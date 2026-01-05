@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://moriform.github.io/sitemap.xml
