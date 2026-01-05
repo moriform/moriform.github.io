@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>知识 on Moriform</title>
+        <link>http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/</link>
+        <description>Recent content in 知识 on Moriform</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 01 Dec 2019 19:40:38 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Solresol语法1</title>
+        <link>http://localhost:1313/post/20191201solresol_grammar1/</link>
+        <pubDate>Sun, 01 Dec 2019 19:40:38 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/20191201solresol_grammar1/</guid>
+        <description>&lt;h3 id=&#34;引入&#34;&gt;引入
+&lt;/h3&gt;&lt;p&gt;生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。
+但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。
+为了旅行和国际交流的方便，促进有益科学的发展，我们需要一门易于理解传播的全人类所共有的一门语言。这种语言可以为想要学习一门外语的人节省时间和金钱，并且在多个国家通用。&lt;/p&gt;
+&lt;p&gt;如今旅行业的发展日益加快，一门所有人都能够掌握的第二语言显得如此重要。
+这样用于全球的国际语言是存在的，需要的是人们有意愿去学习练习并传播。&lt;/p&gt;
+&lt;h3 id=&#34;solresol语的概念&#34;&gt;Solresol语的概念
+&lt;/h3&gt;&lt;p&gt;Francois Sudre（?-1862）发明了一种简单的语言，为了避免国际上的干涉，他发明了一门和其他所有语言都不一样的“中立”的语言。一门完全基于音乐上的7个音（do，re，mi，fa，sol，la，si）创造的语言。
+学习这门语言，你完全不需要去了解音乐，它易于发音和拼写，简单到只需要花不到一分钟就能够了解它的拼写。
+/这种语言叫做SOLRESOL，法语不比德语多，英语不比俄语多，西班牙语不比土耳其语多，拉丁语不比汉语多。
+当然，法国人永远讲法语，英国人永远讲英语，俄罗斯人永远讲俄语等等，但索尔索将是一个共同的纽带，一个普遍的沟通思想的手段，无论是在言语中，甚至是在没有言语的情况下，无论是从远处还是近距离，无论是在秘密还是在光天化日之下。
+因此，通过Solresol，盲人将能够与外国聋哑人交流思想，反之亦然，因此每个人都能够回答并被他们理解。
+在欧洲，有25万多人被束缚，21万多聋哑人；因此，仅在欧洲，就有46万人几乎没有任何与其他人交流的手段，而且由于solresol，他们将被带回到日常生活中，并看到他们残疾的不便减少。*/（译者：被省略的地方实在不想翻译所以百度了。说这门语言能在世界上广为流传的句子基于事实也没有翻译。）&lt;/p&gt;
+&lt;p&gt;（solresol没有官方的中文第二说明书，所以阅读以下的所有内容需要掌握至少小学英语水平）&lt;/p&gt;
+&lt;h3 id=&#34;写法&#34;&gt;写法
+&lt;/h3&gt;&lt;p&gt;我们可以用不同的方式书写solresol语。
+写全音节do,re,mi,fa,sol,la,si。&lt;/p&gt;
+&lt;p&gt;书写省略元音（除了sol要写成so来与si区分开）：d,r,m,f,so,l,s。&lt;/p&gt;
+&lt;p&gt;五线谱取下加一线到第三间的范围书写。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/3e5659fe62b746c65a3bf0d5f41a015d.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;用简谱上的数字来代替音节。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/3e79b973f015843bfd7b6ff8a4cb1ef6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;由 Vincent GAJEWSKI发明的solresol特有的速记方式。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/9bc3b8b5e96197edc1ae2a0413e845ca.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;|547x154&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;（译：神奇的事来了：这些速记符号是用来画图的，读图方式遵循从上到下从左到右）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/6833bb32dfd7f185979d30b635b16e8e.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;遇到叠音我们只需要写一遍然后在中间划一道线。&lt;/p&gt;
+&lt;h3 id=&#34;用solresol交流的不同方式&#34;&gt;用solresol交流的不同方式
+&lt;/h3&gt;&lt;p&gt;不管是在白天还是黑夜，远处还是近处，海上还是陆地，出声与否我们都能通过solresol语言交流自如。即使是各国的聋哑人或是盲人也有多种交流方式。
+大声说出来，solresol的发音对任何一个国家的人来说都应该是很简单的。&lt;/p&gt;
+&lt;p&gt;之前所提到的五种简单的书写方式。&lt;/p&gt;
+&lt;p&gt;这门语言可以通过用手摆出之前所提到的速记方式的标志来无声交流（比如说do需要将手比作一个球或摆出一个零，对于叠词将同一记号摆两次即可）。&lt;/p&gt;
+&lt;p&gt;用右手食指指出左手的不同区域来代表不同的音节。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/599068a0884c366c4db976989a32ab88.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;看见了吗，这里比出的三根手指就是之前说明的五线谱标注法的第一线，第二线和第三线。&lt;/p&gt;
+&lt;p&gt;通过敲击的方式来进行交流。
+&lt;code&gt;敲一下代表do.&lt;/code&gt;
+&lt;code&gt;敲两下代表re.&lt;/code&gt;
+&lt;code&gt;……&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;熟悉音乐的人当然可以用任何乐器来演奏索来索语。&lt;/p&gt;
+&lt;p&gt;聋哑人与盲人交流时可以通过触碰盲人手指的各个部分来交流信息。&lt;/p&gt;
+&lt;p&gt;相距较远时，如相隔一条街或隔窗相望，我们可以通过速记符号进行交流，这种情况下只有两个人能看见。通过这种方法，囚犯也能通过窗台记号和外界交流，反之亦然。&lt;/p&gt;
+&lt;p&gt;在夜间通过点亮七色彩灯或焰火交流：
+&lt;code&gt;红色：do&lt;/code&gt;
+&lt;code&gt;橙色：re&lt;/code&gt;
+&lt;code&gt;黄色：mi&lt;/code&gt;
+&lt;code&gt;绿色：fa&lt;/code&gt;
+&lt;code&gt;蓝色：sol&lt;/code&gt;
+&lt;code&gt;靛蓝：la（铁氰化亚铁的普鲁士蓝）&lt;/code&gt;
+&lt;code&gt;紫色：si&lt;/code&gt;
+&lt;code&gt;(可以看见颜色的顺序是彩虹的颜色顺序。)&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
