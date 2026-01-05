@@ -4,8 +4,7 @@
     <title>Categories on Moriform</title>
     <link>https://moriform.github.io/en/categories/</link>
     <description>Recent content in Categories on Moriform</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="https://moriform.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://moriform.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
