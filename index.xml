@@ -1,125 +1,2016 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>森月台</title>
     <link>https://moriform.github.io/</link>
     <description>Recent content on 森月台</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Moriform</copyright>
-    <lastBuildDate>Sun, 04 Jan 2026 19:40:38 +0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Blog</title>
       <link>https://moriform.github.io/post/my-first-blog/</link>
       <pubDate>Sun, 04 Jan 2026 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/my-first-blog/</guid>
       <description>&lt;p&gt;This is my first blog on hugo!&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is my first blog on hugo!</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>2025.11.30</title>
       <link>https://moriform.github.io/post/20251130weekly/</link>
       <pubDate>Sun, 30 Nov 2025 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20251130weekly/</guid>
-      <description>&lt;p&gt;这个月买了什么&lt;/p&gt;&#xA;&lt;p&gt;十一月算是购物大月，我虽然不在国内没有办法过双十一，但是还是一贯在黑五买了些东西。&lt;/p&gt;&#xA;&lt;h2 id=&#34;launchpad-pro-mk3&#34;&gt;Launchpad Pro mk3&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_9288.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;一个19年的老玩意儿了。16年的时候买了Launchpad mk2的版本打了几个灯光效果很酷炫的工程之后就一直用于DrumPad弹和弦，以及和Ableton live一起使用在直播的时候作为通道条的控制器。&lt;/p&gt;&#xA;&lt;p&gt;在Ebay上面120镑买的几乎全新的mk3，价格和当时闲鱼上面的最低价差不多了。新的版本多了版面的自定义功能可以使用不同的预设。然后多了十分好用的和弦功能和音阶选择功能，很适合没有灵感的时候随机漫游。&lt;/p&gt;&#xA;&lt;p&gt;以及Pro版本有专属的音序器功能，暂时没有时间去摸索，估计是可以和其他硬件合成器搭配使用的方案。&lt;/p&gt;&#xA;&lt;h2 id=&#34;mpowersynth&#34;&gt;Mpowersynth&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;reaper_yi78BjSHya.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;红塔山(Melda production)的波表合成器打骨折，加上折扣券28镑收了，算是逐渐集齐红塔山全家桶的又一步。&lt;/p&gt;&#xA;&lt;p&gt;特点是极低的cpu消耗以及红塔山的特色效果器路由和无限可能性。&lt;/p&gt;&#xA;&lt;p&gt;当然还有红塔山特色的让人不想靠近的UI。&lt;/p&gt;&#xA;&lt;h2 id=&#34;rond&#34;&gt;Rond&lt;/h2&gt;&#xA;&lt;p&gt;128元&#xA;&lt;img src=&#34;IMG_9407.webp&#34; alt=&#34;&#34;&gt;&#xA;暄穗之前一直使用Life cycle来进行日常的追踪和记录，在使用的过程中发现了其局限性：其一是太长时间没有更新，像是亖了一样。其二是地图如果有所偏移的话修改方式极其诡异甚至无法修改。&lt;/p&gt;&#xA;&lt;p&gt;所以在少数派搜索Life cycle的时候看见了Rond这款软件。给我的整体感觉就是一个持续更新的Life Cycle，而且还是可以买断的，所以试用了三天就买了。给人感觉相当不错。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;IMG_9406.webp&#34; alt=&#34;&#34;&gt;&#xA;同时下载了一个叫做一生足迹的APP一直放在手机后台记录。要说两者的区别的话Rond和Life cycle都是记录事件，记录在一个地方呆的时间有多长。而一生足迹是记录具体地图上经历过的路径。&lt;/p&gt;&#xA;&lt;h2 id=&#34;elegoo-uno-r3&#34;&gt;ELEGOO UNO R3&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;20251201232436.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;用于处理学校的Creative Coding for Sound大作业。但是Arduino的价格太高所以选择了替代主板。同时购买的还有ECG贴片，AD8232组件和一盆绿植。大概也能猜出想要做什么东西了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;游戏&#34;&gt;游戏&lt;/h2&gt;&#xA;&lt;h3 id=&#34;亚路塔&#34;&gt;亚路塔&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;2020251201232635.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;关于见习勇者打工打怪建设文明乡镇的故事。一个迷你且完善的类潜水员戴夫的经营动作类游戏。&lt;/p&gt;&#xA;&lt;p&gt;像素人物很可爱，但是刷钱的过程有些肝弥补了游戏时长短的缺点。估计20小时以内可以玩完。&lt;/p&gt;&#xA;&lt;h3 id=&#34;星之终途&#34;&gt;星之终途&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;20251201232803.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;既然是Key社的游戏还是短篇还是4折促销就不得不买了。&lt;/p&gt;</description>
+      <description>&lt;p&gt;这个月买了什么&lt;/p&gt;
+&lt;p&gt;十一月算是购物大月，我虽然不在国内没有办法过双十一，但是还是一贯在黑五买了些东西。&lt;/p&gt;
+&lt;h2 id=&#34;launchpad-pro-mk3&#34;&gt;Launchpad Pro mk3&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/IMG_9288.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;一个19年的老玩意儿了。16年的时候买了Launchpad mk2的版本打了几个灯光效果很酷炫的工程之后就一直用于DrumPad弹和弦，以及和Ableton live一起使用在直播的时候作为通道条的控制器。&lt;/p&gt;
+&lt;p&gt;在Ebay上面120镑买的几乎全新的mk3，价格和当时闲鱼上面的最低价差不多了。新的版本多了版面的自定义功能可以使用不同的预设。然后多了十分好用的和弦功能和音阶选择功能，很适合没有灵感的时候随机漫游。&lt;/p&gt;
+&lt;p&gt;以及Pro版本有专属的音序器功能，暂时没有时间去摸索，估计是可以和其他硬件合成器搭配使用的方案。&lt;/p&gt;
+&lt;h2 id=&#34;mpowersynth&#34;&gt;Mpowersynth&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/reaper_yi78BjSHya.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;红塔山(Melda production)的波表合成器打骨折，加上折扣券28镑收了，算是逐渐集齐红塔山全家桶的又一步。&lt;/p&gt;
+&lt;p&gt;特点是极低的cpu消耗以及红塔山的特色效果器路由和无限可能性。&lt;/p&gt;
+&lt;p&gt;当然还有红塔山特色的让人不想靠近的UI。&lt;/p&gt;
+&lt;h2 id=&#34;rond&#34;&gt;Rond&lt;/h2&gt;
+&lt;p&gt;128元
+&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/IMG_9407.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+暄穗之前一直使用Life cycle来进行日常的追踪和记录，在使用的过程中发现了其局限性：其一是太长时间没有更新，像是亖了一样。其二是地图如果有所偏移的话修改方式极其诡异甚至无法修改。&lt;/p&gt;
+&lt;p&gt;所以在少数派搜索Life cycle的时候看见了Rond这款软件。给我的整体感觉就是一个持续更新的Life Cycle，而且还是可以买断的，所以试用了三天就买了。给人感觉相当不错。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/IMG_9406.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+同时下载了一个叫做一生足迹的APP一直放在手机后台记录。要说两者的区别的话Rond和Life cycle都是记录事件，记录在一个地方呆的时间有多长。而一生足迹是记录具体地图上经历过的路径。&lt;/p&gt;
+&lt;h2 id=&#34;elegoo-uno-r3&#34;&gt;ELEGOO UNO R3&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/20251201232436.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;用于处理学校的Creative Coding for Sound大作业。但是Arduino的价格太高所以选择了替代主板。同时购买的还有ECG贴片，AD8232组件和一盆绿植。大概也能猜出想要做什么东西了。&lt;/p&gt;
+&lt;h2 id=&#34;游戏&#34;&gt;游戏&lt;/h2&gt;
+&lt;h3 id=&#34;亚路塔&#34;&gt;亚路塔&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/2020251201232635.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;关于见习勇者打工打怪建设文明乡镇的故事。一个迷你且完善的类潜水员戴夫的经营动作类游戏。&lt;/p&gt;
+&lt;p&gt;像素人物很可爱，但是刷钱的过程有些肝弥补了游戏时长短的缺点。估计20小时以内可以玩完。&lt;/p&gt;
+&lt;h3 id=&#34;星之终途&#34;&gt;星之终途&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20251130weekly/20251201232803.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;既然是Key社的游戏还是短篇还是4折促销就不得不买了。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>这个月买了什么</p>
+<p>十一月算是购物大月，我虽然不在国内没有办法过双十一，但是还是一贯在黑五买了些东西。</p>
+<h2 id="launchpad-pro-mk3">Launchpad Pro mk3</h2>
+<p><img loading="lazy" src="/post/20251130weekly/IMG_9288.webp" type="" alt=""  /></p>
+<p>一个19年的老玩意儿了。16年的时候买了Launchpad mk2的版本打了几个灯光效果很酷炫的工程之后就一直用于DrumPad弹和弦，以及和Ableton live一起使用在直播的时候作为通道条的控制器。</p>
+<p>在Ebay上面120镑买的几乎全新的mk3，价格和当时闲鱼上面的最低价差不多了。新的版本多了版面的自定义功能可以使用不同的预设。然后多了十分好用的和弦功能和音阶选择功能，很适合没有灵感的时候随机漫游。</p>
+<p>以及Pro版本有专属的音序器功能，暂时没有时间去摸索，估计是可以和其他硬件合成器搭配使用的方案。</p>
+<h2 id="mpowersynth">Mpowersynth</h2>
+<p><img loading="lazy" src="/post/20251130weekly/reaper_yi78BjSHya.webp" type="" alt=""  /></p>
+<p>红塔山(Melda production)的波表合成器打骨折，加上折扣券28镑收了，算是逐渐集齐红塔山全家桶的又一步。</p>
+<p>特点是极低的cpu消耗以及红塔山的特色效果器路由和无限可能性。</p>
+<p>当然还有红塔山特色的让人不想靠近的UI。</p>
+<h2 id="rond">Rond</h2>
+<p>128元
+<img loading="lazy" src="/post/20251130weekly/IMG_9407.webp" type="" alt=""  />
+暄穗之前一直使用Life cycle来进行日常的追踪和记录，在使用的过程中发现了其局限性：其一是太长时间没有更新，像是亖了一样。其二是地图如果有所偏移的话修改方式极其诡异甚至无法修改。</p>
+<p>所以在少数派搜索Life cycle的时候看见了Rond这款软件。给我的整体感觉就是一个持续更新的Life Cycle，而且还是可以买断的，所以试用了三天就买了。给人感觉相当不错。</p>
+<p><img loading="lazy" src="/post/20251130weekly/IMG_9406.webp" type="" alt=""  />
+同时下载了一个叫做一生足迹的APP一直放在手机后台记录。要说两者的区别的话Rond和Life cycle都是记录事件，记录在一个地方呆的时间有多长。而一生足迹是记录具体地图上经历过的路径。</p>
+<h2 id="elegoo-uno-r3">ELEGOO UNO R3</h2>
+<p><img loading="lazy" src="/post/20251130weekly/20251201232436.webp" type="" alt=""  /></p>
+<p>用于处理学校的Creative Coding for Sound大作业。但是Arduino的价格太高所以选择了替代主板。同时购买的还有ECG贴片，AD8232组件和一盆绿植。大概也能猜出想要做什么东西了。</p>
+<h2 id="游戏">游戏</h2>
+<h3 id="亚路塔">亚路塔</h3>
+<p><img loading="lazy" src="/post/20251130weekly/2020251201232635.webp" type="" alt=""  /></p>
+<p>关于见习勇者打工打怪建设文明乡镇的故事。一个迷你且完善的类潜水员戴夫的经营动作类游戏。</p>
+<p>像素人物很可爱，但是刷钱的过程有些肝弥补了游戏时长短的缺点。估计20小时以内可以玩完。</p>
+<h3 id="星之终途">星之终途</h3>
+<p><img loading="lazy" src="/post/20251130weekly/20251201232803.webp" type="" alt=""  /></p>
+<p>既然是Key社的游戏还是短篇还是4折促销就不得不买了。</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Max治好了我的巴托比症候群</title>
       <link>https://moriform.github.io/post/20251028max/</link>
       <pubDate>Tue, 28 Oct 2025 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20251028max/</guid>
-      <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;&#xA;&lt;p&gt;上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。&lt;/p&gt;&#xA;&lt;p&gt;大纲：&lt;/p&gt;&#xA;&lt;p&gt;简述这个项目是什么&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Lofi音乐机&lt;/li&gt;&#xA;&lt;li&gt;随机性&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;为什么说我有巴托比&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;对于创作的胆怯&lt;/li&gt;&#xA;&lt;li&gt;对于年龄和是不是应该做的事情，拖延症让我对于创作持续延后；acfun截的僧人的图&lt;/li&gt;&#xA;&lt;li&gt;对于作画便是每个像素的考量，对于音乐便是每一帧的计较，而不是整体pattern和texture的思想&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;怎么治好的&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;通过pattern来管理整个作品，&lt;/li&gt;&#xA;&lt;li&gt;通过并无答案，只要原理正确即使是随机也能够有很好的效果，更何况是自己管理的呢&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;关于项目&#34;&gt;关于项目&lt;/h2&gt;&#xA;&lt;p&gt;稍微说一下项目本身。&lt;/p&gt;&#xA;&lt;p&gt;这是一个自称“自动Lofi生成系统”的MIDI生成片段。需要和任意一个daw连接，通过MIDI演奏乐器达到完成的成品。&lt;/p&gt;&#xA;&lt;p&gt;如果你玩过《节奏医生》就知道里面2-4关卡海之歌（就是让你吃妮可和科尔狗粮的那一关）只需要不停地按下空格键就可以和着背景的爵士乐演奏一个听上去似乎还挺和谐的旋律。曾经我在这一关弹了10多分钟也不知道如何完成关卡，但也就是这十分钟给了我关于音乐新的感觉：1.音乐是可以无限延申的。2.有一种算法可以让随机的旋律和背景很好地融合在一起。如果乐理知识再深一点就知道这个算法的原理就是让旋律弹奏背景和弦的不同组成音。&lt;/p&gt;&#xA;&lt;p&gt;于是，这两个思想就构成了课程项目的作业。暄穗按照其对于Lofi音乐拙劣理解和代码块的不成熟使用在几天时间里搭建了这个系统：背景音就是钢琴和弦，Lofi鼓就是最基础的那几个鼓组，贝斯就是和弦根音，旋律就是和弦随机音。贝斯和旋律音的时长完全从二分音符到十六分音符随机选择。这样一个简单Lofi音乐生成系统就搭建好了，没有使用更多的织体和各种和声写作方法，仅仅就是拼贴。唯一音乐知识的补足是上网搜索了几个Lofi合适的和弦进行，发现只要是同一音阶的七和弦拼上都挺不错。&lt;/p&gt;&#xA;&lt;p&gt;在这个系统中自动生成的音乐充满了随机性。和弦是随机的，随机和和弦进行，以及随机的转调处理。鼓组是随机的，4个基本鼓组随机选择。贝斯是随机的，音符时长以及是否高八度处理是随机的。旋律是随机的，甚至对于音符选择和弦中的音还是音阶中和弦内的音也有权重。&lt;/p&gt;&#xA;&lt;p&gt;于是，基于规则内的随机，显示出了超乎想象的效果，即出乎意料地正常。如果把这个系统放在直播的时候作为背景音乐运行个半个小时估计也没有人在意其中的微妙感。&lt;/p&gt;&#xA;&lt;h2 id=&#34;巴托比症候群&#34;&gt;巴托比症候群&lt;/h2&gt;&#xA;&lt;p&gt;巴托比出自梅尔维尔的小说《书记员巴托比》。后比拉·马塔斯以此为名写了一本《巴托比症候群》提出了这样一个现象：关于作家突然拒绝创作。&lt;/p&gt;&#xA;&lt;p&gt;为何拒绝创作？书里面给出了各种各样的原因。但是，我为什么不创作？我似乎得了这样一种空想症，以至于我在很久之间都没有继续进行原创创作。我也学乐理知识，也学习如何制作如何混编，我也有过能在脑中浮现无限旋律的时候，但是一旦真正打开DAW的时候一切又归于虚无了。这样的状态持续了很久导致我已经不知道为什么创作以及为什么不创作了。&lt;/p&gt;&#xA;&lt;p&gt;直到某一天读到《被讨厌的勇气》的时候，我注意到一段文中僧人说的话。&lt;/p&gt;&#xA;&lt;p&gt;“我有一位年轻朋友，虽然梦想着成为小说家，但却总是写不出作品。他说是因为工作太忙、写小说的时间非常有限，所以才写不出来作品，也从未参加过任何比赛。但真是如此吗？实际上，他是想通过不去比赛这一方式来保留一种“如果做的话我也可以”的可能性，即不愿出去被人评价，更不愿去面对因作品拙劣而落选的现实。他只想活在“只要有时间我也可以、只要环境具备我也能写、自己有这种才能”之类的可能性中。或许再过5年或者10年，他又会开始使用“已经不再年轻”或者“也已经有了家庭”之类的借口。”&lt;/p&gt;&#xA;&lt;p&gt;这让我背脊发凉也似乎让我找到了原因。我在一个自己虚构的位置上坐得太久，反倒不愿意在其他人面前展示了，久而久之刀锈了就更不愿意承认了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;意义&#34;&gt;意义&lt;/h2&gt;&#xA;&lt;p&gt;这次Max工程对于我来说不仅是一个课程设计项目，更多的是启发。&lt;/p&gt;&#xA;&lt;p&gt;给我的最大的启发是对于pattern的认知有了更深入的理解。以前对于创作的理解是在作画中计较每一个像素，在音乐中计较每一帧的表现，这让我在自以为庞大的工作量前心生畏惧。而若是通过pattern的思想来进行创作则会避免这些误区，从心理和实际着手的时候都可以减轻不少负担。&lt;/p&gt;&#xA;&lt;p&gt;第二是给予了更多创作的信心。这次的系统搭建我也是按照以前仅存的经验一段一段搭建的，仅从和弦来说听不出什么名堂，加上鼓组也是。但是当贝斯和旋律的随机部分出来之后立刻感觉就不一样了。是部分的有机结合成就一首歌，所以在完成各个部分之前听上去不尽人意是情理之中的，如果在这之前就放弃实在可惜。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
+&lt;p&gt;上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。&lt;/p&gt;
+&lt;p&gt;大纲：&lt;/p&gt;
+&lt;p&gt;简述这个项目是什么&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lofi音乐机&lt;/li&gt;
+&lt;li&gt;随机性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为什么说我有巴托比&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于创作的胆怯&lt;/li&gt;
+&lt;li&gt;对于年龄和是不是应该做的事情，拖延症让我对于创作持续延后；acfun截的僧人的图&lt;/li&gt;
+&lt;li&gt;对于作画便是每个像素的考量，对于音乐便是每一帧的计较，而不是整体pattern和texture的思想&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;怎么治好的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过pattern来管理整个作品，&lt;/li&gt;
+&lt;li&gt;通过并无答案，只要原理正确即使是随机也能够有很好的效果，更何况是自己管理的呢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;关于项目&#34;&gt;关于项目&lt;/h2&gt;
+&lt;p&gt;稍微说一下项目本身。&lt;/p&gt;
+&lt;p&gt;这是一个自称“自动Lofi生成系统”的MIDI生成片段。需要和任意一个daw连接，通过MIDI演奏乐器达到完成的成品。&lt;/p&gt;
+&lt;p&gt;如果你玩过《节奏医生》就知道里面2-4关卡海之歌（就是让你吃妮可和科尔狗粮的那一关）只需要不停地按下空格键就可以和着背景的爵士乐演奏一个听上去似乎还挺和谐的旋律。曾经我在这一关弹了10多分钟也不知道如何完成关卡，但也就是这十分钟给了我关于音乐新的感觉：1.音乐是可以无限延申的。2.有一种算法可以让随机的旋律和背景很好地融合在一起。如果乐理知识再深一点就知道这个算法的原理就是让旋律弹奏背景和弦的不同组成音。&lt;/p&gt;
+&lt;p&gt;于是，这两个思想就构成了课程项目的作业。暄穗按照其对于Lofi音乐拙劣理解和代码块的不成熟使用在几天时间里搭建了这个系统：背景音就是钢琴和弦，Lofi鼓就是最基础的那几个鼓组，贝斯就是和弦根音，旋律就是和弦随机音。贝斯和旋律音的时长完全从二分音符到十六分音符随机选择。这样一个简单Lofi音乐生成系统就搭建好了，没有使用更多的织体和各种和声写作方法，仅仅就是拼贴。唯一音乐知识的补足是上网搜索了几个Lofi合适的和弦进行，发现只要是同一音阶的七和弦拼上都挺不错。&lt;/p&gt;
+&lt;p&gt;在这个系统中自动生成的音乐充满了随机性。和弦是随机的，随机和和弦进行，以及随机的转调处理。鼓组是随机的，4个基本鼓组随机选择。贝斯是随机的，音符时长以及是否高八度处理是随机的。旋律是随机的，甚至对于音符选择和弦中的音还是音阶中和弦内的音也有权重。&lt;/p&gt;
+&lt;p&gt;于是，基于规则内的随机，显示出了超乎想象的效果，即出乎意料地正常。如果把这个系统放在直播的时候作为背景音乐运行个半个小时估计也没有人在意其中的微妙感。&lt;/p&gt;
+&lt;h2 id=&#34;巴托比症候群&#34;&gt;巴托比症候群&lt;/h2&gt;
+&lt;p&gt;巴托比出自梅尔维尔的小说《书记员巴托比》。后比拉·马塔斯以此为名写了一本《巴托比症候群》提出了这样一个现象：关于作家突然拒绝创作。&lt;/p&gt;
+&lt;p&gt;为何拒绝创作？书里面给出了各种各样的原因。但是，我为什么不创作？我似乎得了这样一种空想症，以至于我在很久之间都没有继续进行原创创作。我也学乐理知识，也学习如何制作如何混编，我也有过能在脑中浮现无限旋律的时候，但是一旦真正打开DAW的时候一切又归于虚无了。这样的状态持续了很久导致我已经不知道为什么创作以及为什么不创作了。&lt;/p&gt;
+&lt;p&gt;直到某一天读到《被讨厌的勇气》的时候，我注意到一段文中僧人说的话。&lt;/p&gt;
+&lt;p&gt;“我有一位年轻朋友，虽然梦想着成为小说家，但却总是写不出作品。他说是因为工作太忙、写小说的时间非常有限，所以才写不出来作品，也从未参加过任何比赛。但真是如此吗？实际上，他是想通过不去比赛这一方式来保留一种“如果做的话我也可以”的可能性，即不愿出去被人评价，更不愿去面对因作品拙劣而落选的现实。他只想活在“只要有时间我也可以、只要环境具备我也能写、自己有这种才能”之类的可能性中。或许再过5年或者10年，他又会开始使用“已经不再年轻”或者“也已经有了家庭”之类的借口。”&lt;/p&gt;
+&lt;p&gt;这让我背脊发凉也似乎让我找到了原因。我在一个自己虚构的位置上坐得太久，反倒不愿意在其他人面前展示了，久而久之刀锈了就更不愿意承认了。&lt;/p&gt;
+&lt;h2 id=&#34;意义&#34;&gt;意义&lt;/h2&gt;
+&lt;p&gt;这次Max工程对于我来说不仅是一个课程设计项目，更多的是启发。&lt;/p&gt;
+&lt;p&gt;给我的最大的启发是对于pattern的认知有了更深入的理解。以前对于创作的理解是在作画中计较每一个像素，在音乐中计较每一帧的表现，这让我在自以为庞大的工作量前心生畏惧。而若是通过pattern的思想来进行创作则会避免这些误区，从心理和实际着手的时候都可以减轻不少负担。&lt;/p&gt;
+&lt;p&gt;第二是给予了更多创作的信心。这次的系统搭建我也是按照以前仅存的经验一段一段搭建的，仅从和弦来说听不出什么名堂，加上鼓组也是。但是当贝斯和旋律的随机部分出来之后立刻感觉就不一样了。是部分的有机结合成就一首歌，所以在完成各个部分之前听上去不尽人意是情理之中的，如果在这之前就放弃实在可惜。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="这是什么">这是什么</h2>
+<p>上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。</p>
+<p>大纲：</p>
+<p>简述这个项目是什么</p>
+<ul>
+<li>Lofi音乐机</li>
+<li>随机性</li>
+</ul>
+<p>为什么说我有巴托比</p>
+<ul>
+<li>对于创作的胆怯</li>
+<li>对于年龄和是不是应该做的事情，拖延症让我对于创作持续延后；acfun截的僧人的图</li>
+<li>对于作画便是每个像素的考量，对于音乐便是每一帧的计较，而不是整体pattern和texture的思想</li>
+</ul>
+<p>怎么治好的</p>
+<ul>
+<li>通过pattern来管理整个作品，</li>
+<li>通过并无答案，只要原理正确即使是随机也能够有很好的效果，更何况是自己管理的呢</li>
+</ul>
+<h2 id="关于项目">关于项目</h2>
+<p>稍微说一下项目本身。</p>
+<p>这是一个自称“自动Lofi生成系统”的MIDI生成片段。需要和任意一个daw连接，通过MIDI演奏乐器达到完成的成品。</p>
+<p>如果你玩过《节奏医生》就知道里面2-4关卡海之歌（就是让你吃妮可和科尔狗粮的那一关）只需要不停地按下空格键就可以和着背景的爵士乐演奏一个听上去似乎还挺和谐的旋律。曾经我在这一关弹了10多分钟也不知道如何完成关卡，但也就是这十分钟给了我关于音乐新的感觉：1.音乐是可以无限延申的。2.有一种算法可以让随机的旋律和背景很好地融合在一起。如果乐理知识再深一点就知道这个算法的原理就是让旋律弹奏背景和弦的不同组成音。</p>
+<p>于是，这两个思想就构成了课程项目的作业。暄穗按照其对于Lofi音乐拙劣理解和代码块的不成熟使用在几天时间里搭建了这个系统：背景音就是钢琴和弦，Lofi鼓就是最基础的那几个鼓组，贝斯就是和弦根音，旋律就是和弦随机音。贝斯和旋律音的时长完全从二分音符到十六分音符随机选择。这样一个简单Lofi音乐生成系统就搭建好了，没有使用更多的织体和各种和声写作方法，仅仅就是拼贴。唯一音乐知识的补足是上网搜索了几个Lofi合适的和弦进行，发现只要是同一音阶的七和弦拼上都挺不错。</p>
+<p>在这个系统中自动生成的音乐充满了随机性。和弦是随机的，随机和和弦进行，以及随机的转调处理。鼓组是随机的，4个基本鼓组随机选择。贝斯是随机的，音符时长以及是否高八度处理是随机的。旋律是随机的，甚至对于音符选择和弦中的音还是音阶中和弦内的音也有权重。</p>
+<p>于是，基于规则内的随机，显示出了超乎想象的效果，即出乎意料地正常。如果把这个系统放在直播的时候作为背景音乐运行个半个小时估计也没有人在意其中的微妙感。</p>
+<h2 id="巴托比症候群">巴托比症候群</h2>
+<p>巴托比出自梅尔维尔的小说《书记员巴托比》。后比拉·马塔斯以此为名写了一本《巴托比症候群》提出了这样一个现象：关于作家突然拒绝创作。</p>
+<p>为何拒绝创作？书里面给出了各种各样的原因。但是，我为什么不创作？我似乎得了这样一种空想症，以至于我在很久之间都没有继续进行原创创作。我也学乐理知识，也学习如何制作如何混编，我也有过能在脑中浮现无限旋律的时候，但是一旦真正打开DAW的时候一切又归于虚无了。这样的状态持续了很久导致我已经不知道为什么创作以及为什么不创作了。</p>
+<p>直到某一天读到《被讨厌的勇气》的时候，我注意到一段文中僧人说的话。</p>
+<p>“我有一位年轻朋友，虽然梦想着成为小说家，但却总是写不出作品。他说是因为工作太忙、写小说的时间非常有限，所以才写不出来作品，也从未参加过任何比赛。但真是如此吗？实际上，他是想通过不去比赛这一方式来保留一种“如果做的话我也可以”的可能性，即不愿出去被人评价，更不愿去面对因作品拙劣而落选的现实。他只想活在“只要有时间我也可以、只要环境具备我也能写、自己有这种才能”之类的可能性中。或许再过5年或者10年，他又会开始使用“已经不再年轻”或者“也已经有了家庭”之类的借口。”</p>
+<p>这让我背脊发凉也似乎让我找到了原因。我在一个自己虚构的位置上坐得太久，反倒不愿意在其他人面前展示了，久而久之刀锈了就更不愿意承认了。</p>
+<h2 id="意义">意义</h2>
+<p>这次Max工程对于我来说不仅是一个课程设计项目，更多的是启发。</p>
+<p>给我的最大的启发是对于pattern的认知有了更深入的理解。以前对于创作的理解是在作画中计较每一个像素，在音乐中计较每一帧的表现，这让我在自以为庞大的工作量前心生畏惧。而若是通过pattern的思想来进行创作则会避免这些误区，从心理和实际着手的时候都可以减轻不少负担。</p>
+<p>第二是给予了更多创作的信心。这次的系统搭建我也是按照以前仅存的经验一段一段搭建的，仅从和弦来说听不出什么名堂，加上鼓组也是。但是当贝斯和旋律的随机部分出来之后立刻感觉就不一样了。是部分的有机结合成就一首歌，所以在完成各个部分之前听上去不尽人意是情理之中的，如果在这之前就放弃实在可惜。</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>2025.10.26</title>
       <link>https://moriform.github.io/post/20251026weekly/</link>
       <pubDate>Sun, 26 Oct 2025 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20251026weekly/</guid>
-      <description>&lt;h2 id=&#34;近况&#34;&gt;近况&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1&#34;&gt;1&lt;/h3&gt;&#xA;&lt;p&gt;非常艰难的一周过去了。&lt;/p&gt;&#xA;&lt;p&gt;具体来说一周的时间都在赶DDL，声学和声音编程课的期中作业和项目都放在了这周交，但是从周一开始才开始做。由于完全高估了自己对时间的掌握能力和编辑Latex的能力所以晚上过得特别艰难。&lt;/p&gt;&#xA;&lt;p&gt;声音编程的项目是完成一个MIDI级别输出的作品，我做了一个随机生成简单Lofi音乐的系统出来。声学的期中是6个高数物理题，花了近18个小时连续从草稿到Latex三百行代码加上Matlab作图完成。&lt;/p&gt;&#xA;&lt;p&gt;最主要的教训就是不要把事情都放在DDL之前完成。以及更重要的：数学和工程相关的作业不要放在创作之后去完成。因为创作的东西，就比如这一次的声音编程课作业，一旦入迷了就不停修改不停延申不停加功能，前三天半的时间都花在了这上面，导致后面的时间严重不足。如果把声学作业分散开每天完成一些不至于这样狼狈。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2&#34;&gt;2&lt;/h3&gt;&#xA;&lt;p&gt;开学已经快2个月了，感觉状态还是没有调整过来。&lt;/p&gt;&#xA;&lt;p&gt;一方面是异地他乡还没多少太阳，确实没什么精力。问gpt说可能维生素D不足，得买点保健品吃。&lt;/p&gt;&#xA;&lt;p&gt;另一方面是对自己的约束似乎不太够，已经离开学校这么久了，重新回到学校也没办法回到高三那种状态，又是一个人，很多时候不太想做就跳过了，导致验收的时候发现没什么成果。&lt;/p&gt;&#xA;&lt;p&gt;其实现在想想只要lecture预习了总结了，tutorial提前过了，上课再总结了那学习的基本工作就完成了。至于大作业掰碎了做每天都能够过得很充实。&lt;/p&gt;&#xA;&lt;h2 id=&#34;亮点&#34;&gt;亮点&lt;/h2&gt;&#xA;&lt;h3 id=&#34;周记&#34;&gt;周记&lt;/h3&gt;&#xA;&lt;p&gt;终于，暄穗开始写周记了。&lt;/p&gt;&#xA;&lt;p&gt;其实暄穗很早就开始计划写周记了，契机是最早rss关注的一个日本视频博主在博客做教程的同时，每周都会写周记，总结自己的一周。我觉得这能让我抽时间审视自己的一周并总结，同时能够留下记忆，让我回顾的同时也能作为数字骨灰盒留在互联网上。而且想到要把自己的时间进行总结，也就下意识想把生活过得KIRAKIRA一点了。&lt;/p&gt;&#xA;&lt;p&gt;不过让我真正开始这个行为的契机是这周关注了Blog finder的rss订阅，同时也提交了自己的博客作为收录。这才发现我在互联网上并不是一个孤立的站点，森月台最终能够和其他站台相连接，给城市外的地图增加路线。我看见其他的站长也都积极更新这自己的站点，城市外并不是沉寂的虚无。&lt;/p&gt;&#xA;&lt;h3 id=&#34;lofi生成系统&#34;&gt;Lofi生成系统&lt;/h3&gt;&#xA;&lt;p&gt;这是声音编程课的第一个大作业，也是我最近离艺术最近的一次。&lt;/p&gt;&#xA;&lt;h3 id=&#34;与rsshub和解&#34;&gt;与Rsshub和解&lt;/h3&gt;&#xA;&lt;p&gt;暄穗在和Rsshub斗智斗勇许久之后和它和解了，不再非要按照在云服务器上了。这样也让服务器的其他应用不会卡死了。&lt;/p&gt;&#xA;&lt;p&gt;暄穗的服务器是一个2g2核的小服务器（实际自己能用的只有1.6g），上面有wordpress，freshrss和一个nginx proxy manager，由于rsshub的存在经常让整个服务器的内存占用在1.3~卡死之间徘徊，也有若干次因为占IOPS和CPU把服务器卡死。所以经过几轮激烈战斗后暄穗还是放弃了，就1.6个G拼啥命啊。&lt;/p&gt;&#xA;&lt;p&gt;现在暄穗使用的方法是在本地wsl部署一个rsshub(8g的debian够耗的了)，然后通过frp进行内网穿透，这样访问原来域名的时候依旧是rsshub。而且暄穗不在国内，所以暂时某些神奇网站也可以订阅。&lt;/p&gt;&#xA;&lt;p&gt;之后预计会买一个树莓派把rsshub放上去然后搁寝室一直开着就不用担心断电的问题了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;音乐推荐&#34;&gt;音乐推荐&lt;/h2&gt;&#xA;&lt;p&gt;MIMI的&lt;a href=&#34;https://www.youtube.com/watch?v=EGJR43xgFgQ&amp;amp;list=PL0hwzg3Etw7VLQAqiscMuMrniomB5lCo7&amp;amp;index=94&#34;&gt;フローレミ / feat.初音ミク&lt;/a&gt;&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/EGJR43xgFgQ?si=hFWu--bWILOXzpeI&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;这是高考后某个下午听见的夏曲，是MIMI的曲风还没有同质化时候我喜欢的旋律，现在听见也能会想起那个什么事情都不用忧虑只需坐在阳台的露营椅专心听歌的时光。&lt;/p&gt;&#xA;&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;&#xA;&lt;p&gt;暄穗已经很久没有写过东西了，现在的文字依旧支离破碎，还得适应。我尽量快地赶上来，我想和更多人交流。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;近况&#34;&gt;近况&lt;/h2&gt;
+&lt;h3 id=&#34;1&#34;&gt;1&lt;/h3&gt;
+&lt;p&gt;非常艰难的一周过去了。&lt;/p&gt;
+&lt;p&gt;具体来说一周的时间都在赶DDL，声学和声音编程课的期中作业和项目都放在了这周交，但是从周一开始才开始做。由于完全高估了自己对时间的掌握能力和编辑Latex的能力所以晚上过得特别艰难。&lt;/p&gt;
+&lt;p&gt;声音编程的项目是完成一个MIDI级别输出的作品，我做了一个随机生成简单Lofi音乐的系统出来。声学的期中是6个高数物理题，花了近18个小时连续从草稿到Latex三百行代码加上Matlab作图完成。&lt;/p&gt;
+&lt;p&gt;最主要的教训就是不要把事情都放在DDL之前完成。以及更重要的：数学和工程相关的作业不要放在创作之后去完成。因为创作的东西，就比如这一次的声音编程课作业，一旦入迷了就不停修改不停延申不停加功能，前三天半的时间都花在了这上面，导致后面的时间严重不足。如果把声学作业分散开每天完成一些不至于这样狼狈。&lt;/p&gt;
+&lt;h3 id=&#34;2&#34;&gt;2&lt;/h3&gt;
+&lt;p&gt;开学已经快2个月了，感觉状态还是没有调整过来。&lt;/p&gt;
+&lt;p&gt;一方面是异地他乡还没多少太阳，确实没什么精力。问gpt说可能维生素D不足，得买点保健品吃。&lt;/p&gt;
+&lt;p&gt;另一方面是对自己的约束似乎不太够，已经离开学校这么久了，重新回到学校也没办法回到高三那种状态，又是一个人，很多时候不太想做就跳过了，导致验收的时候发现没什么成果。&lt;/p&gt;
+&lt;p&gt;其实现在想想只要lecture预习了总结了，tutorial提前过了，上课再总结了那学习的基本工作就完成了。至于大作业掰碎了做每天都能够过得很充实。&lt;/p&gt;
+&lt;h2 id=&#34;亮点&#34;&gt;亮点&lt;/h2&gt;
+&lt;h3 id=&#34;周记&#34;&gt;周记&lt;/h3&gt;
+&lt;p&gt;终于，暄穗开始写周记了。&lt;/p&gt;
+&lt;p&gt;其实暄穗很早就开始计划写周记了，契机是最早rss关注的一个日本视频博主在博客做教程的同时，每周都会写周记，总结自己的一周。我觉得这能让我抽时间审视自己的一周并总结，同时能够留下记忆，让我回顾的同时也能作为数字骨灰盒留在互联网上。而且想到要把自己的时间进行总结，也就下意识想把生活过得KIRAKIRA一点了。&lt;/p&gt;
+&lt;p&gt;不过让我真正开始这个行为的契机是这周关注了Blog finder的rss订阅，同时也提交了自己的博客作为收录。这才发现我在互联网上并不是一个孤立的站点，森月台最终能够和其他站台相连接，给城市外的地图增加路线。我看见其他的站长也都积极更新这自己的站点，城市外并不是沉寂的虚无。&lt;/p&gt;
+&lt;h3 id=&#34;lofi生成系统&#34;&gt;Lofi生成系统&lt;/h3&gt;
+&lt;p&gt;这是声音编程课的第一个大作业，也是我最近离艺术最近的一次。&lt;/p&gt;
+&lt;h3 id=&#34;与rsshub和解&#34;&gt;与Rsshub和解&lt;/h3&gt;
+&lt;p&gt;暄穗在和Rsshub斗智斗勇许久之后和它和解了，不再非要按照在云服务器上了。这样也让服务器的其他应用不会卡死了。&lt;/p&gt;
+&lt;p&gt;暄穗的服务器是一个2g2核的小服务器（实际自己能用的只有1.6g），上面有wordpress，freshrss和一个nginx proxy manager，由于rsshub的存在经常让整个服务器的内存占用在1.3~卡死之间徘徊，也有若干次因为占IOPS和CPU把服务器卡死。所以经过几轮激烈战斗后暄穗还是放弃了，就1.6个G拼啥命啊。&lt;/p&gt;
+&lt;p&gt;现在暄穗使用的方法是在本地wsl部署一个rsshub(8g的debian够耗的了)，然后通过frp进行内网穿透，这样访问原来域名的时候依旧是rsshub。而且暄穗不在国内，所以暂时某些神奇网站也可以订阅。&lt;/p&gt;
+&lt;p&gt;之后预计会买一个树莓派把rsshub放上去然后搁寝室一直开着就不用担心断电的问题了。&lt;/p&gt;
+&lt;h2 id=&#34;音乐推荐&#34;&gt;音乐推荐&lt;/h2&gt;
+&lt;p&gt;MIMI的&lt;a href=&#34;https://www.youtube.com/watch?v=EGJR43xgFgQ&amp;amp;list=PL0hwzg3Etw7VLQAqiscMuMrniomB5lCo7&amp;amp;index=94&#34;&gt;フローレミ / feat.初音ミク&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/EGJR43xgFgQ?si=hFWu--bWILOXzpeI&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;这是高考后某个下午听见的夏曲，是MIMI的曲风还没有同质化时候我喜欢的旋律，现在听见也能会想起那个什么事情都不用忧虑只需坐在阳台的露营椅专心听歌的时光。&lt;/p&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
+&lt;p&gt;暄穗已经很久没有写过东西了，现在的文字依旧支离破碎，还得适应。我尽量快地赶上来，我想和更多人交流。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="近况">近况</h2>
+<h3 id="1">1</h3>
+<p>非常艰难的一周过去了。</p>
+<p>具体来说一周的时间都在赶DDL，声学和声音编程课的期中作业和项目都放在了这周交，但是从周一开始才开始做。由于完全高估了自己对时间的掌握能力和编辑Latex的能力所以晚上过得特别艰难。</p>
+<p>声音编程的项目是完成一个MIDI级别输出的作品，我做了一个随机生成简单Lofi音乐的系统出来。声学的期中是6个高数物理题，花了近18个小时连续从草稿到Latex三百行代码加上Matlab作图完成。</p>
+<p>最主要的教训就是不要把事情都放在DDL之前完成。以及更重要的：数学和工程相关的作业不要放在创作之后去完成。因为创作的东西，就比如这一次的声音编程课作业，一旦入迷了就不停修改不停延申不停加功能，前三天半的时间都花在了这上面，导致后面的时间严重不足。如果把声学作业分散开每天完成一些不至于这样狼狈。</p>
+<h3 id="2">2</h3>
+<p>开学已经快2个月了，感觉状态还是没有调整过来。</p>
+<p>一方面是异地他乡还没多少太阳，确实没什么精力。问gpt说可能维生素D不足，得买点保健品吃。</p>
+<p>另一方面是对自己的约束似乎不太够，已经离开学校这么久了，重新回到学校也没办法回到高三那种状态，又是一个人，很多时候不太想做就跳过了，导致验收的时候发现没什么成果。</p>
+<p>其实现在想想只要lecture预习了总结了，tutorial提前过了，上课再总结了那学习的基本工作就完成了。至于大作业掰碎了做每天都能够过得很充实。</p>
+<h2 id="亮点">亮点</h2>
+<h3 id="周记">周记</h3>
+<p>终于，暄穗开始写周记了。</p>
+<p>其实暄穗很早就开始计划写周记了，契机是最早rss关注的一个日本视频博主在博客做教程的同时，每周都会写周记，总结自己的一周。我觉得这能让我抽时间审视自己的一周并总结，同时能够留下记忆，让我回顾的同时也能作为数字骨灰盒留在互联网上。而且想到要把自己的时间进行总结，也就下意识想把生活过得KIRAKIRA一点了。</p>
+<p>不过让我真正开始这个行为的契机是这周关注了Blog finder的rss订阅，同时也提交了自己的博客作为收录。这才发现我在互联网上并不是一个孤立的站点，森月台最终能够和其他站台相连接，给城市外的地图增加路线。我看见其他的站长也都积极更新这自己的站点，城市外并不是沉寂的虚无。</p>
+<h3 id="lofi生成系统">Lofi生成系统</h3>
+<p>这是声音编程课的第一个大作业，也是我最近离艺术最近的一次。</p>
+<h3 id="与rsshub和解">与Rsshub和解</h3>
+<p>暄穗在和Rsshub斗智斗勇许久之后和它和解了，不再非要按照在云服务器上了。这样也让服务器的其他应用不会卡死了。</p>
+<p>暄穗的服务器是一个2g2核的小服务器（实际自己能用的只有1.6g），上面有wordpress，freshrss和一个nginx proxy manager，由于rsshub的存在经常让整个服务器的内存占用在1.3~卡死之间徘徊，也有若干次因为占IOPS和CPU把服务器卡死。所以经过几轮激烈战斗后暄穗还是放弃了，就1.6个G拼啥命啊。</p>
+<p>现在暄穗使用的方法是在本地wsl部署一个rsshub(8g的debian够耗的了)，然后通过frp进行内网穿透，这样访问原来域名的时候依旧是rsshub。而且暄穗不在国内，所以暂时某些神奇网站也可以订阅。</p>
+<p>之后预计会买一个树莓派把rsshub放上去然后搁寝室一直开着就不用担心断电的问题了。</p>
+<h2 id="音乐推荐">音乐推荐</h2>
+<p>MIMI的<a href="https://www.youtube.com/watch?v=EGJR43xgFgQ&amp;list=PL0hwzg3Etw7VLQAqiscMuMrniomB5lCo7&amp;index=94">フローレミ / feat.初音ミク</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EGJR43xgFgQ?si=hFWu--bWILOXzpeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>这是高考后某个下午听见的夏曲，是MIMI的曲风还没有同质化时候我喜欢的旋律，现在听见也能会想起那个什么事情都不用忧虑只需坐在阳台的露营椅专心听歌的时光。</p>
+<h2 id="其他">其他</h2>
+<p>暄穗已经很久没有写过东西了，现在的文字依旧支离破碎，还得适应。我尽量快地赶上来，我想和更多人交流。</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Cubase水平滚动反向的解决方法</title>
       <link>https://moriform.github.io/post/20230905cubase/</link>
       <pubDate>Tue, 05 Sep 2023 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20230905cubase/</guid>
-      <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;&#xA;&lt;p&gt;Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。&lt;/p&gt;&#xA;&lt;p&gt;作为一家制定标准的公司，我们能够理解其软件制作上为了优化自己独特的工作流程指定不同的快捷键，毕竟其他公司出品软件的快捷键也各不相同。但是其在Windows操作系统下的Cubase却有一个惊为天人的快捷键，就是shift+鼠标滚轮用于水平滚动，说其惊为天人是因为它的鼠标滚轮的滚动方式与其他所有主流软件(不限于音频工作站)的水平滚动是相反的。&lt;/p&gt;&#xA;&lt;p&gt;这种非人的操作方式在论坛上2014年就被人提出，通过论坛可以得到以下的信息：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;这个问题仅存在于Windows操作系统下的Cubase和Nuendo。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;官方知道这个bug，称与操作系统相关。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;一直到现在Cubase 12这个问题还没有被官方修复。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;所以当下要想解决这个问题只能自己通过鼠标宏绑定软件来解决。本文介绍一种基于软件X-MOUSE的方法来解决大部分的问题。&lt;/p&gt;&#xA;&lt;h3 id=&#34;工具&#34;&gt;工具&lt;/h3&gt;&#xA;&lt;p&gt;X-Mouse Button Control 软件&lt;/p&gt;&#xA;&lt;p&gt;Windows操作软件&lt;/p&gt;&#xA;&lt;p&gt;Cubase 10.0.5（目前个人使用的版本，与当前版本的解决方法通用）&lt;/p&gt;&#xA;&lt;h3 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;下载对应的软件&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;启动X-Mouse软件，点击add添加新的鼠标预设，在跳出的应用选择窗口中选中cubase 10应用，设置描述作为预设的标题。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;进入Layer2,在Wheel Up的选单中选择Mouse Wheel Down，在Wheel Down的选单中选择Mouse Wheel Up。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;进入左下角的Settings页面，在Modifier Keys中勾选第一项Enable,然后在下面的Activate Layer 2中选择Shift，点击确定退出Settings页面。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;主界面点击Apply。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这样打开Cubase后就可以愉快地用正确的姿势进行水平滚动了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;高级&#34;&gt;高级&lt;/h3&gt;&#xA;&lt;p&gt;上述方法可以解决大部分的问题而非全部。单纯用软件内的插件和界面不大的插件是没有问题的，但如果在Cubase中使用本身会用到正常水平滚动的插件(比如Vocaloid,Synthesizer V和Melodyne)，加上X-Mouse对Cubase的反转Buff就会让本身正常的插件反向水平滚动。&lt;/p&gt;&#xA;&lt;p&gt;所以如果是会在Cubase中使用术力口工具或修音工具的用户还需要进行一步，来指定鼠标宏生效的软件界面。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;打开Cubase软件，显示一个任意的工程界面&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在不最小化Cubase的情况下打开X-Mouse，从左侧的大窗口中选择设置的预设，点击Edit，进入Find Window，在Find Method中有一个靶心一样的图标，拖动这个图标到Cubase的主工程界面(不要拖动到插件界面上)，点击OK退出界面，点击Apply。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这样操作后在Cubase中启动Vocaloid和Melonyne之类也能够正常水平拖动了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;后话&#34;&gt;后话&lt;/h3&gt;&#xA;&lt;p&gt;查文件折腾了这么多，10多年来一直有人提这个问题，但是从官方的回信来看实际上他们也不想深入解决这个问题。作为正版受害者也只能看着官方这态度憋着气自己找方法解决，每次写术前多开一个应用也挺膈应人的。毕竟现在能用的DAW太多了不用惯着这群官方，能用其他的来写就尽量往其他DAW搬了。反正在官方解决这个问题前是不会再给Steinberg多花一分钱了。&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+&lt;p&gt;Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。&lt;/p&gt;
+&lt;p&gt;作为一家制定标准的公司，我们能够理解其软件制作上为了优化自己独特的工作流程指定不同的快捷键，毕竟其他公司出品软件的快捷键也各不相同。但是其在Windows操作系统下的Cubase却有一个惊为天人的快捷键，就是shift+鼠标滚轮用于水平滚动，说其惊为天人是因为它的鼠标滚轮的滚动方式与其他所有主流软件(不限于音频工作站)的水平滚动是相反的。&lt;/p&gt;
+&lt;p&gt;这种非人的操作方式在论坛上2014年就被人提出，通过论坛可以得到以下的信息：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;这个问题仅存在于Windows操作系统下的Cubase和Nuendo。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;官方知道这个bug，称与操作系统相关。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一直到现在Cubase 12这个问题还没有被官方修复。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以当下要想解决这个问题只能自己通过鼠标宏绑定软件来解决。本文介绍一种基于软件X-MOUSE的方法来解决大部分的问题。&lt;/p&gt;
+&lt;h3 id=&#34;工具&#34;&gt;工具&lt;/h3&gt;
+&lt;p&gt;X-Mouse Button Control 软件&lt;/p&gt;
+&lt;p&gt;Windows操作软件&lt;/p&gt;
+&lt;p&gt;Cubase 10.0.5（目前个人使用的版本，与当前版本的解决方法通用）&lt;/p&gt;
+&lt;h3 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;下载对应的软件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;启动X-Mouse软件，点击add添加新的鼠标预设，在跳出的应用选择窗口中选中cubase 10应用，设置描述作为预设的标题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入Layer2,在Wheel Up的选单中选择Mouse Wheel Down，在Wheel Down的选单中选择Mouse Wheel Up。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入左下角的Settings页面，在Modifier Keys中勾选第一项Enable,然后在下面的Activate Layer 2中选择Shift，点击确定退出Settings页面。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主界面点击Apply。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样打开Cubase后就可以愉快地用正确的姿势进行水平滚动了。&lt;/p&gt;
+&lt;h3 id=&#34;高级&#34;&gt;高级&lt;/h3&gt;
+&lt;p&gt;上述方法可以解决大部分的问题而非全部。单纯用软件内的插件和界面不大的插件是没有问题的，但如果在Cubase中使用本身会用到正常水平滚动的插件(比如Vocaloid,Synthesizer V和Melodyne)，加上X-Mouse对Cubase的反转Buff就会让本身正常的插件反向水平滚动。&lt;/p&gt;
+&lt;p&gt;所以如果是会在Cubase中使用术力口工具或修音工具的用户还需要进行一步，来指定鼠标宏生效的软件界面。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开Cubase软件，显示一个任意的工程界面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在不最小化Cubase的情况下打开X-Mouse，从左侧的大窗口中选择设置的预设，点击Edit，进入Find Window，在Find Method中有一个靶心一样的图标，拖动这个图标到Cubase的主工程界面(不要拖动到插件界面上)，点击OK退出界面，点击Apply。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这样操作后在Cubase中启动Vocaloid和Melonyne之类也能够正常水平拖动了。&lt;/p&gt;
+&lt;h3 id=&#34;后话&#34;&gt;后话&lt;/h3&gt;
+&lt;p&gt;查文件折腾了这么多，10多年来一直有人提这个问题，但是从官方的回信来看实际上他们也不想深入解决这个问题。作为正版受害者也只能看着官方这态度憋着气自己找方法解决，每次写术前多开一个应用也挺膈应人的。毕竟现在能用的DAW太多了不用惯着这群官方，能用其他的来写就尽量往其他DAW搬了。反正在官方解决这个问题前是不会再给Steinberg多花一分钱了。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="前言">前言</h3>
+<p>Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。</p>
+<p>作为一家制定标准的公司，我们能够理解其软件制作上为了优化自己独特的工作流程指定不同的快捷键，毕竟其他公司出品软件的快捷键也各不相同。但是其在Windows操作系统下的Cubase却有一个惊为天人的快捷键，就是shift+鼠标滚轮用于水平滚动，说其惊为天人是因为它的鼠标滚轮的滚动方式与其他所有主流软件(不限于音频工作站)的水平滚动是相反的。</p>
+<p>这种非人的操作方式在论坛上2014年就被人提出，通过论坛可以得到以下的信息：</p>
+<ul>
+<li>
+<p>这个问题仅存在于Windows操作系统下的Cubase和Nuendo。</p>
+</li>
+<li>
+<p>官方知道这个bug，称与操作系统相关。</p>
+</li>
+<li>
+<p>一直到现在Cubase 12这个问题还没有被官方修复。</p>
+</li>
+</ul>
+<p>所以当下要想解决这个问题只能自己通过鼠标宏绑定软件来解决。本文介绍一种基于软件X-MOUSE的方法来解决大部分的问题。</p>
+<h3 id="工具">工具</h3>
+<p>X-Mouse Button Control 软件</p>
+<p>Windows操作软件</p>
+<p>Cubase 10.0.5（目前个人使用的版本，与当前版本的解决方法通用）</p>
+<h3 id="操作步骤">操作步骤</h3>
+<ul>
+<li>
+<p>下载对应的软件</p>
+</li>
+<li>
+<p>启动X-Mouse软件，点击add添加新的鼠标预设，在跳出的应用选择窗口中选中cubase 10应用，设置描述作为预设的标题。</p>
+</li>
+<li>
+<p>进入Layer2,在Wheel Up的选单中选择Mouse Wheel Down，在Wheel Down的选单中选择Mouse Wheel Up。</p>
+</li>
+<li>
+<p>进入左下角的Settings页面，在Modifier Keys中勾选第一项Enable,然后在下面的Activate Layer 2中选择Shift，点击确定退出Settings页面。</p>
+</li>
+<li>
+<p>主界面点击Apply。</p>
+</li>
+</ul>
+<p>这样打开Cubase后就可以愉快地用正确的姿势进行水平滚动了。</p>
+<h3 id="高级">高级</h3>
+<p>上述方法可以解决大部分的问题而非全部。单纯用软件内的插件和界面不大的插件是没有问题的，但如果在Cubase中使用本身会用到正常水平滚动的插件(比如Vocaloid,Synthesizer V和Melodyne)，加上X-Mouse对Cubase的反转Buff就会让本身正常的插件反向水平滚动。</p>
+<p>所以如果是会在Cubase中使用术力口工具或修音工具的用户还需要进行一步，来指定鼠标宏生效的软件界面。</p>
+<ul>
+<li>
+<p>打开Cubase软件，显示一个任意的工程界面</p>
+</li>
+<li>
+<p>在不最小化Cubase的情况下打开X-Mouse，从左侧的大窗口中选择设置的预设，点击Edit，进入Find Window，在Find Method中有一个靶心一样的图标，拖动这个图标到Cubase的主工程界面(不要拖动到插件界面上)，点击OK退出界面，点击Apply。</p>
+</li>
+</ul>
+<p>这样操作后在Cubase中启动Vocaloid和Melonyne之类也能够正常水平拖动了。</p>
+<h3 id="后话">后话</h3>
+<p>查文件折腾了这么多，10多年来一直有人提这个问题，但是从官方的回信来看实际上他们也不想深入解决这个问题。作为正版受害者也只能看着官方这态度憋着气自己找方法解决，每次写术前多开一个应用也挺膈应人的。毕竟现在能用的DAW太多了不用惯着这群官方，能用其他的来写就尽量往其他DAW搬了。反正在官方解决这个问题前是不会再给Steinberg多花一分钱了。</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Reaper中分频段处理的方案</title>
       <link>https://moriform.github.io/post/20221025bandjoint/</link>
       <pubDate>Tue, 25 Oct 2022 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20221025bandjoint/</guid>
-      <description>&lt;p&gt;使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。&lt;/p&gt;&#xA;&lt;p&gt;REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。&lt;/p&gt;&#xA;&lt;h3 id=&#34;spliiter-joiner简介&#34;&gt;Spliiter Joiner简介&lt;/h3&gt;&#xA;&lt;p&gt;3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。&lt;/p&gt;&#xA;&lt;p&gt;3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。&lt;/p&gt;&#xA;&lt;h3 id=&#34;splitter&#34;&gt;Splitter&lt;/h3&gt;&#xA;&lt;p&gt;我们先用Splitter对于轨道Main进行处理看能够发生什么。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_11-16-24.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;如上图所示，我们将一首歌分成了0&lt;del&gt;200Hz，200Hz&lt;/del&gt;2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。&lt;/p&gt;&#xA;&lt;p&gt;这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_11-23-59.webp&#34; alt=&#34;&#34;&gt;&#xA;可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。&lt;/p&gt;&#xA;&lt;p&gt;点击Track channels，选择6。整个轨道就有了6个通道。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_11-28-36.webp&#34; alt=&#34;&#34;&gt;&#xA;插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。&lt;/p&gt;&#xA;&lt;h3 id=&#34;在多个轨道中的处理&#34;&gt;在多个轨道中的处理&lt;/h3&gt;&#xA;&lt;p&gt;接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：&lt;/p&gt;&#xA;&lt;p&gt;分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。&lt;/p&gt;&#xA;&lt;p&gt;点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_14-59-49.webp&#34; alt=&#34;&#34;&gt;&#xA;查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&amp;gt;1/2将中频分离。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_15-02-20.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;高频轨道的设置和中频相似将Audio的输入改为5/6-&amp;gt;1/2即可。&lt;/p&gt;&#xA;&lt;p&gt;这样就可以实现分频段的音频处理啦。&lt;/p&gt;&#xA;&lt;h3 id=&#34;在单个轨道中的处理&#34;&gt;在单个轨道中的处理&lt;/h3&gt;&#xA;&lt;p&gt;基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。&lt;/p&gt;&#xA;&lt;p&gt;这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_17-55-38.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。&lt;/p&gt;&#xA;&lt;p&gt;于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。&lt;/p&gt;&#xA;&lt;p&gt;我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。&lt;/p&gt;&#xA;&lt;p&gt;低频混响如图&#xA;&lt;img src=&#34;Snipaste_2022-10-25_18-09-47.webp&#34; alt=&#34;&#34;&gt;&#xA;从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。&lt;/p&gt;&#xA;&lt;p&gt;中频和高频的处理方式相似，都是直接设置插件的输入输出路由。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_18-13-00.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-25_18-13-20.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。&lt;/p&gt;&#xA;&lt;p&gt;#reaper #js插件 #音频&lt;/p&gt;</description>
+      <description>&lt;p&gt;使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。&lt;/p&gt;
+&lt;p&gt;REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。&lt;/p&gt;
+&lt;h3 id=&#34;spliiter-joiner简介&#34;&gt;Spliiter Joiner简介&lt;/h3&gt;
+&lt;p&gt;3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。&lt;/p&gt;
+&lt;p&gt;3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。&lt;/p&gt;
+&lt;h3 id=&#34;splitter&#34;&gt;Splitter&lt;/h3&gt;
+&lt;p&gt;我们先用Splitter对于轨道Main进行处理看能够发生什么。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-16-24.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;如上图所示，我们将一首歌分成了0&lt;del&gt;200Hz，200Hz&lt;/del&gt;2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。&lt;/p&gt;
+&lt;p&gt;这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-23-59.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。&lt;/p&gt;
+&lt;p&gt;点击Track channels，选择6。整个轨道就有了6个通道。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-28-36.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。&lt;/p&gt;
+&lt;h3 id=&#34;在多个轨道中的处理&#34;&gt;在多个轨道中的处理&lt;/h3&gt;
+&lt;p&gt;接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：&lt;/p&gt;
+&lt;p&gt;分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。&lt;/p&gt;
+&lt;p&gt;点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_14-59-49.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&amp;gt;1/2将中频分离。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_15-02-20.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;高频轨道的设置和中频相似将Audio的输入改为5/6-&amp;gt;1/2即可。&lt;/p&gt;
+&lt;p&gt;这样就可以实现分频段的音频处理啦。&lt;/p&gt;
+&lt;h3 id=&#34;在单个轨道中的处理&#34;&gt;在单个轨道中的处理&lt;/h3&gt;
+&lt;p&gt;基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。&lt;/p&gt;
+&lt;p&gt;这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_17-55-38.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。&lt;/p&gt;
+&lt;p&gt;于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。&lt;/p&gt;
+&lt;p&gt;我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。&lt;/p&gt;
+&lt;p&gt;低频混响如图
+&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-09-47.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。&lt;/p&gt;
+&lt;p&gt;中频和高频的处理方式相似，都是直接设置插件的输入输出路由。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-13-00.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-13-20.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。&lt;/p&gt;
+&lt;p&gt;#reaper #js插件 #音频&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。</p>
+<p>REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。</p>
+<h3 id="spliiter-joiner简介">Spliiter Joiner简介</h3>
+<p>3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。</p>
+<p>3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。</p>
+<h3 id="splitter">Splitter</h3>
+<p>我们先用Splitter对于轨道Main进行处理看能够发生什么。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-16-24.webp" type="" alt=""  /></p>
+<p>如上图所示，我们将一首歌分成了0<del>200Hz，200Hz</del>2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。</p>
+<p>这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-23-59.webp" type="" alt=""  />
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。</p>
+<p>点击Track channels，选择6。整个轨道就有了6个通道。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-28-36.webp" type="" alt=""  />
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。</p>
+<h3 id="在多个轨道中的处理">在多个轨道中的处理</h3>
+<p>接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：</p>
+<p>分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。</p>
+<p>点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_14-59-49.webp" type="" alt=""  />
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&gt;1/2将中频分离。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_15-02-20.webp" type="" alt=""  /></p>
+<p>高频轨道的设置和中频相似将Audio的输入改为5/6-&gt;1/2即可。</p>
+<p>这样就可以实现分频段的音频处理啦。</p>
+<h3 id="在单个轨道中的处理">在单个轨道中的处理</h3>
+<p>基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。</p>
+<p>这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_17-55-38.webp" type="" alt=""  /></p>
+<p>很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。</p>
+<p>于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。</p>
+<p>我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。</p>
+<p>低频混响如图
+<img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-09-47.webp" type="" alt=""  />
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。</p>
+<p>中频和高频的处理方式相似，都是直接设置插件的输入输出路由。</p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-13-00.webp" type="" alt=""  /></p>
+<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-13-20.webp" type="" alt=""  /></p>
+<p>最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。</p>
+<p>#reaper #js插件 #音频</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>关于中置通道的初认识</title>
       <link>https://moriform.github.io/post/20221024midside1/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20221024midside1/</guid>
-      <description>&lt;p&gt;在Reaper的自身JS插件中找到了一个Center Canceler的插件，在调大效果的时候逐渐可以听见人声渐渐消失。&lt;/p&gt;&#xA;&lt;h3 id=&#34;midside&#34;&gt;Mid/Side&lt;/h3&gt;&#xA;&lt;p&gt;去网上查了查这个叫做中置通道析取，是以前的MP3等音乐播放器的卡拉OK去人声的一种快速方法。方式是通过将正常的双声道转换为Mid/Side模式（中央声道/侧边声道模式）进行操作。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;20221024230355.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mid/Side也是一种声道模式，与双声道的左右两通道不同，它是对于两个音响内一个声道(Mid)，两个音响外一个声道(Side)。这样比起左右分声道或频率分声道有独特的混音优势。&lt;/p&gt;&#xA;&lt;p&gt;中置通道析取就是用了这样的方式。通过Mid声道和一个与Mid声道相同但是相位差180度的通道相加直接将Mid通道抵消掉。一般情况下人声大部分都分布在Mid声道上(常见的地球人应该都是正对着麦克风唱歌的吧)，鼓组大都分布在Mid上，乐器在Side上。所以得到的结果是人声和鼓组的大部分都被抵消了剩下了Side通道上面的信息。&lt;/p&gt;&#xA;&lt;h3 id=&#34;验证&#34;&gt;验证&lt;/h3&gt;&#xA;&lt;p&gt;对于中置声道析取我们可以做这样的验证：&lt;/p&gt;&#xA;&lt;p&gt;Reaper里面自带Mid/Side通道和双声道转换的JS插件Mid/Side Decoder 和Mid/side Encoder,在轨道上加一个Mid/side Encoder插件，通过轨道的路由可以看见双声道转换成了MID/SIDE模式，通过左边输出Mid通道，通过右边输出Side通道。所以听起来左边的声音较大较实，右边的声音偏小比较虚。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-10-24_22-33-40.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;我们关闭这个音轨到总线的输出将这两个通道的信号发送给不同的轨道，对于Mid轨再发一个信号到新的轨道，对于新的轨道使用JS插件Phase Rotator，数值拉到180。同时打开现在的三个新建的音轨，可以听见人声的大部分都被消除了，和中置通道析取效果相同，就是声音有一些闷，大概这就是自行完成和产品之间的差异。少部分像回声一样的飘渺的Side上的人声留了下来，这个方法无法完全去除人声而且破坏了许多鼓组，在现在有更好的方法的情况下也应该不会再使用这样的人声提取方法了。&lt;/p&gt;&#xA;&lt;p&gt;PS1:既然中置通道已经被抵消了，为什么不直接用Side通道呢？&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;202003_031605145.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;PS2:将Side直接提出来，响度调成和Center Canceler一个水平效果不相上下。&lt;/p&gt;&#xA;&lt;p&gt;#reaper #js插件&lt;/p&gt;</description>
+      <description>&lt;p&gt;在Reaper的自身JS插件中找到了一个Center Canceler的插件，在调大效果的时候逐渐可以听见人声渐渐消失。&lt;/p&gt;
+&lt;h3 id=&#34;midside&#34;&gt;Mid/Side&lt;/h3&gt;
+&lt;p&gt;去网上查了查这个叫做中置通道析取，是以前的MP3等音乐播放器的卡拉OK去人声的一种快速方法。方式是通过将正常的双声道转换为Mid/Side模式（中央声道/侧边声道模式）进行操作。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221024midside1/20221024230355.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;Mid/Side也是一种声道模式，与双声道的左右两通道不同，它是对于两个音响内一个声道(Mid)，两个音响外一个声道(Side)。这样比起左右分声道或频率分声道有独特的混音优势。&lt;/p&gt;
+&lt;p&gt;中置通道析取就是用了这样的方式。通过Mid声道和一个与Mid声道相同但是相位差180度的通道相加直接将Mid通道抵消掉。一般情况下人声大部分都分布在Mid声道上(常见的地球人应该都是正对着麦克风唱歌的吧)，鼓组大都分布在Mid上，乐器在Side上。所以得到的结果是人声和鼓组的大部分都被抵消了剩下了Side通道上面的信息。&lt;/p&gt;
+&lt;h3 id=&#34;验证&#34;&gt;验证&lt;/h3&gt;
+&lt;p&gt;对于中置声道析取我们可以做这样的验证：&lt;/p&gt;
+&lt;p&gt;Reaper里面自带Mid/Side通道和双声道转换的JS插件Mid/Side Decoder 和Mid/side Encoder,在轨道上加一个Mid/side Encoder插件，通过轨道的路由可以看见双声道转换成了MID/SIDE模式，通过左边输出Mid通道，通过右边输出Side通道。所以听起来左边的声音较大较实，右边的声音偏小比较虚。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221024midside1/Snipaste_2022-10-24_22-33-40.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;我们关闭这个音轨到总线的输出将这两个通道的信号发送给不同的轨道，对于Mid轨再发一个信号到新的轨道，对于新的轨道使用JS插件Phase Rotator，数值拉到180。同时打开现在的三个新建的音轨，可以听见人声的大部分都被消除了，和中置通道析取效果相同，就是声音有一些闷，大概这就是自行完成和产品之间的差异。少部分像回声一样的飘渺的Side上的人声留了下来，这个方法无法完全去除人声而且破坏了许多鼓组，在现在有更好的方法的情况下也应该不会再使用这样的人声提取方法了。&lt;/p&gt;
+&lt;p&gt;PS1:既然中置通道已经被抵消了，为什么不直接用Side通道呢？&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221024midside1/202003_031605145.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;PS2:将Side直接提出来，响度调成和Center Canceler一个水平效果不相上下。&lt;/p&gt;
+&lt;p&gt;#reaper #js插件&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>在Reaper的自身JS插件中找到了一个Center Canceler的插件，在调大效果的时候逐渐可以听见人声渐渐消失。</p>
+<h3 id="midside">Mid/Side</h3>
+<p>去网上查了查这个叫做中置通道析取，是以前的MP3等音乐播放器的卡拉OK去人声的一种快速方法。方式是通过将正常的双声道转换为Mid/Side模式（中央声道/侧边声道模式）进行操作。</p>
+<p><img loading="lazy" src="/post/20221024midside1/20221024230355.webp" type="" alt=""  /></p>
+<p>Mid/Side也是一种声道模式，与双声道的左右两通道不同，它是对于两个音响内一个声道(Mid)，两个音响外一个声道(Side)。这样比起左右分声道或频率分声道有独特的混音优势。</p>
+<p>中置通道析取就是用了这样的方式。通过Mid声道和一个与Mid声道相同但是相位差180度的通道相加直接将Mid通道抵消掉。一般情况下人声大部分都分布在Mid声道上(常见的地球人应该都是正对着麦克风唱歌的吧)，鼓组大都分布在Mid上，乐器在Side上。所以得到的结果是人声和鼓组的大部分都被抵消了剩下了Side通道上面的信息。</p>
+<h3 id="验证">验证</h3>
+<p>对于中置声道析取我们可以做这样的验证：</p>
+<p>Reaper里面自带Mid/Side通道和双声道转换的JS插件Mid/Side Decoder 和Mid/side Encoder,在轨道上加一个Mid/side Encoder插件，通过轨道的路由可以看见双声道转换成了MID/SIDE模式，通过左边输出Mid通道，通过右边输出Side通道。所以听起来左边的声音较大较实，右边的声音偏小比较虚。</p>
+<p><img loading="lazy" src="/post/20221024midside1/Snipaste_2022-10-24_22-33-40.webp" type="" alt=""  /></p>
+<p>我们关闭这个音轨到总线的输出将这两个通道的信号发送给不同的轨道，对于Mid轨再发一个信号到新的轨道，对于新的轨道使用JS插件Phase Rotator，数值拉到180。同时打开现在的三个新建的音轨，可以听见人声的大部分都被消除了，和中置通道析取效果相同，就是声音有一些闷，大概这就是自行完成和产品之间的差异。少部分像回声一样的飘渺的Side上的人声留了下来，这个方法无法完全去除人声而且破坏了许多鼓组，在现在有更好的方法的情况下也应该不会再使用这样的人声提取方法了。</p>
+<p>PS1:既然中置通道已经被抵消了，为什么不直接用Side通道呢？</p>
+<p><img loading="lazy" src="/post/20221024midside1/202003_031605145.webp" type="" alt=""  /></p>
+<p>PS2:将Side直接提出来，响度调成和Center Canceler一个水平效果不相上下。</p>
+<p>#reaper #js插件</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>在Domino中加载新音源的方法</title>
       <link>https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Sun, 03 Apr 2022 21:08:30 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;&#xA;&lt;p&gt;本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;&#xA;&lt;p&gt;Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;index-1767622087706.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-04-03_18-45-49.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。&lt;/p&gt;&#xA;&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;&#xA;&lt;p&gt;对于本文的实践来说需要准备的工具可以再文中给出的超链接中直接下载。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;首先是本文的主角&lt;a href=&#34;https://takabosoft.com/domino&#34;&gt;Domino&lt;/a&gt;,请怀着对开发者的感激之情将它下载下来。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;然后是能够在中文环境下运行编码为日语环境软件的&lt;a href=&#34;https://github.com/xupefei/Locale-Emulator/releases&#34;&gt;Locale Emulator&lt;/a&gt;，一些只看CG不管剧情的游戏中的乱码也可以用这个程序来解决。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.reaper.fm/download-old.php?ver=0x&#34;&gt;Reaper0.999&lt;/a&gt;,在方法一中会使用到&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm&#34;&gt;YOKE&lt;/a&gt;在方法一中会使用到&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;方法一用domino在reaper中编辑midi&#34;&gt;方法一：用Domino在Reaper中编辑midi&lt;/h2&gt;&#xA;&lt;p&gt;Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&amp;quot;试用&amp;quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&amp;hellip;&amp;hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。&lt;/p&gt;&#xA;&lt;p&gt;回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。&lt;/p&gt;&#xA;&lt;p&gt;Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;1.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;当然32位VST插件请自行获取，正版免费的互联网上挺多的。&lt;/p&gt;&#xA;&lt;h3 id=&#34;具体操作&#34;&gt;具体操作&lt;/h3&gt;&#xA;&lt;p&gt;首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-04-03_16-22-07-1.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino&lt;/p&gt;&#xA;&lt;p&gt;最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&amp;gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-04-03_16-48-04.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;右键这个物件选择&amp;quot;Open items in editor&amp;quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&amp;quot;Open items in default editor&amp;quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-04-03_16-46-19.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Snipaste_2022-04-03_17-06-39.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;按下轨道上面的fx按钮会出来选框，里面是你的电脑里面刚才扫描的VST插件，选择一个乐器插件加载完成之后就可以播放了。&lt;/p&gt;&#xA;&lt;p&gt;以上的操作很基础但是过于反人类，因为在写入MIDI音符的时候听不到任何东西，所以我们调整一下步骤并加入YOKE的使用。&lt;/p&gt;&#xA;&lt;p&gt;轨道上面的表示录音的红色按钮点亮，将喇叭图标调整到有一个A字母的自动监听状态，右击喇叭，在选单中最下面有一个MIDI INPUT，选择一个（建议ALL）。然后在Fx里面选择一个乐器。在有乐器并且开着录音和自动监听的情况下，我们按照原来的方法打开Domino，在里面输入一个音符&amp;hellip;&amp;hellip;然后就会惊讶地发现打入音符的一瞬间DAW发出了声响正是刚才我们选择的那个乐器，在Domino里面播放的时候也能够发出声音，在reaper的对应轨道上面加入phase之类的音频插件后使用Domino也能够发出处理后应该有的声音。注意在录制一条轨道的时候其他的轨道应该关闭录制否则会出现失真的情况。&lt;/p&gt;&#xA;&lt;p&gt;于是使用Domino在Reaper中进行midi编辑的基本设置就完成了，接下来请享受编曲带来的快乐(?)。&lt;/p&gt;&#xA;&lt;p&gt;PS1:发现editor有一个Ctrl+ALT+E的快捷键很想用？那就在首选项External Editor中编辑以下刚才加入的Domino吧，只需要在extension中输入mid，就变成midi专用editor，可以直接用快捷键来调用了。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+&lt;p&gt;本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/index-1767622087706.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_18-45-49.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;p&gt;对于本文的实践来说需要准备的工具可以再文中给出的超链接中直接下载。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;首先是本文的主角&lt;a href=&#34;https://takabosoft.com/domino&#34;&gt;Domino&lt;/a&gt;,请怀着对开发者的感激之情将它下载下来。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后是能够在中文环境下运行编码为日语环境软件的&lt;a href=&#34;https://github.com/xupefei/Locale-Emulator/releases&#34;&gt;Locale Emulator&lt;/a&gt;，一些只看CG不管剧情的游戏中的乱码也可以用这个程序来解决。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.reaper.fm/download-old.php?ver=0x&#34;&gt;Reaper0.999&lt;/a&gt;,在方法一中会使用到&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm&#34;&gt;YOKE&lt;/a&gt;在方法一中会使用到&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;方法一用domino在reaper中编辑midi&#34;&gt;方法一：用Domino在Reaper中编辑midi&lt;/h2&gt;
+&lt;p&gt;Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&amp;quot;试用&amp;quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&amp;hellip;&amp;hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。&lt;/p&gt;
+&lt;p&gt;回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。&lt;/p&gt;
+&lt;p&gt;Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/1.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;当然32位VST插件请自行获取，正版免费的互联网上挺多的。&lt;/p&gt;
+&lt;h3 id=&#34;具体操作&#34;&gt;具体操作&lt;/h3&gt;
+&lt;p&gt;首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-22-07-1.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino&lt;/p&gt;
+&lt;p&gt;最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&amp;gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-48-04.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;右键这个物件选择&amp;quot;Open items in editor&amp;quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&amp;quot;Open items in default editor&amp;quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-46-19.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_17-06-39.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="注意">注意</h2>
+<p>本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。</p>
+<h2 id="前言">前言</h2>
+<p>Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/index-1767622087706.webp" type="" alt=""  /></p>
+<p>但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_18-45-49.webp" type="" alt=""  /></p>
+<p>尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。</p>
+<h2 id="准备工作">准备工作</h2>
+<p>对于本文的实践来说需要准备的工具可以再文中给出的超链接中直接下载。</p>
+<ul>
+<li>
+<p>首先是本文的主角<a href="https://takabosoft.com/domino">Domino</a>,请怀着对开发者的感激之情将它下载下来。</p>
+</li>
+<li>
+<p>然后是能够在中文环境下运行编码为日语环境软件的<a href="https://github.com/xupefei/Locale-Emulator/releases">Locale Emulator</a>，一些只看CG不管剧情的游戏中的乱码也可以用这个程序来解决。</p>
+</li>
+<li>
+<p><a href="https://www.reaper.fm/download-old.php?ver=0x">Reaper0.999</a>,在方法一中会使用到</p>
+</li>
+<li>
+<p><a href="http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm">YOKE</a>在方法一中会使用到</p>
+</li>
+</ul>
+<h2 id="方法一用domino在reaper中编辑midi">方法一：用Domino在Reaper中编辑midi</h2>
+<p>Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&quot;试用&quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&hellip;&hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。</p>
+<p>回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。</p>
+<p>Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/1.webp" type="" alt=""  /></p>
+<p>当然32位VST插件请自行获取，正版免费的互联网上挺多的。</p>
+<h3 id="具体操作">具体操作</h3>
+<p>首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-22-07-1.webp" type="" alt=""  /></p>
+<p>接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino</p>
+<p>最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-48-04.webp" type="" alt=""  /></p>
+<p>右键这个物件选择&quot;Open items in editor&quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&quot;Open items in default editor&quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_16-46-19.webp" type="" alt=""  /></p>
+<p>我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。</p>
+<p><img loading="lazy" src="/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/Snipaste_2022-04-03_17-06-39.webp" type="" alt=""  /></p>
+<p>按下轨道上面的fx按钮会出来选框，里面是你的电脑里面刚才扫描的VST插件，选择一个乐器插件加载完成之后就可以播放了。</p>
+<p>以上的操作很基础但是过于反人类，因为在写入MIDI音符的时候听不到任何东西，所以我们调整一下步骤并加入YOKE的使用。</p>
+<p>轨道上面的表示录音的红色按钮点亮，将喇叭图标调整到有一个A字母的自动监听状态，右击喇叭，在选单中最下面有一个MIDI INPUT，选择一个（建议ALL）。然后在Fx里面选择一个乐器。在有乐器并且开着录音和自动监听的情况下，我们按照原来的方法打开Domino，在里面输入一个音符&hellip;&hellip;然后就会惊讶地发现打入音符的一瞬间DAW发出了声响正是刚才我们选择的那个乐器，在Domino里面播放的时候也能够发出声音，在reaper的对应轨道上面加入phase之类的音频插件后使用Domino也能够发出处理后应该有的声音。注意在录制一条轨道的时候其他的轨道应该关闭录制否则会出现失真的情况。</p>
+<p>于是使用Domino在Reaper中进行midi编辑的基本设置就完成了，接下来请享受编曲带来的快乐(?)。</p>
+<p>PS1:发现editor有一个Ctrl+ALT+E的快捷键很想用？那就在首选项External Editor中编辑以下刚才加入的Domino吧，只需要在extension中输入mid，就变成midi专用editor，可以直接用快捷键来调用了。</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>20211028comiday</title>
       <link>https://moriform.github.io/post/20211028comiday/</link>
       <pubDate>Thu, 28 Oct 2021 21:08:30 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20211028comiday/</guid>
-      <description>&lt;p&gt;托人寄了一份CD的场刊过来，一本书（虽然页数有些少），一个纸袋，几张周边，就当是逛了这一次的同人展了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;8EA91CEEC4CD36855E4565F4CE6A9ABC.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;持续逛同人展（特指COMIDAY）是从高中开始的，和同学一起在里面逛一天，逛完晚上看电影。高中正是做术力口的狂热时期，逛展的时候也基本上是按着VOCALOID的音乐摊一家一家扫过去的。当时的VOCALOID二创作同人画集的特别多，但是做专辑的数量并不多，见过的就平行四界初心社和稔盛望官方摊位还有一堆寄售其他社团的鸽子，再加上几个海外的社团。&lt;/p&gt;&#xA;&lt;p&gt;当时逛展子要跑到非遗公园和新城区的会展中心那边基本就是地铁穿个城跑终点站的距离。于是早上五六点钟起床打的坐到火车北站地铁口，坐去那边差不多是早上7点钟。CD不让排夜场，但是为了限定周边7点钟就已经排起人了，于是也一起排着一边背单词做作业等到同学来再等到九点多开场。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;1psc.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;逛展前一个晚上就翻完官方的参展动态，把感兴趣的社团都标记一圈，把预算先算出来甚至零钱都准备好准备拿起本子放下钱就跑下一家（当时也没有智能手机，但是基于场地极其糟糕的信号还是零钱来得快），在地图上把最短路线画好。第二天进场安检完速度跑向限定场，然后跑向官方场刊，顺着路线一家一家跑，差不多10分钟就能够把想买的都买到，然后接下来的几个小时就是闲逛时间了。边聊天边看看其他有趣的摊位。&lt;/p&gt;&#xA;&lt;p&gt;印象深的有一个社团把成都的二次元场地(?)做了一份大的城市地图来卖。一个做术曲（主要是IA和ONE）专辑的海外社团的小哥哥特别可爱，两次去找他签名都会笑着说好多东西（虽然听个半懂）。AVG专区全是严肃otaku不敢去盖印章于是拿痛衣给同学交换代盖。甚至有一届能够看到narcissus的摊位而且还排满人。&lt;/p&gt;&#xA;&lt;p&gt;每一次逛完回家都会写手记，会写很多东西，灵感泉涌。似乎只有在那样一个看上去不是那么真实的环境下才会想到一些。第一次人生有了非提前制定的目标是因为发现原来自己也可以做到。初次看术曲周刊的时候发现弹幕并不在歌姬而在于P主，这个时候才发现原来一首歌的制作并不是远到明星和企业，就是我这样的普通人也可以完成，于是在这样的契机上开始了尝试。那时资源没有现在这么唾手可得，都藏在各种论坛里面；纸片人也没有像现在这样被发现商机被尝试广传，加上还要补课，于是开始几年都不敢外说，在网友的交流中持续着创作。&lt;/p&gt;&#xA;&lt;p&gt;尽管知道世界上一定有同好，但是直到站在那里才感受到知道周围这么多人共同爱好着这个领域，在各自的圈子里面进行创作并且乐于向他人展示交流是一种多么激动的感觉。当时的我也决定再次出现在这个地方的时候想要作为创作者与他人交流。&lt;/p&gt;&#xA;&lt;p&gt;很遗憾，大学之后就没有再参加本地的同人展了。本来有希望的时隔两年的今年暑假也因为成都的本地疫情取消了。不过之后的每一次同人展都会找人带一份场刊过来。现在大陆这方面的纸质杂志基本上所剩无几了，而CD的场刊在这里无疑是质量上乘的（最近见过的其他能够称得上高质量的也就只有只出过三期的AVG SPIRITS了），里面的每一篇约稿采访都能看出执笔者对于这个圈子学术般认真的态度。而且甚至能够在里面找到更早（小学）时见过的展子和游戏馆。不仅带有现实中的老成都情怀，也让我发现更多圈子里上世纪考古人的身影（或许对于他们来说只是想要找寻童年的痕迹吧）。&lt;/p&gt;&#xA;&lt;p&gt;个人觉得嗅觉应该是最能够唤起人记忆的感觉。虽然封面不同，但开封这份场刊的时候，几年未有过的新印刷杂志特有的油墨味又把我带进了两手拿着纸袋背着书包在场地里奔跑的那几年，似乎又看到了创作者一起交流的场景。很欣慰这份新油墨味确实是新的，证明那里确实有这样的圈子，还有这样的氛围存在着。&lt;/p&gt;&#xA;&lt;p&gt;(图1.新的场刊，图2.老年机时代唯一找到存下来的CD痕迹，图3.突然想到的@tamuro_g的图片)&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;cc22c6376a54bb6f37a3abe09d94f0d1bacd1ef8.jpg@393w_810h_progressive.webp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;托人寄了一份CD的场刊过来，一本书（虽然页数有些少），一个纸袋，几张周边，就当是逛了这一次的同人展了。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20211028comiday/8EA91CEEC4CD36855E4565F4CE6A9ABC.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;持续逛同人展（特指COMIDAY）是从高中开始的，和同学一起在里面逛一天，逛完晚上看电影。高中正是做术力口的狂热时期，逛展的时候也基本上是按着VOCALOID的音乐摊一家一家扫过去的。当时的VOCALOID二创作同人画集的特别多，但是做专辑的数量并不多，见过的就平行四界初心社和稔盛望官方摊位还有一堆寄售其他社团的鸽子，再加上几个海外的社团。&lt;/p&gt;
+&lt;p&gt;当时逛展子要跑到非遗公园和新城区的会展中心那边基本就是地铁穿个城跑终点站的距离。于是早上五六点钟起床打的坐到火车北站地铁口，坐去那边差不多是早上7点钟。CD不让排夜场，但是为了限定周边7点钟就已经排起人了，于是也一起排着一边背单词做作业等到同学来再等到九点多开场。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20211028comiday/1psc.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;逛展前一个晚上就翻完官方的参展动态，把感兴趣的社团都标记一圈，把预算先算出来甚至零钱都准备好准备拿起本子放下钱就跑下一家（当时也没有智能手机，但是基于场地极其糟糕的信号还是零钱来得快），在地图上把最短路线画好。第二天进场安检完速度跑向限定场，然后跑向官方场刊，顺着路线一家一家跑，差不多10分钟就能够把想买的都买到，然后接下来的几个小时就是闲逛时间了。边聊天边看看其他有趣的摊位。&lt;/p&gt;
+&lt;p&gt;印象深的有一个社团把成都的二次元场地(?)做了一份大的城市地图来卖。一个做术曲（主要是IA和ONE）专辑的海外社团的小哥哥特别可爱，两次去找他签名都会笑着说好多东西（虽然听个半懂）。AVG专区全是严肃otaku不敢去盖印章于是拿痛衣给同学交换代盖。甚至有一届能够看到narcissus的摊位而且还排满人。&lt;/p&gt;
+&lt;p&gt;每一次逛完回家都会写手记，会写很多东西，灵感泉涌。似乎只有在那样一个看上去不是那么真实的环境下才会想到一些。第一次人生有了非提前制定的目标是因为发现原来自己也可以做到。初次看术曲周刊的时候发现弹幕并不在歌姬而在于P主，这个时候才发现原来一首歌的制作并不是远到明星和企业，就是我这样的普通人也可以完成，于是在这样的契机上开始了尝试。那时资源没有现在这么唾手可得，都藏在各种论坛里面；纸片人也没有像现在这样被发现商机被尝试广传，加上还要补课，于是开始几年都不敢外说，在网友的交流中持续着创作。&lt;/p&gt;
+&lt;p&gt;尽管知道世界上一定有同好，但是直到站在那里才感受到知道周围这么多人共同爱好着这个领域，在各自的圈子里面进行创作并且乐于向他人展示交流是一种多么激动的感觉。当时的我也决定再次出现在这个地方的时候想要作为创作者与他人交流。&lt;/p&gt;
+&lt;p&gt;很遗憾，大学之后就没有再参加本地的同人展了。本来有希望的时隔两年的今年暑假也因为成都的本地疫情取消了。不过之后的每一次同人展都会找人带一份场刊过来。现在大陆这方面的纸质杂志基本上所剩无几了，而CD的场刊在这里无疑是质量上乘的（最近见过的其他能够称得上高质量的也就只有只出过三期的AVG SPIRITS了），里面的每一篇约稿采访都能看出执笔者对于这个圈子学术般认真的态度。而且甚至能够在里面找到更早（小学）时见过的展子和游戏馆。不仅带有现实中的老成都情怀，也让我发现更多圈子里上世纪考古人的身影（或许对于他们来说只是想要找寻童年的痕迹吧）。&lt;/p&gt;
+&lt;p&gt;个人觉得嗅觉应该是最能够唤起人记忆的感觉。虽然封面不同，但开封这份场刊的时候，几年未有过的新印刷杂志特有的油墨味又把我带进了两手拿着纸袋背着书包在场地里奔跑的那几年，似乎又看到了创作者一起交流的场景。很欣慰这份新油墨味确实是新的，证明那里确实有这样的圈子，还有这样的氛围存在着。&lt;/p&gt;
+&lt;p&gt;(图1.新的场刊，图2.老年机时代唯一找到存下来的CD痕迹，图3.突然想到的@tamuro_g的图片)&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20211028comiday/cc22c6376a54bb6f37a3abe09d94f0d1bacd1ef8.jpg@393w_810h_progressive.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>托人寄了一份CD的场刊过来，一本书（虽然页数有些少），一个纸袋，几张周边，就当是逛了这一次的同人展了。</p>
+<p><img loading="lazy" src="/post/20211028comiday/8EA91CEEC4CD36855E4565F4CE6A9ABC.webp" type="" alt=""  /></p>
+<p>持续逛同人展（特指COMIDAY）是从高中开始的，和同学一起在里面逛一天，逛完晚上看电影。高中正是做术力口的狂热时期，逛展的时候也基本上是按着VOCALOID的音乐摊一家一家扫过去的。当时的VOCALOID二创作同人画集的特别多，但是做专辑的数量并不多，见过的就平行四界初心社和稔盛望官方摊位还有一堆寄售其他社团的鸽子，再加上几个海外的社团。</p>
+<p>当时逛展子要跑到非遗公园和新城区的会展中心那边基本就是地铁穿个城跑终点站的距离。于是早上五六点钟起床打的坐到火车北站地铁口，坐去那边差不多是早上7点钟。CD不让排夜场，但是为了限定周边7点钟就已经排起人了，于是也一起排着一边背单词做作业等到同学来再等到九点多开场。</p>
+<p><img loading="lazy" src="/post/20211028comiday/1psc.webp" type="" alt=""  /></p>
+<p>逛展前一个晚上就翻完官方的参展动态，把感兴趣的社团都标记一圈，把预算先算出来甚至零钱都准备好准备拿起本子放下钱就跑下一家（当时也没有智能手机，但是基于场地极其糟糕的信号还是零钱来得快），在地图上把最短路线画好。第二天进场安检完速度跑向限定场，然后跑向官方场刊，顺着路线一家一家跑，差不多10分钟就能够把想买的都买到，然后接下来的几个小时就是闲逛时间了。边聊天边看看其他有趣的摊位。</p>
+<p>印象深的有一个社团把成都的二次元场地(?)做了一份大的城市地图来卖。一个做术曲（主要是IA和ONE）专辑的海外社团的小哥哥特别可爱，两次去找他签名都会笑着说好多东西（虽然听个半懂）。AVG专区全是严肃otaku不敢去盖印章于是拿痛衣给同学交换代盖。甚至有一届能够看到narcissus的摊位而且还排满人。</p>
+<p>每一次逛完回家都会写手记，会写很多东西，灵感泉涌。似乎只有在那样一个看上去不是那么真实的环境下才会想到一些。第一次人生有了非提前制定的目标是因为发现原来自己也可以做到。初次看术曲周刊的时候发现弹幕并不在歌姬而在于P主，这个时候才发现原来一首歌的制作并不是远到明星和企业，就是我这样的普通人也可以完成，于是在这样的契机上开始了尝试。那时资源没有现在这么唾手可得，都藏在各种论坛里面；纸片人也没有像现在这样被发现商机被尝试广传，加上还要补课，于是开始几年都不敢外说，在网友的交流中持续着创作。</p>
+<p>尽管知道世界上一定有同好，但是直到站在那里才感受到知道周围这么多人共同爱好着这个领域，在各自的圈子里面进行创作并且乐于向他人展示交流是一种多么激动的感觉。当时的我也决定再次出现在这个地方的时候想要作为创作者与他人交流。</p>
+<p>很遗憾，大学之后就没有再参加本地的同人展了。本来有希望的时隔两年的今年暑假也因为成都的本地疫情取消了。不过之后的每一次同人展都会找人带一份场刊过来。现在大陆这方面的纸质杂志基本上所剩无几了，而CD的场刊在这里无疑是质量上乘的（最近见过的其他能够称得上高质量的也就只有只出过三期的AVG SPIRITS了），里面的每一篇约稿采访都能看出执笔者对于这个圈子学术般认真的态度。而且甚至能够在里面找到更早（小学）时见过的展子和游戏馆。不仅带有现实中的老成都情怀，也让我发现更多圈子里上世纪考古人的身影（或许对于他们来说只是想要找寻童年的痕迹吧）。</p>
+<p>个人觉得嗅觉应该是最能够唤起人记忆的感觉。虽然封面不同，但开封这份场刊的时候，几年未有过的新印刷杂志特有的油墨味又把我带进了两手拿着纸袋背着书包在场地里奔跑的那几年，似乎又看到了创作者一起交流的场景。很欣慰这份新油墨味确实是新的，证明那里确实有这样的圈子，还有这样的氛围存在着。</p>
+<p>(图1.新的场刊，图2.老年机时代唯一找到存下来的CD痕迹，图3.突然想到的@tamuro_g的图片)</p>
+<p><img loading="lazy" src="/post/20211028comiday/cc22c6376a54bb6f37a3abe09d94f0d1bacd1ef8.jpg@393w_810h_progressive.webp" type="" alt=""  /></p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Solresol语法3</title>
       <link>https://moriform.github.io/post/20191203solresol_grammar3/</link>
       <pubDate>Tue, 03 Dec 2019 21:02:39 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20191203solresol_grammar3/</guid>
-      <description>&lt;h2 id=&#34;动词&#34;&gt;动词&lt;/h2&gt;&#xA;&lt;p&gt;Solresol的动词都是保持原形。&#xA;begin, sdf;I begin, dr sdf&#xA;为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss.&#xA;在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代替soso……&lt;/p&gt;&#xA;&lt;h3 id=&#34;d&#34;&gt;D&lt;/h3&gt;&#xA;&lt;p&gt;一般现在时I begin, dr D sdf, etc.&#xA;过去完成时I had begun, dr D sdf, etc.&lt;/p&gt;&#xA;&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;&#xA;&lt;p&gt;一般过去时I began, dr R sdf, etc.&#xA;先事过去时(as soon as/when) I had begun, dr R sdf, etc.&#xA;一般虚拟时that I might/should begin, mr dr R sdf, etc.&#xA;过去虚拟时that I might/should have begun, mr dr, R sdf.&lt;/p&gt;&#xA;&lt;h3 id=&#34;m&#34;&gt;M&lt;/h3&gt;&#xA;&lt;p&gt;一般将来时I will begin, dr M sdf, etc., etc.&#xA;将来完成时 I will have begun, dr M sdf, etc.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;动词&#34;&gt;动词&lt;/h2&gt;
+&lt;p&gt;Solresol的动词都是保持原形。
+begin, sdf;I begin, dr sdf
+为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss.
+在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代替soso……&lt;/p&gt;
+&lt;h3 id=&#34;d&#34;&gt;D&lt;/h3&gt;
+&lt;p&gt;一般现在时I begin, dr D sdf, etc.
+过去完成时I had begun, dr D sdf, etc.&lt;/p&gt;
+&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
+&lt;p&gt;一般过去时I began, dr R sdf, etc.
+先事过去时(as soon as/when) I had begun, dr R sdf, etc.
+一般虚拟时that I might/should begin, mr dr R sdf, etc.
+过去虚拟时that I might/should have begun, mr dr, R sdf.&lt;/p&gt;
+&lt;h3 id=&#34;m&#34;&gt;M&lt;/h3&gt;
+&lt;p&gt;一般将来时I will begin, dr M sdf, etc., etc.
+将来完成时 I will have begun, dr M sdf, etc.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="动词">动词</h2>
+<p>Solresol的动词都是保持原形。
+begin, sdf;I begin, dr sdf
+为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss.
+在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代替soso……</p>
+<h3 id="d">D</h3>
+<p>一般现在时I begin, dr D sdf, etc.
+过去完成时I had begun, dr D sdf, etc.</p>
+<h3 id="r">R</h3>
+<p>一般过去时I began, dr R sdf, etc.
+先事过去时(as soon as/when) I had begun, dr R sdf, etc.
+一般虚拟时that I might/should begin, mr dr R sdf, etc.
+过去虚拟时that I might/should have begun, mr dr, R sdf.</p>
+<h3 id="m">M</h3>
+<p>一般将来时I will begin, dr M sdf, etc., etc.
+将来完成时 I will have begun, dr M sdf, etc.</p>
+<h3 id="f">F</h3>
+<p>条件现在时I would begin, dr F sdf, etc.
+条件完成时I would have begun, dr F sdf, etc.</p>
+<h3 id="so">SO.</h3>
+<p>祈使句 Let&rsquo;s begin, SO sdf.</p>
+<h3 id="l">L.</h3>
+<p>现在分词beginning, L sdf.
+过去分词having begun, L sdf</p>
+<h3 id="s">S</h3>
+<p>被动分词begun, S sdf.</p>
+<h2 id="虚拟语气">虚拟语气</h2>
+<p>通过在人称代词前面加mr（that）来表现虚拟语气。
+That I should commence, mr dr sdf.
+That you should finish, mr dm fds.
+May he/it progress, mr df sdl.
+May she learn, mr df- sds.
+That we should study, mr dr&rsquo; sdso.
+That you (pl) should accomplish, mr dm&rsquo; dsf.
+That they (not f) should work, mr df&rsquo; rsosr.
+That they (f)should come, mr df&rsquo;- msod.
+That you might write, mr dm R lmr.</p>
+<h2 id="被动语态">被动语态</h2>
+<p>我们看到完成时的变换不需要任何助动词，而在被动语态下我们会用助动词frm（be）。
+To be loved, frm mls.
+To have been loved, frm mls.
+I am loved, dr frm mls.
+I have been loved, dr frm mls.
+I was (being) detested, dr D frm slm.
+I had been (being) detested, dr D frm slm.
+I was detested, dr R frm slm.
+I had been detested, dr R frm slm.
+I will be understood, dr M frm flf.
+I shall have been understood, dr M frm flf.
+I would be understood, dr F frm flf.
+I would have been understood, dr F frm flf.
+Be accepted, frm dldm.
+Let&rsquo;s be accepted, SO frm dldm.
+That I should be refused, mr dr frm mdld.
+That I should have received, mr dr frm msorso.
+That I might be understood, mr dr R frm flf.
+That I might have been understood, mr dr R frm flf.
+Being understood, L frm flf.
+Having been understood, L frm flf.
+Understood, S frm flf.</p>
+<h2 id="反身动词">反身动词</h2>
+<p>I amuse myself, dr lsr dr.
+You amuse yourself, dm lsr dm.
+He amuses himself, df lsr dso.
+She amuses herself, df炉 lsr dso.</p>
+<h2 id="非人称动词">非人称动词</h2>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>It is necessary. 	fld.</td>
+          <td>It is freezing/icy. 	lsoso</td>
+      </tr>
+      <tr>
+          <td>It is raining. 		ssd</td>
+          <td>It is windy.		ssr</td>
+      </tr>
+      <tr>
+          <td>It is snowing.	iff.</td>
+          <td>It is foggy.		lrr</td>
+      </tr>
+      <tr>
+          <td>There is thunder	ssso</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>It is (now) necessary.	fld</td>
+          <td>It will be windy.			M ssr</td>
+      </tr>
+      <tr>
+          <td>It was necessary.		fld</td>
+          <td>It will have been foggy.	M lrr</td>
+      </tr>
+      <tr>
+          <td>It was raining.		D ssd</td>
+          <td>It will be hot 				F ssl</td>
+      </tr>
+      <tr>
+          <td>It had snowed		D lff</td>
+          <td>It shall have been cold	F lss</td>
+      </tr>
+      <tr>
+          <td>It thundered.			R ssso</td>
+          <td>It had been icy.			R lsoso</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="疑问与否定">疑问与否定</h2>
+<p>将人称代词放在动词后面表示疑问</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Am I?</td>
+          <td>frm-dr?</td>
+      </tr>
+      <tr>
+          <td>Do we study?</td>
+          <td>sdso-dr?</td>
+      </tr>
+      <tr>
+          <td>Do you want (to/that)?</td>
+          <td>fsf-dm?</td>
+      </tr>
+      <tr>
+          <td>Are you learning?</td>
+          <td>sds-dm?</td>
+      </tr>
+      <tr>
+          <td>Does he understand?</td>
+          <td>flf-df?</td>
+      </tr>
+      <tr>
+          <td>Do they love?</td>
+          <td>mls-df'?</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="在需要否定的单词前面加d来否定">在需要否定的单词前面加d来否定</h3>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I do not love.</td>
+          <td>dr d mls.</td>
+      </tr>
+      <tr>
+          <td>Don&rsquo;t you want (to/that)?</td>
+          <td>d fsf-dm?</td>
+      </tr>
+      <tr>
+          <td>Won&rsquo;t it rain?</td>
+          <td>d M ssd so?</td>
+      </tr>
+      <tr>
+          <td>Why don&rsquo;t we ocntinue the study?</td>
+          <td>fso d Frsoml_dr&rsquo; fm sd?</td>
+      </tr>
+      <tr>
+          <td>Let&rsquo;s not go there</td>
+          <td>d So frf lm.</td>
+      </tr>
+      <tr>
+          <td>It is necessary never to act unwisely in order not to be sick.</td>
+          <td>Lso fld fsol dsfd md d ffdr</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="语法规则">语法规则</h2>
+<p>Solresol通过短语的缩写或省略来使它们在符合逻辑的条件下，更清楚简单地被使用。
+否定句式只需要加一个d而不需要重复多次表示否定。（这条规则是相较于法语的简化，不懂可省略，略懂可参照例句。）</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I don&rsquo;t want to leave.</td>
+          <td>Dr d fsf fsor.</td>
+      </tr>
+      <tr>
+          <td>We never go there.</td>
+          <td>Dr&rsquo; frf ls lm.</td>
+      </tr>
+      <tr>
+          <td>You don&rsquo;t understand their letter.</td>
+          <td>Dm d flf re fdm.</td>
+      </tr>
+  </tbody>
+</table>
+<p>一些外语存在习语成语或是具有比喻意义的表达，其他国家的人一般情况下难以理解这些表达。而solresol强调用准确的单词来表达正确清晰易懂的意思。</p>
+<table>
+  <thead>
+      <tr>
+          <th>俚语</th>
+          <th>实意</th>
+          <th>单词</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>get the drift</td>
+          <td>understand</td>
+          <td>flf</td>
+      </tr>
+      <tr>
+          <td>how are you doing</td>
+          <td>are you well</td>
+          <td>rdff</td>
+      </tr>
+      <tr>
+          <td>pass away</td>
+          <td>die</td>
+          <td>rfmd</td>
+      </tr>
+      <tr>
+          <td>have every hair in place</td>
+          <td>be correct</td>
+          <td>frm srso</td>
+      </tr>
+      <tr>
+          <td>feel hollow</td>
+          <td>be hungry</td>
+          <td>dsod</td>
+      </tr>
+  </tbody>
+</table>
+<p>我们把具有形容词意义的部分放在名词性部分之后。
+所以我们不会说	joyful baby, unhappy friend, honest citizen, good food
+而是Baby joyful, dmfso sosr.
+和Friend unhappy, mds sosm.
+和Citizen honest, sdrd dfsso.
+和Food good, dlfr fl.</p>
+<p>Fasi和Sifa
+Solresol用这两个单词来表示四个不同的程度。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>fs加在形容词前面表示比较级：fl：good</td>
+          <td>fs fl：very good</td>
+      </tr>
+      <tr>
+          <td>fs加在形容词后面表示最高级：fl：good</td>
+          <td>fl fs：extremely good</td>
+      </tr>
+      <tr>
+          <td>sf加在形容词前面表示微小级：fl：good</td>
+          <td>sf fl：somewhat good</td>
+      </tr>
+      <tr>
+          <td>sf加在形容词后面表示极微级：fl：good</td>
+          <td>fl sf：not very good，almost bad</td>
+      </tr>
+  </tbody>
+</table>
+<p>对名词来说也是如此。
+ssr	wind
+sf ssr：slight wind
+ssr sf：gentle breeze
+fs ssr：gale
+ssr fs：strong wind 、hurricane</p>
+<h2 id="不确定量">不确定量</h2>
+<p>在表示不确定的数量时，solresol省略了其中表示部分一些和表示不确定的词，同时单数的冠词也被省略。
+I would like [* some] beer and [* a] pastry -&gt; I would like beer and pastry-&gt;dr mfl dsfr r dsrs
+Give me a meter of muslin-&gt;Give meter muslin-&gt;rml rdd lsorf ldld
+The enermy has a very number of troop.-&gt;enermy has troop much-&gt;sdm fmso fmfr fs</p>
+<p>#solresol</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Solresol语法2</title>
       <link>https://moriform.github.io/post/20191202solresol_grammar2/</link>
       <pubDate>Mon, 02 Dec 2019 21:02:39 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20191202solresol_grammar2/</guid>
-      <description>&lt;h2 id=&#34;一音节词&#34;&gt;一音节词&lt;/h2&gt;&#xA;&lt;p&gt;Solresol的单词由一到四个音节组成。以下是一音节的单词。&#xA;Do , no, not, neither, nor;&#x9;&#x9;&#x9;&#x9;Sol, if;&#xA;Re, and, as well as;&#x9;&#x9;&#x9;&#x9;&#x9;La, the;&#xA;Mi, or, or even;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Si, yes, okay, gladly, agreed.&#xA;Fa to&lt;/p&gt;&#xA;&lt;h4 id=&#34;solresol的每个音节可以进行缩写&#34;&gt;Solresol的每个音节可以进行缩写&lt;/h4&gt;&#xA;&lt;p&gt;d for do; r for re; m for mi; f for fa; so for sol; l for la; s for si&lt;/p&gt;&#xA;&lt;h2 id=&#34;二音节词&#34;&gt;二音节词&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Dore/Dr:I, me;&lt;/td&gt;&#xA;          &lt;td&gt;Dl: one, someone;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Dm: you (single)&lt;/td&gt;&#xA;          &lt;td&gt;Ds:other.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Dso: self, oneself;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Redo/rd:my, mine&lt;/td&gt;&#xA;          &lt;td&gt;Rso: our, ours&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rm: your, yours (single)&lt;/td&gt;&#xA;          &lt;td&gt;Rl: your, yours (pl)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rf: hisRs: their&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Mido/md: for, in order to/that&lt;/td&gt;&#xA;          &lt;td&gt;Mso, well (adv)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Mr, who, which (rel pron); that (conj)&lt;/td&gt;&#xA;          &lt;td&gt;Ml, here/there is, behold;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Mf, whose, of which;&lt;/td&gt;&#xA;          &lt;td&gt;Ms, good evening/night.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fado/fd, what?;&lt;/td&gt;&#xA;          &lt;td&gt;Fso, why, for what reason;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fr, with, jointly;&lt;/td&gt;&#xA;          &lt;td&gt;Fl, good, tasty, delectable;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Fm, this, that;&lt;/td&gt;&#xA;          &lt;td&gt;Fs, much, very, extremely.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Soldo/sod, but;&lt;/td&gt;&#xA;          &lt;td&gt;Sof, because;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sor, in, within;&lt;/td&gt;&#xA;          &lt;td&gt;Sol (solla), perpetually, always, without end, without ceasing;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Som, wrong, ill (adv);&lt;/td&gt;&#xA;          &lt;td&gt;Sos, thank, thanks.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lado or ld, nothing, no one, nobody;&lt;/td&gt;&#xA;          &lt;td&gt;Lm, here, there;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lso, never, at no time;&lt;/td&gt;&#xA;          &lt;td&gt;Lf, bad;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Lr, by;&lt;/td&gt;&#xA;          &lt;td&gt;Ls, of.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sido or sd, the same (thing);&lt;/td&gt;&#xA;          &lt;td&gt;Sso, mister, sir;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sr, each, every;&lt;/td&gt;&#xA;          &lt;td&gt;Sso_, madame, lady;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sr, all;&lt;/td&gt;&#xA;          &lt;td&gt;Sl, young man, bachelor;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sm, good morning/afternoon;&lt;/td&gt;&#xA;          &lt;td&gt;Sl_, young woman, etc.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Sf, little, scarcely;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;词群&#34;&gt;词群&lt;/h2&gt;&#xA;&lt;p&gt;为了让solresol语言更容易学习， Francois Sudre特意将单词按照意思分组，每组有六个单词。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;一音节词&#34;&gt;一音节词&lt;/h2&gt;
+&lt;p&gt;Solresol的单词由一到四个音节组成。以下是一音节的单词。
+Do , no, not, neither, nor;				Sol, if;
+Re, and, as well as;					La, the;
+Mi, or, or even;						Si, yes, okay, gladly, agreed.
+Fa to&lt;/p&gt;
+&lt;h4 id=&#34;solresol的每个音节可以进行缩写&#34;&gt;Solresol的每个音节可以进行缩写&lt;/h4&gt;
+&lt;p&gt;d for do; r for re; m for mi; f for fa; so for sol; l for la; s for si&lt;/p&gt;
+&lt;h2 id=&#34;二音节词&#34;&gt;二音节词&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Dore/Dr:I, me;&lt;/td&gt;
+          &lt;td&gt;Dl: one, someone;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Dm: you (single)&lt;/td&gt;
+          &lt;td&gt;Ds:other.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Dso: self, oneself;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Redo/rd:my, mine&lt;/td&gt;
+          &lt;td&gt;Rso: our, ours&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Rm: your, yours (single)&lt;/td&gt;
+          &lt;td&gt;Rl: your, yours (pl)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Rf: hisRs: their&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mido/md: for, in order to/that&lt;/td&gt;
+          &lt;td&gt;Mso, well (adv)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mr, who, which (rel pron); that (conj)&lt;/td&gt;
+          &lt;td&gt;Ml, here/there is, behold;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Mf, whose, of which;&lt;/td&gt;
+          &lt;td&gt;Ms, good evening/night.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fado/fd, what?;&lt;/td&gt;
+          &lt;td&gt;Fso, why, for what reason;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fr, with, jointly;&lt;/td&gt;
+          &lt;td&gt;Fl, good, tasty, delectable;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Fm, this, that;&lt;/td&gt;
+          &lt;td&gt;Fs, much, very, extremely.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Soldo/sod, but;&lt;/td&gt;
+          &lt;td&gt;Sof, because;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sor, in, within;&lt;/td&gt;
+          &lt;td&gt;Sol (solla), perpetually, always, without end, without ceasing;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Som, wrong, ill (adv);&lt;/td&gt;
+          &lt;td&gt;Sos, thank, thanks.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Lado or ld, nothing, no one, nobody;&lt;/td&gt;
+          &lt;td&gt;Lm, here, there;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Lso, never, at no time;&lt;/td&gt;
+          &lt;td&gt;Lf, bad;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Lr, by;&lt;/td&gt;
+          &lt;td&gt;Ls, of.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sido or sd, the same (thing);&lt;/td&gt;
+          &lt;td&gt;Sso, mister, sir;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sr, each, every;&lt;/td&gt;
+          &lt;td&gt;Sso_, madame, lady;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sr, all;&lt;/td&gt;
+          &lt;td&gt;Sl, young man, bachelor;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sm, good morning/afternoon;&lt;/td&gt;
+          &lt;td&gt;Sl_, young woman, etc.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Sf, little, scarcely;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;词群&#34;&gt;词群&lt;/h2&gt;
+&lt;p&gt;为了让solresol语言更容易学习， Francois Sudre特意将单词按照意思分组，每组有六个单词。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h2 id="一音节词">一音节词</h2>
+<p>Solresol的单词由一到四个音节组成。以下是一音节的单词。
+Do , no, not, neither, nor;				Sol, if;
+Re, and, as well as;					La, the;
+Mi, or, or even;						Si, yes, okay, gladly, agreed.
+Fa to</p>
+<h4 id="solresol的每个音节可以进行缩写">Solresol的每个音节可以进行缩写</h4>
+<p>d for do; r for re; m for mi; f for fa; so for sol; l for la; s for si</p>
+<h2 id="二音节词">二音节词</h2>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Dore/Dr:I, me;</td>
+          <td>Dl: one, someone;</td>
+      </tr>
+      <tr>
+          <td>Dm: you (single)</td>
+          <td>Ds:other.</td>
+      </tr>
+      <tr>
+          <td>Dso: self, oneself;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Redo/rd:my, mine</td>
+          <td>Rso: our, ours</td>
+      </tr>
+      <tr>
+          <td>Rm: your, yours (single)</td>
+          <td>Rl: your, yours (pl)</td>
+      </tr>
+      <tr>
+          <td>Rf: hisRs: their</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Mido/md: for, in order to/that</td>
+          <td>Mso, well (adv)</td>
+      </tr>
+      <tr>
+          <td>Mr, who, which (rel pron); that (conj)</td>
+          <td>Ml, here/there is, behold;</td>
+      </tr>
+      <tr>
+          <td>Mf, whose, of which;</td>
+          <td>Ms, good evening/night.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Fado/fd, what?;</td>
+          <td>Fso, why, for what reason;</td>
+      </tr>
+      <tr>
+          <td>Fr, with, jointly;</td>
+          <td>Fl, good, tasty, delectable;</td>
+      </tr>
+      <tr>
+          <td>Fm, this, that;</td>
+          <td>Fs, much, very, extremely.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Soldo/sod, but;</td>
+          <td>Sof, because;</td>
+      </tr>
+      <tr>
+          <td>Sor, in, within;</td>
+          <td>Sol (solla), perpetually, always, without end, without ceasing;</td>
+      </tr>
+      <tr>
+          <td>Som, wrong, ill (adv);</td>
+          <td>Sos, thank, thanks.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Lado or ld, nothing, no one, nobody;</td>
+          <td>Lm, here, there;</td>
+      </tr>
+      <tr>
+          <td>Lso, never, at no time;</td>
+          <td>Lf, bad;</td>
+      </tr>
+      <tr>
+          <td>Lr, by;</td>
+          <td>Ls, of.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Sido or sd, the same (thing);</td>
+          <td>Sso, mister, sir;</td>
+      </tr>
+      <tr>
+          <td>Sr, each, every;</td>
+          <td>Sso_, madame, lady;</td>
+      </tr>
+      <tr>
+          <td>Sr, all;</td>
+          <td>Sl, young man, bachelor;</td>
+      </tr>
+      <tr>
+          <td>Sm, good morning/afternoon;</td>
+          <td>Sl_, young woman, etc.</td>
+      </tr>
+      <tr>
+          <td>Sf, little, scarcely;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="词群">词群</h2>
+<p>为了让solresol语言更容易学习， Francois Sudre特意将单词按照意思分组，每组有六个单词。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Doredo or drd, time;</td>
+          <td>Drso, month;</td>
+      </tr>
+      <tr>
+          <td>Drm, day;</td>
+          <td>Drl, year;</td>
+      </tr>
+      <tr>
+          <td>Drf, week;</td>
+          <td>Drs, century.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Dosoldo or dsod, be hungry;</td>
+          <td>Dsof, be thirsty;</td>
+      </tr>
+      <tr>
+          <td>Dsor, eat;</td>
+          <td>Dsol, drink;</td>
+      </tr>
+      <tr>
+          <td>Dsom, bread;</td>
+          <td>Dsos, water.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Domiredo/dmrd, the five senses;</td>
+          <td>Dmrso, taste;</td>
+      </tr>
+      <tr>
+          <td>Dmrm, see;</td>
+          <td>Dmrl, feel;</td>
+      </tr>
+      <tr>
+          <td>Dmrf, touch, feel, handle;</td>
+          <td>Dmrs, hear.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Dofalado or dfld, candor, sincerity;</td>
+          <td>Dflf, cordiality;</td>
+      </tr>
+      <tr>
+          <td>Dflr, goodness, kindness;</td>
+          <td>Dflso, generosity, unselfishness;</td>
+      </tr>
+      <tr>
+          <td>Dflm, sensitivity, impressionableness;</td>
+          <td>Dfls, humanity, mercy.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Lafadore or lfdr, counting;</td>
+          <td>Ldfso, multiplication;</td>
+      </tr>
+      <tr>
+          <td>Lfdm, addition;</td>
+          <td>Lfdl, division;</td>
+      </tr>
+      <tr>
+          <td>Lfdf, subtraction;</td>
+          <td>Lfds, division, share.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="普通单词的分类">普通单词的分类</h2>
+<p>在先前的例子中，我们可以看到由三个以内的音节作为前缀被使用来说明这一组词的基本特征。四音节词则按类分组。（这句没懂，看之前的例子理解就行）</p>
+<h3 id="do组属于人人的品质人的优良才能和食物">DO组属于“人”、“人的品质”、“人的优良才能”和“食物”。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Dmfd, man, human being;</td>
+          <td>Dfsf, conscience;</td>
+      </tr>
+      <tr>
+          <td>Dmsof, intelligence;</td>
+          <td>Dlfr, food, nourishment;</td>
+      </tr>
+      <tr>
+          <td>Dmlr, pronounce;</td>
+          <td>Dssof, cooking.</td>
+      </tr>
+      <tr>
+          <td>Dfmr, quality;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="re组用于衣物房屋家具家政和家">RE组用于“衣物”，“房屋”，“家具”，“家政”和“家”.</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rdfs,	clothing, dress;</td>
+          <td>Rfdm,	furniture;</td>
+      </tr>
+      <tr>
+          <td>Rdrf,	shirt, blouse;</td>
+          <td>Rsosr,	work;</td>
+      </tr>
+      <tr>
+          <td>Rmfl,	house;</td>
+          <td>Rldr,	washing, laundry;</td>
+      </tr>
+      <tr>
+          <td>Rmfs,	dwelling, habitation, residence，apartment;</td>
+          <td>Rsdso,	family;</td>
+      </tr>
+      <tr>
+          <td>Rsds,	father.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="mi组用于描述人的行为尤其是人的缺点">MI组用于描述人的行为，尤其是人的缺点。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Mdfl, abandon, leave, desert;</td>
+          <td>Mfmf, laziness;</td>
+      </tr>
+      <tr>
+          <td>Mdsod, fear, doubt, hold back;</td>
+          <td>Mlrl, slander;</td>
+      </tr>
+      <tr>
+          <td>Mrdl, undertake;</td>
+          <td>Msmf, responsibility;</td>
+      </tr>
+      <tr>
+          <td>Mfrd, selfishness;</td>
+          <td>Msfd, indiscretion.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="fa组用于国家农业战争海与旅行">FA组用于国家，农业，战争，海与旅行</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Fdrm,country(side)</td>
+          <td>Fmfl, regiment;Fdsd, gardening, horticulture;</td>
+      </tr>
+      <tr>
+          <td>Fsomr, strategy, tactic;</td>
+          <td>Frdr, agriculture;</td>
+      </tr>
+      <tr>
+          <td>Fldr, navigate, sail;</td>
+          <td>Frdf, work the land, furrow;</td>
+      </tr>
+      <tr>
+          <td>Fsdr, travel;</td>
+          <td>Frmf, harvest, gather, glean;</td>
+      </tr>
+      <tr>
+          <td>Fssor, travel through, sightsee.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="sol与天气文学艺术和科学相关">SOL与天气，文学，艺术和科学相关。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sodrm, theater;</td>
+          <td>Somsos, harmony;</td>
+      </tr>
+      <tr>
+          <td>Sodsd, orchestra;</td>
+          <td>Soldl, painting, watercolor;</td>
+      </tr>
+      <tr>
+          <td>Sodsr, instrument;</td>
+          <td>Solmf, sculpture;</td>
+      </tr>
+      <tr>
+          <td>Somsor, music;</td>
+          <td>Sosdr, literature, letters.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="la行主要用于表达工业和交易">LA行主要用于表达工业和交易。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ldrd, industry;</td>
+          <td>Lfsod, cash (on hand), money;</td>
+      </tr>
+      <tr>
+          <td>Ldrm, make, manufacture;</td>
+          <td>Lfsol, franc;</td>
+      </tr>
+      <tr>
+          <td>Ldrf, material, substance;</td>
+          <td>Lfsos, centime;</td>
+      </tr>
+      <tr>
+          <td>Ldrso, produce;</td>
+          <td>Lfld, measure;</td>
+      </tr>
+      <tr>
+          <td>Ldrl, sell, retail;</td>
+          <td>Lflf, liter;</td>
+      </tr>
+      <tr>
+          <td>Ldrs, in bulk, wholesale;</td>
+          <td>Lfsf, gram;</td>
+      </tr>
+      <tr>
+          <td>Ldmr, shop, store;</td>
+          <td>Lsorf, meter;</td>
+      </tr>
+      <tr>
+          <td>Lrdl, buy, acquire, gain possession of;</td>
+          <td>Lsomr, sample;</td>
+      </tr>
+      <tr>
+          <td>Lsofr, exposition, exhibition;</td>
+          <td>Lsofd, display (area/things);</td>
+      </tr>
+      <tr>
+          <td>Lrfr, propose, offer;</td>
+          <td>Lsofm, assortment, set;</td>
+      </tr>
+      <tr>
+          <td>Lmlf, merchandise;</td>
+          <td>Lsmso, notions (store).</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="si用于描述城市行政金融警察">SI用于描述城市，行政，金融，警察。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sdms, municipality;</td>
+          <td>Srsl, republic;</td>
+      </tr>
+      <tr>
+          <td>Srdr, government;</td>
+          <td>Smld, newspaper, journal, gazette;</td>
+      </tr>
+      <tr>
+          <td>Srdso, election;</td>
+          <td>Sfmr, internationalism;</td>
+      </tr>
+      <tr>
+          <td>Srsd, diplomacy;</td>
+          <td>Ssomr, finance;</td>
+      </tr>
+      <tr>
+          <td>Srsr, politics;</td>
+          <td>Slmd, police.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="叠音词的分类">叠音词的分类</h3>
+<p>在solresol中存在一些有叠音的单词（两个相同的音节排列在一起），它们被单独放在词典中。它们同样用行为顺序、家庭和阶级来分类。</p>
+<p>单词dd,rr,mm,ff,soso,ll,ss用于表示动词的情感和时态。</p>
+<h3 id="三音节词用于表示数字日期的年月日和气温天气情况">三音节词用于表示数字，日期的年月日和气温（天气情况）。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rdd, one, first;</td>
+          <td>Sosod, Monday;</td>
+      </tr>
+      <tr>
+          <td>Rmm, two, second;</td>
+          <td>Sosor, Tuesday;</td>
+      </tr>
+      <tr>
+          <td>Rff, three, third;</td>
+          <td>Lff, snow;</td>
+      </tr>
+      <tr>
+          <td>Drr, January;</td>
+          <td>Ssd, rain;Dmm, February;</td>
+      </tr>
+      <tr>
+          <td>Ssl, heat, warmth.</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="四音节词">四音节词：</h2>
+<h3 id="do表示宗教和神职人员">Do：表示宗教和神职人员。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ddsod, gospel, bible;</td>
+          <td>Dmss, superstition.</td>
+      </tr>
+      <tr>
+          <td>Dffd, Easter;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="re建设建筑手艺相关">RE：建设建筑，手艺相关。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rrdr, construction;</td>
+          <td>Rsorr, pliers, pincers;</td>
+      </tr>
+      <tr>
+          <td>Rrdl, masonry;</td>
+          <td>Rsoff, hammer;</td>
+      </tr>
+      <tr>
+          <td>Rffm, locksmiths;</td>
+          <td>Rsdd, equipment, tools.</td>
+      </tr>
+      <tr>
+          <td>Rlld, cabinet-work;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="mi用作单独的副词介词和连词">MI：用作单独的副词，介词和连词。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Mmdm,	however, nevertheless;</td>
+          <td>Mdrr,	approximately, around, almost</td>
+      </tr>
+      <tr>
+          <td>Mrrso,	gradually, imperceptibly, little by little</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="faso用于疾病和医疗">FA/SO:用于疾病和医疗。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ffdr, be sick, feel ill;</td>
+          <td>Fmrr, camphor;</td>
+      </tr>
+      <tr>
+          <td>Ffdm, (medical) consultation;</td>
+          <td>Fsll, anatomy.</td>
+      </tr>
+      <tr>
+          <td>Ffdf, doctor;</td>
+          <td>Ffdso, surgeon;</td>
+      </tr>
+      <tr>
+          <td>Sosord, migraine;</td>
+          <td>Ffdl, dentist;</td>
+      </tr>
+      <tr>
+          <td>Soddf, chillblain;</td>
+          <td>Ffds, oculist;</td>
+      </tr>
+      <tr>
+          <td>Sollr, purgation;</td>
+          <td>Ffrso, pharmacist;</td>
+      </tr>
+      <tr>
+          <td>Sofdd, suffocation.</td>
+          <td>Fmmd, convalescence, recovery;</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="la用于工业和交易就像普通单词中的la一样">LA：用于工业和交易（就像普通单词中的LA一样）。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Llrl, bookstore;</td>
+          <td>Lmmd, tinsmith&rsquo;s;</td>
+      </tr>
+      <tr>
+          <td>Llmd, printshop;</td>
+          <td>Lsodd, grocery store;</td>
+      </tr>
+      <tr>
+          <td>Llfd, watchmaker&rsquo;s;</td>
+          <td>Lsoss, flour;</td>
+      </tr>
+      <tr>
+          <td>Llrs, hardware store, iron-monger&rsquo;s;</td>
+          <td>Lsdd, butcher&rsquo;s.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="si用于司法裁判法庭相关">SI：用于司法、裁判、法庭相关。</h3>
+<table>
+  <thead>
+      <tr>
+          <th>EXAMPLES:</th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Ssdso, magistracy;</td>
+          <td>Sslf, imprisonment, incarceration.</td>
+      </tr>
+      <tr>
+          <td>Ssmd, testimony;</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="同义词">同义词</h2>
+<p>Solresol没有同义词
+因此一个solla就能表示英语里面的always, without ceasing, perpetually, without end.
+一个 mifala(mfl)就能表示英语里面的desire, long for, wish for.
+一个dosido(dsd)就能表示英语里面的aid, help, assist, come to one&rsquo;s aid……</p>
+<h2 id="反义词">反义词</h2>
+<p>Solresol拥有其他语言不具有的优势，就是它将音节倒过来读写就是它的反义词。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Misol, good</td>
+          <td>Solmi, evil.</td>
+      </tr>
+      <tr>
+          <td>Fala, good, tasty</td>
+          <td>Lafa, bad.</td>
+      </tr>
+      <tr>
+          <td>Solla, always</td>
+          <td>Lasol, never.</td>
+      </tr>
+      <tr>
+          <td>Fs, much, very</td>
+          <td>Sf, little, scarcely.</td>
+      </tr>
+      <tr>
+          <td>Msso, good fortune, happiness</td>
+          <td>Sosm, misfortune.</td>
+      </tr>
+      <tr>
+          <td>Sols, climb, ascend</td>
+          <td>Slso, descend.</td>
+      </tr>
+      <tr>
+          <td>Sosf, laugh</td>
+          <td>Fsso, weep, sob.</td>
+      </tr>
+      <tr>
+          <td>Sml, ease</td>
+          <td>Lms, difficulty.</td>
+      </tr>
+      <tr>
+          <td>Dldm, accept, consent</td>
+          <td>Mdld, refuse, reject.</td>
+      </tr>
+      <tr>
+          <td>Fsms, advance</td>
+          <td>Smsf, draw back, retreat.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="注意在使用solresol语言时需要特别注意在每个单词后的停顿稍微的停顿对区分单词有相当大的作用听者也能够很容易理解从接触solresol的一刻起我们就应该清楚地将单词分离同时建议在读solresol语时可以速度放缓一些">注意:在使用solresol语言时，需要特别注意在每个单词后的停顿，稍微的停顿对区分单词有相当大的作用，听者也能够很容易理解。从接触solresol的一刻起我们就应该清楚地将单词分离，同时建议在读solresol语时可以速度放缓一些。</h3>
+<h2 id="词性">词性</h2>
+<p>Solresol中的单词有三种词性：阴性、阳性和中性。我们可以很轻易区分它们：
+所有和雄性（male）相关的都是阳性的。
+所有和雌性（female）相关的都是阴性。
+所有和材料物体相关，抽象的东西，或是未知性别的东西都属于中性。
+这些单词始终保持不变。</p>
+<p>####阴性词需要单独表明出来。如果是在口语中，就重读最后一个音节元音。如果是在书写中，就在最后一个元音后面加一个短横线。
+EXAMPLES:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Masculine:</th>
+          <th>Feminine:</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sisol, Mr;</td>
+          <td>Sisool or Siso_l, Mrs.;</td>
+      </tr>
+      <tr>
+          <td>Sila, Master (title), boy;</td>
+          <td>Silaa or Sila_, Miss;</td>
+      </tr>
+      <tr>
+          <td>Msf, husband;</td>
+          <td>Msf_, wife;</td>
+      </tr>
+      <tr>
+          <td>Ldm, pupil, student (m);</td>
+          <td>Ldm_, pupil, student (f);</td>
+      </tr>
+      <tr>
+          <td>Dmfd, man;</td>
+          <td>Dmfd_, woman;</td>
+      </tr>
+      <tr>
+          <td>Rsmr, brother;</td>
+          <td>Rsmr_, sister;</td>
+      </tr>
+      <tr>
+          <td>Frsod, stallion;</td>
+          <td>Frsod_, mare.</td>
+      </tr>
+  </tbody>
+</table>
+<p>（注1：例子中表明也可以双写最后一个元音字母，这里的加短横线和双写都是针对元音字母，如sol最后处理是sool和so-l）
+（注2：虽然这里使用的是下划线，但是源pdf里面使用的是上划线）</p>
+<h2 id="复数">复数</h2>
+<p>最后辅音上面标注一个重读符号表明这个单词为复数。这个被标了重读的辅音我们在读的时候会延长，就好像它被写了两遍一样。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Rd, my, mine (ms);</td>
+          <td>Rd&rsquo;, my, mine (mpl);</td>
+      </tr>
+      <tr>
+          <td>Rd_, my, mine (fs);</td>
+          <td>Rd&rsquo;_, my, mine (fpl);</td>
+      </tr>
+      <tr>
+          <td>Sso, mister;</td>
+          <td>Ss&rsquo;o, messers;</td>
+      </tr>
+      <tr>
+          <td>Sso_, madame;</td>
+          <td>Ss&rsquo;o_, mesdames;</td>
+      </tr>
+      <tr>
+          <td>Fdso, signature;</td>
+          <td>Fds&rsquo;o, signatures;</td>
+      </tr>
+      <tr>
+          <td>Fml, letter-carrier;</td>
+          <td>Fml&rsquo;, letter-carriers;</td>
+      </tr>
+      <tr>
+          <td>Drmr, eye;</td>
+          <td>Drmr&rsquo;, eyes.</td>
+      </tr>
+  </tbody>
+</table>
+<p>（注意：当一个单词或短语前面是这些单词：f,l,rd,rm,rf,rso,rl,rs,mr,mf,fm,我们在这些简单单词上面添加阴性或复数符号，跟在这些单词后的单词不需要添加其他符号。）</p>
+<p>The stallions, l&rsquo; frsod;
+My brothers, rd&rsquo; rsmr;
+My sisters are dead, rd&rsquo;_ rsmr frm rfmd;
+These orphans (f) are not unhappy, fm&rsquo;_ mdfso d frm sosm.
+就是说只有名词在单独出现的时候阴性符号和复数符号才是必要的。</p>
+<p>Horses, frsod&rsquo;;Sisters, rsmr&rsquo;炉;Brothers, rsmr&rsquo;;Orphans (f), mdfs&rsquo;o_.</p>
+<h2 id="词性-1">词性</h2>
+<p>Solresol里面同一个单词有多个意思可以表示动词、名次、形容词、副词。我们通过以下固定不变的法则来移动重读音节符号来注明词性。
+Mdf, prefer .
+M-df, preference .名词
+Md-f, preferable .形容词
+Mdf-, preferably .副词
+Rsoml, continuer .
+R-soml, continuation .名词
+Rs-oml, one who continues .
+Rsom-l, continual .形容词
+Rsoml-, continually .副词
+在口语中我们延长被标注的辅音，就好像它被写了两遍。（译者实在不知两个辅音怎么读）</p>
+<h2 id="单词的数量">单词的数量</h2>
+<p>由于每个单词可以表现不同词性下的所有相同意思（包括名词的性别），solresol通过有限的2660个单词数量就包含了所有我们所需要的单词的意思，形成完整的语言体系。它们可以在人们最必要正式的国际交流间使用。(几年前那些法国人决定把词汇表多加一位，几年过去了5%的进度都没到)</p>
+<p>#solresol</p>
+]]></content:encoded>
     </item>
+    
     <item>
       <title>Solresol语法1</title>
       <link>https://moriform.github.io/post/20191201solresol_grammar1/</link>
       <pubDate>Sun, 01 Dec 2019 19:40:38 +0000</pubDate>
+      
       <guid>https://moriform.github.io/post/20191201solresol_grammar1/</guid>
-      <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;&#xA;&lt;p&gt;生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。&#xA;但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。&#xA;为了旅行和国际交流的方便，促进有益科学的发展，我们需要一门易于理解传播的全人类所共有的一门语言。这种语言可以为想要学习一门外语的人节省时间和金钱，并且在多个国家通用。&lt;/p&gt;&#xA;&lt;p&gt;如今旅行业的发展日益加快，一门所有人都能够掌握的第二语言显得如此重要。&#xA;这样用于全球的国际语言是存在的，需要的是人们有意愿去学习练习并传播。&lt;/p&gt;&#xA;&lt;h3 id=&#34;solresol语的概念&#34;&gt;Solresol语的概念&lt;/h3&gt;&#xA;&lt;p&gt;Francois Sudre（?-1862）发明了一种简单的语言，为了避免国际上的干涉，他发明了一门和其他所有语言都不一样的“中立”的语言。一门完全基于音乐上的7个音（do，re，mi，fa，sol，la，si）创造的语言。&#xA;学习这门语言，你完全不需要去了解音乐，它易于发音和拼写，简单到只需要花不到一分钟就能够了解它的拼写。&#xA;/这种语言叫做SOLRESOL，法语不比德语多，英语不比俄语多，西班牙语不比土耳其语多，拉丁语不比汉语多。&#xA;当然，法国人永远讲法语，英国人永远讲英语，俄罗斯人永远讲俄语等等，但索尔索将是一个共同的纽带，一个普遍的沟通思想的手段，无论是在言语中，甚至是在没有言语的情况下，无论是从远处还是近距离，无论是在秘密还是在光天化日之下。&#xA;因此，通过Solresol，盲人将能够与外国聋哑人交流思想，反之亦然，因此每个人都能够回答并被他们理解。&#xA;在欧洲，有25万多人被束缚，21万多聋哑人；因此，仅在欧洲，就有46万人几乎没有任何与其他人交流的手段，而且由于solresol，他们将被带回到日常生活中，并看到他们残疾的不便减少。*/（译者：被省略的地方实在不想翻译所以百度了。说这门语言能在世界上广为流传的句子基于事实也没有翻译。）&lt;/p&gt;&#xA;&lt;p&gt;（solresol没有官方的中文第二说明书，所以阅读以下的所有内容需要掌握至少小学英语水平）&lt;/p&gt;&#xA;&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;&#xA;&lt;p&gt;我们可以用不同的方式书写solresol语。&#xA;写全音节do,re,mi,fa,sol,la,si。&lt;/p&gt;&#xA;&lt;p&gt;书写省略元音（除了sol要写成so来与si区分开）：d,r,m,f,so,l,s。&lt;/p&gt;&#xA;&lt;p&gt;五线谱取下加一线到第三间的范围书写。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/3e5659fe62b746c65a3bf0d5f41a015d.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;用简谱上的数字来代替音节。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/3e79b973f015843bfd7b6ff8a4cb1ef6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;由 Vincent GAJEWSKI发明的solresol特有的速记方式。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/9bc3b8b5e96197edc1ae2a0413e845ca.png&#34; alt=&#34;|547x154&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;（译：神奇的事来了：这些速记符号是用来画图的，读图方式遵循从上到下从左到右）&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/6833bb32dfd7f185979d30b635b16e8e.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;遇到叠音我们只需要写一遍然后在中间划一道线。&lt;/p&gt;&#xA;&lt;h3 id=&#34;用solresol交流的不同方式&#34;&gt;用solresol交流的不同方式&lt;/h3&gt;&#xA;&lt;p&gt;不管是在白天还是黑夜，远处还是近处，海上还是陆地，出声与否我们都能通过solresol语言交流自如。即使是各国的聋哑人或是盲人也有多种交流方式。&#xA;大声说出来，solresol的发音对任何一个国家的人来说都应该是很简单的。&lt;/p&gt;&#xA;&lt;p&gt;之前所提到的五种简单的书写方式。&lt;/p&gt;&#xA;&lt;p&gt;这门语言可以通过用手摆出之前所提到的速记方式的标志来无声交流（比如说do需要将手比作一个球或摆出一个零，对于叠词将同一记号摆两次即可）。&lt;/p&gt;&#xA;&lt;p&gt;用右手食指指出左手的不同区域来代表不同的音节。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://i.gyazo.com/599068a0884c366c4db976989a32ab88.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;看见了吗，这里比出的三根手指就是之前说明的五线谱标注法的第一线，第二线和第三线。&lt;/p&gt;&#xA;&lt;p&gt;通过敲击的方式来进行交流。&#xA;&lt;code&gt;敲一下代表do.&lt;/code&gt;&#xA;&lt;code&gt;敲两下代表re.&lt;/code&gt;&#xA;&lt;code&gt;……&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;熟悉音乐的人当然可以用任何乐器来演奏索来索语。&lt;/p&gt;&#xA;&lt;p&gt;聋哑人与盲人交流时可以通过触碰盲人手指的各个部分来交流信息。&lt;/p&gt;&#xA;&lt;p&gt;相距较远时，如相隔一条街或隔窗相望，我们可以通过速记符号进行交流，这种情况下只有两个人能看见。通过这种方法，囚犯也能通过窗台记号和外界交流，反之亦然。&lt;/p&gt;&#xA;&lt;p&gt;在夜间通过点亮七色彩灯或焰火交流：&#xA;&lt;code&gt;红色：do&lt;/code&gt;&#xA;&lt;code&gt;橙色：re&lt;/code&gt;&#xA;&lt;code&gt;黄色：mi&lt;/code&gt;&#xA;&lt;code&gt;绿色：fa&lt;/code&gt;&#xA;&lt;code&gt;蓝色：sol&lt;/code&gt;&#xA;&lt;code&gt;靛蓝：la（铁氰化亚铁的普鲁士蓝）&lt;/code&gt;&#xA;&lt;code&gt;紫色：si&lt;/code&gt;&#xA;&lt;code&gt;(可以看见颜色的顺序是彩虹的颜色顺序。)&lt;/code&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;
+&lt;p&gt;生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。
+但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。
+为了旅行和国际交流的方便，促进有益科学的发展，我们需要一门易于理解传播的全人类所共有的一门语言。这种语言可以为想要学习一门外语的人节省时间和金钱，并且在多个国家通用。&lt;/p&gt;
+&lt;p&gt;如今旅行业的发展日益加快，一门所有人都能够掌握的第二语言显得如此重要。
+这样用于全球的国际语言是存在的，需要的是人们有意愿去学习练习并传播。&lt;/p&gt;
+&lt;h3 id=&#34;solresol语的概念&#34;&gt;Solresol语的概念&lt;/h3&gt;
+&lt;p&gt;Francois Sudre（?-1862）发明了一种简单的语言，为了避免国际上的干涉，他发明了一门和其他所有语言都不一样的“中立”的语言。一门完全基于音乐上的7个音（do，re，mi，fa，sol，la，si）创造的语言。
+学习这门语言，你完全不需要去了解音乐，它易于发音和拼写，简单到只需要花不到一分钟就能够了解它的拼写。
+/这种语言叫做SOLRESOL，法语不比德语多，英语不比俄语多，西班牙语不比土耳其语多，拉丁语不比汉语多。
+当然，法国人永远讲法语，英国人永远讲英语，俄罗斯人永远讲俄语等等，但索尔索将是一个共同的纽带，一个普遍的沟通思想的手段，无论是在言语中，甚至是在没有言语的情况下，无论是从远处还是近距离，无论是在秘密还是在光天化日之下。
+因此，通过Solresol，盲人将能够与外国聋哑人交流思想，反之亦然，因此每个人都能够回答并被他们理解。
+在欧洲，有25万多人被束缚，21万多聋哑人；因此，仅在欧洲，就有46万人几乎没有任何与其他人交流的手段，而且由于solresol，他们将被带回到日常生活中，并看到他们残疾的不便减少。*/（译者：被省略的地方实在不想翻译所以百度了。说这门语言能在世界上广为流传的句子基于事实也没有翻译。）&lt;/p&gt;
+&lt;p&gt;（solresol没有官方的中文第二说明书，所以阅读以下的所有内容需要掌握至少小学英语水平）&lt;/p&gt;
+&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
+&lt;p&gt;我们可以用不同的方式书写solresol语。
+写全音节do,re,mi,fa,sol,la,si。&lt;/p&gt;
+&lt;p&gt;书写省略元音（除了sol要写成so来与si区分开）：d,r,m,f,so,l,s。&lt;/p&gt;
+&lt;p&gt;五线谱取下加一线到第三间的范围书写。&lt;/p&gt;
+&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://i.gyazo.com/3e5659fe62b746c65a3bf0d5f41a015d.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;用简谱上的数字来代替音节。&lt;/p&gt;
+&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://i.gyazo.com/3e79b973f015843bfd7b6ff8a4cb1ef6.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;由 Vincent GAJEWSKI发明的solresol特有的速记方式。&lt;/p&gt;
+&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://i.gyazo.com/9bc3b8b5e96197edc1ae2a0413e845ca.png&#34; alt=&#34;|547x154&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;（译：神奇的事来了：这些速记符号是用来画图的，读图方式遵循从上到下从左到右）&lt;/p&gt;
+&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://i.gyazo.com/6833bb32dfd7f185979d30b635b16e8e.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;遇到叠音我们只需要写一遍然后在中间划一道线。&lt;/p&gt;
+&lt;h3 id=&#34;用solresol交流的不同方式&#34;&gt;用solresol交流的不同方式&lt;/h3&gt;
+&lt;p&gt;不管是在白天还是黑夜，远处还是近处，海上还是陆地，出声与否我们都能通过solresol语言交流自如。即使是各国的聋哑人或是盲人也有多种交流方式。
+大声说出来，solresol的发音对任何一个国家的人来说都应该是很简单的。&lt;/p&gt;
+&lt;p&gt;之前所提到的五种简单的书写方式。&lt;/p&gt;
+&lt;p&gt;这门语言可以通过用手摆出之前所提到的速记方式的标志来无声交流（比如说do需要将手比作一个球或摆出一个零，对于叠词将同一记号摆两次即可）。&lt;/p&gt;
+&lt;p&gt;用右手食指指出左手的不同区域来代表不同的音节。&lt;/p&gt;
+&lt;p&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://i.gyazo.com/599068a0884c366c4db976989a32ab88.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;看见了吗，这里比出的三根手指就是之前说明的五线谱标注法的第一线，第二线和第三线。&lt;/p&gt;
+&lt;p&gt;通过敲击的方式来进行交流。
+&lt;code&gt;敲一下代表do.&lt;/code&gt;
+&lt;code&gt;敲两下代表re.&lt;/code&gt;
+&lt;code&gt;……&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;熟悉音乐的人当然可以用任何乐器来演奏索来索语。&lt;/p&gt;
+&lt;p&gt;聋哑人与盲人交流时可以通过触碰盲人手指的各个部分来交流信息。&lt;/p&gt;
+&lt;p&gt;相距较远时，如相隔一条街或隔窗相望，我们可以通过速记符号进行交流，这种情况下只有两个人能看见。通过这种方法，囚犯也能通过窗台记号和外界交流，反之亦然。&lt;/p&gt;
+&lt;p&gt;在夜间通过点亮七色彩灯或焰火交流：
+&lt;code&gt;红色：do&lt;/code&gt;
+&lt;code&gt;橙色：re&lt;/code&gt;
+&lt;code&gt;黄色：mi&lt;/code&gt;
+&lt;code&gt;绿色：fa&lt;/code&gt;
+&lt;code&gt;蓝色：sol&lt;/code&gt;
+&lt;code&gt;靛蓝：la（铁氰化亚铁的普鲁士蓝）&lt;/code&gt;
+&lt;code&gt;紫色：si&lt;/code&gt;
+&lt;code&gt;(可以看见颜色的顺序是彩虹的颜色顺序。)&lt;/code&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h3 id="引入">引入</h3>
+<p>生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。
+但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。
+为了旅行和国际交流的方便，促进有益科学的发展，我们需要一门易于理解传播的全人类所共有的一门语言。这种语言可以为想要学习一门外语的人节省时间和金钱，并且在多个国家通用。</p>
+<p>如今旅行业的发展日益加快，一门所有人都能够掌握的第二语言显得如此重要。
+这样用于全球的国际语言是存在的，需要的是人们有意愿去学习练习并传播。</p>
+<h3 id="solresol语的概念">Solresol语的概念</h3>
+<p>Francois Sudre（?-1862）发明了一种简单的语言，为了避免国际上的干涉，他发明了一门和其他所有语言都不一样的“中立”的语言。一门完全基于音乐上的7个音（do，re，mi，fa，sol，la，si）创造的语言。
+学习这门语言，你完全不需要去了解音乐，它易于发音和拼写，简单到只需要花不到一分钟就能够了解它的拼写。
+/这种语言叫做SOLRESOL，法语不比德语多，英语不比俄语多，西班牙语不比土耳其语多，拉丁语不比汉语多。
+当然，法国人永远讲法语，英国人永远讲英语，俄罗斯人永远讲俄语等等，但索尔索将是一个共同的纽带，一个普遍的沟通思想的手段，无论是在言语中，甚至是在没有言语的情况下，无论是从远处还是近距离，无论是在秘密还是在光天化日之下。
+因此，通过Solresol，盲人将能够与外国聋哑人交流思想，反之亦然，因此每个人都能够回答并被他们理解。
+在欧洲，有25万多人被束缚，21万多聋哑人；因此，仅在欧洲，就有46万人几乎没有任何与其他人交流的手段，而且由于solresol，他们将被带回到日常生活中，并看到他们残疾的不便减少。*/（译者：被省略的地方实在不想翻译所以百度了。说这门语言能在世界上广为流传的句子基于事实也没有翻译。）</p>
+<p>（solresol没有官方的中文第二说明书，所以阅读以下的所有内容需要掌握至少小学英语水平）</p>
+<h3 id="写法">写法</h3>
+<p>我们可以用不同的方式书写solresol语。
+写全音节do,re,mi,fa,sol,la,si。</p>
+<p>书写省略元音（除了sol要写成so来与si区分开）：d,r,m,f,so,l,s。</p>
+<p>五线谱取下加一线到第三间的范围书写。</p>
+<p>
+  <img loading="lazy" src="https://i.gyazo.com/3e5659fe62b746c65a3bf0d5f41a015d.png" alt=""  /></p>
+<p>用简谱上的数字来代替音节。</p>
+<p>
+  <img loading="lazy" src="https://i.gyazo.com/3e79b973f015843bfd7b6ff8a4cb1ef6.png" alt=""  /></p>
+<p>由 Vincent GAJEWSKI发明的solresol特有的速记方式。</p>
+<p>
+  <img loading="lazy" src="https://i.gyazo.com/9bc3b8b5e96197edc1ae2a0413e845ca.png" alt="|547x154"  /></p>
+<p>（译：神奇的事来了：这些速记符号是用来画图的，读图方式遵循从上到下从左到右）</p>
+<p>
+  <img loading="lazy" src="https://i.gyazo.com/6833bb32dfd7f185979d30b635b16e8e.png" alt=""  /></p>
+<p>遇到叠音我们只需要写一遍然后在中间划一道线。</p>
+<h3 id="用solresol交流的不同方式">用solresol交流的不同方式</h3>
+<p>不管是在白天还是黑夜，远处还是近处，海上还是陆地，出声与否我们都能通过solresol语言交流自如。即使是各国的聋哑人或是盲人也有多种交流方式。
+大声说出来，solresol的发音对任何一个国家的人来说都应该是很简单的。</p>
+<p>之前所提到的五种简单的书写方式。</p>
+<p>这门语言可以通过用手摆出之前所提到的速记方式的标志来无声交流（比如说do需要将手比作一个球或摆出一个零，对于叠词将同一记号摆两次即可）。</p>
+<p>用右手食指指出左手的不同区域来代表不同的音节。</p>
+<p>
+  <img loading="lazy" src="https://i.gyazo.com/599068a0884c366c4db976989a32ab88.png" alt=""  /></p>
+<p>看见了吗，这里比出的三根手指就是之前说明的五线谱标注法的第一线，第二线和第三线。</p>
+<p>通过敲击的方式来进行交流。
+<code>敲一下代表do.</code>
+<code>敲两下代表re.</code>
+<code>……</code></p>
+<p>熟悉音乐的人当然可以用任何乐器来演奏索来索语。</p>
+<p>聋哑人与盲人交流时可以通过触碰盲人手指的各个部分来交流信息。</p>
+<p>相距较远时，如相隔一条街或隔窗相望，我们可以通过速记符号进行交流，这种情况下只有两个人能看见。通过这种方法，囚犯也能通过窗台记号和外界交流，反之亦然。</p>
+<p>在夜间通过点亮七色彩灯或焰火交流：
+<code>红色：do</code>
+<code>橙色：re</code>
+<code>黄色：mi</code>
+<code>绿色：fa</code>
+<code>蓝色：sol</code>
+<code>靛蓝：la（铁氰化亚铁的普鲁士蓝）</code>
+<code>紫色：si</code>
+<code>(可以看见颜色的顺序是彩虹的颜色顺序。)</code></p>
+]]></content:encoded>
     </item>
-    <item>
-      <title>Archives</title>
-      <link>https://moriform.github.io/page/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://moriform.github.io/page/archives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://moriform.github.io/page/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://moriform.github.io/page/about/</guid>
-      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache License 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Links</title>
-      <link>https://moriform.github.io/page/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://moriform.github.io/page/links/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>https://moriform.github.io/page/searches/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://moriform.github.io/page/searches/</guid>
-      <description>search</description>
-    </item>
+    
   </channel>
 </rss>

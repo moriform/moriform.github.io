@@ -1,0 +1,130 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Reaper中分频段处理的方案 | 森月台</title><meta name=keywords content><meta name=description content="使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。
+REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。
+Spliiter Joiner简介
+3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。
+3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。
+Splitter
+我们先用Splitter对于轨道Main进行处理看能够发生什么。
+
+如上图所示，我们将一首歌分成了0200Hz，200Hz2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。
+这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。
+
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。
+点击Track channels，选择6。整个轨道就有了6个通道。
+
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。
+在多个轨道中的处理
+接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：
+分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。
+点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。
+
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4->1/2将中频分离。
+
+高频轨道的设置和中频相似将Audio的输入改为5/6->1/2即可。
+这样就可以实现分频段的音频处理啦。
+在单个轨道中的处理
+基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。
+这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：
+
+很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。
+于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。
+我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。
+低频混响如图
+
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。
+中频和高频的处理方式相似，都是直接设置插件的输入输出路由。
+
+
+最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。
+#reaper #js插件 #音频"><meta name=author content="暄穗"><link rel=canonical href=https://moriform.github.io/post/20221025bandjoint/><link crossorigin=anonymous href=/assets/css/stylesheet.min.7da7716a1f2d0725f74c6ae7f8d6adafc43aabe2b366b65bfbf433448e2a2001.css integrity="sha256-fadxah8tByX3TGrn+Natr8Q6q+KzZrZb+/QzRI4qIAE=" rel="preload stylesheet" as=style><link rel=icon href=https://moriform.github.io/favicon.ico><link rel=apple-touch-icon href=https://moriform.github.io/apple-touch-icon.png><link rel=alternate hreflang=en href=https://moriform.github.io/post/20221025bandjoint/><meta name=twitter:card content="summary"><meta name=twitter:title content="Reaper中分频段处理的方案 | 森月台"><meta name=twitter:description content="使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。
+REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。
+Spliiter Joiner简介
+3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。
+3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。
+Splitter
+我们先用Splitter对于轨道Main进行处理看能够发生什么。
+
+如上图所示，我们将一首歌分成了0200Hz，200Hz2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。
+这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。
+
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。
+点击Track channels，选择6。整个轨道就有了6个通道。
+
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。
+在多个轨道中的处理
+接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：
+分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。
+点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。
+
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4->1/2将中频分离。
+
+高频轨道的设置和中频相似将Audio的输入改为5/6->1/2即可。
+这样就可以实现分频段的音频处理啦。
+在单个轨道中的处理
+基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。
+这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：
+
+很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。
+于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。
+我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。
+低频混响如图
+
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。
+中频和高频的处理方式相似，都是直接设置插件的输入输出路由。
+
+
+最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。
+#reaper #js插件 #音频"><meta property="og:title" content="Reaper中分频段处理的方案 | 森月台"><meta property="og:description" content="使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。
+REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。
+Spliiter Joiner简介
+3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。
+3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。
+Splitter
+我们先用Splitter对于轨道Main进行处理看能够发生什么。
+
+如上图所示，我们将一首歌分成了0200Hz，200Hz2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。
+这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。
+
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。
+点击Track channels，选择6。整个轨道就有了6个通道。
+
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。
+在多个轨道中的处理
+接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：
+分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。
+点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。
+
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4->1/2将中频分离。
+
+高频轨道的设置和中频相似将Audio的输入改为5/6->1/2即可。
+这样就可以实现分频段的音频处理啦。
+在单个轨道中的处理
+基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。
+这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：
+
+很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。
+于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。
+我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。
+低频混响如图
+
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。
+中频和高频的处理方式相似，都是直接设置插件的输入输出路由。
+
+
+最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。
+#reaper #js插件 #音频"><meta property="og:type" content="article"><meta property="og:url" content="https://moriform.github.io/post/20221025bandjoint/"><meta property="og:image" content="https://moriform.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="post"><meta property="article:published_time" content="2022-10-25T19:40:38+00:00"><meta property="article:modified_time" content="2022-10-25T19:40:38+00:00"><meta property="og:site_name" content="森月台"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://moriform.github.io/post/"},{"@type":"ListItem","position":2,"name":"Reaper中分频段处理的方案","item":"https://moriform.github.io/post/20221025bandjoint/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Reaper中分频段处理的方案 | 森月台","name":"Reaper中分频段处理的方案","description":"使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。\nREAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。\nSpliiter Joiner简介 3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。\n3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。\nSplitter 我们先用Splitter对于轨道Main进行处理看能够发生什么。\n如上图所示，我们将一首歌分成了0200Hz，200Hz2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。\n这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。\n可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。\n点击Track channels，选择6。整个轨道就有了6个通道。\n插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。\n在多个轨道中的处理 接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：\n分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。\n点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。\n查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-\u0026gt;1/2将中频分离。\n高频轨道的设置和中频相似将Audio的输入改为5/6-\u0026gt;1/2即可。\n这样就可以实现分频段的音频处理啦。\n在单个轨道中的处理 基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。\n这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：\n很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。\n于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。\n我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。\n低频混响如图 从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。\n中频和高频的处理方式相似，都是直接设置插件的输入输出路由。\n最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。\n#reaper #js插件 #音频\n","keywords":[],"wordCount":"45","inLanguage":"en","datePublished":"2022-10-25T19:40:38Z","dateModified":"2022-10-25T19:40:38Z","author":{"@type":"Person","name":"暄穗"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://moriform.github.io/post/20221025bandjoint/"},"publisher":{"@type":"Organization","name":"森月台","logo":{"@type":"ImageObject","url":"https://moriform.github.io/favicon.ico"}}}</script><script type=text/javascript async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["[[","]]"]],processEscapes:!0,processEnvironments:!0,skipTags:["script","noscript","style","textarea","pre"],TeX:{equationNumbers:{autoNumber:"AMS"},extensions:["AMSmath.js","AMSsymbols.js"]}}}),MathJax.Hub.Queue(function(){var e,t=MathJax.Hub.getAllJax();for(e=0;e<t.length;e+=1)t[e].SourceElement().parentNode.className+=" has-jax"})</script><style>code.has-jax{font:inherit;font-size:100%;background:inherit;border:inherit;color:#515151}</style><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary-bg:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list-page{background:var(--theme)}.list-page:not(.dark)::-webkit-scrollbar-track{background:0 0}.list-page:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript></head><body class="type-post kind-page layout-" id=top><script data-no-instant>function switchTheme(e){switch(e){case"light":document.body.classList.remove("dark");break;case"dark":document.body.classList.add("dark");break;default:window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")}}function isDarkTheme(){return document.body.className.includes("dark")}function getPrefTheme(){return localStorage.getItem("pref-theme")}function setPrefTheme(e){switchTheme(e),localStorage.setItem("pref-theme",e)}const toggleThemeCallbacks={};toggleThemeCallbacks.main=e=>{setPrefTheme(e?"light":"dark")},window.addEventListener("toggle-theme",function(){const e=isDarkTheme();for(const t in toggleThemeCallbacks)toggleThemeCallbacks[t](e)});function toggleThemeListener(){window.dispatchEvent(new CustomEvent("toggle-theme"))}</script><script>(function(){const t="auto",e=getPrefTheme(),n=e||t;switchTheme(n)})()</script><header class=header><nav class=nav><div class=logo><a href=https://moriform.github.io/ accesskey=h title="森月台 (Alt + H)">森月台</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)">
+<svg id="moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+<svg id="sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://moriform.github.io/page/about/ title=About>About</a></li><li><a href=https://moriform.github.io/page/archives/ title=Archives>Archives</a></li><li><a href=https://moriform.github.io/page/links/ title=Links>Links</a></li><li><a href=https://moriform.github.io/categories/ title=categories>categories</a></li><li><a href=https://moriform.github.io/tags/ title=tags>tags</a></li><li><a href=https://example.org/ title=example.org>example.org</a></li></ul></nav></header><main class="main post"><article class=post-single><header class=post-header><h1 class=post-title>Reaper中分频段处理的方案</h1><div class=post-meta><span class=meta-item><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select:text"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select:text"/><line x1="16" y1="2" x2="16" y2="6" style="user-select:text"/><line x1="8" y1="2" x2="8" y2="6" style="user-select:text"/><line x1="3" y1="10" x2="21" y2="10" style="user-select:text"/></svg>
+<span>25 October, 2022</span></span></div></header><div class="toc side right"><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#spliiter-joiner%e7%ae%80%e4%bb%8b aria-label="Spliiter Joiner简介">Spliiter Joiner简介</a></li><li><a href=#splitter aria-label=Splitter>Splitter</a></li><li><a href=#%e5%9c%a8%e5%a4%9a%e4%b8%aa%e8%bd%a8%e9%81%93%e4%b8%ad%e7%9a%84%e5%a4%84%e7%90%86 aria-label=在多个轨道中的处理>在多个轨道中的处理</a></li><li><a href=#%e5%9c%a8%e5%8d%95%e4%b8%aa%e8%bd%a8%e9%81%93%e4%b8%ad%e7%9a%84%e5%a4%84%e7%90%86 aria-label=在单个轨道中的处理>在单个轨道中的处理</a></li></ul></div></details></div><div class=post-content><p>使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。</p><p>REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。</p><h3 id=spliiter-joiner简介>Spliiter Joiner简介<a hidden class=anchor aria-hidden=true href=#spliiter-joiner简介>¶</a></h3><p>3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。</p><p>3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。</p><h3 id=splitter>Splitter<a hidden class=anchor aria-hidden=true href=#splitter>¶</a></h3><p>我们先用Splitter对于轨道Main进行处理看能够发生什么。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_11-16-24.webp type alt></p><p>如上图所示，我们将一首歌分成了0<del>200Hz，200Hz</del>2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。</p><p>这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_11-23-59.webp type alt>
+可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。</p><p>点击Track channels，选择6。整个轨道就有了6个通道。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_11-28-36.webp type alt>
+插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。</p><h3 id=在多个轨道中的处理>在多个轨道中的处理<a hidden class=anchor aria-hidden=true href=#在多个轨道中的处理>¶</a></h3><p>接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：</p><p>分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。</p><p>点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_14-59-49.webp type alt>
+查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4->1/2将中频分离。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_15-02-20.webp type alt></p><p>高频轨道的设置和中频相似将Audio的输入改为5/6->1/2即可。</p><p>这样就可以实现分频段的音频处理啦。</p><h3 id=在单个轨道中的处理>在单个轨道中的处理<a hidden class=anchor aria-hidden=true href=#在单个轨道中的处理>¶</a></h3><p>基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。</p><p>这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_17-55-38.webp type alt></p><p>很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。</p><p>于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。</p><p>我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。</p><p>低频混响如图
+<img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_18-09-47.webp type alt>
+从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。</p><p>中频和高频的处理方式相似，都是直接设置插件的输入输出路由。</p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_18-13-00.webp type alt></p><p><img loading=lazy src=/post/20221025bandjoint/Snipaste_2022-10-25_18-13-20.webp type alt></p><p>最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。</p><p>#reaper #js插件 #音频</p></div><footer class=post-footer><nav class=paginav><a class=prev href=https://moriform.github.io/post/20230905cubase/><span class=title><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left" style="user-select:text"><line x1="19" y1="12" x2="5" y2="12" style="user-select:text"/><polyline points="12 19 5 12 12 5" style="user-select:text"/></svg>&nbsp;Prev Page</span><br><span>Cubase水平滚动反向的解决方法</span>
+</a><a class=next href=https://moriform.github.io/post/20221024midside1/><span class=title>Next Page&nbsp;<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right" style="user-select:text"><line x1="5" y1="12" x2="19" y2="12" style="user-select:text"/><polyline points="12 5 19 12 12 19" style="user-select:text"/></svg></span><br><span>关于中置通道的初认识</span></a></nav></footer><div class=comments-separator></div><script src=https://giscus.app/client.js data-repo=moriform/moriform.github.io data-repo-id=R_kgDOHEppWw data-category=Announcements data-category-id=DIC_kwDOHEppW84C0pyw data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=bottom data-theme=preferred_color_scheme data-lang=zh-CN crossorigin=anonymous async></script></article></main><footer class=footer><span>Moriform</span><span style=display:inline-block;margin-left:1em>
+<a href=https://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA</a>
+</span><span style=display:inline-block;margin-left:1em>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/reorx/hugo-PaperModX/ rel=noopener target=_blank>PaperModX</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>(function(){const t=""=="1";if(t)return;let e=document.getElementById("theme-toggle");e.removeEventListener("click",toggleThemeListener),e.addEventListener("click",toggleThemeListener)})()</script><script>(function(){let e=document.getElementById("menu");e&&(e.scrollLeft=localStorage.getItem("menu-scroll-position"),e.onscroll=function(){localStorage.setItem("menu-scroll-position",e.scrollLeft)});const t=""=="1",n=""=="1";if(window.matchMedia("(prefers-reduced-motion: reduce)").matches||t||n)return;document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})})()</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>if(window.scrollListeners)for(const e of scrollListeners)window.removeEventListener("scroll",e);window.scrollListeners=[]</script><script src=/js/medium-zoom.min.js data-no-instant></script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerText="copy";function s(){t.innerText="copied!",setTimeout(()=>{t.innerText="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script><script>(function(){const a="1"=="1";if(!a)return;if(!document.querySelector(".toc")){console.log("no toc found, ignore toc scroll");return}const r=window.scrollListeners,t=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id]"),n="active";let e=t[0];o(e).classList.add(n);const c=()=>{const s=[];for(const e of t)if(l(e)<5)s.push(e);else break;s.length>0?newActiveHeading=s[s.length-1]:newActiveHeading=t[0],e!=newActiveHeading&&(o(e).classList.remove(n),e=newActiveHeading,o(e).classList.add(n))};let s=null;const i=()=>{s!==null&&clearTimeout(s),s=setTimeout(c,50)};window.addEventListener("scroll",i,!1),r.push(i);function o(e){const t=encodeURI(e.getAttribute("id")).toLowerCase();return document.querySelector(`.toc ul li a[href="#${t}"]`)}function l(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect();return t.top}})()</script></body></html>
