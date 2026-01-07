@@ -2,184 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://moriform.github.io/post/20251130weekly/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/weekly/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2025-11-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/max/</loc>
-    <lastmod>2025-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20251028max/</loc>
-    <lastmod>2025-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E9%9F%B3%E9%A2%91/</loc>
-    <lastmod>2025-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20251026weekly/</loc>
-    <lastmod>2025-10-26T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/cubase/</loc>
-    <lastmod>2023-09-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20230905cubase/</loc>
-    <lastmod>2023-09-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/x-mouse/</loc>
-    <lastmod>2023-09-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2023-09-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20221028needygirl/</loc>
-    <lastmod>2022-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E4%B8%BB%E6%92%AD%E5%A5%B3%E5%AD%A9%E9%87%8D%E5%BA%A6%E4%BE%9D%E8%B5%96/</loc>
-    <lastmod>2022-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2022-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E8%A7%82%E5%90%8E/</loc>
-    <lastmod>2022-10-28T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/eq/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/joiner/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/reaper/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20221025bandjoint/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/splitter/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E5%88%86%E9%A2%91/</loc>
-    <lastmod>2022-10-25T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/midside/</loc>
-    <lastmod>2022-10-24T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93/</loc>
-    <lastmod>2022-10-24T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20221024midside1/</loc>
-    <lastmod>2022-10-24T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/domino/</loc>
-    <lastmod>2022-04-03T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/loopmidi/</loc>
-    <lastmod>2022-04-03T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20220403%E5%9C%A8domino%E4%B8%AD%E5%8A%A0%E8%BD%BD%E6%96%B0%E9%9F%B3%E6%BA%90%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2022-04-03T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E4%B8%89%E8%89%B2%E7%BB%98%E6%81%8B/</loc>
-    <lastmod>2022-01-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20220130sjsehvlm/</loc>
-    <lastmod>2022-01-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2022-01-30T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20211105why2demension/</loc>
-    <lastmod>2021-11-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E8%A7%86%E9%A2%91/</loc>
-    <lastmod>2021-11-05T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20211028comiday/</loc>
-    <lastmod>2021-10-28T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/comiday/</loc>
-    <lastmod>2021-10-28T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E6%BC%AB%E5%B1%95/</loc>
-    <lastmod>2021-10-28T21:08:30+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20211021aviutlplugin/</loc>
-    <lastmod>2021-10-21T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E6%97%A0%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2021-10-21T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
-    <lastmod>2021-10-21T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/aviutl/</loc>
-    <lastmod>2021-10-20T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20211020aviutlpluginexport/</loc>
-    <lastmod>2021-10-20T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20211006aviutlinstall/</loc>
-    <lastmod>2021-10-06T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/solresol/</loc>
-    <lastmod>2019-12-03T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20191203solresol_grammar3/</loc>
-    <lastmod>2019-12-03T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E7%B4%A2%E6%9D%A5%E7%B4%A2/</loc>
-    <lastmod>2019-12-03T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2019-12-03T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2019-12-03T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20191202solresol_grammar2/</loc>
-    <lastmod>2019-12-02T21:02:39+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20191201solresol_grammar1/</loc>
-    <lastmod>2019-12-01T19:40:38+00:00</lastmod>
-  </url><url>
     <loc>https://moriform.github.io/page/about/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/page/</loc>
     <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://moriform.github.io/categories/%E5%88%9B%E4%BD%9C/</loc>
-    <lastmod>2018-10-18T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/</loc>
-    <lastmod>2018-10-18T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/20181018railwaypetrora/</loc>
-    <lastmod>2018-10-18T19:40:38+00:00</lastmod>
+    <loc>https://moriform.github.io/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/archives/</loc>
+  </url><url>
+    <loc>https://moriform.github.io/categories/</loc>
   </url><url>
     <loc>https://moriform.github.io/page/links/</loc>
   </url><url>
     <loc>https://moriform.github.io/page/searches/</loc>
   </url><url>
     <loc>https://moriform.github.io/search/</loc>
+  </url><url>
+    <loc>https://moriform.github.io/tags/</loc>
   </url><url>
     <loc>https://moriform.github.io/categories/test/</loc>
   </url>
