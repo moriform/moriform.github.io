@@ -172,7 +172,7 @@
 <p><img loading="lazy" src="/post/20211006aviutlinstall/Snipaste_2021-10-05_21-41-39.webp" type="" alt=""  />
 其他的选项也可以以后再看。</p>
 <h3 id="入力优先度设定">入力优先度设定</h3>
-<p></p>
+<p><img loading="lazy" src="/post/20211006aviutlinstall/Snipaste_2021-10-05_21-24-16.webp" type="" alt=""  /></p>
 <p><img loading="lazy" src="/post/20211006aviutlinstall/Snipaste_2021-10-05_21-25-48.webp" type="" alt=""  />
 AviUtl的入力优先设定之后加入的文件会按照优先度的顺序来读取，如果上一个插件无法读取，则试用下一个插件。</p>
 <p>这里主要的是DirectShow File Reader放在L-SMASH的后面。根据说明记载使用L-SMASH比起DS“安定していて動作も軽快なので”，所以优先使用L-SMASH，在L-SMASH出问题了之后备用DS导入素材。</p>
