@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Moriform</copyright>
-    <lastBuildDate>Sun, 30 Nov 2025 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog</title>
+      <link>https://moriform.github.io/post/index-1-1-1/</link>
+      <pubDate>Sun, 04 Jan 2026 19:40:38 +0000</pubDate>
+      
+      <guid>https://moriform.github.io/post/index-1-1-1/</guid>
+      <description>&lt;p&gt;This is my first blog on hugo!&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is my first blog on hugo!</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>2025.11.30</title>
       <link>https://moriform.github.io/post/20251130weekly/</link>
@@ -303,93 +314,6 @@
 <p>这样操作后在Cubase中启动Vocaloid和Melonyne之类也能够正常水平拖动了。</p>
 <h3 id="后话">后话</h3>
 <p>查文件折腾了这么多，10多年来一直有人提这个问题，但是从官方的回信来看实际上他们也不想深入解决这个问题。作为正版受害者也只能看着官方这态度憋着气自己找方法解决，每次写术前多开一个应用也挺膈应人的。毕竟现在能用的DAW太多了不用惯着这群官方，能用其他的来写就尽量往其他DAW搬了。反正在官方解决这个问题前是不会再给Steinberg多花一分钱了。</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>Reaper中分频段处理的方案</title>
-      <link>https://moriform.github.io/post/20221025bandjoint/</link>
-      <pubDate>Tue, 25 Oct 2022 19:40:38 +0000</pubDate>
-      
-      <guid>https://moriform.github.io/post/20221025bandjoint/</guid>
-      <description>&lt;p&gt;使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。&lt;/p&gt;
-&lt;p&gt;REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。&lt;/p&gt;
-&lt;h3 id=&#34;spliiter-joiner简介&#34;&gt;Spliiter Joiner简介&lt;/h3&gt;
-&lt;p&gt;3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。&lt;/p&gt;
-&lt;p&gt;3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。&lt;/p&gt;
-&lt;h3 id=&#34;splitter&#34;&gt;Splitter&lt;/h3&gt;
-&lt;p&gt;我们先用Splitter对于轨道Main进行处理看能够发生什么。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-16-24.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;如上图所示，我们将一首歌分成了0&lt;del&gt;200Hz，200Hz&lt;/del&gt;2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。&lt;/p&gt;
-&lt;p&gt;这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-23-59.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。&lt;/p&gt;
-&lt;p&gt;点击Track channels，选择6。整个轨道就有了6个通道。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_11-28-36.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。&lt;/p&gt;
-&lt;h3 id=&#34;在多个轨道中的处理&#34;&gt;在多个轨道中的处理&lt;/h3&gt;
-&lt;p&gt;接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：&lt;/p&gt;
-&lt;p&gt;分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。&lt;/p&gt;
-&lt;p&gt;点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_14-59-49.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&amp;gt;1/2将中频分离。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_15-02-20.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;高频轨道的设置和中频相似将Audio的输入改为5/6-&amp;gt;1/2即可。&lt;/p&gt;
-&lt;p&gt;这样就可以实现分频段的音频处理啦。&lt;/p&gt;
-&lt;h3 id=&#34;在单个轨道中的处理&#34;&gt;在单个轨道中的处理&lt;/h3&gt;
-&lt;p&gt;基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。&lt;/p&gt;
-&lt;p&gt;这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_17-55-38.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。&lt;/p&gt;
-&lt;p&gt;于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。&lt;/p&gt;
-&lt;p&gt;我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。&lt;/p&gt;
-&lt;p&gt;低频混响如图
-&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-09-47.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;
-从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。&lt;/p&gt;
-&lt;p&gt;中频和高频的处理方式相似，都是直接设置插件的输入输出路由。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-13-00.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://moriform.github.io/post/20221025bandjoint/Snipaste_2022-10-25_18-13-20.webp&#34; type=&#34;&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
-&lt;p&gt;最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。&lt;/p&gt;
-&lt;p&gt;#reaper #js插件 #音频&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。</p>
-<p>REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。</p>
-<h3 id="spliiter-joiner简介">Spliiter Joiner简介</h3>
-<p>3 Band Splitter的作用是将当下轨道的音频通过分低中高频进行分通道处理。</p>
-<p>3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。</p>
-<h3 id="splitter">Splitter</h3>
-<p>我们先用Splitter对于轨道Main进行处理看能够发生什么。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-16-24.webp" type="" alt=""  /></p>
-<p>如上图所示，我们将一首歌分成了0<del>200Hz，200Hz</del>2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。</p>
-<p>这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-23-59.webp" type="" alt=""  />
-可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。</p>
-<p>点击Track channels，选择6。整个轨道就有了6个通道。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_11-28-36.webp" type="" alt=""  />
-插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。</p>
-<h3 id="在多个轨道中的处理">在多个轨道中的处理</h3>
-<p>接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：</p>
-<p>分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。</p>
-<p>点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_14-59-49.webp" type="" alt=""  />
-查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&gt;1/2将中频分离。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_15-02-20.webp" type="" alt=""  /></p>
-<p>高频轨道的设置和中频相似将Audio的输入改为5/6-&gt;1/2即可。</p>
-<p>这样就可以实现分频段的音频处理啦。</p>
-<h3 id="在单个轨道中的处理">在单个轨道中的处理</h3>
-<p>基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。</p>
-<p>这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_17-55-38.webp" type="" alt=""  /></p>
-<p>很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。</p>
-<p>于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。</p>
-<p>我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。</p>
-<p>低频混响如图
-<img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-09-47.webp" type="" alt=""  />
-从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。</p>
-<p>中频和高频的处理方式相似，都是直接设置插件的输入输出路由。</p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-13-00.webp" type="" alt=""  /></p>
-<p><img loading="lazy" src="/post/20221025bandjoint/Snipaste_2022-10-25_18-13-20.webp" type="" alt=""  /></p>
-<p>最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。</p>
-<p>#reaper #js插件 #音频</p>
 ]]></content:encoded>
     </item>
     
