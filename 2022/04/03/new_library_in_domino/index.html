@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="注意 本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。\n前言 Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。\n">
+<title>在Domino中加载新音源的方法</title>
+
+<link rel='canonical' href='https://moriform.github.io/2022/04/03/new_library_in_domino/'>
+
+<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="在Domino中加载新音源的方法">
+<meta property='og:description' content="注意 本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。\n前言 Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。\n">
+<meta property='og:url' content='https://moriform.github.io/2022/04/03/new_library_in_domino/'>
+<meta property='og:site_name' content='森月台'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='reaper' /><meta property='article:tag' content='loopmidi' /><meta property='article:tag' content='音频' /><meta property='article:tag' content='domino' /><meta property='article:published_time' content='2022-04-03T21:08:30&#43;00:00'/><meta property='article:modified_time' content='2022-04-03T21:08:30&#43;00:00'/>
+<meta name="twitter:title" content="在Domino中加载新音源的方法">
+<meta name="twitter:description" content="注意 本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。\n前言 Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。\n">
+    <link rel="shortcut icon" href="/favicon" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">森月台</a></h1>
+            <h2 class="site-description">森林深处无人经过的站点</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/diary/index.html' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+                
+                <span>日记</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#注意">注意</a></li>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#准备工作">准备工作</a></li>
+    <li><a href="#方法一用domino在reaper中编辑midi">方法一：用Domino在Reaper中编辑midi</a>
+      <ol>
+        <li><a href="#具体操作">具体操作</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
+                知识
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/2022/04/03/new_library_in_domino/">在Domino中加载新音源的方法</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2022-04-03T21:08:30Z'>Apr 03, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 6 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="注意">注意
+</h2><p>本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。</p>
+<h2 id="前言">前言
+</h2><p>Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。</p>
+<p><img src="/2022/04/03/new_library_in_domino/index-1767622087706.webp"
+	width="1479"
+	height="798"
+	srcset="/2022/04/03/new_library_in_domino/index-1767622087706_hu_ca4de31d71d6be9d.webp 480w, /2022/04/03/new_library_in_domino/index-1767622087706_hu_dae6fbce22b464fb.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="185"
+		data-flex-basis="444px"
+	
+></p>
+<p>但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。</p>
+<p><img src="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49.webp"
+	width="646"
+	height="511"
+	srcset="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49_hu_6a83f611c344bff5.webp 480w, /2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49_hu_85b90c50c3c111aa.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="303px"
+	
+></p>
+<p>尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。</p>
+<h2 id="准备工作">准备工作
+</h2><p>对于本文的实践来说需要准备的工具可以再文中给出的超链接中直接下载。</p>
+<ul>
+<li>
+<p>首先是本文的主角<a class="link" href="https://takabosoft.com/domino"  target="_blank" rel="noopener"
+    >Domino</a>,请怀着对开发者的感激之情将它下载下来。</p>
+</li>
+<li>
+<p>然后是能够在中文环境下运行编码为日语环境软件的<a class="link" href="https://github.com/xupefei/Locale-Emulator/releases"  target="_blank" rel="noopener"
+    >Locale Emulator</a>，一些只看CG不管剧情的游戏中的乱码也可以用这个程序来解决。</p>
+</li>
+<li>
+<p><a class="link" href="https://www.reaper.fm/download-old.php?ver=0x"  target="_blank" rel="noopener"
+    >Reaper0.999</a>,在方法一中会使用到</p>
+</li>
+<li>
+<p><a class="link" href="http://www.midiox.com/index.htm?http://www.midiox.com/myoke.htm"  target="_blank" rel="noopener"
+    >YOKE</a>在方法一中会使用到</p>
+</li>
+</ul>
+<h2 id="方法一用domino在reaper中编辑midi">方法一：用Domino在Reaper中编辑midi
+</h2><p>Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&quot;试用&quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&hellip;&hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。</p>
+<p>回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。</p>
+<p>Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）</p>
+<p><img src="/2022/04/03/new_library_in_domino/1.webp"
+	width="1920"
+	height="1080"
+	srcset="/2022/04/03/new_library_in_domino/1_hu_d5b463f19458399b.webp 480w, /2022/04/03/new_library_in_domino/1_hu_4155713495333ac2.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p>当然32位VST插件请自行获取，正版免费的互联网上挺多的。</p>
+<h3 id="具体操作">具体操作
+</h3><p>首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。</p>
+<p><img src="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1.webp"
+	width="690"
+	height="410"
+	srcset="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1_hu_208fc880b4b14538.webp 480w, /2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1_hu_aab0953401940f81.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="168"
+		data-flex-basis="403px"
+	
+></p>
+<p>接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino</p>
+<p>最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，</p>
+<p><img src="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp"
+	width="1010"
+	height="761"
+	srcset="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04_hu_b11721c73d3e181c.webp 480w, /2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04_hu_5155e8df6305cf23.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="132"
+		data-flex-basis="318px"
+	
+></p>
+<p>右键这个物件选择&quot;Open items in editor&quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&quot;Open items in default editor&quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。</p>
+<p><img src="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19.webp"
+	width="448"
+	height="199"
+	srcset="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19_hu_c210e9e64f0e204d.webp 480w, /2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19_hu_66d7b24d02d38c54.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="225"
+		data-flex-basis="540px"
+	
+></p>
+<p>我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。</p>
+<p><img src="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp"
+	width="1010"
+	height="761"
+	srcset="/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39_hu_64308354147f2bf7.webp 480w, /2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39_hu_f47aaae5f05eed1f.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="132"
+		data-flex-basis="318px"
+	
+></p>
+<p>按下轨道上面的fx按钮会出来选框，里面是你的电脑里面刚才扫描的VST插件，选择一个乐器插件加载完成之后就可以播放了。</p>
+<p>以上的操作很基础但是过于反人类，因为在写入MIDI音符的时候听不到任何东西，所以我们调整一下步骤并加入YOKE的使用。</p>
+<p>轨道上面的表示录音的红色按钮点亮，将喇叭图标调整到有一个A字母的自动监听状态，右击喇叭，在选单中最下面有一个MIDI INPUT，选择一个（建议ALL）。然后在Fx里面选择一个乐器。在有乐器并且开着录音和自动监听的情况下，我们按照原来的方法打开Domino，在里面输入一个音符&hellip;&hellip;然后就会惊讶地发现打入音符的一瞬间DAW发出了声响正是刚才我们选择的那个乐器，在Domino里面播放的时候也能够发出声音，在reaper的对应轨道上面加入phase之类的音频插件后使用Domino也能够发出处理后应该有的声音。注意在录制一条轨道的时候其他的轨道应该关闭录制否则会出现失真的情况。</p>
+<p>于是使用Domino在Reaper中进行midi编辑的基本设置就完成了，接下来请享受编曲带来的快乐(?)。</p>
+<p>PS1:发现editor有一个Ctrl+ALT+E的快捷键很想用？那就在首选项External Editor中编辑以下刚才加入的Domino吧，只需要在extension中输入mid，就变成midi专用editor，可以直接用快捷键来调用了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/reaper/">Reaper</a>
+        
+            <a href="/tags/loopmidi/">Loopmidi</a>
+        
+            <a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a>
+        
+            <a href="/tags/domino/">Domino</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Launchpad Drum Pad在Reaper中的映射设置</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reaper中分频段处理的方案</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">中置通道的初认识</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cubase水平滚动反向的解决方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于新版本Freshrss和Rsshub同时使用时出现的问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="moriform/moriform.github.io"
+    data-repo-id="R_kgDOHEppWw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHEppW84C0pyw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 暄穗
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

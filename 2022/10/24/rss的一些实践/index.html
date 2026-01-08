@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="可以跳过的碎碎念 你的Bilibili首页，应该是https://search.bilibili.com\n我是比较晚接触互联网的那一批。08年联网11年微博12年B站。在社交平台的一些交流中能够明显感觉到表面互联网（说白了就是大平台，没有限制人人都知道的都能无条件使用的平台）越来越不是真人能呆的地方。\n">
+<title>RSS的实践</title>
+
+<link rel='canonical' href='https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/'>
+
+<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="RSS的实践">
+<meta property='og:description' content="可以跳过的碎碎念 你的Bilibili首页，应该是https://search.bilibili.com\n我是比较晚接触互联网的那一批。08年联网11年微博12年B站。在社交平台的一些交流中能够明显感觉到表面互联网（说白了就是大平台，没有限制人人都知道的都能无条件使用的平台）越来越不是真人能呆的地方。\n">
+<meta property='og:url' content='https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/'>
+<meta property='og:site_name' content='森月台'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rss' /><meta property='article:tag' content='互联网' /><meta property='article:published_time' content='2022-10-24T19:40:38&#43;00:00'/><meta property='article:modified_time' content='2022-10-24T19:40:38&#43;00:00'/>
+<meta name="twitter:title" content="RSS的实践">
+<meta name="twitter:description" content="可以跳过的碎碎念 你的Bilibili首页，应该是https://search.bilibili.com\n我是比较晚接触互联网的那一批。08年联网11年微博12年B站。在社交平台的一些交流中能够明显感觉到表面互联网（说白了就是大平台，没有限制人人都知道的都能无条件使用的平台）越来越不是真人能呆的地方。\n">
+    <link rel="shortcut icon" href="/favicon" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">森月台</a></h1>
+            <h2 class="site-description">森林深处无人经过的站点</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/diary/index.html' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+                
+                <span>日记</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#可以跳过的碎碎念">可以跳过的碎碎念</a></li>
+    <li><a href="#rss系统">RSS系统</a>
+      <ol>
+        <li><a href="#rsshub">RSShub</a></li>
+        <li><a href="#rsshub-radar">RSSHub Radar</a></li>
+      </ol>
+    </li>
+    <li><a href="#实践">实践</a>
+      <ol>
+        <li><a href="#epicbundle">Epicbundle</a></li>
+        <li><a href="#weibo">Weibo</a></li>
+        <li><a href="#youtube">Youtube</a></li>
+        <li><a href="#bilibili">Bilibili</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
+                知识
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/">RSS的实践</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2022-10-24T19:40:38Z'>Oct 24, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 7 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="可以跳过的碎碎念">可以跳过的碎碎念
+</h2><blockquote>
+<p>你的Bilibili首页，应该是https://search.bilibili.com</p>
+</blockquote>
+<p>我是比较晚接触互联网的那一批。08年联网11年微博12年B站。在社交平台的一些交流中能够明显感觉到表面互联网（说白了就是大平台，没有限制人人都知道的都能无条件使用的平台）越来越不是真人能呆的地方。</p>
+<p>昨天决定重新看看中V（中文术力口而不是中文皮套人），除了发出看板娘更加圆润的感慨，还顺便看了看B站更新了几年的非官方周刊。发现现在的30名里面基本都是营销号和解说，也愈发明白了B站绝不可能倒闭这一事实。</p>
+<p>记得2015年左右游戏区发生这么一回事，区榜首是一个介绍扫雷游戏规则的视频，语速偏快，只有不到一分钟。评论区很多都在说这样会带坏游戏区做视频的风气。时间转回现在，看这种视频打发时间的人更多了，这样的视频的流量更多了，于是这样的视频就多了。我没有资格说别人做视频的，只能尽量避免看到这种视频。</p>
+<p>细数一下有多少时间花在了本来应该查找资料结果去看其他的娱乐去了？放在没有这些介质的年代我们的社交网络消遣其实和上一辈晚饭后去逛公园性质是一样的，不一样的是他们逛完公园就回家了，而我们一直在公园呆着，就和无家去的流浪汉一样。</p>
+<p>所以我的B站首页从一开始的bilibili.tv变成t.bilibili.com,在使用RSS之后成为了search.bilibili.com。除了我真正输入的查询，其他的都不是当下所需要的。</p>
+<p>微博很早之前就昏天黑地，各种假消息频出。看他们有各种消息传播链，看着是人不是人都在里面搅混水，这样凌晨情绪到了最低谷，思考这样的平台的意义。距离我千里之外的人在我还没有完成当下最重要的事的时候对我而言没有任何意义却占据了我整个手机屏幕，而就是这些东西成为了流量吸取了大量了经济，实现了货币的贬值。</p>
+<p>于是就在这种情况下我选择了RSS订阅资讯。我关心的除了宇宙爆炸和学术震荡这样的大事，其他的就只有我的自身和我的周边了。</p>
+<p>关于我对于当下信息的质量多么失望的事我能不重复写个一天一夜，上面很显然是我满是情感的偏题，现在说一下我的RSS系统。</p>
+<p><strong>以下的阅读需要你能够有酷比的上网姿势</strong></p>
+<h2 id="rss系统">RSS系统
+</h2><p>我的RSS系统分成三个硬件。Iphone作为资讯订阅了一些微博用户作为时事和游戏折扣的消息订阅，订阅了一些推特上的单图漫画家和推特“Aviutlスクリプト”关键词。使用的是Reeder 5，这个阅读器最大的特点是自己定义收藏tag可以把社会消息和情头分开。</p>
+<p>Ipad因为不能升级IOS15所以用的是netnewswire,也是个不错的IOS端RSS阅读器，用来订阅一些技术博客等长文。</p>
+<p>PC端的是Fluent Reader，用来替代bilibili和Youtube的关注，简单说就是用来听术力口和术人口的。RSS阅读器的这种列表视图其实用来看视频时相当方便的，按左右键就能直接切视频画面。
+<img src="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp"
+	width="1920"
+	height="1080"
+	srcset="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_cdc40e1cf8668a2c.webp 480w, /2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_218f59e96f86ec53.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+>
+用RSS订阅视频需要对于网站本身有一定的了解，比如NICONICO的视频我暂时没有订阅的方法所以我用对应的关键词来搜索B站的搬运视频。Youtube的内嵌视频可以调倍速和高清晰度，B站的内嵌视频不能调倍速，也不能有高清视频。</p>
+<p>所以总结一下，一个RSS系统需要一个RSS阅读器以及RSS订阅源。阅读器有很多大家可以自己去尝试。RSS源首先去看官方是否有自己的RSS订阅源，一般会有一个长这样的标识：</p>
+<p><img src="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp"
+	width="82"
+	height="96"
+	srcset="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51_hu_8da75a969d9d074f.webp 480w, /2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51_hu_148c3b4706fb3d95.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="205px"
+	
+></p>
+<p>如果没有看到试着在博客主页网址后面加上feed或atom来看看有没有像代码一样的东西出来，如果有，那么这个网址就是订阅源了。</p>
+<p>顺便一提，森月台的订阅源是<a class="link" href="https://moriform.com/feed/"  target="_blank" rel="noopener"
+    >森月台</a>或者<a class="link" href="https://moriform.com/feed/atom"  target="_blank" rel="noopener"
+    >森月台</a></p>
+<p>如果一个常见的网站没有官方的订阅源(像B站),那么需要一些第三方的RSS订阅源来支持订阅，比较常见的开箱即用的是RSShub</p>
+<h3 id="rsshub">RSShub
+</h3><p><a class="link" href="https://docs.rsshub.app/"  target="_blank" rel="noopener"
+    >RSSHub</a>是DIYGOD佬发起的一项RSS订阅源补全计划，许多本不存在的RSS源和改良的RSS源都可以在这里找到。细读里面感兴趣的平台的条目就可以试着做出自己想要的RSS源了。</p>
+<h3 id="rsshub-radar">RSSHub Radar
+</h3><p><a class="link" href="https://github.com/DIYgod/RSSHub-Radar"  target="_blank" rel="noopener"
+    >RSSHub-Radar</a>是RSShub的浏览器配套工具，在Chrome里面打开一个网页后这个插件会自动查找当前网页的相关RSS订阅源直接复制就能用，降低了查找RSS源的难度。</p>
+<h2 id="实践">实践
+</h2><p>RSS系统的订阅方式很简单，将订阅源直接放入RSS阅读器就行。现在我们来简单进行一些操作。</p>
+<h3 id="epicbundle">Epicbundle
+</h3><p><a class="link" href="https://www.epicbundle.com/"  target="_blank" rel="noopener"
+    >Epic Bundle</a>是一个慈善包的整合网站，里面有humblebundle，fanatical和indiegala等包包的更新，以前会经常去这几个看新的包包，尤其是fanatical的游戏包发布了跟没发布一样不仔细看都不知道更新了什么游戏包，所以我们直接订阅EpicbundleRSS源。我们直接查看它的首页，有一个RSS Feed，点进去就是一个订阅源，塞入阅读器就可以了。</p>
+<h3 id="weibo">Weibo
+</h3><p>微博上我订阅每日荐游君作为游戏折扣的消息，搜索每日荐游君的主页点进去，此时Radar就已经亮了可以直接复制订阅源。https://rsshub.app/weibo/user/6137455005，可以看见RSS源的网址方式是/平台/项目/UID。按照这个规律一些时候Radar没有反应我们也可以按照此规律做出RSS源。</p>
+<h3 id="youtube">Youtube
+</h3><p>Youtube上的博主主页点进去你可以看见Radar有消息，可以得到Youtube的官方RSS源，但是之前展示的图片可以看见我们要的是内嵌视频的订阅，这个官方订阅没有内嵌视频只是引诱我们进去点广告的。我们要用自定义的RSS源。
+查阅资料后我们看见，Youtube的博主订阅的格式是https://rsshub.app/youtube/channel/UID。按照这样的方式我们制作订阅源。
+比如雪乃イト的网址是https://www.youtube.com/channel/UCeNMaEGAcBG3xrIrtnQXo7g，后面的UC那一串就是该用户的UID，所以订阅源是https://rsshub.app/youtube/channel/UCeNMaEGAcBG3xrIrtnQXo7g。
+再比如REAPER Mania是https://www.youtube.com/c/REAPERMania, /c/后面不是UID而是频道的名字，这个时候我们复制官方的RSS源https://www.youtube.com/feeds/videos.xml?channel_id=UCq297H7Ca98HlB5mVFHGSsQ，后面那一串就是UID，配合原来的模板直接贴上去就能使用。</p>
+<h3 id="bilibili">Bilibili
+</h3><p>一般UP主的订阅方式按照Radar订阅就行了，现在我们要订阅NICO的週刊VOCAL Character &amp; UTAU RANKING，因为没有找到NICO的订阅方式，而且这个节目每一期都有bilibili搬运，所以我们直接用关键词搜索。查阅BILIBILI词条发现确实有这个功能，生成RSS源https://rsshub.app/bilibili/vsearch/周刊VOCAL_Character・UTAU Ranking/pubdate。这个时候发现里面有一个【伪】周刊的标题，看了一下不是我们需要的视频，所以我们使用滤镜把标题的伪给去掉。方法一是Fluent Reader里面有系统自带的过滤功能，方法二是RSS源的文档里面提到了过滤的功能设置使用RSS源https://rsshub.app/bilibili/vsearch/周刊VOCAL_Character・UTAU Ranking/pubdate?filterout_title=伪</p>
+<p>#rss</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/rss/">Rss</a>
+        
+            <a href="/tags/%E4%BA%92%E8%81%94%E7%BD%91/">互联网</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于新版本Freshrss和Rsshub同时使用时出现的问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rsshub在bilibili和weibo的一些基础</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">电脑重装记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Launchpad Drum Pad在Reaper中的映射设置</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2024/06/23/voicemeeterrepair1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">我的电脑找不到Voicemeeter硬件，我该怎么做？</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="moriform/moriform.github.io"
+    data-repo-id="R_kgDOHEppWw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHEppW84C0pyw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 暄穗
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

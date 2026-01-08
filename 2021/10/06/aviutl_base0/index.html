@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间\n">
+<title>关于Aviutl的基本安装说明</title>
+
+<link rel='canonical' href='https://moriform.github.io/2021/10/06/aviutl_base0/'>
+
+<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="关于Aviutl的基本安装说明">
+<meta property='og:description' content="如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间\n">
+<meta property='og:url' content='https://moriform.github.io/2021/10/06/aviutl_base0/'>
+<meta property='og:site_name' content='森月台'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='视频' /><meta property='article:tag' content='aviutl' /><meta property='article:published_time' content='2021-10-06T19:40:38&#43;00:00'/><meta property='article:modified_time' content='2021-10-06T19:40:38&#43;00:00'/>
+<meta name="twitter:title" content="关于Aviutl的基本安装说明">
+<meta name="twitter:description" content="如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间\n">
+    <link rel="shortcut icon" href="/favicon" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">森月台</a></h1>
+            <h2 class="site-description">森林深处无人经过的站点</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/diary/index.html' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+                
+                <span>日记</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#日语">日语</a></li>
+    <li><a href="#高级网术">高级网术</a></li>
+    <li><a href="#开始安装">开始安装</a>
+      <ol>
+        <li><a href="#日语环境">日语环境</a>
+          <ol>
+            <li><a href="#系统变更">系统变更</a></li>
+            <li><a href="#locale-emulator">Locale Emulator</a></li>
+          </ol>
+        </li>
+        <li><a href="#主体安装">主体安装</a>
+          <ol>
+            <li><a href="#aviutl">Aviutl</a></li>
+            <li><a href="#exedit92">exedit92</a></li>
+            <li><a href="#l-smash-works">L-Smash works</a></li>
+            <li><a href="#x264guiex">x264guiEx</a></li>
+            <li><a href="#directshow-file-reader">DirectShow File Reader</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#基本设置">基本设置</a>
+      <ol>
+        <li><a href="#系统设置">系统设置</a></li>
+        <li><a href="#入力优先度设定">入力优先度设定</a></li>
+        <li><a href="#exeditini2021年10月20日">exedit.ini(2021年10月20日)</a></li>
+      </ol>
+    </li>
+    <li><a href="#简单的练手">简单的练手</a></li>
+    <li><a href="#后序">后序</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
+                知识
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/2021/10/06/aviutl_base0/">关于Aviutl的基本安装说明</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2021-10-06T19:40:38Z'>Oct 06, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 11 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><strong>如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间</strong></p>
+<h2 id="前言">前言
+</h2><p>使用Aviutl来编辑视频差不多都快6年了，从以前做V家的PV到现在做VRO视频还是平常剪片子，基本上都没有离开这款软件。</p>
+<p>发展到现在，Aviutl已经成一款比较成熟的视频工作站了（这个概念我是对比着Cubase这种音频工作站自己下的定义）。和adobe家的软件比起来它不吃资源，而且上手曲线前期极为平坦。更重要的是这是一款免费的编辑软件，从Ken神发布它之后就一直有大神在持续更新制作相关的插件(script)。对于这款软件的发展我是完全看好的(实际上单是现在已有的功能就已经能够满足大部分的剪辑需求了)。</p>
+<p>但是现在来看这款软件在国内的学习资源并不多，在叔叔站这款软件在知识区也只有5页，这对于一款软件来说实在太少（当然尽管搬过来的AviUtl制作的PV还是挺多的，可以用这些来学习模仿以及观测Aviutl的上限）。所以决定在这里稍微写一下教程，从Aviutl的安装讲起，到里面的一些有意义的插件。</p>
+<p>我并不是专业的视频制作人，其中所讲的可能也会有错误。制作视频除了工具以外更重要的是思想，关于如何将各个素材进行组合将整个制作流程向前推进的思想。这些我并不会讲，有需求可以去看凯文桑曾经发的视频<a class="link" href="https://www.bilibili.com/video/BV1zs41117zp?from=search&amp;seid=17432377695150750118&amp;spm_id_from=333.337.0.0"  target="_blank" rel="noopener"
+    >教练我想学系列</a>，那也是我梦的开始。</p>
+<h2 id="日语">日语
+</h2><p>虽然在Aviutl里面有各种汉化版英化版，但是我还是推荐使用日文版进行入门。比起各种已经打包好了的软件，我更喜欢从头开始慢慢装，这样我知道里面每一个文件夹究竟是干什么的，每个插件是什么意思。以后的不断拓展也可以由自己完成甚至可以自己写script来满足自己的需要。同时日语版也一定是最快更新的（尤其是19年谁也没有想到时隔六年会把本体更新了）。</p>
+<p>所以这里面的要求是你需要有一定的日语基础，什么样的基础呢？就是要有日语的汉字向中文汉字翻译的能力，以及片假名的阅读能力，然后平假名能rua过去就rua过去实在不行再查字典的水平。比如<strong>拡張編集</strong>你要反应过来叫做<strong>扩张编辑</strong>，<strong>設定</strong>要反应过来叫<strong>设定</strong>，<strong>サイズ</strong>你要熟练把它读成赛子然后反应过来是<strong>size</strong>的意思，<strong>ファイル</strong>读成发一了然后反应过来是<strong>file</strong>的意思。<del>现在你已经基本上掌握日语了，让我们一起来翻译这篇《<strong>歌声の合成における応用技術</strong>》吧</del></p>
+<h2 id="高级网术">高级网术
+</h2><p>很遗憾在这个教程里面这个是必须的，里面存在一些需要高级网术才能够继续的安装环境（x264），也有一些只能通过高级网术观察的网站。这个是自身的能力，我并不会教授怎么使用。</p>
+<h2 id="开始安装">开始安装
+</h2><h3 id="日语环境">日语环境
+</h3><p>因为日语电脑和中文电脑的编码不同，如果你的windows是中文的话，那么使用日文软件有一定概率是会乱码的，就想你玩只看CG不管剧情的日语游戏一样。这个时候解决办法有两个：</p>
+<h4 id="系统变更">系统变更
+</h4><p>直接将电脑转换成日语环境。在<strong>设置</strong>里面的<strong>时间和语言</strong>里面进行设置。<strong>语言</strong>下面的超链接里面有一个<strong>管理语言设置</strong>，点进去出现了一个<strong>区域</strong>的窗口，选择窗口页面上方的<strong>管理</strong>，在<strong>非Unicode程序的语言</strong>里面找到**日语(日本)**然后重启就行了。</p>
+<p>理论上来说毫无破绽但是考虑到你可能会用到其他的中文软件，这样的话又要重新在里面切换重启。所以是否这样做请自行决定。顺便一说我的电脑里面因为经常要用Cevio和Domino而且写论文都在leafover上面所以是日语环境，暂时没有遇到乱码的情况（压缩包乱码之类的请用360压缩选择语言）。</p>
+<h4 id="locale-emulator">Locale Emulator
+</h4><p>第二种办法是使用<a class="link" href="https://github.com/xupefei/Locale-Emulator/releases"  target="_blank" rel="noopener"
+    >Locale emulator</a>,相当于在中文环境的电脑里面强制让软件使用日语环境来跑。请点进链接选择一个稳定的版本的zip文件进行下载。解压缩之后选中里面的LEInstaller.exe一键安装。</p>
+<p>安装结束后您右键点击软件之后出现的菜单中多了一个Locale Emulator的黄色L图标，按您自己的情况选择第一个或者第二个来运行软件即可。</p>
+<h3 id="主体安装">主体安装
+</h3><h4 id="aviutl">Aviutl
+</h4><p>到<a class="link" href="http://spring-fragrance.mints.ne.jp/aviutl/"  target="_blank" rel="noopener"
+    >AviUtl的部屋</a>里面进行安装，这个是Ken的发布压面，同时里面还会有其他资源和相关链接。</p>
+<p>首先是AviUtl的下载，选择上面的稳定版本(2021年10月5日，此时用的是19年10月更新的1.10版本)。</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32.webp"
+	width="626"
+	height="483"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32_hu_b3098529aca91ad3.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32_hu_8178e33c5da87a91.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="129"
+		data-flex-basis="311px"
+	
+></p>
+<p>此时打开AviUtl，会发现这几乎只是一个空壳，什么也没法做。</p>
+<h4 id="exedit92">exedit92
+</h4><p>回到部屋，对<strong>拡張編集Plugin</strong>进行下载。选择上面的稳定版本(2021年10月5日，此时用的是13年7月更新的0.92版本)。注意如果你的片假名过关的话你会发现下面有一个test版本的0.93，如果没有十足的把握的话不要下载这个版本，就我而言因为一直使用的PSDTOOL明确说了0.93里面有Bug所以也不敢用。（当然如果你看着片文章的时候0.93已经放在0.92的上面了，请直接下载上面版本号最高的就行了）。</p>
+<p>解压缩之后直接放到刚才解压缩的AvuUtl110文件夹里面。此时你的文件夹大概长这样</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56.webp"
+	width="774"
+	height="632"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56_hu_24f7f214067bc3de.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56_hu_d0fdd3d30a92a828.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="122"
+		data-flex-basis="293px"
+	
+></p>
+<p>(可能你的文件夹里面没有选中的东西比我的要少，这是因为刚才鼓捣了一会儿本体自动写了一些文件出来)</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49.webp"
+	width="280"
+	height="441"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49_hu_7aa8d62a8b8d28d3.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49_hu_29c4d7600b0ac131.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="63"
+		data-flex-basis="152px"
+	
+></p>
+<p>再次打开软件本体，<strong>设定</strong>里面选择<strong>扩张编辑的设定</strong>然后就出现了一般视频编辑软件有的时间轴了。一般我们的时间大部分都用在在时间轴上面摆放物件。</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39.webp"
+	width="701"
+	height="602"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39_hu_cc42029b7ccb661e.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39_hu_f652d85652c61360.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="116"
+		data-flex-basis="279px"
+	
+></p>
+<p>此时我们已经可以在上面摆放各种物件了，实时在上面摆放一些test文件，或者摆放一个图形(右键点击时间轴选择第一个media object追加)。但是这个时候我们发现我们没有办法加入一般的动画文件画像文件和音频文件。再加入的时候我们发现此时的Aviutl只认识这些文件格式。
+<img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51.webp"
+	width="295"
+	height="62"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51_hu_e7f6067ecccf7110.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51_hu_98e114f835d003e3.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="475"
+		data-flex-basis="1141px"
+	
+></p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19.webp"
+	width="190"
+	height="25"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19_hu_9458c8fc0744ba88.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19_hu_6baf411bdc2eca.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="760"
+		data-flex-basis="1824px"
+	
+></p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35.webp"
+	width="184"
+	height="42"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35_hu_5d72e6595371fb54.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35_hu_da539488197bf2f9.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="438"
+		data-flex-basis="1051px"
+	
+>
+一般使用的MP4格式啊MP3格式啊都没有。这个时候我们要来再次扩展插件。</p>
+<h4 id="l-smash-works">L-Smash works
+</h4><p>这个插件就是针对刚才所遇到的问题进行的拓展，使得MP4和MP3等文件能够被读取。<strong>L-Smash works 940</strong>可以在<a class="link" href="https://pop.4-bit.jp/"  target="_blank" rel="noopener"
+    >RePOPn</a>大神的博客里面下载到。然后回来了，发现海外人民没有办法下载到这个插件&hellip;&hellip;于是我找到了之前放在Plugin文件夹里面的文件，可能是935版本的。<strong>在AviUtl主文件夹里面创建一个Plugins文件夹</strong>，然后把L-SMASH WORK的那四个文件放到Plugins文件夹里面即可</p>
+<h4 id="x264guiex">x264guiEx
+</h4><p>这个插件是用来对视频进行解码的，可以在视频导出的时候用到</p>
+<p>请去<a class="link" href="https://rigaya34589.blog.fc2.com/blog-category-5.html"  target="_blank" rel="noopener"
+    >rigaya</a>大神的博客里面寻找相关的词汇，然后找到最新版本进行下载(2021年10月5日，此时用的是21年7月更新的2.67版本)</p>
+<p>解压缩之后点进去，里面有一个auoSetup.exe（是主文件夹，不是setup文件夹）点进去，命令栏会加载一会儿。选择这个Aviutl所在的文件夹进行插件安装。注意因为刚才创建了一个Plugins文件夹（特别重要），所以安装的插件全部到那个文件夹里面去了。此时Plugins文件夹长这样</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22.webp"
+	width="635"
+	height="693"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22_hu_fcc07a74a4dda711.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22_hu_75857f0f8171e5c9.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="219px"
+	
+></p>
+<p>这个时候打开软件本体，试着把刚刚从<a class="link" href="https://mazwai.com/"  target="_blank" rel="noopener"
+    >mazwai</a>下载下来的免费素材导入进去，成功了。点击播放（空格），甚至还会跳出来一个播放窗口，这样就表示aviutl的基本设置成功了。</p>
+<h4 id="directshow-file-reader"><a class="link" href="https://videoinfo.tenchi.ne.jp/?DirectShow%20File%20Reader%20%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3%20for%20AviUtl"  target="_blank" rel="noopener"
+    >DirectShow File Reader</a>
+</h4><p>还有一个和LSMASHWORK很像的插件，一些lsmashwork不能导入的文件可以使用这个插件进行导入，安装的方法和LSMASHWORK一样都是解压缩把程序放在Plugins里面。</p>
+<h2 id="基本设置">基本设置
+</h2><h3 id="系统设置">系统设置
+</h3><p>我们先摸到系统设置里面</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51.webp"
+	width="480"
+	height="632"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51_hu_1281a0ac04c024f6.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51_hu_516855a1cae9bfd4.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="75"
+		data-flex-basis="182px"
+	
+></p>
+<p>第一行最大画像是视频的最大尺寸，如果想做4k视频就再调大一点</p>
+<p>第四行设定解像度list是要把做视频常用的分辨率写进去，这里现在基本都挺全的，如果不做大视频也不用管。</p>
+<p>上半部分建议把倒数第二个方框打上勾，这样就不会出现多的播放窗口，直接就在主播放窗口播出了。</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52.webp"
+	width="336"
+	height="18"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52_hu_38286d4da4caa5c8.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52_hu_7820aa2f6ec5237a.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1866"
+		data-flex-basis="4480px"
+	
+></p>
+<p>下半部分倒数第八个方框打上勾，这样在编辑的时候如果关闭窗口就会提醒你当前的数据不保存的话会丢失。（血的教训，所以请务必勾上。但是这个提示框本身是没有保存功能的，想要保存工程文件请在编辑的过程中时时注意）</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25.webp"
+	width="301"
+	height="18"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25_hu_95ce6fefdab82673.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25_hu_9b5b0d9cdd7945a9.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1672"
+		data-flex-basis="4013px"
+	
+></p>
+<p>下半部分再把倒数第二个勾选上，这样就开起了窗口吸附功能。还是挺便利的。</p>
+<p>差不多设置完了之后整体长这样：</p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39.webp"
+	width="452"
+	height="684"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39_hu_d1fdeceb18723226.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39_hu_ffc0617640ca3459.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="158px"
+	
+>
+其他的选项也可以以后再看。</p>
+<h3 id="入力优先度设定">入力优先度设定
+</h3><p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16.webp"
+	width="469"
+	height="574"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16_hu_545d9a0aa9bb0a26.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16_hu_4fe59d997561257.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="81"
+		data-flex-basis="196px"
+	
+></p>
+<p><img src="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48.webp"
+	width="268"
+	height="358"
+	srcset="/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48_hu_1d7135c286e92425.webp 480w, /2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48_hu_827849a3a8074236.webp 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="179px"
+	
+>
+AviUtl的入力优先设定之后加入的文件会按照优先度的顺序来读取，如果上一个插件无法读取，则试用下一个插件。</p>
+<p>这里主要的是DirectShow File Reader放在L-SMASH的后面。根据说明记载使用L-SMASH比起DS“安定していて動作も軽快なので”，所以优先使用L-SMASH，在L-SMASH出问题了之后备用DS导入素材。</p>
+<h3 id="exeditini2021年10月20日">exedit.ini(2021年10月20日)
+</h3><p>在AviUtl的主文件夹里面有一个exedit.ini，这个是时间轴之类的基础拓展的配置文件，里面显示了哪些文件可以直接被拖进时间轴。比如刚才安装了L-SMASH之后mov之类的文件可以被导入，直接拖进时间轴的话没有任何效果，这样作为没有媒体池的动画编辑软件来说效率就降低了。所以我们按照现有的文件格式按部就班将自己大致需要的文件格式添加上去，比如.mov=動画ファイル。一个完整的ini大概长这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[extension]
+</span></span><span class="line"><span class="cl">; 拡張子とメディアオブジェクトの種類を関連付けます
+</span></span><span class="line"><span class="cl">.avi=動画ファイル
+</span></span><span class="line"><span class="cl">.avi=音声ファイル
+</span></span><span class="line"><span class="cl">.mpg=動画ファイル
+</span></span><span class="line"><span class="cl">.mpg=音声ファイル
+</span></span><span class="line"><span class="cl">.mkv=動画ファイル
+</span></span><span class="line"><span class="cl">.mkv=音声ファイル
+</span></span><span class="line"><span class="cl">.mp4=動画ファイル
+</span></span><span class="line"><span class="cl">.mp4=音声ファイル
+</span></span><span class="line"><span class="cl">.avs=音声ファイル
+</span></span><span class="line"><span class="cl">.avs=動画ファイル
+</span></span><span class="line"><span class="cl">.flv=動画ファイル
+</span></span><span class="line"><span class="cl">.flv=音声ファイル
+</span></span><span class="line"><span class="cl">.dv=動画ファイル
+</span></span><span class="line"><span class="cl">.bmp=画像ファイル
+</span></span><span class="line"><span class="cl">.jpg=画像ファイル
+</span></span><span class="line"><span class="cl">.jpeg=画像ファイル
+</span></span><span class="line"><span class="cl">.png=画像ファイル
+</span></span><span class="line"><span class="cl">.gif=動画ファイル
+</span></span><span class="line"><span class="cl">.ico=画像ファイル
+</span></span><span class="line"><span class="cl">.wav=音声ファイル
+</span></span><span class="line"><span class="cl">.mp3=音声ファイル
+</span></span><span class="line"><span class="cl">.txt=テキスト
+</span></span><span class="line"><span class="cl">.flac=音声ファイル
+</span></span><span class="line"><span class="cl">.aac=音声ファイル
+</span></span><span class="line"><span class="cl">.ape=音声ファイル
+</span></span><span class="line"><span class="cl">.m4a=音声ファイル
+</span></span><span class="line"><span class="cl">.ac3=音声ファイル
+</span></span><span class="line"><span class="cl">.lpcm=音声ファイル
+</span></span><span class="line"><span class="cl">.wma=音声ファイル
+</span></span><span class="line"><span class="cl">.pcm=音声ファイル
+</span></span><span class="line"><span class="cl">.ogg=音声ファイル
+</span></span><span class="line"><span class="cl">.opus=音声ファイル
+</span></span><span class="line"><span class="cl">.h264=動画ファイル
+</span></span><span class="line"><span class="cl">.x264=動画ファイル
+</span></span><span class="line"><span class="cl">.avc1=動画ファイル
+</span></span><span class="line"><span class="cl">.h265=動画ファイル
+</span></span><span class="line"><span class="cl">.x265=動画ファイル
+</span></span><span class="line"><span class="cl">.ts=動画ファイル
+</span></span><span class="line"><span class="cl">.ts=音声ファイル
+</span></span><span class="line"><span class="cl">.m2t=動画ファイル
+</span></span><span class="line"><span class="cl">.m2t=音声ファイル
+</span></span><span class="line"><span class="cl">.wmv=動画ファイル
+</span></span><span class="line"><span class="cl">.wmv=音声ファイル
+</span></span><span class="line"><span class="cl">.rmvb=動画ファイル
+</span></span><span class="line"><span class="cl">.rmvb=音声ファイル
+</span></span><span class="line"><span class="cl">.mts=動画ファイル
+</span></span><span class="line"><span class="cl">.mts=音声ファイル
+</span></span><span class="line"><span class="cl">.mov=動画ファイル
+</span></span><span class="line"><span class="cl">.mov=音声ファイル
+</span></span><span class="line"><span class="cl">.mjpeg=動画ファイル
+</span></span><span class="line"><span class="cl">.mjpeg=音声ファイル
+</span></span><span class="line"><span class="cl">.m2ts=動画ファイル
+</span></span><span class="line"><span class="cl">.m2ts=音声ファイル
+</span></span><span class="line"><span class="cl">.vob=動画ファイル
+</span></span><span class="line"><span class="cl">.vob=音声ファイル
+</span></span><span class="line"><span class="cl">.webm=動画ファイル
+</span></span><span class="line"><span class="cl">.webm=音声ファイル
+</span></span><span class="line"><span class="cl">.3gp=動画ファイル
+</span></span><span class="line"><span class="cl">.3gp=音声ファイル
+</span></span><span class="line"><span class="cl">.asf=動画ファイル
+</span></span><span class="line"><span class="cl">.asf=音声ファイル
+</span></span><span class="line"><span class="cl">.y4m=動画ファイル
+</span></span><span class="line"><span class="cl">.y4m=音声ファイル
+</span></span><span class="line"><span class="cl">.swf=動画ファイル
+</span></span><span class="line"><span class="cl">.swf=音声ファイル
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[script]
+</span></span><span class="line"><span class="cl">dll=lua51.dll
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一些自己肯定用不到的文件可以不用加，但是mov,wmv这种还是加上为好，并且注意里面的.gif链接的是画像文件，要改成动画文件，不然文件没法动。下面的练手就因为没有提前配置ini文件导致mov拖不进去。</p>
+<h2 id="简单的练手">简单的练手
+</h2><p>配置好了软件，我们来稍微试着做一个简单的视频吧。</p>
+<p>这次我们来从mazwai下载两个视频，组合在一起，然后加一些文字，然后导出吧。</p>
+<p>做完了吗。所以我们完成了剪辑里面基本的各种素材添加，简单加工最终导出的普遍流程。</p>
+<p>实际上默认导出所有内容的话是不需要用shift来进行勾选的。</p>
+<p>另外刚才在实际重新配置Aviutl的时候出现了就连重启电脑也没法挽救的错误，最终重新搭了一遍。如果你发现了任何搞不定的软件内的问题，在前面的步骤都没有错误的情况下建议再来一遍。</p>
+<p>配置完了一遍基本的aviutl我们回到主文件夹里面看一看这个程序的大小，发现这个几乎能够把基本剪辑的事情都干完还自带各种官方特效的软件容量才不到30M。比起某些付费还吃显卡经常崩溃的软件不是亲切多了吗。</p>
+<h2 id="后序">后序
+</h2><p>于是简单的三千字的Aviutl基础装备就这样完成了。这里面可能需要你做出比把文件解压缩放在主文件夹里面更多的东西，比如去找一个不是太卡的梯子，去看一下文件夹的构成，去网页里面稍微看一下各种插件的功能。感受一下如同历史一样的一个东西从无到有，又因为各种缺陷而得到各种提升的过程。</p>
+<p>刚才我在各种物件的属性框右上角的加号上面选择了フェード，也就是渐进效果fade。那个加号里面有所有剪辑以外的对于物件的效果，一般视频的大部分内容都由它们来完成。也请读者们去尝试一下里面的各种效果。</p>
+<p>之前说到了凯文桑的视频，他16年左右也有另外一个更新叫<a class="link" href="https://www.bilibili.com/video/BV17x411Q79b"  target="_blank" rel="noopener"
+    >每天一个新技能</a>，分享一些基础的小技巧，这也是我见过的国内Aviutl质量最高的教程了，现在好多做Aviutl的大佬都是当年的群友学员，有空也请去看一下。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%A7%86%E9%A2%91/">视频</a>
+        
+            <a href="/tags/aviutl/">Aviutl</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/2021/11/11/aviutl_plugin/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">AviUtl的一些看上去不错的辅助插件</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2021/11/11/aviutl_output/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">AviUtl的其他导入导出插件</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2021/11/11/wycma2dv/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">你为什么能做一个二维视频</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于新版本Freshrss和Rsshub同时使用时出现的问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Rsshub在bilibili和weibo的一些基础</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="moriform/moriform.github.io"
+    data-repo-id="R_kgDOHEppWw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHEppW84C0pyw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 暄穗
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

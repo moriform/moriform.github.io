@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。\n">
+<title>Launchpad Drum Pad在Reaper中的映射设置</title>
+
+<link rel='canonical' href='https://moriform.github.io/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/'>
+
+<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="Launchpad Drum Pad在Reaper中的映射设置">
+<meta property='og:description' content="暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。\n">
+<meta property='og:url' content='https://moriform.github.io/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/'>
+<meta property='og:site_name' content='森月台'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='音频' /><meta property='article:tag' content='launchpad' /><meta property='article:tag' content='reaper' /><meta property='article:tag' content='drumpad' /><meta property='article:tag' content='midi' /><meta property='article:published_time' content='2024-07-13T19:40:38&#43;00:00'/><meta property='article:modified_time' content='2024-07-13T19:40:38&#43;00:00'/>
+<meta name="twitter:title" content="Launchpad Drum Pad在Reaper中的映射设置">
+<meta name="twitter:description" content="暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。\n">
+    <link rel="shortcut icon" href="/favicon" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_b5976aa1afdc1d2e.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">森月台</a></h1>
+            <h2 class="site-description">森林深处无人经过的站点</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/diary/index.html' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+                
+                <span>日记</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
+                知识
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/">Launchpad Drum Pad在Reaper中的映射设置</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2024-07-13T19:40:38Z'>Jul 13, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 3 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。</p>
+<p>若使用LaunchPad作为钢琴来演奏，使用Drum Map模式（4个4×4模块）一定是最好的选择，但是Drum Map模式是在Ableton Live里面才有的，如果我们是使用其他的DAW(如Reaper)，则没有办法直接使用，只能用残疾的音阶模式。有两个办法可以解决这个问题。</p>
+<p>1.在使用Reaper的时候同时打开Ableton Live，这个时候LaunchPad会自动识别并打开，此时运用于Live的映射会直接运用于Reaper中。注意此时使用User 1模式为Drum Map模式，但是MIDI通道无法修改默认为6。（但是为什么要在打开轻便的Reaper的时候打开一个高负Live呢？？？）</p>
+<p>2.在Reaper中为LaunchPad制作MIDI映射。使用的是JS中的MIDI MAP To Key v2。首先用Everything找到预设Default Mapping.txt的文件夹并打开，打开后复制一份预设进行制作，简单说把LaunchPad在音阶模式中的MIDI输出修改为对应键位在鼓组模式下的输出。完成后在JS插件中选择对应制作的映射文件即可。这样就可以完成72个键位的映射然后快乐弹奏了。</p>
+<hr>
+<p>文件如下所示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Key Mapping File. Change the number at the beginning of the line to set the output note.  
+</span></span><span class="line"><span class="cl">//Octave 0  
+</span></span><span class="line"><span class="cl">0 (0) C  
+</span></span><span class="line"><span class="cl">1 (1) C#  
+</span></span><span class="line"><span class="cl">2 (2) D  
+</span></span><span class="line"><span class="cl">3 (3) Eb  
+</span></span><span class="line"><span class="cl">4 (4) E  
+</span></span><span class="line"><span class="cl">5 (5) F  
+</span></span><span class="line"><span class="cl">6 (6) F#  
+</span></span><span class="line"><span class="cl">7 (7) G  
+</span></span><span class="line"><span class="cl">8 (8) G#  
+</span></span><span class="line"><span class="cl">9 (9) A  
+</span></span><span class="line"><span class="cl">10 (10) Bb  
+</span></span><span class="line"><span class="cl">36 (11) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 1  
+</span></span><span class="line"><span class="cl">37 (12) C  
+</span></span><span class="line"><span class="cl">38 (13) C#  
+</span></span><span class="line"><span class="cl">39 (14) D  
+</span></span><span class="line"><span class="cl">68 (15) Eb  
+</span></span><span class="line"><span class="cl">69 (16) E  
+</span></span><span class="line"><span class="cl">70 (17) F  
+</span></span><span class="line"><span class="cl">71 (18) F#  
+</span></span><span class="line"><span class="cl">107 (19) G  
+</span></span><span class="line"><span class="cl">20 (20) G#  
+</span></span><span class="line"><span class="cl">40 (21) A  
+</span></span><span class="line"><span class="cl">41 (22) Bb  
+</span></span><span class="line"><span class="cl">42 (23) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 2  
+</span></span><span class="line"><span class="cl">43 (24) C  
+</span></span><span class="line"><span class="cl">72 (25) C#  
+</span></span><span class="line"><span class="cl">73 (26) D  
+</span></span><span class="line"><span class="cl">74 (27) Eb  
+</span></span><span class="line"><span class="cl">75 (28) E  
+</span></span><span class="line"><span class="cl">106 (29) F  
+</span></span><span class="line"><span class="cl">30 (30) F#  
+</span></span><span class="line"><span class="cl">44 (31) G  
+</span></span><span class="line"><span class="cl">45 (32) G#  
+</span></span><span class="line"><span class="cl">46 (33) A  
+</span></span><span class="line"><span class="cl">47 (34) Bb  
+</span></span><span class="line"><span class="cl">76 (35) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 3  
+</span></span><span class="line"><span class="cl">77 (36) C  
+</span></span><span class="line"><span class="cl">78 (37) C#  
+</span></span><span class="line"><span class="cl">79 (38) D  
+</span></span><span class="line"><span class="cl">105 (39) Eb  
+</span></span><span class="line"><span class="cl">40 (40) E  
+</span></span><span class="line"><span class="cl">48 (41) F  
+</span></span><span class="line"><span class="cl">49 (42) F#  
+</span></span><span class="line"><span class="cl">50 (43) G  
+</span></span><span class="line"><span class="cl">51 (44) G#  
+</span></span><span class="line"><span class="cl">80 (45) A  
+</span></span><span class="line"><span class="cl">81 (46) Bb  
+</span></span><span class="line"><span class="cl">82 (47) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 4  
+</span></span><span class="line"><span class="cl">83 (48) C  
+</span></span><span class="line"><span class="cl">104 (49) C#  
+</span></span><span class="line"><span class="cl">50 (50) D  
+</span></span><span class="line"><span class="cl">52 (51) Eb  
+</span></span><span class="line"><span class="cl">53 (52) E  
+</span></span><span class="line"><span class="cl">54 (53) F  
+</span></span><span class="line"><span class="cl">55 (54) F#  
+</span></span><span class="line"><span class="cl">84 (55) G  
+</span></span><span class="line"><span class="cl">85 (56) G#  
+</span></span><span class="line"><span class="cl">86 (57) A  
+</span></span><span class="line"><span class="cl">87 (58) Bb  
+</span></span><span class="line"><span class="cl">103 (59) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 5  
+</span></span><span class="line"><span class="cl">60 (60) C //Middle C  
+</span></span><span class="line"><span class="cl">56 (61) C#  
+</span></span><span class="line"><span class="cl">57 (62) D  
+</span></span><span class="line"><span class="cl">58 (63) Eb  
+</span></span><span class="line"><span class="cl">59 (64) E  
+</span></span><span class="line"><span class="cl">88 (65) F  
+</span></span><span class="line"><span class="cl">89 (66) F#  
+</span></span><span class="line"><span class="cl">90 (67) G  
+</span></span><span class="line"><span class="cl">91 (68) G#  
+</span></span><span class="line"><span class="cl">102 (69) A  
+</span></span><span class="line"><span class="cl">70 (70) Bb  
+</span></span><span class="line"><span class="cl">60 (71) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 6  
+</span></span><span class="line"><span class="cl">61 (72) C  
+</span></span><span class="line"><span class="cl">62 (73) C#  
+</span></span><span class="line"><span class="cl">63 (74) D  
+</span></span><span class="line"><span class="cl">92 (75) Eb  
+</span></span><span class="line"><span class="cl">93 (76) E  
+</span></span><span class="line"><span class="cl">94 (77) F  
+</span></span><span class="line"><span class="cl">95 (78) F#  
+</span></span><span class="line"><span class="cl">101 (79) G  
+</span></span><span class="line"><span class="cl">80 (80) G#  
+</span></span><span class="line"><span class="cl">64 (81) A  
+</span></span><span class="line"><span class="cl">65 (82) Bb  
+</span></span><span class="line"><span class="cl">66 (83) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 7  
+</span></span><span class="line"><span class="cl">67 (84) C  
+</span></span><span class="line"><span class="cl">96 (85) C#  
+</span></span><span class="line"><span class="cl">97 (86) D  
+</span></span><span class="line"><span class="cl">98 (87) Eb  
+</span></span><span class="line"><span class="cl">99 (88) E  
+</span></span><span class="line"><span class="cl">100 (89) F  
+</span></span><span class="line"><span class="cl">90 (90) F#  
+</span></span><span class="line"><span class="cl">91 (91) G  
+</span></span><span class="line"><span class="cl">92 (92) G#  
+</span></span><span class="line"><span class="cl">93 (93) A  
+</span></span><span class="line"><span class="cl">94 (94) Bb  
+</span></span><span class="line"><span class="cl">95 (95) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 8  
+</span></span><span class="line"><span class="cl">96 (96) C  
+</span></span><span class="line"><span class="cl">97 (97) C#  
+</span></span><span class="line"><span class="cl">98 (98) D  
+</span></span><span class="line"><span class="cl">99 (99) Eb  
+</span></span><span class="line"><span class="cl">100 (100) E  
+</span></span><span class="line"><span class="cl">101 (101) F  
+</span></span><span class="line"><span class="cl">102 (102) F#  
+</span></span><span class="line"><span class="cl">103 (103) G  
+</span></span><span class="line"><span class="cl">104 (104) G#  
+</span></span><span class="line"><span class="cl">105 (105) A  
+</span></span><span class="line"><span class="cl">106 (106) Bb  
+</span></span><span class="line"><span class="cl">107 (107) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 9  
+</span></span><span class="line"><span class="cl">108 (108) C  
+</span></span><span class="line"><span class="cl">109 (109) C#  
+</span></span><span class="line"><span class="cl">110 (110) D  
+</span></span><span class="line"><span class="cl">111 (111) Eb  
+</span></span><span class="line"><span class="cl">112 (112) E  
+</span></span><span class="line"><span class="cl">113 (113) F  
+</span></span><span class="line"><span class="cl">114 (114) F#  
+</span></span><span class="line"><span class="cl">115 (115) G  
+</span></span><span class="line"><span class="cl">116 (116) G#  
+</span></span><span class="line"><span class="cl">117 (117) A  
+</span></span><span class="line"><span class="cl">118 (118) Bb  
+</span></span><span class="line"><span class="cl">119 (119) B
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">//Octave 10  
+</span></span><span class="line"><span class="cl">120 (120) C  
+</span></span><span class="line"><span class="cl">121 (121) C#  
+</span></span><span class="line"><span class="cl">122 (122) D  
+</span></span><span class="line"><span class="cl">123 (123) Eb  
+</span></span><span class="line"><span class="cl">124 (124) E  
+</span></span><span class="line"><span class="cl">125 (125) F  
+</span></span><span class="line"><span class="cl">126 (126) F#  
+</span></span><span class="line"><span class="cl">127 (127) G
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a>
+        
+            <a href="/tags/launchpad/">Launchpad</a>
+        
+            <a href="/tags/reaper/">Reaper</a>
+        
+            <a href="/tags/drumpad/">Drumpad</a>
+        
+            <a href="/tags/midi/">Midi</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Reaper中分频段处理的方案</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">中置通道的初认识</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2022/04/03/new_library_in_domino/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">在Domino中加载新音源的方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Cubase水平滚动反向的解决方法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">关于新版本Freshrss和Rsshub同时使用时出现的问题</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="moriform/moriform.github.io"
+    data-repo-id="R_kgDOHEppWw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOHEppW84C0pyw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 暄穗
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
