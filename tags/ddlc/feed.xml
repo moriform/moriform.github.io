@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Ddlc on 森月台</title>
+        <link>https://moriform.github.io/tags/ddlc/</link>
+        <description>Recent content in Ddlc on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Mon, 23 Oct 2023 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/tags/ddlc/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>心跳文学部秘密诗篇10自动化获取方案(Python版)</title>
+        <link>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
+        <pubDate>Mon, 23 Oct 2023 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
+        <description>&lt;h2 id=&#34;总览&#34;&gt;总览
+&lt;/h2&gt;&lt;p&gt;在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。&lt;/p&gt;
+&lt;p&gt;所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。&lt;/p&gt;
+&lt;h2 id=&#34;代码简介&#34;&gt;代码简介
+&lt;/h2&gt;&lt;p&gt;代码由python写成，非常简单，实现鼠标的移动单击和截屏保存。代码不包括任何网络通讯功能。逻辑如下：&lt;/p&gt;
+&lt;p&gt;从游戏的OS界面（游戏中模拟电脑的画面）单击&lt;em&gt;心跳文学部&lt;/em&gt;进入DDLC，待人物立绘出现后截屏。对于截屏的某一个特定像素进行颜色分析，若颜色为黑色，则刷出了秘密10，保存截屏，程序退出。若为原来的颜色，则退出DDLC回到OS界面再进入DDLC循环。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作
+&lt;/h2&gt;&lt;h3 id=&#34;ddlc&#34;&gt;DDLC
+&lt;/h3&gt;&lt;p&gt;1.DDLC进入第二周目，首次见到Monika后就可以保存退出。
+2.DDLC分辨率调整到1920x1080并全屏。&lt;/p&gt;
+&lt;h3 id=&#34;电脑&#34;&gt;电脑
+&lt;/h3&gt;&lt;p&gt;1.安装Python &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Welcome to Python.org&lt;/a&gt;
+2.使用pip安装pyautogui（控制鼠标）和pillow（图像截屏和分析）
+3.分辨率调整到1920x1080（我的电脑是这样的分辨率，鼠标的移动也是按照该分辨率设置的）&lt;/p&gt;
+&lt;h2 id=&#34;运行&#34;&gt;运行
+&lt;/h2&gt;&lt;p&gt;代码需要在游戏全屏进行时运行。可以在游戏全屏的时候按Windows键从下面任务栏调出&lt;em&gt;没有最大化的编辑器或文件管理器&lt;/em&gt;。注意调出的编辑器或文件管理器不能遮挡游戏的OS界面菜单选项。&lt;/p&gt;
+&lt;p&gt;对于有编程经验的人可以直接用熟手的编辑器来运行代码。&lt;/p&gt;
+&lt;p&gt;对于没有编程经验的人可以创建一个txt文件，将代码粘贴保存后文件更名为example.py(注意把txt的后缀改成py)，然后在代码保存的文件夹下创建一个txt文件，粘贴以下代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python example.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;保存文件后文件更名为1.bat。双击文件运行程序。&lt;/p&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果
+&lt;/h2&gt;&lt;p&gt;如果吃完饭看完电影回来发现画面停在了OS界面，则秘密10已经刷到，可以在shortcut里面找到截图和刷图用时以及刷图的次数。&lt;/p&gt;
+&lt;p&gt;如果页面停在了游戏的设置画面，则在点击进入游戏时出现了问题，需要稍微加长while下面四行的两个duration参数。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Voicemeeter on 森月台</title>
+        <link>https://moriform.github.io/tags/voicemeeter/</link>
+        <description>Recent content in Voicemeeter on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Sun, 23 Jun 2024 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/tags/voicemeeter/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我的电脑找不到Voicemeeter硬件，我该怎么做？</title>
+        <link>https://moriform.github.io/2024/06/23/voicemeeterrepair1/</link>
+        <pubDate>Sun, 23 Jun 2024 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2024/06/23/voicemeeterrepair1/</guid>
+        <description>&lt;p&gt;暄穗花了一天时间来修Voicemeeter的问题，因为暄穗在音频设置里面完全找不到之前的各种VAIO 3啊VAIO啊之类的选项，在Python中也找不到各种通道的名字。总之一句话：下载了Vociemeeter后在电脑各个选项中都没有Voicemeeter的踪迹，但是可以在Voicemeeter软件上选其他的硬件（当然这事不能正常使用的，因为只能连接输入而不能连接输出）。&lt;/p&gt;
+&lt;p&gt;在多次下载重启卸载重启都没有解决问题后暄穗放弃了。&lt;/p&gt;
+&lt;p&gt;但是某一天在暄穗查找电脑其他硬件设置的时候登入了&lt;strong&gt;此电脑&lt;/strong&gt;的&lt;strong&gt;管理&lt;/strong&gt;页面，在&lt;strong&gt;设备管理器&lt;/strong&gt;的&lt;strong&gt;声音视频和游戏控制器&lt;/strong&gt;中找到了Voicemeeter的选项，其旁边有一个大大的叹号，表示这个设备不能使用。&lt;/p&gt;
+&lt;p&gt;暄穗&lt;strong&gt;卸载&lt;/strong&gt;了那个出问题的设备后重新下载了Voicemeeter，使用&lt;strong&gt;管理员模式安装&lt;/strong&gt;这个软件包。安装的时候出现了各种没有看见的安装VAIO 安装PIN之类的。最后&lt;strong&gt;重启&lt;/strong&gt;后重新在音频中找到了Voicemeeter的相关选择，安装就成功了。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
