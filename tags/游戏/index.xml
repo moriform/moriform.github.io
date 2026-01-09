@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>游戏 on 森月台</title>
+        <link>https://moriform.github.io/tags/%E6%B8%B8%E6%88%8F/</link>
+        <description>Recent content in 游戏 on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Fri, 21 Jun 2024 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>电脑自动刷香蕉</title>
+        <link>https://moriform.github.io/2024/06/21/autobanana/</link>
+        <pubDate>Fri, 21 Jun 2024 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2024/06/21/autobanana/</guid>
+        <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
+&lt;/h2&gt;&lt;p&gt;最近Banana挺火的，说是挂机就可以得到香蕉到市场上卖，四舍五入挂机得钱。所以我们还是花最少的心思参与一下，而且挂机最好不要影响电脑的正常使用。官方说禁止连点器以外的任何外挂，所以我们就只用python写一个连点器的程序就行了。&lt;/p&gt;
+&lt;h2 id=&#34;代码描述&#34;&gt;代码描述
+&lt;/h2&gt;&lt;p&gt;代码部分不含有任何网络连接部分，仅为简单鼠标操作和窗口操作。基本代码逻辑如下：唤出窗口，窗口顶置，点击窗口，窗口最小化，（窗口隐藏）。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作
+&lt;/h2&gt;&lt;p&gt;1.安装Python &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Welcome to Python.org&lt;/a&gt; （下载一个安装包一个劲地next）
+2.使用pip安装pyautogui（控制鼠标）&lt;/p&gt;
+&lt;p&gt;同时按下win和R出现一个运行，输入cmd打开黑窗，复制以下内容&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install pyautogui -i https://pypi.douban.com/simple
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;运行&#34;&gt;运行
+&lt;/h2&gt;&lt;p&gt;0.打开游戏&lt;/p&gt;
+&lt;p&gt;1.首先先在para.py中修改参数，其中x和y大约在分辨率的二分之一就可以，如1920*1080设置为x1000y500就行。interval推荐1小时或2小时，即3600或7200，修改完保存。&lt;/p&gt;
+&lt;p&gt;2.设置好后点击test.bat运行一个连续点击banana游戏五次的程序，如果点击的次数增加了则设置成功。&lt;/p&gt;
+&lt;p&gt;3.点击banana.bat或banana_no_window.bat运行主程序，程序启动了就可以直接关掉黑窗口。如果想要游戏出现在任务栏就选第一个，如果想完全隐藏游戏则点击第二个，这样窗口不会出现在下方。若是怀疑程序没有运行，则打开任务管理器，若python和banana都有，则正常运行（一定注意只留一个python，否则就是两个程序同时运行了）。&lt;/p&gt;
+&lt;p&gt;4.这样程序每1小时或2小时会启动一次打开游戏窗口然后瞬间关闭游戏窗口的过程，大部分情况下不会影响电脑普通使用。&lt;/p&gt;
+&lt;p&gt;5.若是长时间不用电脑刷香蕉的话，需要进行电池和睡眠，把睡眠设置为从不。&lt;/p&gt;
+&lt;h2 id=&#34;代码展示&#34;&gt;代码展示
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;pyautogui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;win32con&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;para&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;hwnd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;FindWindow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;UnityWndClass&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Banana&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ShowWindow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hwnd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SetForegroundWindow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hwnd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;pyautogui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;leftClick&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;para&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;para&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ShowWindow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hwnd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;win32con&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SW_MINIMIZE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;win32gui&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ShowWindow&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hwnd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sleep&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;para&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;interval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>心跳文学部秘密诗篇10自动化获取方案(Python版)</title>
+        <link>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
+        <pubDate>Mon, 23 Oct 2023 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
+        <description>&lt;h2 id=&#34;总览&#34;&gt;总览
+&lt;/h2&gt;&lt;p&gt;在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。&lt;/p&gt;
+&lt;p&gt;所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。&lt;/p&gt;
+&lt;h2 id=&#34;代码简介&#34;&gt;代码简介
+&lt;/h2&gt;&lt;p&gt;代码由python写成，非常简单，实现鼠标的移动单击和截屏保存。代码不包括任何网络通讯功能。逻辑如下：&lt;/p&gt;
+&lt;p&gt;从游戏的OS界面（游戏中模拟电脑的画面）单击&lt;em&gt;心跳文学部&lt;/em&gt;进入DDLC，待人物立绘出现后截屏。对于截屏的某一个特定像素进行颜色分析，若颜色为黑色，则刷出了秘密10，保存截屏，程序退出。若为原来的颜色，则退出DDLC回到OS界面再进入DDLC循环。&lt;/p&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作
+&lt;/h2&gt;&lt;h3 id=&#34;ddlc&#34;&gt;DDLC
+&lt;/h3&gt;&lt;p&gt;1.DDLC进入第二周目，首次见到Monika后就可以保存退出。
+2.DDLC分辨率调整到1920x1080并全屏。&lt;/p&gt;
+&lt;h3 id=&#34;电脑&#34;&gt;电脑
+&lt;/h3&gt;&lt;p&gt;1.安装Python &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Welcome to Python.org&lt;/a&gt;
+2.使用pip安装pyautogui（控制鼠标）和pillow（图像截屏和分析）
+3.分辨率调整到1920x1080（我的电脑是这样的分辨率，鼠标的移动也是按照该分辨率设置的）&lt;/p&gt;
+&lt;h2 id=&#34;运行&#34;&gt;运行
+&lt;/h2&gt;&lt;p&gt;代码需要在游戏全屏进行时运行。可以在游戏全屏的时候按Windows键从下面任务栏调出&lt;em&gt;没有最大化的编辑器或文件管理器&lt;/em&gt;。注意调出的编辑器或文件管理器不能遮挡游戏的OS界面菜单选项。&lt;/p&gt;
+&lt;p&gt;对于有编程经验的人可以直接用熟手的编辑器来运行代码。&lt;/p&gt;
+&lt;p&gt;对于没有编程经验的人可以创建一个txt文件，将代码粘贴保存后文件更名为example.py(注意把txt的后缀改成py)，然后在代码保存的文件夹下创建一个txt文件，粘贴以下代码：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python example.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;保存文件后文件更名为1.bat。双击文件运行程序。&lt;/p&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果
+&lt;/h2&gt;&lt;p&gt;如果吃完饭看完电影回来发现画面停在了OS界面，则秘密10已经刷到，可以在shortcut里面找到截图和刷图用时以及刷图的次数。&lt;/p&gt;
+&lt;p&gt;如果页面停在了游戏的设置画面，则在点击进入游戏时出现了问题，需要稍微加长while下面四行的两个duration参数。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Needy Girl Overdose</title>
+        <link>https://moriform.github.io/2022/10/28/needy-girl-overdose/</link>
+        <pubDate>Fri, 28 Oct 2022 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2022/10/28/needy-girl-overdose/</guid>
+        <description>&lt;p&gt;年初的时候玩了这个游戏的所有结局，家人过年我一人抑郁，发现最近有更新了就及时重新下载下来玩了。&lt;/p&gt;
+&lt;p&gt;游戏更新了三个结局线，一条极其地现实，两条极其地浪漫。&lt;/p&gt;
+&lt;p&gt;其实从之前的断网结局就已经看得出作者的意图了，对于现如今混沌的网络最好的方法就是将它完全结束。但是还记得互联网最初的样貌吗？那个真正能够把人们连接起来的互联网。每一个节点就像一颗颗星星那样的闪耀，那样的温暖。成片的星星相互连接能够照亮一整条银河。网络能够传递的是人们内心最真实的善良，无顾忌的倾诉，而不是催人一个劲做数据的机器。&lt;/p&gt;
+&lt;p&gt;作者在试图告诉我们网络现在已经成了多么臃肿的肉块据巨兽的时候，仍然想要告诉我们互联网最初的美好。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>20220130</title>
+        <link>https://moriform.github.io/2022/01/30/20220130/</link>
+        <pubDate>Sun, 30 Jan 2022 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2022/01/30/20220130/</guid>
+        <description>&lt;p&gt;三色绘恋这桩子事也是意料之中，从一开始关注的时候山百合就搞各种骚操作。对标白色相簿不说，众筹高档位送床单还能理解是对标日厂，游戏还没发售就开始党争就不懂是怎么个操作了。给樱花游戏发行12元真的对得起认真做游戏的人吗？之后还带一些莫名奇妙的周边，官方做女主胖次雨伞也应该是国内第一人了。到现在看更是请了初学程序员来维护屎山一样的操作。&lt;/p&gt;
+&lt;p&gt;从CD上买的杂志关注到的这个游戏，庆幸当时错过了付款时间没有买捆绑初回限定（捆的另外一个蝉XX的游戏现在应该也活不过来了），后来买了一个游戏包付了一个玩了一个半小时真的没有玩下去也明白12元是怎么来的了。&lt;/p&gt;
+&lt;p&gt;不要说什么国AVG第一，15年以前的国内御三家剧本质量都是上乘的文笔都是相当有特色的。写高恋的橘子班、写赤印的Hollowings（这两个可以说是左右极端的浪漫了）、写刻痕的蓝天使都是值得推荐的。&lt;/p&gt;
+&lt;p&gt;前几天拿PSP重新玩了Ever17，虽然已经知道了结局没有了首次玩的震撼，但是在剧本中体会到的是一个游戏人努力使用局限的技术将一个故事完整优雅叙出的艺术。现在的文字游戏引擎先进得多，能动的纸片人能交互的场景都很容易就能做出来，但是在制作的过程中沉迷于将游戏做得看上去精细而忽略了文字游戏本身应该讲好讲精一个故事的本质。本身流畅不如番剧，游戏性不如其他类型游戏，失了故事，还剩下什么呢？&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>倾听画语 </title>
+        <link>https://moriform.github.io/2021/09/20/behind_the_frame/</link>
+        <pubDate>Mon, 20 Sep 2021 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2021/09/20/behind_the_frame/</guid>
+        <description>&lt;h2 id=&#34;倾听画语&#34;&gt;倾听画语
+&lt;/h2&gt;&lt;p&gt;之前看谜之声玩的游戏，看了一半，感觉时长和题材都挺符合，就买来自己玩了。&lt;/p&gt;
+&lt;p&gt;是一个关于画与相遇的故事。&lt;/p&gt;
+&lt;p&gt;我很喜欢里面的动画过场，就和电影一样。而动画与游戏场景的融合，我好像便融入了这场一个小时的电影中去了。&lt;/p&gt;
+&lt;p&gt;对于女主来说，她便是困在了画框之中的人，这对于她的存在是理所当然的。她是他内心真挚的爱慕，是他对于相遇之人短暂相处之中的理想形象。于是女主在仅有的空间和自己被赋予的短暂的记忆中开始寻找他的这段相遇。&lt;/p&gt;
+&lt;p&gt;故事是这样的。咖啡，早餐，录音机，慵懒的阳台和慵懒的猫猫结合在一起的日常与咖啡馆，薰衣草，雨景下的街边招牌的浪漫相结合，相呼应。将故事像溪水一般理所当然地前行。&lt;/p&gt;
+&lt;p&gt;即使是里面最大的矛盾，也就是宣告她的离开，也是不多着笔墨的短短几秒钟的场景，平静而又自然，邂逅在这里终结。&lt;/p&gt;
+&lt;p&gt;平静吗？不然。否则他不会用一生的时间来创造出女主这样的形象。&lt;/p&gt;
+&lt;p&gt;遗憾吗？对于看到最后的我们来说是的。女主是男主在晚年对于曾经相遇之人的想象刻画，也表明了两人不再相遇。唯有最后男主过世，在他的画展上她出现了，同样是满头白发，归还了他的画笔。&lt;/p&gt;
+&lt;p&gt;看到最后有一种说不出的酸痛，大概的原因是时间跨度之大而产生的冲突吧。玩的时候关着灯，只有电脑的光闪烁着。前面的场景还是在薰衣草场两人的邂逅，后面找到了真相后等来的只有两人的衰老与不再相遇。再次体会到一种冲突与无力感。&lt;/p&gt;
+&lt;p&gt;唯一保持年轻的，是女主，是他想象中的她的最美好的相貌。尽管时间瞬息万变，美好的记忆永远漂流在时间的河流中，等待着被发现。&lt;/p&gt;
+&lt;p&gt;#游戏
+#感想&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

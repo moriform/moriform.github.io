@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Freshrss on 森月台</title>
+        <link>https://moriform.github.io/tags/freshrss/</link>
+        <description>Recent content in Freshrss on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Fri, 17 Oct 2025 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/tags/freshrss/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于新版本Freshrss和Rsshub同时使用时出现的问题</title>
+        <link>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Fri, 17 Oct 2025 19:40:38 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述
+&lt;/h3&gt;&lt;p&gt;暄穗在使用freshrss在服务器中作为远程rss阅读器的时候最近发现了问题，就是和rsshub同时使用的时候总是会有freshrss“力不从心”的情况：抓取的数量很少，通过管理页面看订阅的feed会红一大片，但是自己手动用浏览器打开rsshub订阅发现是可以打开的。也就是说明明rsshub订阅是没有问题，但是Freshrss就是不抓。如果再看得仔细一点会发现Freshrss确实抓了几个我的rsshub，然后就不抓了，通过Rsshub的日志也能看见Freshrss红的订阅根本没有请求抓取（加把劲啊Freshrss!你为什么不抓！）。&lt;/p&gt;
+&lt;h3 id=&#34;原因说明&#34;&gt;原因说明
+&lt;/h3&gt;&lt;p&gt;这其实是Fresh 1.27的新特性，如果打开日志可以看见一堆关于红色feed的描述“For that domain, will first retry after”，也就是说Freshrss确实知道他要抓取这个feed，但是他跳过了，说下一次抓取。而下一次他又是同样的说法，于是就永远看不到这个feed的订阅了&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Retry After是1.27的新机制，这个机制可以降低Freshrss的抓取负担。比如说我订阅了一个音乐新闻网站的“信息贴”，“新闻贴”和“求助帖”三个不同的feed，如果Freshrss第一个请求“新闻贴”抓取失败了，那Freshrss就知道这个网站暂时无法登录，相同域名下的“新闻贴”和“求助帖”本次抓取就会跳过，直到下一次再试。&lt;/p&gt;
+&lt;p&gt;通过简单举例可以理解这个新机制的好处，但是对于我这样的rsshub用户来说这就是致命打击。首先Rsshub部署基本都是一个域名，其次Rsshub抓取因为自己的配置导致各个网站的成功率不一样。比如说我的Rsshub抓取bilibili的订阅非常流畅，但是抓取weibo经常会失效（原因正在排查）。那么如果我用Freshrss订阅了100个bilibili和一个weibo，Freshrss在抓取完23个bilibili订阅之后灵机一动抓了那个weibo，得到报错之后剩下的77个bilibili也不会抓去了。&lt;/p&gt;
+&lt;h3 id=&#34;解决方法&#34;&gt;解决方法
+&lt;/h3&gt;&lt;p&gt;目前在Github已经有人针对相同的问题提出了issue，开发者也将这个提上了日程。而目不知道下一个版本的Freshrss会什么时候公布只能自己想办法了。&lt;/p&gt;
+&lt;p&gt;首先是退版本。既然是1.27出了问题那回到上一个版本1.26.3肯定是没有错的。&lt;/p&gt;
+&lt;p&gt;其次是使用更稳定的订阅源或取消订阅出问题的订阅源。在我取消了微博的抓取之后我的Freshrss破天荒抓完了所有我在Rsshub的订阅，可喜可贺。而在我更新Weibo的cookie到Rsshub让weibo的抓取成功显示之后也没有红一大片的情况了。&lt;/p&gt;
+&lt;p&gt;相关读物：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/FreshRSS/FreshRSS/issues/7880&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[Feature] Improve &amp;ldquo;Retry-After&amp;rdquo; feature to give users more control, especially for RSSHub 改进“Retry-After”功能以给予用户更多控制权，特别是针对RSSHub用户 · Issue #7880 · FreshRSS/FreshRSS&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/FreshRSS/FreshRSS/issues/7870&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[错误] 1.27：503/429 上的域范围“Retry-After”会阻止同一主机上的所有源（RSSHub 用例）。请添加每个 Feed 范围或切换 ·问题 #7870 ·FreshRSS/FreshRSS&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
