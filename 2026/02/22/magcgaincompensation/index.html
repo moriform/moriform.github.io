@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大月好听的审美心理也直接影响到响度大战。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。\n">
 <title>在Reaper中实现响度补偿的一种方法</title>
 
 <link rel='canonical' href='https://moriform.github.io/2026/02/22/magcgaincompensation/'>
 
 <link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="在Reaper中实现响度补偿的一种方法">
-<meta property='og:description' content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大月好听的审美心理也直接影响到响度大战。\n">
+<meta property='og:description' content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。\n">
 <meta property='og:url' content='https://moriform.github.io/2026/02/22/magcgaincompensation/'>
 <meta property='og:site_name' content='森月台'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='reaper' /><meta property='article:tag' content='audio' /><meta property='article:tag' content='meldaproduction' /><meta property='article:tag' content='magc' /><meta property='article:tag' content='gain compensation' /><meta property='article:tag' content='audio plugin' /><meta property='article:published_time' content='2026-02-22T21:38:26&#43;00:00'/><meta property='article:modified_time' content='2026-02-22T21:38:26&#43;00:00'/>
 <meta name="twitter:title" content="在Reaper中实现响度补偿的一种方法">
-<meta name="twitter:description" content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大月好听的审美心理也直接影响到响度大战。\n">
+<meta name="twitter:description" content="响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
@@ -236,6 +236,7 @@
         <li><a href="#响度补偿的路由逻辑">响度补偿的路由逻辑</a></li>
         <li><a href="#实际操作">实际操作</a></li>
         <li><a href="#验证">验证</a></li>
+        <li><a href="#打包">打包</a></li>
       </ol>
     </li>
   </ol>
@@ -304,16 +305,16 @@
     
     
     <h2 id="响度补偿的必要性">响度补偿的必要性
-</h2><p>音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大月好听的审美心理也直接影响到响度大战。</p>
+</h2><p>音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。</p>
 <p>但是在音频制作的过程中，制作人不应该因为给音频增加压缩调节EQ增加失真的时候响度发生变化而影响自己的审美。一些插件给出了响度补偿(gain compensation)的方案，让输出的音频响度和输入的音频响度保持一致，避免响度差异带来误判。</p>
-<p>本文使用Melda Production的免费插件MAGC演示在Reaper中实现响度补偿的方案，这套方案可用于大部分音频处理插件处理过程中保持响度不变。</p>
+<p>本文使用Melda Production的免费插件MAGC演示在Reaper中实现响度补偿的方案，这套方案可用于大部分音频处理插件在处理过程中保持响度不变。</p>
 <h2 id="magc">MAGC
-</h2><p>MAGC(读作magic)是MeldaProduction(后文称作红塔山)推出的免费插件，处于他们家免费插件包按字母排序的第一个，如果不看说明书就直接把它拖进音轨发现毫无用处又因为红塔山的尿性忍着难看的UI和完全没有新手引导胡乱操作一通就会十分影响学习积极性。</p>
+</h2><p>MAGC(读作magic)是MeldaProduction(后文称作红塔山)推出的免费插件，处于他们家免费插件包按字母排序的第一个。如果不看说明书就直接把它拖进音轨发现毫无用处又因为红塔山的尿性忍着难看的UI和完全没有新手引导胡乱操作一通就会十分影响学习积极性。</p>
 <p>效果是将主音频信号的动态响度跟踪为侧链信号的动态响度，保持音轨音频和侧链音频响度逼近。</p>
 <p>举一个例子，在电音中时常会听见Lead具有和鼓点一样的呼吸感，每当鼓点响的时候鼓点作为侧链增加就会Lead的响度（注意不是侧链压缩，侧链压缩是鼓点响的时候反而让主音频响度减小，主音频和侧链信号呈负相关）。</p>
 <p>所以我们可以很容易想到使用这个插件实现响度补偿的逻辑：经过效果器一系列处理的音频作为主音轨输入到MAGC中，完全没有任何效果器处理的原声音频作为侧链输入到MAGC的侧链中，时刻将主音轨和侧链的响度进行对比。如果主音轨响度不同于侧链，MAGC就降低或升高主音轨的响度到向侧链的响度逼近。</p>
 <h2 id="在reaper中的操作">在Reaper中的操作
-</h2><p>这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中Fx轨道的“容器”来创建子fx轨，将插件和路由设置放在容器中，然后把容器作为Fx chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个Fx chain把其他效果器拖入正确位置就可以。</p>
+</h2><p>这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中FX轨道的“容器”来创建子FX轨，将插件和路由的设置放在容器中，然后把容器作为FX chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个FX chain把其他效果器拖入正确位置就可以。</p>
 <h3 id="响度补偿的路由逻辑">响度补偿的路由逻辑
 </h3><p>响度补偿的路由和操作逻辑如下图所示：</p>
 <p><img src="/2026/02/22/magcgaincompensation/gaincompensation.webp"
@@ -328,9 +329,9 @@
 		data-flex-basis="918px"
 	
 ></p>
-<p>即整个效果需要一个Gain Compensation容器，容器设置为4个输入2个输出。输入1和输入2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音轨输入MAGC，Gain Compensation容器的输入3和输入4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理的响度和原声相同的音频作为整个容器的输出。</p>
+<p>即整个效果需要一个Gain Compensation容器，容器设置为4个输入2个输出。输入1和输入2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3和输入4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。</p>
 <h3 id="实际操作">实际操作
-</h3><p>在Fx track中右键Add container就可以添加容器，如图我在音轨的Fx track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo加了一个Gain效果器用于调整原声的响度，而Effector中的Gain只用于测试，测试方法后文会提到。）</p>
+</h3><p>在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）</p>
 <p><img src="/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp"
 	width="1239"
 	height="1013"
@@ -356,7 +357,7 @@
 		data-flex-basis="386px"
 	
 ></p>
-<p>Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后经过效果器处理，且响度补偿后的音频输出。</p>
+<p>Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后效果器处理且响度补偿后的音频输出。</p>
 <p>设置Effectors容器的路由如下：
 <img src="/2026/02/22/magcgaincompensation/rAzUZayTvY.webp"
 	width="502"
@@ -384,10 +385,13 @@
 		data-flex-basis="466px"
 	
 ></p>
-<p>注意MAGC摆放在主容器，且在Effector容器的下面，所以对于MAGC来说Container Channel 1/2就是Effector输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2输出到音轨，整个过程结束。</p>
+<p>注意MAGC摆放在主容器内，且在Effector容器的下面，所以对于MAGC来说Container Channel 1/2就是Effector输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2，整个过程结束。</p>
 <h3 id="验证">验证
 </h3><p>可以通过在Effectors中放一个Gain来验证（因为最直观）。
-在MAGC中设置的range参数是指MAGC可以为响度补偿调整的最大响度。比如range是20dB，那么如果我在Gain插件里面调整Gain范围在-20dB~+20bB之间的时候，听见的声音基本是不会变化的，如+10dB的时候，可以看见插件图中G往零下压了10分贝。如果Gain插件+30dB,MAGC最多补偿了设置的20dB，剩下的10dB超出了range范围就无法处理了，可以听到声音变大。</p>
+在MAGC中设置的range参数是指MAGC可以为响度补偿调整的最大响度。比如range是20dB，那么如果我在Gain插件里面调整Gain范围在-20dB~+20dB之间的时候，听见的声音基本是不会变化的，如+10dB的时候，可以看见插件图中G往零下压了10分贝。如果Gain插件+30dB,MAGC最多补偿设置的20dB，剩下的10dB超出了range范围就无法处理了，可以听到声音变大。</p>
+<p>或者，在Effectors中随意放一些插件把音频变得很随意，然后在MAGC中选择Side-chain listen，此时听见的是没有进行处理的原声，也说明系统搭建成功了。</p>
+<h3 id="打包">打包
+</h3><p>由于每一次使用MAGC做响度补偿都会调整路由十分繁琐，所以本文介绍的方法给整个插件和路由都封装了。右键Gain Compensation Stereo，移动到FX chains,选择Save FX as chain&hellip;，这样以后都可以一键响度补偿了。</p>
 
 </section>
 
