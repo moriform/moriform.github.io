@@ -7,14 +7,107 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Sat, 10 Jan 2026 21:38:26 +0000</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于Aviutl的自定义UI</title>
+        <lastBuildDate>Sun, 22 Feb 2026 21:38:26 +0000</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>在Reaper中实现响度补偿的一种方法</title>
+        <link>https://moriform.github.io/2026/02/22/magcgaincompensation/</link>
+        <pubDate>Sun, 22 Feb 2026 21:38:26 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2026/02/22/magcgaincompensation/</guid>
+        <description>&lt;h2 id=&#34;响度补偿的必要性&#34;&gt;响度补偿的必要性
+&lt;/h2&gt;&lt;p&gt;音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大月好听的审美心理也直接影响到响度大战。&lt;/p&gt;
+&lt;p&gt;但是在音频制作的过程中，制作人不应该因为给音频增加压缩调节EQ增加失真的时候响度发生变化而影响自己的审美。一些插件给出了响度补偿(gain compensation)的方案，让输出的音频响度和输入的音频响度保持一致，避免响度差异带来误判。&lt;/p&gt;
+&lt;p&gt;本文使用Melda Production的免费插件MAGC演示在Reaper中实现响度补偿的方案，这套方案可用于大部分音频处理插件处理过程中保持响度不变。&lt;/p&gt;
+&lt;h2 id=&#34;magc&#34;&gt;MAGC
+&lt;/h2&gt;&lt;p&gt;MAGC(读作magic)是MeldaProduction(后文称作红塔山)推出的免费插件，处于他们家免费插件包按字母排序的第一个，如果不看说明书就直接把它拖进音轨发现毫无用处又因为红塔山的尿性忍着难看的UI和完全没有新手引导胡乱操作一通就会十分影响学习积极性。&lt;/p&gt;
+&lt;p&gt;效果是将主音频信号的动态响度跟踪为侧链信号的动态响度，保持音轨音频和侧链音频响度逼近。&lt;/p&gt;
+&lt;p&gt;举一个例子，在电音中时常会听见Lead具有和鼓点一样的呼吸感，每当鼓点响的时候鼓点作为侧链增加就会Lead的响度（注意不是侧链压缩，侧链压缩是鼓点响的时候反而让主音频响度减小，主音频和侧链信号呈负相关）。&lt;/p&gt;
+&lt;p&gt;所以我们可以很容易想到使用这个插件实现响度补偿的逻辑：经过效果器一系列处理的音频作为主音轨输入到MAGC中，完全没有任何效果器处理的原声音频作为侧链输入到MAGC的侧链中，时刻将主音轨和侧链的响度进行对比。如果主音轨响度不同于侧链，MAGC就降低或升高主音轨的响度到向侧链的响度逼近。&lt;/p&gt;
+&lt;h2 id=&#34;在reaper中的操作&#34;&gt;在Reaper中的操作
+&lt;/h2&gt;&lt;p&gt;这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中Fx轨道的“容器”来创建子fx轨，将插件和路由设置放在容器中，然后把容器作为Fx chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个Fx chain把其他效果器拖入正确位置就可以。&lt;/p&gt;
+&lt;h3 id=&#34;响度补偿的路由逻辑&#34;&gt;响度补偿的路由逻辑
+&lt;/h3&gt;&lt;p&gt;响度补偿的路由和操作逻辑如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/gaincompensation.webp&#34;
+	width=&#34;750&#34;
+	height=&#34;196&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/gaincompensation_hu_cc9c6081798fb70a.webp 480w, https://moriform.github.io/2026/02/22/magcgaincompensation/gaincompensation_hu_12882030fb96ae8c.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;382&#34;
+		data-flex-basis=&#34;918px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4个输入2个输出。输入1和输入2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音轨输入MAGC，Gain Compensation容器的输入3和输入4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理的响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
+&lt;h3 id=&#34;实际操作&#34;&gt;实际操作
+&lt;/h3&gt;&lt;p&gt;在Fx track中右键Add container就可以添加容器，如图我在音轨的Fx track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo加了一个Gain效果器用于调整原声的响度，而Effector中的Gain只用于测试，测试方法后文会提到。）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34;
+	width=&#34;1239&#34;
+	height=&#34;1013&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5_hu_7ea71b1347b35104.webp 480w, https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5_hu_bdb6acbb4f5b5dc9.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;122&#34;
+		data-flex-basis=&#34;293px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;设置Gain Compensation Stereo容器的路由如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34;
+	width=&#34;502&#34;
+	height=&#34;312&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/AGMLffQG0m_hu_7916699ce3a9c280.webp 480w, https://moriform.github.io/2026/02/22/magcgaincompensation/AGMLffQG0m_hu_433d3d804663ee28.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;386px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后经过效果器处理，且响度补偿后的音频输出。&lt;/p&gt;
+&lt;p&gt;设置Effectors容器的路由如下：
+&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/rAzUZayTvY.webp&#34;
+	width=&#34;502&#34;
+	height=&#34;352&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/rAzUZayTvY_hu_4cd2ca7fc6c25ce1.webp 480w, https://moriform.github.io/2026/02/22/magcgaincompensation/rAzUZayTvY_hu_d63d69cdc4256d79.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;142&#34;
+		data-flex-basis=&#34;342px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;只取主容器的1/2输入到该容器中，容器内部就是正常的双声道音轨的插件摆放。&lt;/p&gt;
+&lt;p&gt;设置MAGC的路由如下：
+&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34;
+	width=&#34;610&#34;
+	height=&#34;314&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw_hu_f400047a525e4e2a.webp 480w, https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw_hu_d5b08933f65fdb7.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;466px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;注意MAGC摆放在主容器，且在Effector容器的下面，所以对于MAGC来说Container Channel 1/2就是Effector输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2输出到音轨，整个过程结束。&lt;/p&gt;
+&lt;h3 id=&#34;验证&#34;&gt;验证
+&lt;/h3&gt;&lt;p&gt;可以通过在Effectors中放一个Gain来验证（因为最直观）。
+在MAGC中设置的range参数是指MAGC可以为响度补偿调整的最大响度。比如range是20dB，那么如果我在Gain插件里面调整Gain范围在-20dB~+20bB之间的时候，听见的声音基本是不会变化的，如+10dB的时候，可以看见插件图中G往零下压了10分贝。如果Gain插件+30dB,MAGC最多补偿了设置的20dB，剩下的10dB超出了range范围就无法处理了，可以听到声音变大。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>关于AviUtl的自定义UI</title>
         <link>https://moriform.github.io/2026/01/10/avitulinstallzoku/</link>
         <pubDate>Sat, 10 Jan 2026 21:38:26 +0000</pubDate>
         
         <guid>https://moriform.github.io/2026/01/10/avitulinstallzoku/</guid>
         <description>&lt;h2 id=&#34;前置准备&#34;&gt;前置准备
-&lt;/h2&gt;&lt;p&gt;前置准备参考前三篇关于Aviutl的文章。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;前置准备参考前三篇关于AviUtl的文章。&lt;/p&gt;
 &lt;h2 id=&#34;客制化&#34;&gt;客制化
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ePi5131/patch.aul&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Patch&lt;/a&gt;插件的发布直接拉高了AUL的性能，以此为基础&lt;a class=&#34;link&#34; href=&#34;https://github.com/hebiiro&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -24,19 +117,19 @@
     &gt; オブジェクトエクスプローラ&lt;/a&gt;。通过这三个插件可以将整个AUL的UI布置成一个标准视频剪辑软件的界面，也弥补了AUL多年没有媒体池的缺陷。&lt;/p&gt;
 &lt;p&gt;需要注意的是有以下插件冲突和替代情况：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;SplitWindow和psdtool kit在之前测试的时候同时打开psdtool kit无法打开。&lt;/li&gt;
+&lt;li&gt;SplitWindow和psdtool kit在之前测试的时候同时安装psdtool kit无法打开。&lt;/li&gt;
 &lt;li&gt;オブジェクトエクスプローラ是插件篇中提到的&lt;a class=&#34;link&#34; href=&#34;https://aoytsk.blog.jp/aviutl/1151849.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;文件管理器&lt;/a&gt;的上位替代。&lt;/li&gt;
 &lt;li&gt;SplitWindow和&lt;a class=&#34;link&#34; href=&#34;https://github.com/amate/PropertyWindowFixerPlugin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PropertyWindowFixerPlugin&lt;/a&gt;同时使用会导致报错，如果想要窗口一体化的话，一体化窗口就已经包括了WindowFixerPlugin的效果。可以在[表示]中选择取消勾选画面size固定化plugin来避免去文件夹删除插件。&lt;/li&gt;
+    &gt;PropertyWindowFixerPlugin&lt;/a&gt;同时使用会导致报错，如果想要窗口一体化的话，一体化窗口就已经包括了WindowFixerPlugin的效果。可以在[表示]中选择取消勾选画面size固定化plugin来避免在文件夹里删除插件的操作。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;安装过程如视频所示，包括基本插件的安装，以及一些进阶的自定义操作。&lt;/p&gt;
 &lt;iframe id=&#34;spkj&#34; src=&#34;https://www.acfun.cn/player/ac43509163&#34; width=&#34;100%&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;&lt;/span&gt; &lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;&lt;/span&gt; &lt;/iframe&gt; &lt;script type=&#34;text/javascript&#34;&gt; document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#34;spkj&#34;).scrollWidth*0.76+&#34;px&#34;; &lt;/script&gt;
 &lt;h2 id=&#34;后话&#34;&gt;后话
-&lt;/h2&gt;&lt;p&gt;2021年10月6日我发布了一篇《关于Aviutl的基本安装说明》。尽管当时想法十分天真，打算做一系列插件和脚本的使用教程，只更新了3篇文章就去忙其他事情了。那三篇已经把当时的AviUtl该讲的配置和基本使用方法介绍得差不多，读完了那几篇就可以自己配置软件开始制作视频并深入研究这个软件圈子了。&lt;/p&gt;
-&lt;p&gt;在那之后Aul发生了一些大事，其一是ePi5131大佬发布并持续更新patch.aul插件极大提高了这个快30岁的软件的性能，在这个插件的基础上社区内又持续更新了一堆脚本和插件。其二是神一样的Ken在半年前发布了AUL2，重新构建了这个软件，最直接的感受是页面不会像1代一样碎一屏幕，更加符合视频剪辑软件的UI；以及AUL2是惊人的极为先进的64位软件，性能大幅度提高，并且不会产生内存占满的情况了。&lt;/p&gt;
-&lt;p&gt;目前的情况是：Aul2持续发布更新，半年发布了27个beta版本。由于AUL和AUL2属于完全不一样的软件，其他比较出名的插件和脚本人在更新AUL1的插件和脚本的时候也在同步开发AUL2的适配插件。大方向一定是最后AUL2大部分代替AUL1，但是现在仍然处于过渡阶段。&lt;/p&gt;
-&lt;p&gt;我个人预计在很长时间里都不会去使用AUL2，因为目前更新速度过快没有稳定下来不如AUL1用得熟练，而且我个人使用这个软件的频率现在也不多了，目前更多时候拿剪映剪剪再加上字幕就够了。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;2021年10月6日我发布了一篇《关于Aviutl的基本安装说明》。当时想法十分天真，打算做一系列插件和脚本的使用教程，结果只更新了三篇文章就去忙其他事情了。那三篇已经把当时的AviUtl该讲的配置和基本使用方法介绍得差不多，读完了那几篇就可以自己配置软件开始制作视频并深入研究这个软件圈子了。&lt;/p&gt;
+&lt;p&gt;在那之后AUL发生了一些大事，其一是ePi5131大佬发布并持续更新patch.aul插件极大提高了这个快30岁的软件的性能，在这个插件的基础上社区内又持续更新了一堆脚本和插件。其二是神一样的KEN在半年前发布了AUL2，重新构建了这个软件，最直接的感受是页面不会像1代一样碎一屏幕，更加符合当代视频剪辑软件界面；以及AUL2是惊人的极为先进的64位软件，性能大幅度提高，并且不会产生内存占满的情况了。&lt;/p&gt;
+&lt;p&gt;目前的情况是：Aul2持续发布更新，半年发布了27个beta版本。由于AUL和AUL2属于完全不一样的软件，其他比较出名的插件和脚本制作者在更新AUL1的插件和脚本的时候也在同步开发AUL2的适配插件。大方向一定是最后AUL2大部分代替AUL1，但是现在仍然处于过渡阶段。&lt;/p&gt;
+&lt;p&gt;我个人预计在很长时间里都不会去使用AUL2，因为目前更新速度过快没有稳定下来也不如AUL1用得熟练，而且我个人使用这个软件的频率现在也不多了，目前更多时候拿剪映剪剪再加上字幕就够了。&lt;/p&gt;
 &lt;p&gt;本来我打算写点有的没的作为前三篇的补充，将那之后的一些瞩目的更新插件简要过一遍。以便总结结束之后去尝试新的AUL2，但是实际上细碎的东西太多了真要细讲不是几篇就能说完的，所以选了个能够增加编辑视频幸福感的方面简要介绍一下。剩下的相信靠读者强大的搜索能力和浏览器强大的翻译能力以及AI也能找到自己想要的信息。&lt;/p&gt;
 </description>
         </item>
@@ -125,16 +218,6 @@
         
         <guid>https://moriform.github.io/about/</guid>
         <description>&lt;p&gt;信息数据是否能够长久存在于互联网的世界？&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://moriform.github.io/diary/20260108/</link>
-        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/diary/20260108/</guid>
-        <description>&lt;p&gt;☁️ 阴&lt;br&gt;
-今天风很大，在 Stack 里折腾日记系统&lt;/p&gt;
 </description>
         </item>
         

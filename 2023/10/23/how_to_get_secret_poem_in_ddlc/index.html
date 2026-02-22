@@ -239,6 +239,8 @@
     </li>
     <li><a href="#运行">运行</a></li>
     <li><a href="#结果">结果</a></li>
+    <li><a href="#中途我想退出">中途我想退出&hellip;&hellip;</a></li>
+    <li><a href="#代码">代码</a></li>
   </ol>
 </nav>
         </div>
@@ -335,7 +337,179 @@
 <h2 id="结果">结果
 </h2><p>如果吃完饭看完电影回来发现画面停在了OS界面，则秘密10已经刷到，可以在shortcut里面找到截图和刷图用时以及刷图的次数。</p>
 <p>如果页面停在了游戏的设置画面，则在点击进入游戏时出现了问题，需要稍微加长while下面四行的两个duration参数。</p>
-
+<h2 id="中途我想退出">中途我想退出&hellip;&hellip;
+</h2><p>程序我没有做任何中途退出的方式。</p>
+<p>所以如果中途不想刷图了，或者运行的时候遇到了各种错误但是程序没有停下也没有办法控制鼠标。这个时候要介绍pyautogui的紧急停止机制:迅速将鼠标移动到屏幕最左上角，就可以停下整个程序。</p>
+<h2 id="代码">代码
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyautogui</span> <span class="k">as</span> <span class="nn">ui</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">ImageGrab</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;./shortcut/&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">):</span>           <span class="c1">#创建文件夹保存截图  #create a folder to save shortcut</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">time0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">480</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">1.7</span><span class="p">)</span>         <span class="c1">#点击开机键</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">480</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>         <span class="c1">#enter DDLC</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">470</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>           <span class="c1">#等待开屏动画   #5s game loading</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">pic</span> <span class="o">=</span> <span class="n">ImageGrab</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">pic</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s1">&#39;0_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>   <span class="c1">#截图保存格言   #save monologue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>           <span class="c1">#等待立绘动画   #load menu</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">pic</span> <span class="o">=</span> <span class="n">ImageGrab</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span>                  <span class="c1">#立绘截图      #get characters image from menu  </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>           <span class="c1">#退出DDLC      #exit DDLC and back to OS</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">img</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">color</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">1600</span><span class="p">,</span><span class="mi">680</span><span class="p">))</span>        <span class="c1">#截取图中某点的像素  #get pixel from characters image (actually from Monika)    </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">#if color != (166,132,143):              #判断色素是否正常，不正常则保存立绘并退出自动程序  </span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">20</span> <span class="p">)</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">filePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="s1">&#39;test.txt&#39;</span><span class="p">)</span><span class="c1">#check the color of the pixel, if black then save the ghost menu and cease the script</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filePath</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;It took </span><span class="si">{</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">time0</span><span class="p">)</span><span class="o">//</span><span class="mi">1</span><span class="si">}</span><span class="s1">s and repeated for </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> times&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">pic</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>    <span class="c1">#截图</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">850</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span><span class="c1">#确认退出</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -467,12 +641,12 @@
             
                 
 <article class="">
-    <a href="/2026/01/10/avitulinstallzoku/">
+    <a href="/2026/02/22/magcgaincompensation/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">关于Aviutl的自定义UI</h2>
+            <h2 class="article-title">在Reaper中实现响度补偿的一种方法</h2>
         </div>
     </a>
 </article>
