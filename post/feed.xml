@@ -7,7 +7,50 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Sun, 22 Feb 2026 21:38:26 +0000</lastBuildDate><atom:link href="https://moriform.github.io/post/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 23 Feb 2026 15:39:26 +0000</lastBuildDate><atom:link href="https://moriform.github.io/post/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>关于我的RSS订阅系统</title>
+        <link>https://moriform.github.io/2026/02/23/rsslast/</link>
+        <pubDate>Mon, 23 Feb 2026 15:39:26 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/2026/02/23/rsslast/</guid>
+        <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
+&lt;/h2&gt;&lt;p&gt;我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。&lt;/p&gt;
+&lt;p&gt;如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建RSS系统的人一些参考。本文不会讲基本的如何安装，只会说一些自己注意到的事项。&lt;/p&gt;
+&lt;h2 id=&#34;系统概述&#34;&gt;系统概述
+&lt;/h2&gt;&lt;p&gt;系统的大致情况和几年前没有变化。一个RSS抓取器，一个RSS订阅存储器和一个RSS阅读器。&lt;/p&gt;
+&lt;p&gt;RSS抓取器我部署了一个RSSHub。RSSHub是DIYGOD一直维护的RSS生成系统，至今一直在维持更新。我用RSSHub来进行哔哩哔哩视频的抓取和微博一些活动信息源的抓取。&lt;/p&gt;
+&lt;p&gt;RSS订阅存储器我是用的是FreshRSS，部署在和RSSHub相同的服务器上面。FreshRSS本身就可以当作一个阅读器在电脑端进行阅读，同时它提供Fever api可以用在其他阅读器上面，比如我的移动端Reeder 5阅读器。这样可以保证信息源在多端的同步。我可以在日常间隙中简要阅读文章，把觉得可以细读的文章和关注的UP主新发的视频收藏起来当作Read Later，有充分休息时间或是面对电脑的时候就可以把收藏翻出来一个一个看。&lt;/p&gt;
+&lt;h2 id=&#34;rsshub&#34;&gt;RSSHub
+&lt;/h2&gt;&lt;p&gt;RSSHub的配置总是充满各种坑。以前需要不定期手动更新各个网站的Cookie避免被网站反爬虫机制制裁，现在RSSHub使用了无头Chrome模拟真实浏览器访问，在访问哔哩哔哩的时候就不需要自己提供Cookie了。&lt;/p&gt;
+&lt;p&gt;然而代价是什么？代价是现在的RSSHub对于服务器内存的需求大幅增加。曾经我把wordpress和fFreshRSS和RSSHub放在一个2c2g服务器里面，经常不到半天就把服务器炸了还得重启。而现在我安排了一个境外的2c2g服务器，专门用于RSS系统，把RSSHub和FreshRSS部署在上面，和博客分开管理了。&lt;/p&gt;
+&lt;p&gt;影响RSSHub使用内存大小的另一个因素是用户对RSSHub的访问请求量。有两个重要参数影响了访问请求量：访问频率和访问的基数。&lt;/p&gt;
+&lt;p&gt;在修改之前单个RSSHub的docker就可以把2g内存(虽然可用的是1.8g)占满。因为不仅我在用这个RSSHub，其他人搜索到了这个公开页面的时候也会使用我的RSSHub，这样访问基数就增加了，我也时常会在log中看到一些神奇网站的订阅。虽然我很乐意公开我的RSSHub给其他人提供帮助，但如果因此我自己都没办法使用RSSHub的话就得不偿失了。所以最后我还是选择把我的RSSHub仅作为个人使用，方法就是使用nginx或caddy等类似的软件将RSSHub仅对我FreshRSS所在的服务器IP公开。&lt;/p&gt;
+&lt;h2 id=&#34;freshrss&#34;&gt;FreshRSS
+&lt;/h2&gt;&lt;p&gt;FreshRSS我基本使用了最基础默认的配置，打开了api提供我手机阅读器使用。Reeder和FreshRSS联动的好处是可以直接在Reeder上面将新的订阅添加到FreshRSS上面，这是我使用fluent reader无法做到的。&lt;/p&gt;
+&lt;p&gt;FreshRSS提供了各种功能的拓展，我推荐我使用的两个。&lt;/p&gt;
+&lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
+&lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
+&lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34;
+	width=&#34;2550&#34;
+	height=&#34;1393&#34;
+	srcset=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_b991678f9338cc6e.webp 480w, https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_6231b408211a06de.webp 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗
+&lt;/h2&gt;&lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
+&lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
+&lt;p&gt;真正的时事大多在各种通讯和邮件中，而不是RSS中。想通这个道理之后我开始思考每个订阅我应该多久访问一次。比如术力口周刊每周更新一次，那么我应该一周访问一次，且把它的访问更新时间放在周末，这样不会让我工作日分心。而bedroomproducersblog时常分享一些限时的免费物件，是货真价实的时事，我也会把它设置成6小时更新一次，这样不会出现信息尿不尽的情况，同时我的RSS服务器也稳定多了。&lt;/p&gt;
+&lt;p&gt;而现在有了AutoTTL之后大部分时间我订阅新的内容之后就不用手动去修改更新时间了，不过仍需要思考AutoTTL给的时间是否合理，比如说我订阅了Comiday的微博，这个是成都的一年两次同人展的官方，没有展的日子几个月都不发微博，有展的日子一天转几十个帖子。针对这种更新不规律但又十分重要的订阅，还是手动设置更新时间比如一天一次。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>在Reaper中实现响度补偿的一种方法</title>
         <link>https://moriform.github.io/2026/02/22/magcgaincompensation/</link>
         <pubDate>Sun, 22 Feb 2026 21:38:26 +0000</pubDate>
@@ -21,7 +64,7 @@
 &lt;/h2&gt;&lt;p&gt;MAGC(读作magic)是MeldaProduction(后文称作红塔山)推出的免费插件，处于他们家免费插件包按字母排序的第一个。如果不看说明书就直接把它拖进音轨发现毫无用处又因为红塔山的尿性忍着难看的UI和完全没有新手引导胡乱操作一通就会十分影响学习积极性。&lt;/p&gt;
 &lt;p&gt;效果是将主音频信号的动态响度跟踪为侧链信号的动态响度，保持音轨音频和侧链音频响度逼近。&lt;/p&gt;
 &lt;p&gt;举一个例子，在电音中时常会听见Lead具有和鼓点一样的呼吸感，每当鼓点响的时候鼓点作为侧链增加就会Lead的响度（注意不是侧链压缩，侧链压缩是鼓点响的时候反而让主音频响度减小，主音频和侧链信号呈负相关）。&lt;/p&gt;
-&lt;p&gt;所以我们可以很容易想到使用这个插件实现响度补偿的逻辑：经过效果器一系列处理的音频作为主音轨输入到MAGC中，完全没有任何效果器处理的原声音频作为侧链输入到MAGC的侧链中，时刻将主音轨和侧链的响度进行对比。如果主音轨响度不同于侧链，MAGC就降低或升高主音轨的响度到向侧链的响度逼近。&lt;/p&gt;
+&lt;p&gt;所以我们可以很容易想到使用这个插件实现响度补偿的逻辑：经过效果器一系列处理的音频作为主信号输入到MAGC中，完全没有任何效果器处理的原声音频作为侧链输入到MAGC的侧链中，时刻将主信号和侧链的响度进行对比。如果主信号响度不同于侧链，MAGC就降低或升高主信号的响度向侧链的响度逼近。&lt;/p&gt;
 &lt;h2 id=&#34;在reaper中的操作&#34;&gt;在Reaper中的操作
 &lt;/h2&gt;&lt;p&gt;这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中FX轨道的“容器”来创建子FX轨，将插件和路由的设置放在容器中，然后把容器作为FX chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个FX chain把其他效果器拖入正确位置就可以。&lt;/p&gt;
 &lt;h3 id=&#34;响度补偿的路由逻辑&#34;&gt;响度补偿的路由逻辑
@@ -38,7 +81,7 @@
 		data-flex-basis=&#34;918px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4个输入2个输出。输入1和输入2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3和输入4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
+&lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4输入2输出。输入1/2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3/4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
 &lt;h3 id=&#34;实际操作&#34;&gt;实际操作
 &lt;/h3&gt;&lt;p&gt;在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34;
@@ -80,7 +123,7 @@
 		data-flex-basis=&#34;342px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;只取主容器的1/2输入到该容器中，容器内部就是正常的双声道音轨的插件摆放。&lt;/p&gt;
+&lt;p&gt;只取主容器的1/2输入到该容器中，容器内部就是正常的双声道音轨的插件摆放方式。&lt;/p&gt;
 &lt;p&gt;设置MAGC的路由如下：
 &lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34;
 	width=&#34;610&#34;
@@ -94,11 +137,11 @@
 		data-flex-basis=&#34;466px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;注意MAGC摆放在主容器内，且在Effector容器的下面，所以对于MAGC来说Container Channel 1/2就是Effector输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2，整个过程结束。&lt;/p&gt;
+&lt;p&gt;注意MAGC摆放在主容器里，且在Effector容器下方，所以对于MAGC来说Container Channel 1/2就是Effectors输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2，整个过程结束。&lt;/p&gt;
 &lt;h3 id=&#34;验证&#34;&gt;验证
-&lt;/h3&gt;&lt;p&gt;可以通过在Effectors中放一个Gain来验证（因为最直观）。
-在MAGC中设置的range参数是指MAGC可以为响度补偿调整的最大响度。比如range是20dB，那么如果我在Gain插件里面调整Gain范围在-20dB~+20dB之间的时候，听见的声音基本是不会变化的，如+10dB的时候，可以看见插件图中G往零下压了10分贝。如果Gain插件+30dB,MAGC最多补偿设置的20dB，剩下的10dB超出了range范围就无法处理了，可以听到声音变大。&lt;/p&gt;
-&lt;p&gt;或者，在Effectors中随意放一些插件把音频变得很随意，然后在MAGC中选择Side-chain listen，此时听见的是没有进行处理的原声，也说明系统搭建成功了。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;可以通过在Effectors中放一个Gain来验证。
+MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB，则在Gain插件里面调整Gain范围在-20dB~+20dB之间的时候，听见的声音基本是不会变化的，如Gain+10dB的时候，可以看见插件图中G往下压了10分贝。如果Gain插件+30dB,超过了MAGC最多补偿设置的20dB，剩下的10dB无法处理，可以听到声音变大。&lt;/p&gt;
+&lt;p&gt;或者，在Effectors中随意放一些插件把音频变得很随意，然后在MAGC中选择Side-chain listen，如果听见没有进行处理的原声，则系统搭建成功。&lt;/p&gt;
 &lt;h3 id=&#34;打包&#34;&gt;打包
 &lt;/h3&gt;&lt;p&gt;由于每一次使用MAGC做响度补偿都会调整路由十分繁琐，所以本文介绍的方法给整个插件和路由都封装了。右键Gain Compensation Stereo，移动到FX chains,选择Save FX as chain&amp;hellip;，这样以后都可以一键响度补偿了。&lt;/p&gt;
 </description>
@@ -317,33 +360,6 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;既然是Key社的游戏还是短篇还是4折促销就不得不买了。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Max治好了我的巴托比症候群</title>
-        <link>https://moriform.github.io/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</link>
-        <pubDate>Tue, 28 Oct 2025 19:40:38 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</guid>
-        <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
-&lt;/h2&gt;&lt;p&gt;上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。&lt;/p&gt;
-&lt;h2 id=&#34;关于项目&#34;&gt;关于项目
-&lt;/h2&gt;&lt;p&gt;稍微说一下项目本身。&lt;/p&gt;
-&lt;p&gt;这是一个自称“自动Lofi生成系统”的MIDI生成片段。需要和任意一个daw连接，通过MIDI演奏乐器达到完成的成品。&lt;/p&gt;
-&lt;p&gt;如果你玩过《节奏医生》就知道里面2-4关卡海之歌（就是让你吃妮可和科尔狗粮的那一关）只需要不停地按下空格键就可以和着背景的爵士乐演奏一个听上去似乎还挺和谐的旋律。曾经我在这一关弹了10多分钟也不知道如何完成关卡，但也就是这十分钟给了我关于音乐新的感觉：1.音乐是可以无限延申的。2.有一种算法可以让随机的旋律和背景很好地融合在一起。如果乐理知识再深一点就知道这个算法的原理就是让旋律弹奏背景和弦的不同组成音。&lt;/p&gt;
-&lt;p&gt;于是，这两个思想就构成了课程项目的作业。暄穗按照其对于Lofi音乐拙劣理解和代码块的不成熟使用在几天时间里搭建了这个系统：背景音就是钢琴和弦，Lofi鼓就是最基础的那几个鼓组，贝斯就是和弦根音，旋律就是和弦随机音。贝斯和旋律音的时长完全从二分音符到十六分音符随机选择。这样一个简单Lofi音乐生成系统就搭建好了，没有使用更多的织体和各种和声写作方法，仅仅就是拼贴。唯一音乐知识的补足是上网搜索了几个Lofi合适的和弦进行，发现只要是同一音阶的七和弦拼上都挺不错。&lt;/p&gt;
-&lt;p&gt;在这个系统中自动生成的音乐充满了随机性。和弦是随机的，随机和和弦进行，以及随机的转调处理。鼓组是随机的，4个基本鼓组随机选择。贝斯是随机的，音符时长以及是否高八度处理是随机的。旋律是随机的，甚至对于音符选择和弦中的音还是音阶中和弦内的音也有权重。&lt;/p&gt;
-&lt;p&gt;于是，基于规则内的随机，显示出了超乎想象的效果，即出乎意料地正常。如果把这个系统放在直播的时候作为背景音乐运行个半个小时估计也没有人在意其中的微妙感。&lt;/p&gt;
-&lt;h2 id=&#34;巴托比症候群&#34;&gt;巴托比症候群
-&lt;/h2&gt;&lt;p&gt;巴托比出自梅尔维尔的小说《书记员巴托比》。后比拉·马塔斯以此为名写了一本《巴托比症候群》提出了这样一个现象：关于作家突然拒绝创作。&lt;/p&gt;
-&lt;p&gt;为何拒绝创作？书里面给出了各种各样的原因。但是，我为什么不创作？我似乎得了这样一种空想症，以至于我在很久之间都没有继续进行原创创作。我也学乐理知识，也学习如何制作如何混编，我也有过能在脑中浮现无限旋律的时候，但是一旦真正打开DAW的时候一切又归于虚无了。这样的状态持续了很久导致我已经不知道为什么创作以及为什么不创作了。&lt;/p&gt;
-&lt;p&gt;直到某一天读到《被讨厌的勇气》的时候，我注意到一段文中僧人说的话。&lt;/p&gt;
-&lt;p&gt;“我有一位年轻朋友，虽然梦想着成为小说家，但却总是写不出作品。他说是因为工作太忙、写小说的时间非常有限，所以才写不出来作品，也从未参加过任何比赛。但真是如此吗？实际上，他是想通过不去比赛这一方式来保留一种“如果做的话我也可以”的可能性，即不愿出去被人评价，更不愿去面对因作品拙劣而落选的现实。他只想活在“只要有时间我也可以、只要环境具备我也能写、自己有这种才能”之类的可能性中。或许再过5年或者10年，他又会开始使用“已经不再年轻”或者“也已经有了家庭”之类的借口。”&lt;/p&gt;
-&lt;p&gt;这让我背脊发凉也似乎让我找到了原因。我在一个自己虚构的位置上坐得太久，反倒不愿意在其他人面前展示了，久而久之刀锈了就更不愿意承认了。&lt;/p&gt;
-&lt;h2 id=&#34;意义&#34;&gt;意义
-&lt;/h2&gt;&lt;p&gt;这次Max工程对于我来说不仅是一个课程设计项目，更多的是启发。&lt;/p&gt;
-&lt;p&gt;给我的最大的启发是对于pattern的认知有了更深入的理解。以前对于创作的理解是在作画中计较每一个像素，在音乐中计较每一帧的表现，这让我在自以为庞大的工作量前心生畏惧。而若是通过pattern的思想来进行创作则会避免这些误区，从心理和实际着手的时候都可以减轻不少负担。&lt;/p&gt;
-&lt;p&gt;第二是给予了更多创作的信心。这次的系统搭建我也是按照以前仅存的经验一段一段搭建的，仅从和弦来说听不出什么名堂，加上鼓组也是。但是当贝斯和旋律的随机部分出来之后立刻感觉就不一样了。是部分的有机结合成就一首歌，所以在完成各个部分之前听上去不尽人意是情理之中的，如果在这之前就放弃实在可惜。&lt;/p&gt;
 </description>
         </item>
         
