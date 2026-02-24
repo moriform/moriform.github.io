@@ -7,7 +7,20 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Mon, 23 Feb 2026 15:39:26 +0000</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 23 Feb 2026 21:49:15 +0000</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://moriform.github.io/diary/20260223/</link>
+        <pubDate>Mon, 23 Feb 2026 21:49:15 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/diary/20260223/</guid>
+        <description>&lt;p&gt;上午睡过去了，所以吃了辛拉面。&lt;/p&gt;
+&lt;p&gt;下午做完了套餐，另外写了博客介绍自己的RSS系统。&lt;/p&gt;
+&lt;p&gt;晚上吃了Meal Deal，发现了Chorizo和鸡肉一起的三明治，味道不错。&lt;/p&gt;
+&lt;p&gt;突然发现下周要交整整三个大作业。得从明天开始每三天完成一个了，第一天完成基础知识，第二天完成基础作业，第三天进行基础之外的作业和文档编写。&lt;/p&gt;
+&lt;p&gt;上周过年，周中的时候尝试了把Cold turkey manager作为时间池而不是锁网站工具来使用，对日程效果拔群。副作用是现在特别累，感觉自己能一天把以前无所事事一整周的事情全部做了。所以当下要做的事情就是睡觉。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>关于我的RSS订阅系统</title>
         <link>https://moriform.github.io/2026/02/23/rsslast/</link>
         <pubDate>Mon, 23 Feb 2026 15:39:26 +0000</pubDate>
@@ -182,39 +195,6 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
 &gt;&lt;/p&gt;
 &lt;p&gt;回去的路上在玛莎买了临期的两块鸡排，晚上和洋葱放烤箱之后做鸡排饭吃。路上遇到了一个年轻的传教士叫我周日去摩门教堂参加活动。最后逛了附近的文具店买到了图钉就回去了。&lt;/p&gt;
 &lt;p&gt;好久都没有看见日光了。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>关于AviUtl的自定义UI</title>
-        <link>https://moriform.github.io/2026/01/10/avitulinstallzoku/</link>
-        <pubDate>Sat, 10 Jan 2026 21:38:26 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/2026/01/10/avitulinstallzoku/</guid>
-        <description>&lt;h2 id=&#34;前置准备&#34;&gt;前置准备
-&lt;/h2&gt;&lt;p&gt;前置准备参考前三篇关于AviUtl的文章。&lt;/p&gt;
-&lt;h2 id=&#34;客制化&#34;&gt;客制化
-&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ePi5131/patch.aul&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Patch&lt;/a&gt;插件的发布直接拉高了AUL的性能，以此为基础&lt;a class=&#34;link&#34; href=&#34;https://github.com/hebiiro&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hebiiro (蛇色(へびいろ))&lt;/a&gt;大佬发布了一系列的插件能够对AUL的UI进行自定义，其中瞩目的是&lt;a class=&#34;link&#34; href=&#34;https://github.com/hebiiro/AviUtl-Plugin-SplitWindow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;SplitWindow&lt;/a&gt;，&lt;a class=&#34;link&#34; href=&#34;https://github.com/hebiiro/AviUtl-Plugin-DarkenWindow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;黒窓&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt; オブジェクトエクスプローラ&lt;/a&gt;。通过这三个插件可以将整个AUL的UI布置成一个标准视频剪辑软件的界面，也弥补了AUL多年没有媒体池的缺陷。&lt;/p&gt;
-&lt;p&gt;需要注意的是有以下插件冲突和替代情况：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;SplitWindow和psdtool kit在之前测试的时候同时安装psdtool kit无法打开。&lt;/li&gt;
-&lt;li&gt;オブジェクトエクスプローラ是插件篇中提到的&lt;a class=&#34;link&#34; href=&#34;https://aoytsk.blog.jp/aviutl/1151849.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;文件管理器&lt;/a&gt;的上位替代。&lt;/li&gt;
-&lt;li&gt;SplitWindow和&lt;a class=&#34;link&#34; href=&#34;https://github.com/amate/PropertyWindowFixerPlugin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PropertyWindowFixerPlugin&lt;/a&gt;同时使用会导致报错，如果想要窗口一体化的话，一体化窗口就已经包括了WindowFixerPlugin的效果。可以在[表示]中选择取消勾选画面size固定化plugin来避免在文件夹里删除插件的操作。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;安装过程如视频所示，包括基本插件的安装，以及一些进阶的自定义操作。&lt;/p&gt;
-&lt;iframe id=&#34;spkj&#34; src=&#34;https://www.acfun.cn/player/ac43509163&#34; width=&#34;100%&#34; frameborder=&#34;no&#34; scrolling=&#34;no&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;&lt;/span&gt; &lt;span data-mce-type=&#34;bookmark&#34; style=&#34;display: inline-block; width: 0px; overflow: hidden; line-height: 0;&#34; class=&#34;mce_SELRES_start&#34;&gt;&lt;/span&gt; &lt;/iframe&gt; &lt;script type=&#34;text/javascript&#34;&gt; document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#34;spkj&#34;).scrollWidth*0.76+&#34;px&#34;; &lt;/script&gt;
-&lt;h2 id=&#34;后话&#34;&gt;后话
-&lt;/h2&gt;&lt;p&gt;2021年10月6日我发布了一篇《关于Aviutl的基本安装说明》。当时想法十分天真，打算做一系列插件和脚本的使用教程，结果只更新了三篇文章就去忙其他事情了。那三篇已经把当时的AviUtl该讲的配置和基本使用方法介绍得差不多，读完了那几篇就可以自己配置软件开始制作视频并深入研究这个软件圈子了。&lt;/p&gt;
-&lt;p&gt;在那之后AUL发生了一些大事，其一是ePi5131大佬发布并持续更新patch.aul插件极大提高了这个快30岁的软件的性能，在这个插件的基础上社区内又持续更新了一堆脚本和插件。其二是神一样的KEN在半年前发布了AUL2，重新构建了这个软件，最直接的感受是页面不会像1代一样碎一屏幕，更加符合当代视频剪辑软件界面；以及AUL2是惊人的极为先进的64位软件，性能大幅度提高，并且不会产生内存占满的情况了。&lt;/p&gt;
-&lt;p&gt;目前的情况是：Aul2持续发布更新，半年发布了27个beta版本。由于AUL和AUL2属于完全不一样的软件，其他比较出名的插件和脚本制作者在更新AUL1的插件和脚本的时候也在同步开发AUL2的适配插件。大方向一定是最后AUL2大部分代替AUL1，但是现在仍然处于过渡阶段。&lt;/p&gt;
-&lt;p&gt;我个人预计在很长时间里都不会去使用AUL2，因为目前更新速度过快没有稳定下来也不如AUL1用得熟练，而且我个人使用这个软件的频率现在也不多了，目前更多时候拿剪映剪剪再加上字幕就够了。&lt;/p&gt;
-&lt;p&gt;本来我打算写点有的没的作为前三篇的补充，将那之后的一些瞩目的更新插件简要过一遍。以便总结结束之后去尝试新的AUL2，但是实际上细碎的东西太多了真要细讲不是几篇就能说完的，所以选了个能够增加编辑视频幸福感的方面简要介绍一下。剩下的相信靠读者强大的搜索能力和浏览器强大的翻译能力以及AI也能找到自己想要的信息。&lt;/p&gt;
 </description>
         </item>
         
