@@ -7,7 +7,17 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Mon, 23 Feb 2026 21:49:15 +0000</lastBuildDate><atom:link href="https://moriform.github.io/diary/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 02 Mar 2026 11:08:47 +0000</lastBuildDate><atom:link href="https://moriform.github.io/diary/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://moriform.github.io/diary/20260302/</link>
+        <pubDate>Mon, 02 Mar 2026 11:08:47 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/diary/20260302/</guid>
+        <description>&lt;p&gt;现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。&lt;/p&gt;
+&lt;p&gt;今天要把Audio Programming连续肝一天。估计要像以前做声学作业那样彻夜长谈了。这次的作业是使用简单波形和简单filter与reverb在JUCE里面搭建一个drone music自动生成器。估计写上三个合成器组就差不多了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title></title>
         <link>https://moriform.github.io/diary/20260223/</link>
         <pubDate>Mon, 23 Feb 2026 21:49:15 +0000</pubDate>
@@ -66,16 +76,6 @@
         <guid>https://moriform.github.io/diary/20260109/</guid>
         <description>&lt;p&gt;假期快要结束了，几个课程的指导人都已经发了邮件了。&lt;/p&gt;
 &lt;p&gt;今天把所有的博客都维护完成了。一个静态博客和一个媒体全部丢失的wordpress。在这之后就安心写博客不去碰配置了。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://moriform.github.io/diary/20260108/</link>
-        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/diary/20260108/</guid>
-        <description>&lt;p&gt;☁️ 阴&lt;br&gt;
-今天风很大，在 Stack 里折腾日记系统&lt;/p&gt;
 </description>
         </item>
         
