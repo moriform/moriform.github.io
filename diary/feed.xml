@@ -7,7 +7,19 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Mon, 02 Mar 2026 11:08:47 +0000</lastBuildDate><atom:link href="https://moriform.github.io/diary/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 03 Mar 2026 21:08:33 +0000</lastBuildDate><atom:link href="https://moriform.github.io/diary/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://moriform.github.io/diary/20260303/</link>
+        <pubDate>Tue, 03 Mar 2026 21:08:33 +0000</pubDate>
+        
+        <guid>https://moriform.github.io/diary/20260303/</guid>
+        <description>&lt;p&gt;从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。&lt;/p&gt;
+&lt;p&gt;音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。&lt;/p&gt;
+&lt;p&gt;提交作业之后就这样睡一觉到下午，一天都不想动弹了。看了一下这个作业用了我22个番茄钟共18小时，提前安排的话不至于这样狼狈。&lt;/p&gt;
+&lt;p&gt;突然发现如果每天都可以学上8个小时，或者说将番茄闹钟设置50分钟一轮能够学上8轮的话基本上一天就可以过得很充实也不用像这样每次都是邻近DDL了再做作业。所以要在自己还有大片可掌握时间内努力达到这个目的，让自己的时间不要白白浪费。总之今天的学习时间全部花在编程作业上满了快9个小时，可以休息了。明天又是新的挑战（指后天要交的机器学习作业）。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title></title>
         <link>https://moriform.github.io/diary/20260302/</link>
         <pubDate>Mon, 02 Mar 2026 11:08:47 +0000</pubDate>
@@ -15,6 +27,7 @@
         <guid>https://moriform.github.io/diary/20260302/</guid>
         <description>&lt;p&gt;现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。&lt;/p&gt;
 &lt;p&gt;今天要把Audio Programming连续肝一天。估计要像以前做声学作业那样彻夜长谈了。这次的作业是使用简单波形和简单filter与reverb在JUCE里面搭建一个drone music自动生成器。估计写上三个合成器组就差不多了。&lt;/p&gt;
+&lt;p&gt;今天要尽量完成音频编程的所有作业，明天去Tutorial签到。 明天要做的是套餐和8小时有效学习完成机器学习所有内容。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -66,16 +79,6 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;回去的路上在玛莎买了临期的两块鸡排，晚上和洋葱放烤箱之后做鸡排饭吃。路上遇到了一个年轻的传教士叫我周日去摩门教堂参加活动。最后逛了附近的文具店买到了图钉就回去了。&lt;/p&gt;
 &lt;p&gt;好久都没有看见日光了。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://moriform.github.io/diary/20260109/</link>
-        <pubDate>Fri, 09 Jan 2026 20:16:46 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/diary/20260109/</guid>
-        <description>&lt;p&gt;假期快要结束了，几个课程的指导人都已经发了邮件了。&lt;/p&gt;
-&lt;p&gt;今天把所有的博客都维护完成了。一个静态博客和一个媒体全部丢失的wordpress。在这之后就安心写博客不去碰配置了。&lt;/p&gt;
 </description>
         </item>
         

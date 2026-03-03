@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。\n音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。\n">
 <title></title>
 
-<link rel='canonical' href='https://moriform.github.io/diary/20260302/'>
+<link rel='canonical' href='https://moriform.github.io/diary/20260303/'>
 
 <link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="">
-<meta property='og:description' content="现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。\n">
-<meta property='og:url' content='https://moriform.github.io/diary/20260302/'>
+<meta property='og:description' content="从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。\n音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。\n">
+<meta property='og:url' content='https://moriform.github.io/diary/20260303/'>
 <meta property='og:site_name' content='森月台'>
-<meta property='og:type' content='article'><meta property='article:section' content='Diary' /><meta property='article:published_time' content='2026-03-02T11:08:47&#43;00:00'/><meta property='article:modified_time' content='2026-03-02T11:08:47&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Diary' /><meta property='article:published_time' content='2026-03-03T21:08:33&#43;00:00'/><meta property='article:modified_time' content='2026-03-03T21:08:33&#43;00:00'/>
 <meta name="twitter:title" content="">
-<meta name="twitter:description" content="现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。\n">
+<meta name="twitter:description" content="从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。\n音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
@@ -218,7 +218,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/diary/20260302/"></a>
+            <a href="/diary/20260303/"></a>
         </h2>
     
         
@@ -240,7 +240,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2026-03-02T11:08:47Z'>Mar 02, 2026</time>
+                <time class="article-time--published" datetime='2026-03-03T21:08:33Z'>Mar 03, 2026</time>
             </div>
         
 
@@ -256,9 +256,10 @@
     <section class="article-content">
     
     
-    <p>现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。</p>
-<p>今天要把Audio Programming连续肝一天。估计要像以前做声学作业那样彻夜长谈了。这次的作业是使用简单波形和简单filter与reverb在JUCE里面搭建一个drone music自动生成器。估计写上三个合成器组就差不多了。</p>
-<p>今天要尽量完成音频编程的所有作业，明天去Tutorial签到。 明天要做的是套餐和8小时有效学习完成机器学习所有内容。</p>
+    <p>从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。</p>
+<p>音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。</p>
+<p>提交作业之后就这样睡一觉到下午，一天都不想动弹了。看了一下这个作业用了我22个番茄钟共18小时，提前安排的话不至于这样狼狈。</p>
+<p>突然发现如果每天都可以学上8个小时，或者说将番茄闹钟设置50分钟一轮能够学上8轮的话基本上一天就可以过得很充实也不用像这样每次都是邻近DDL了再做作业。所以要在自己还有大片可掌握时间内努力达到这个目的，让自己的时间不要白白浪费。总之今天的学习时间全部花在编程作业上满了快9个小时，可以休息了。明天又是新的挑战（指后天要交的机器学习作业）。</p>
 
 </section>
 
