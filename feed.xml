@@ -7,7 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Fri, 06 Mar 2026 23:06:52 +0000</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 02 Apr 2026 22:28:57 +0100</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://moriform.github.io/diary/20260402/</link>
+        <pubDate>Thu, 02 Apr 2026 22:28:57 +0100</pubDate>
+        
+        <guid>https://moriform.github.io/diary/20260402/</guid>
+        <description>&lt;h1 id=&#34;记一次闲鱼买卖&#34;&gt;记一次闲鱼买卖
+&lt;/h1&gt;&lt;p&gt;我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给自己回血。&lt;/p&gt;
+&lt;p&gt;这次我挂出的DAW软件有闲鱼用户询问了。这实际上是一个十分经典古董的软件，以相当的录音效果出现在20年前国内混音教程中神一样的存在，不过现在当问到人用什么DAW的时候经常不会出现在对话当中。我把它挂出来也是因为我Cubase FL Studio One Ableton啥的都用过一遍，而且现在Reaper用起飞了，实在不想给自己添加负担再泛泛学习我9成用不到的东西。&lt;/p&gt;
+&lt;p&gt;一对话我就察觉到了用户的特殊性，从输入法语言的使用以及我说汇率之后让我帮他计算价格的时候我察觉到了对方是个上了年纪的人。个人页面果然没错，是个60后，而且爱好广泛到闲鱼卖家好评从钓鱼到摄影。我感觉这大概率是个突然对音频制作感兴趣的大叔，估计从哪个他那个年代的制作人那里听说了这个软件，不然没有理由买这个。如果真实如此的话那就有得折腾了。通常年纪不大的卖家我发送插件网址让他注册账号，然后发送激活码，他注册完交易就结束了；而年龄大一些的就要帮助处理一些网络问题，而需要我帮忙算汇率的我也不知道还会出什么差错，就像淘宝付费帮人安装Steam一样。&lt;/p&gt;
+&lt;p&gt;果然，一开始让注册账号的时候就出问题，然后问我能不能远程操作。我下载了向日葵之后发现远程操作需要国内的电话才行，我在英国没办法用就直接告诉他我无法远程。然后接下来的一大段对话就是他&amp;quot;肯定能用告诉我协助码以前远程都不用注册账号“的坚持之类。最后实在忍不住，直接视频电话给他，给了他我的协助码看他也出了问题。然后看着他的电脑屏幕，用他的邮箱注册了账号一步一步告诉他登录哪个网站哪个账号，哪个按钮下载，下载又等多久。在下载中开始闲聊起来。原来对面是一个大省的一个多媒体工作室的老一辈策划经理人员，组织过一些明星的演出，这次要审一个音乐人的作品，对方出身老制作室使用的就是这个DAW，所以对面发送工程文件但是这边没有一个软件可以打开的时候掉了面子，于是来闲鱼找这个软件，刚好找到我在卖这个软件的散码。&lt;/p&gt;
+&lt;p&gt;然后看着他的屏幕安装软件，哪个按钮登录账号，又在我不熟悉的DAW中找到如何让音响发声才结束。因为是音频人所以我也问了他一些问题，听他说他们老一辈怎么录音的怎么做策划的，听他说日本那边做音频技术而国内缺失的。同时向他安利他电脑也能起飞使用的Reaper也安利成功了。总之类似同行的前辈的话交流就轻松多了。最后告别的时候他祝我游戏大卖我才知道因为安利Reaper时候说的话他当我是游戏音频制作人了，不过为了交流流利就没有指出了。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title></title>
         <link>https://moriform.github.io/diary/20260306/</link>
         <pubDate>Fri, 06 Mar 2026 23:06:52 +0000</pubDate>
@@ -54,49 +68,6 @@
 &lt;p&gt;晚上吃了Meal Deal，发现了Chorizo和鸡肉一起的三明治，味道不错。&lt;/p&gt;
 &lt;p&gt;突然发现下周要交整整三个大作业。得从明天开始每三天完成一个了，第一天完成基础知识，第二天完成基础作业，第三天进行基础之外的作业和文档编写。&lt;/p&gt;
 &lt;p&gt;上周过年，周中的时候尝试了把Cold turkey manager作为时间池而不是锁网站工具来使用，对日程效果拔群。副作用是现在特别累，感觉自己能一天把以前无所事事一整周的事情全部做了。所以当下要做的事情就是睡觉。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>关于我的RSS订阅系统</title>
-        <link>https://moriform.github.io/2026/02/23/rsslast/</link>
-        <pubDate>Mon, 23 Feb 2026 15:39:26 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/2026/02/23/rsslast/</guid>
-        <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
-&lt;/h2&gt;&lt;p&gt;我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。&lt;/p&gt;
-&lt;p&gt;如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建RSS系统的人一些参考。本文不会讲基本的如何安装，只会说一些自己注意到的事项。&lt;/p&gt;
-&lt;h2 id=&#34;系统概述&#34;&gt;系统概述
-&lt;/h2&gt;&lt;p&gt;系统的大致情况和几年前没有变化。一个RSS抓取器，一个RSS订阅存储器和一个RSS阅读器。&lt;/p&gt;
-&lt;p&gt;RSS抓取器我部署了一个RSSHub。RSSHub是DIYGOD一直维护的RSS生成系统，至今一直在维持更新。我用RSSHub来进行哔哩哔哩视频的抓取和微博一些活动信息源的抓取。&lt;/p&gt;
-&lt;p&gt;RSS订阅存储器我是用的是FreshRSS，部署在和RSSHub相同的服务器上面。FreshRSS本身就可以当作一个阅读器在电脑端进行阅读，同时它提供Fever api可以用在其他阅读器上面，比如我的移动端Reeder 5阅读器。这样可以保证信息源在多端的同步。我可以在日常间隙中简要阅读文章，把觉得可以细读的文章和关注的UP主新发的视频收藏起来当作Read Later，有充分休息时间或是面对电脑的时候就可以把收藏翻出来一个一个看。&lt;/p&gt;
-&lt;h2 id=&#34;rsshub&#34;&gt;RSSHub
-&lt;/h2&gt;&lt;p&gt;RSSHub的配置总是充满各种坑。以前需要不定期手动更新各个网站的Cookie避免被网站反爬虫机制制裁，现在RSSHub使用了无头Chrome模拟真实浏览器访问，在访问哔哩哔哩的时候就不需要自己提供Cookie了。&lt;/p&gt;
-&lt;p&gt;然而代价是什么？代价是现在的RSSHub对于服务器内存的需求大幅增加。曾经我把wordpress和FreshRSS和RSSHub放在一个2c2g服务器里面，经常不到半天就把服务器炸了还得重启。而现在我安排了一个境外的2c2g服务器，专门用于RSS系统，把RSSHub和FreshRSS部署在上面，和博客分开管理了。&lt;/p&gt;
-&lt;p&gt;影响RSSHub使用内存大小的另一个因素是用户对RSSHub的访问请求量。有两个重要参数影响了访问请求量：访问频率和访问的基数。&lt;/p&gt;
-&lt;p&gt;在修改之前单个RSSHub的docker就可以把2g内存(虽然可用的是1.8g)占满。因为不仅我在用这个RSSHub，其他人搜索到了这个公开页面的时候也会使用我的RSSHub，这样访问基数就增加了，我也时常会在log中看到一些神奇网站的订阅。虽然我很乐意公开我的RSSHub给其他人提供帮助，但如果因此我自己都没办法使用RSSHub的话就得不偿失了。所以最后我还是选择把我的RSSHub仅作为个人使用，方法就是使用nginx或caddy等类似的软件将RSSHub仅对我FreshRSS所在的服务器IP公开。&lt;/p&gt;
-&lt;h2 id=&#34;freshrss&#34;&gt;FreshRSS
-&lt;/h2&gt;&lt;p&gt;FreshRSS我基本使用了最基础默认的配置，打开了api提供我手机阅读器使用。Reeder和FreshRSS联动的好处是可以直接在Reeder上面将新的订阅添加到FreshRSS上面，这是我使用fluent reader无法做到的。&lt;/p&gt;
-&lt;p&gt;FreshRSS提供了各种功能的拓展，我推荐我使用的两个。&lt;/p&gt;
-&lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
-&lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
-&lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34;
-	width=&#34;2550&#34;
-	height=&#34;1393&#34;
-	srcset=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_b991678f9338cc6e.webp 480w, https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_6231b408211a06de.webp 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;183&#34;
-		data-flex-basis=&#34;439px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗
-&lt;/h2&gt;&lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
-&lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
-&lt;p&gt;真正的时事大多在各种通讯和邮件中，而不是RSS中。想通这个道理之后我开始思考每个订阅我应该多久访问一次。比如术力口周刊每周更新一次，那么我应该一周访问一次，且把它的访问更新时间放在周末，这样不会让我工作日分心。而bedroomproducersblog时常分享一些限时的免费物件，是货真价实的时事，我也会把它设置成6小时更新一次，这样不会出现信息尿不尽的情况，同时我的RSS服务器也稳定多了。&lt;/p&gt;
-&lt;p&gt;而现在有了AutoTTL之后大部分时间我订阅新的内容之后就不用手动去修改更新时间了，不过仍需要思考AutoTTL给的时间是否合理，比如说我订阅了Comiday的微博，这个是成都的一年两次同人展的官方，没有展的日子几个月都不发微博，有展的日子一天转几十个帖子。针对这种更新不规律但又十分重要的订阅，还是手动设置更新时间比如一天一次。&lt;/p&gt;
 </description>
         </item>
         
