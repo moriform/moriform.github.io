@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on 森月台</title>
+        <link>https://moriform.github.io/tags/hugo/</link>
+        <description>Recent content in Hugo on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Sat, 25 Apr 2026 21:20:42 +0100</lastBuildDate><atom:link href="https://moriform.github.io/tags/hugo/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>我用Giscus做了博客的个人说说页面</title>
+        <link>https://moriform.github.io/2026/04/25/giscussvsvnm/</link>
+        <pubDate>Sat, 25 Apr 2026 21:20:42 +0100</pubDate>
+        
+        <guid>https://moriform.github.io/2026/04/25/giscussvsvnm/</guid>
+        <description>&lt;p&gt;我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是碎碎念。&lt;/p&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;我除了有一个Wordpress动态博客以外，还留有一个Hugo静态博客部署在Github Page上面。其中的考量有很多，比如静态博客的文章url和Wordpress保持一致，这样一旦Wordpress出现了什么问题崩了或者暂时没有一百块一年的服务器了我就可以把域名无缝解析到我的静态博客；而且在Github上面使用Git上传文章产生的时间戳比我只发布到自己的服务器要更加可信；以及最重要的，我需要一个看上去十分中立客观的免费平台存放我的文章，作为我在互联网世界的数据骨灰盒。&lt;/p&gt;
+&lt;p&gt;离开熟人朋友圈和QQ动态等一系列平台之后我也尝试过许多记录碎碎念的方式。比如最开始没有运行博客的时候我跟着一群日本二次元程序员用Scrapbox来记录各种生活当微型博客使用。用Wordpress之后我专门做了一个照片墙页面每天往上面加一些东西。学会用Docker之后我部署了memos，一个确实更好用的记录系统来写碎碎念。&lt;/p&gt;
+&lt;p&gt;不过每一种其实都没有持续太久。Wordpress专门页面的每一次写说说我都要挂主题模板，每一次跟新都需要我使用Wordpress的编辑工具，也就是说大多数时候我必须使用电脑。memos很好用，但是需要服务器，而且那个阶段处于Rsshub经常在我的服务器闹脾气的时候。在使用Hugo之后我开了一个日记分类，打算每天写点什么，但是动不动就开天窗也很打击信心，而且只是想写一些小话就要发一篇文章也没有必要。&lt;/p&gt;
+&lt;h2 id=&#34;需求&#34;&gt;需求
+&lt;/h2&gt;&lt;p&gt;现在我对于说说系统的要求有以下几点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;不需要自己用服务器部署且免费&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;信息存储方中立长久&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;可以通过手机端进行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;流程&#34;&gt;流程
+&lt;/h2&gt;&lt;p&gt;然后我就想到了使用Giscus这个评论系统来做博客。&lt;/p&gt;
+&lt;p&gt;Giscus本来是我Github Page博客的评价系统，个人认为这套系统可以活到我死所以就用了，这里也算是若无必要勿增实体了。仔细想说说也就是对时间空白的评论。&lt;/p&gt;
+&lt;p&gt;搭建的方式再简单不过：静态博客中直接创建一个标题为“说说”的带有评论功能的空白页面。登录Github账号在这个页面进行评论，然后Github手机端就有了Discussion的内容，之后的说说就可以直接在APP的discussion里面直接进行了。&lt;/p&gt;
+&lt;h2 id=&#34;改进&#34;&gt;改进
+&lt;/h2&gt;&lt;p&gt;还有一些可以增加体验感的改良。&lt;/p&gt;
+&lt;h3 id=&#34;图片压缩&#34;&gt;图片压缩
+&lt;/h3&gt;&lt;p&gt;使用手机APP进行评论的时候可以直接上传图片，这个时候图片会上传到Github的公共图床上面，然后以Markdown的方式链接在评论中。如果经常上传图片的话可以提前把图片进行压缩处理。&lt;/p&gt;
+&lt;p&gt;我是用Ios手机，在捷径里面有对于图片的压缩方法。&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15t41187eE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;教你用iPhone自带的图片压缩功能，轻松控制图片大小！哔哩哔哩_bilibili&lt;/a&gt; 这里介绍了具体方法，也可以同时减小图片的尺寸。这样我2M的图片可以压缩到100KB再上传。&lt;/p&gt;
+&lt;h3 id=&#34;时间顺序&#34;&gt;时间顺序
+&lt;/h3&gt;&lt;p&gt;博客评论系统和说说系统的最大区别其实是一般评论系统旧的在新的评论上面，而说说朋友圈之类的新的在旧的贴子上面。Giscus默认一般评论方式，但是提供这两种用于设置。可以见&lt;a class=&#34;link&#34; href=&#34;https://github.com/giscus/giscus/blob/40c65a5d35b6392709c79ed7c51cf4bfe16c01ad/ADVANCED-USAGE.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;giscus/ADVANCED-USAGE.mds&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;对于Hugo用户来说在Hugo的static文件夹建立一个giscus.json然后贴入对应的参数设置就可以了。渲染Public的时候这个文件会出现在public下面对Giscus默认样式进行修改。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;defaultCommentOrder&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;newest&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
