@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://moriform.github.io/categories/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/tags/mixcraft/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/post/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/tags/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/2026/04/02/xmyu1/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/tags/%E9%97%B2%E9%B1%BC/</loc>
+    <lastmod>2026-04-02T23:39:26+00:00</lastmod>
+  </url><url>
     <loc>https://moriform.github.io/diary/20260402/</loc>
     <lastmod>2026-04-02T22:28:57+01:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/diary/</loc>
-    <lastmod>2026-04-02T22:28:57+01:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/</loc>
     <lastmod>2026-04-02T22:28:57+01:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/diary/20260306/</loc>
@@ -23,22 +47,13 @@
     <loc>https://moriform.github.io/diary/20260223/</loc>
     <lastmod>2026-02-23T21:49:15+00:00</lastmod>
   </url><url>
-    <loc>https://moriform.github.io/categories/</loc>
-    <lastmod>2026-02-23T15:39:26+00:00</lastmod>
-  </url><url>
     <loc>https://moriform.github.io/tags/freshrss/</loc>
-    <lastmod>2026-02-23T15:39:26+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/post/</loc>
     <lastmod>2026-02-23T15:39:26+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/tags/rss/</loc>
     <lastmod>2026-02-23T15:39:26+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/tags/rsshub/</loc>
-    <lastmod>2026-02-23T15:39:26+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/tags/</loc>
     <lastmod>2026-02-23T15:39:26+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/2026/02/23/rsslast/</loc>
@@ -114,9 +129,6 @@
     <lastmod>2025-12-01T19:40:38+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/tags/weekly/</loc>
-    <lastmod>2025-12-01T19:40:38+00:00</lastmod>
-  </url><url>
-    <loc>https://moriform.github.io/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-12-01T19:40:38+00:00</lastmod>
   </url><url>
     <loc>https://moriform.github.io/tags/max/</loc>
@@ -361,6 +373,8 @@
   </url><url>
     <loc>https://moriform.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moriform.github.io/svsvnm2026/</loc>
   </url><url>
     <loc>https://moriform.github.io/links/</loc>
   </url><url>
