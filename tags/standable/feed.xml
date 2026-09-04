@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Standable on 森月台</title>
+        <link>https://moriform.github.io/tags/standable/</link>
+        <description>Recent content in Standable on 森月台</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>暄穗</copyright>
+        <lastBuildDate>Fri, 04 Sep 2026 17:23:42 +0800</lastBuildDate><atom:link href="https://moriform.github.io/tags/standable/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>VRChat模拟全身追踪的方案</title>
+        <link>https://moriform.github.io/2026/09/04/rvchatvdstandable/</link>
+        <pubDate>Fri, 04 Sep 2026 17:23:42 +0800</pubDate>
+        
+        <guid>https://moriform.github.io/2026/09/04/rvchatvdstandable/</guid>
+        <description>&lt;img src="https://moriform.github.io/2026/09/04/rvchatvdstandable/VRChat_2026-07-08_00-36-43.743_1920x1080.webp" alt="Featured image of post VRChat模拟全身追踪的方案" /&gt;&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
+&lt;/h2&gt;&lt;p&gt;暄穗打算做一个slimeVR来实现VRChat里面的全身追踪，但是出于资金和个人精力这个方案得之后再考虑。正好最近看到了virtual desktop（VD）的更新，可以使用有线串流的方式玩VRChat，于是收集并实践了一套基于软件和quest 3头显设备的模拟全身追踪方案。&lt;/p&gt;
+&lt;h2 id=&#34;材料&#34;&gt;材料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.meta.com/quest/quest-3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Quest 3&lt;/a&gt;: Quest 3在2024年推出了一个Inside-Out Body Tracking&lt;a class=&#34;link&#34; href=&#34;https://developers.meta.com/horizon/blog/inside-out-body-tracking-and-generative-legs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;(IOBT)&lt;/a&gt;功能，可以通过Quest 3自带的摄像头对于上半身（手肘手臂以及胸部位置）进行真实的追踪，这个数据可以直接用于VRChat的上半身追踪。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.vrdesktop.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtual Desktop&lt;/a&gt;: VD是常用的VR串流软件，在国外的时候网络允许所以可以使用Meta Link有线串流，但是回国之后就会有严重的甚至proxy都无法解决的问题，而VD这一次推出的有线串流测试版的功能刚好可以替代Meta Link进行有线串流。而且VD可以使用Quest 3的IOBT数据用于追踪和模拟。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://standablevr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Standable&lt;/a&gt;: VD基于Quest 3真实摄像头追踪，在上半身的追踪模拟非常占优势，但是下半身的模拟就不太理想了。Standable软件是一个通过三点（头显，两个手柄）进行计算模拟动作的软件，在坐姿和睡姿等下半身参与的动作上具有可手动调整的特性。这个软件还支持一些混合追踪，比如和真实的slimeVR或tracker一起使用提高追踪质量。此次我们用它模拟下半身动作的功能。&lt;/li&gt;
+&lt;li&gt;SteamVR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设置&#34;&gt;设置
+&lt;/h2&gt;&lt;h3 id=&#34;vd的有线串流&#34;&gt;VD的有线串流
+&lt;/h3&gt;&lt;p&gt;VD在计算机端的下载版本已经支持了有线串流，可以直接下载。
+在Quest 3端需要修改版本为测试版来获取有线串流的支持。在应用资源库里面找到Virtual Desktop图标，长按图标后出现选单点击“设置”，可以看到已安装版本信息。在版本通道里面选择带有Beta字样的版本然后等待下载即可。（文章发布的时候版本是1.34.22.0，若之后的版本自带有线串流的功能则不需要切换至Beta版本）。&lt;/p&gt;
+&lt;p&gt;在这之后就可以使用有线串流。VD的有线串流和无线串流的方式基本相似，区别是有线串流可以看见可选目标前面有一个USB的图标，所以若是第一次使用VD请先熟悉&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1N1CpY9EkU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VD的基本用法&lt;/a&gt;并准确设置实现一次无线串流。我原来使用的是联想充电宝自带的可以PD充电的usb 2.0数据线，在Meta Link有线串流玩VRChat的时候可以基本满足使用，在Virtual Desktop的有线串流中也是可以的，显示串流码率为480Mbps。最近换了一条usb 4.0的2米pd充电数据线，显示串流码率是5120Mbps。&lt;/p&gt;
+&lt;p&gt;如果点击了有线串流显示unable to connect，就把头显摘下先玩玩电脑可能半分钟的样子看见电脑屏幕黑闪了一下，说明屏幕投影到VR设备里了，则可以继续使用。（不知道这个是不是个例）&lt;/p&gt;
+&lt;p&gt;总之VD的有线串流+SteamVR的流畅度比Meta Link快到不知道哪儿去了，而且占用内存也比Meta Link少多了，4060笔记本也可以轻松把握。&lt;/p&gt;
+&lt;h3 id=&#34;上半身追踪&#34;&gt;上半身追踪
+&lt;/h3&gt;&lt;p&gt;首先在Quest 3里面设置，在“手势与身体”里面选择开启手势和身体追踪，这样就开启了IOBT。&lt;/p&gt;
+&lt;p&gt;然后在Quest 3端的VD里面打开设置，Streaming里面选择勾选“Forward tracking data to PC&amp;quot;以及2个子选项，这样VD就可以将IOBT的数据发送到VRChat中了。&lt;/p&gt;
+&lt;p&gt;此时打开SteamVR可以发现VD设置了一整套全身的Tracker，包括IOBT追踪上半身的和VD自己算法模拟的其他Tracker。因为Standable对于模拟计算的动作更丝滑合理，所以这里我们只使用上半身精确追踪的部分。这里使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VD的追踪设置工具&lt;/a&gt;设置，点击&amp;quot;Upper Body Only&amp;quot;，此时就只勾选了Chest Joint, Left Arm Upper Joint, Right Arm Upper Joint, Left Arm Lower Joint, Right Arm Lower Joint五个点的追踪，点击应用就可以把设置写入SteamVR，这个设置是持续的，之后除了修改配置就不会再使用了。&lt;/p&gt;
+&lt;p&gt;需要注意的是每一次开启VRChat的时候都需要进行一次校准，如果没有校准则上半身追踪无法使用。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1jW421A7HM&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;视频教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;下半身模拟&#34;&gt;下半身模拟
+&lt;/h3&gt;&lt;p&gt;下半身完全使用Standable进行模拟。首先按&amp;quot;开机&amp;quot;按钮确定人物的8个点位都是灰色而不是虚线，然后手动将上半身的3个点设置为虚线。如果不设置为虚线，游戏中会出现上半身剧烈抖动的情况，疑似是Standable的上半身模拟和IOBT的上半身追踪冲突。在人物的右下角将身高设置为VRChat中的身高，也就是玩家的真实身高。&lt;/p&gt;
+&lt;p&gt;在主界面推荐将左侧量身高的图标切换到有A(utomatic)的图标，这样每次校准只需要先做“T-Pose”,听见一声提示音，然后将手放下再听见提示音就完成了校准。&lt;/p&gt;
+&lt;p&gt;Standable最大的用处是坐下的时候会切换到坐姿（包括坐在椅子上和地面上），躺下也可以切换姿势到躺姿，非常适合V睡。人物左侧可以调整三个动作的腿部姿势。坐在椅子上的姿势需要玩家有“坐在椅子上的趋势”，比如说用力流畅地坐在椅子上触发坐姿的概率比慢慢轻轻坐在椅子上触发动作的概率要高，可以在“动作”里面设置估算灵敏度。&lt;/p&gt;
+&lt;p&gt;点击地面上下箭头图标，可以设置床的高度，这样只需要躺在床上然后手柄轻敲床面两次即可切换姿势为睡姿。&lt;/p&gt;
+&lt;p&gt;软件还有其他的功能比如自定义姿势以及具体的细节设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://standablevr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Standable Docs&lt;/a&gt;,非常简单易懂。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;/h2&gt;&lt;p&gt;总之，如果没有特别精确追踪要求（比如跳舞和全身运动）的话，这就是一套非常简便且价格实惠的替代。不需要特地佩戴另外的外设，只需要手动打开几个程序并在游戏开头进行一次校准。着实是懒人必备V睡强推的方案。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

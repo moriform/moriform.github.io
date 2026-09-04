@@ -7,17 +7,63 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暄穗</copyright>
-        <lastBuildDate>Sat, 25 Apr 2026 21:20:42 +0100</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 04 Sep 2026 17:23:42 +0800</lastBuildDate><atom:link href="https://moriform.github.io/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>VRChat模拟全身追踪的方案</title>
+        <link>https://moriform.github.io/2026/09/04/rvchatvdstandable/</link>
+        <pubDate>Fri, 04 Sep 2026 17:23:42 +0800</pubDate>
+        
+        <guid>https://moriform.github.io/2026/09/04/rvchatvdstandable/</guid>
+        <description>&lt;img src="https://moriform.github.io/2026/09/04/rvchatvdstandable/VRChat_2026-07-08_00-36-43.743_1920x1080.webp" alt="Featured image of post VRChat模拟全身追踪的方案" /&gt;&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
+&lt;/h2&gt;&lt;p&gt;暄穗打算做一个slimeVR来实现VRChat里面的全身追踪，但是出于资金和个人精力这个方案得之后再考虑。正好最近看到了virtual desktop（VD）的更新，可以使用有线串流的方式玩VRChat，于是收集并实践了一套基于软件和quest 3头显设备的模拟全身追踪方案。&lt;/p&gt;
+&lt;h2 id=&#34;材料&#34;&gt;材料
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.meta.com/quest/quest-3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Quest 3&lt;/a&gt;: Quest 3在2024年推出了一个Inside-Out Body Tracking&lt;a class=&#34;link&#34; href=&#34;https://developers.meta.com/horizon/blog/inside-out-body-tracking-and-generative-legs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;(IOBT)&lt;/a&gt;功能，可以通过Quest 3自带的摄像头对于上半身（手肘手臂以及胸部位置）进行真实的追踪，这个数据可以直接用于VRChat的上半身追踪。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.vrdesktop.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtual Desktop&lt;/a&gt;: VD是常用的VR串流软件，在国外的时候网络允许所以可以使用Meta Link有线串流，但是回国之后就会有严重的甚至proxy都无法解决的问题，而VD这一次推出的有线串流测试版的功能刚好可以替代Meta Link进行有线串流。而且VD可以使用Quest 3的IOBT数据用于追踪和模拟。&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://standablevr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Standable&lt;/a&gt;: VD基于Quest 3真实摄像头追踪，在上半身的追踪模拟非常占优势，但是下半身的模拟就不太理想了。Standable软件是一个通过三点（头显，两个手柄）进行计算模拟动作的软件，在坐姿和睡姿等下半身参与的动作上具有可手动调整的特性。这个软件还支持一些混合追踪，比如和真实的slimeVR或tracker一起使用提高追踪质量。此次我们用它模拟下半身动作的功能。&lt;/li&gt;
+&lt;li&gt;SteamVR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设置&#34;&gt;设置
+&lt;/h2&gt;&lt;h3 id=&#34;vd的有线串流&#34;&gt;VD的有线串流
+&lt;/h3&gt;&lt;p&gt;VD在计算机端的下载版本已经支持了有线串流，可以直接下载。
+在Quest 3端需要修改版本为测试版来获取有线串流的支持。在应用资源库里面找到Virtual Desktop图标，长按图标后出现选单点击“设置”，可以看到已安装版本信息。在版本通道里面选择带有Beta字样的版本然后等待下载即可。（文章发布的时候版本是1.34.22.0，若之后的版本自带有线串流的功能则不需要切换至Beta版本）。&lt;/p&gt;
+&lt;p&gt;在这之后就可以使用有线串流。VD的有线串流和无线串流的方式基本相似，区别是有线串流可以看见可选目标前面有一个USB的图标，所以若是第一次使用VD请先熟悉&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1N1CpY9EkU&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VD的基本用法&lt;/a&gt;并准确设置实现一次无线串流。我原来使用的是联想充电宝自带的可以PD充电的usb 2.0数据线，在Meta Link有线串流玩VRChat的时候可以基本满足使用，在Virtual Desktop的有线串流中也是可以的，显示串流码率为480Mbps。最近换了一条usb 4.0的2米pd充电数据线，显示串流码率是5120Mbps。&lt;/p&gt;
+&lt;p&gt;如果点击了有线串流显示unable to connect，就把头显摘下先玩玩电脑可能半分钟的样子看见电脑屏幕黑闪了一下，说明屏幕投影到VR设备里了，则可以继续使用。（不知道这个是不是个例）&lt;/p&gt;
+&lt;p&gt;总之VD的有线串流+SteamVR的流畅度比Meta Link快到不知道哪儿去了，而且占用内存也比Meta Link少多了，4060笔记本也可以轻松把握。&lt;/p&gt;
+&lt;h3 id=&#34;上半身追踪&#34;&gt;上半身追踪
+&lt;/h3&gt;&lt;p&gt;首先在Quest 3里面设置，在“手势与身体”里面选择开启手势和身体追踪，这样就开启了IOBT。&lt;/p&gt;
+&lt;p&gt;然后在Quest 3端的VD里面打开设置，Streaming里面选择勾选“Forward tracking data to PC&amp;quot;以及2个子选项，这样VD就可以将IOBT的数据发送到VRChat中了。&lt;/p&gt;
+&lt;p&gt;此时打开SteamVR可以发现VD设置了一整套全身的Tracker，包括IOBT追踪上半身的和VD自己算法模拟的其他Tracker。因为Standable对于模拟计算的动作更丝滑合理，所以这里我们只使用上半身精确追踪的部分。这里使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/DenTechs/Virtual_Desktop_Body_Tracking_Configurator&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VD的追踪设置工具&lt;/a&gt;设置，点击&amp;quot;Upper Body Only&amp;quot;，此时就只勾选了Chest Joint, Left Arm Upper Joint, Right Arm Upper Joint, Left Arm Lower Joint, Right Arm Lower Joint五个点的追踪，点击应用就可以把设置写入SteamVR，这个设置是持续的，之后除了修改配置就不会再使用了。&lt;/p&gt;
+&lt;p&gt;需要注意的是每一次开启VRChat的时候都需要进行一次校准，如果没有校准则上半身追踪无法使用。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1jW421A7HM&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;视频教程&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;下半身模拟&#34;&gt;下半身模拟
+&lt;/h3&gt;&lt;p&gt;下半身完全使用Standable进行模拟。首先按&amp;quot;开机&amp;quot;按钮确定人物的8个点位都是灰色而不是虚线，然后手动将上半身的3个点设置为虚线。如果不设置为虚线，游戏中会出现上半身剧烈抖动的情况，疑似是Standable的上半身模拟和IOBT的上半身追踪冲突。在人物的右下角将身高设置为VRChat中的身高，也就是玩家的真实身高。&lt;/p&gt;
+&lt;p&gt;在主界面推荐将左侧量身高的图标切换到有A(utomatic)的图标，这样每次校准只需要先做“T-Pose”,听见一声提示音，然后将手放下再听见提示音就完成了校准。&lt;/p&gt;
+&lt;p&gt;Standable最大的用处是坐下的时候会切换到坐姿（包括坐在椅子上和地面上），躺下也可以切换姿势到躺姿，非常适合V睡。人物左侧可以调整三个动作的腿部姿势。坐在椅子上的姿势需要玩家有“坐在椅子上的趋势”，比如说用力流畅地坐在椅子上触发坐姿的概率比慢慢轻轻坐在椅子上触发动作的概率要高，可以在“动作”里面设置估算灵敏度。&lt;/p&gt;
+&lt;p&gt;点击地面上下箭头图标，可以设置床的高度，这样只需要躺在床上然后手柄轻敲床面两次即可切换姿势为睡姿。&lt;/p&gt;
+&lt;p&gt;软件还有其他的功能比如自定义姿势以及具体的细节设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://standablevr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Standable Docs&lt;/a&gt;,非常简单易懂。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结
+&lt;/h2&gt;&lt;p&gt;总之，如果没有特别精确追踪要求（比如跳舞和全身运动）的话，这就是一套非常简便且价格实惠的替代。不需要特地佩戴另外的外设，只需要手动打开几个程序并在游戏开头进行一次校准。着实是懒人必备V睡强推的方案。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>我用Giscus做了博客的个人说说页面</title>
         <link>https://moriform.github.io/2026/04/25/giscussvsvnm/</link>
         <pubDate>Sat, 25 Apr 2026 21:20:42 +0100</pubDate>
         
         <guid>https://moriform.github.io/2026/04/25/giscussvsvnm/</guid>
-        <description>&lt;p&gt;我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是碎碎念。&lt;/p&gt;
+        <description>&lt;img src="https://moriform.github.io/2026/04/25/giscussvsvnm/szabo-viktor-7hqEx1al0Fk-unsplash.webp" alt="Featured image of post 我用Giscus做了博客的个人说说页面" /&gt;&lt;p&gt;我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是没啥技术的碎碎念。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言
-&lt;/h2&gt;&lt;p&gt;我除了有一个Wordpress动态博客以外，还留有一个Hugo静态博客部署在Github Page上面。其中的考量有很多，比如静态博客的文章url和Wordpress保持一致，这样一旦Wordpress出现了什么问题崩了或者暂时没有一百块一年的服务器了我就可以把域名无缝解析到我的静态博客；而且在Github上面使用Git上传文章产生的时间戳比我只发布到自己的服务器要更加可信；以及最重要的，我需要一个看上去十分中立客观的免费平台存放我的文章，作为我在互联网世界的数据骨灰盒。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;我除了有一个Wordpress动态博客以外，还留有一个Hugo静态博客部署在Github Page上面。其中的考量有很多，比如静态博客的文章url和Wordpress保持一致，这样一旦Wordpress出现了什么问题我就可以把域名无缝解析到我的静态博客；而且在Github上面使用Git上传文章产生的时间戳比我只发布到自己的服务器要更加可信；以及最重要的，我需要一个看上去十分中立客观的免费平台存放我的文章，作为我在互联网世界的数据骨灰盒。&lt;/p&gt;
 &lt;p&gt;离开熟人朋友圈和QQ动态等一系列平台之后我也尝试过许多记录碎碎念的方式。比如最开始没有运行博客的时候我跟着一群日本二次元程序员用Scrapbox来记录各种生活当微型博客使用。用Wordpress之后我专门做了一个照片墙页面每天往上面加一些东西。学会用Docker之后我部署了memos，一个确实更好用的记录系统来写碎碎念。&lt;/p&gt;
-&lt;p&gt;不过每一种其实都没有持续太久。Wordpress专门页面的每一次写说说我都要挂主题模板，每一次跟新都需要我使用Wordpress的编辑工具，也就是说大多数时候我必须使用电脑。memos很好用，但是需要服务器，而且那个阶段处于Rsshub经常在我的服务器闹脾气的时候。在使用Hugo之后我开了一个日记分类，打算每天写点什么，但是动不动就开天窗也很打击信心，而且只是想写一些小话就要发一篇文章也没有必要。&lt;/p&gt;
+&lt;p&gt;不过每一种都没有持续太久。Wordpress专门页面的每一次写说说我都要挂主题模板，每一次更新都需要我使用Wordpress的编辑工具，也就是说大多数时候我必须使用电脑。memos很好用，但是需要服务器，而且那个阶段处于Rsshub经常在我的服务器闹脾气的时候。在使用Hugo之后我开了一个日记分类，打算每天写点什么，但是动不动就开天窗也很打击信心，只是想写一些小话就要发一篇文章也没有必要。&lt;/p&gt;
 &lt;h2 id=&#34;需求&#34;&gt;需求
 &lt;/h2&gt;&lt;p&gt;现在我对于说说系统的要求有以下几点：&lt;/p&gt;
 &lt;ul&gt;
@@ -32,15 +78,15 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;流程&#34;&gt;流程
-&lt;/h2&gt;&lt;p&gt;然后我就想到了使用Giscus这个评论系统来做博客。&lt;/p&gt;
-&lt;p&gt;Giscus本来是我Github Page博客的评价系统，个人认为这套系统可以活到我死所以就用了，这里也算是若无必要勿增实体了。仔细想说说也就是对时间空白的评论。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;然后我就想到了使用Giscus这个评论系统来做博客。Giscus本来是我Github Page博客的评价系统，个人认为这套系统可以活到我死所以就用了，这里也算是若无必要勿增实体了。&lt;/p&gt;
+&lt;p&gt;仔细想想也对，说说也就是对时间的评论。&lt;/p&gt;
 &lt;p&gt;搭建的方式再简单不过：静态博客中直接创建一个标题为“说说”的带有评论功能的空白页面。登录Github账号在这个页面进行评论，然后Github手机端就有了Discussion的内容，之后的说说就可以直接在APP的discussion里面直接进行了。&lt;/p&gt;
 &lt;h2 id=&#34;改进&#34;&gt;改进
 &lt;/h2&gt;&lt;p&gt;还有一些可以增加体验感的改良。&lt;/p&gt;
 &lt;h3 id=&#34;图片压缩&#34;&gt;图片压缩
 &lt;/h3&gt;&lt;p&gt;使用手机APP进行评论的时候可以直接上传图片，这个时候图片会上传到Github的公共图床上面，然后以Markdown的方式链接在评论中。如果经常上传图片的话可以提前把图片进行压缩处理。&lt;/p&gt;
 &lt;p&gt;我是用Ios手机，在捷径里面有对于图片的压缩方法。&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV15t41187eE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;教你用iPhone自带的图片压缩功能，轻松控制图片大小！哔哩哔哩_bilibili&lt;/a&gt; 这里介绍了具体方法，也可以同时减小图片的尺寸。这样我2M的图片可以压缩到100KB再上传。&lt;/p&gt;
+    &gt;教你用iPhone自带的图片压缩功能，轻松控制图片大小！哔哩哔哩_bilibili&lt;/a&gt; 这里介绍了具体方法，也可以同时减小图片的尺寸。这样我2M的图片可以压缩到100KB再上传(千万注意去掉元信息)。&lt;/p&gt;
 &lt;h3 id=&#34;时间顺序&#34;&gt;时间顺序
 &lt;/h3&gt;&lt;p&gt;博客评论系统和说说系统的最大区别其实是一般评论系统旧的在新的评论上面，而说说朋友圈之类的新的在旧的贴子上面。Giscus默认一般评论方式，但是提供这两种用于设置。可以见&lt;a class=&#34;link&#34; href=&#34;https://github.com/giscus/giscus/blob/40c65a5d35b6392709c79ed7c51cf4bfe16c01ad/ADVANCED-USAGE.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;giscus/ADVANCED-USAGE.mds&lt;/a&gt;&lt;/p&gt;
@@ -57,7 +103,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/div&gt;&lt;h2 id=&#34;文章ai使用范围&#34;&gt;文章AI使用范围
+&lt;/h2&gt;&lt;p&gt;将本文输入到Deepseek(V4 )，Chatgpt和Gemini之后看他们夸完了再发布出来。&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>记一次闲鱼买卖</title>
@@ -65,7 +113,7 @@
         <pubDate>Thu, 02 Apr 2026 23:39:26 +0000</pubDate>
         
         <guid>https://moriform.github.io/2026/04/02/xmyu1/</guid>
-        <description>&lt;p&gt;我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给自己回血。&lt;/p&gt;
+        <description>&lt;img src="https://moriform.github.io/2026/04/02/xmyu1/kelly-sikkema-I5lR4R0CM6g-unsplash.webp" alt="Featured image of post 记一次闲鱼买卖" /&gt;&lt;p&gt;我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给自己回血。&lt;/p&gt;
 &lt;p&gt;这次我挂出的DAW软件有闲鱼用户询问了。这实际上是一个十分经典古董的软件，以相当的录音效果出现在20年前国内混音教程中神一样的存在，不过现在当问到用什么DAW的时候这经常不会出现在对话当中。我把它挂出来也是因为我Cubase FL Studio One Ableton啥的都用过一遍，而且现在Reaper用起飞了，实在不想给自己添加负担再泛泛学习我9成用不到的东西。&lt;/p&gt;
 &lt;p&gt;一对话我就察觉到了用户的特殊性，从输入法语言的使用以及我说汇率之后让我帮他计算价格的时候我察觉到了对方是个上了年纪的人。个人页面果然没错，是个60后，而且爱好广泛到闲鱼卖家好评从钓鱼到摄影。我感觉这大概率是个突然对音频制作感兴趣的大叔，估计从哪个他那个年代的制作人那里听说了这个软件，不然没有理由买这个。如果真实如此的话那就有得折腾了。通常年纪不大的卖家我发送插件网址让他注册账号，然后发送激活码，他注册完交易就结束了；而年龄大一些的就要帮助处理一些网络问题，而需要我帮忙算汇率的我也不知道还会出什么差错，就像淘宝付费帮人安装Steam一样。&lt;/p&gt;
 &lt;p&gt;果然，一开始让注册账号的时候就出问题，然后问我能不能远程操作。我下载了向日葵之后发现远程操作需要国内的电话才行，我在英国没办法用就直接告诉他我无法远程。然后接下来的一大段对话就是他&amp;quot;肯定能用告诉我协助码以前远程都不用注册账号“的坚持之类。最后实在忍不住，直接视频电话给他，给了他我的协助码看他也出了问题。然后看着他的电脑屏幕，用他的邮箱注册了账号一步一步告诉他登录哪个网站哪个账号，哪个按钮下载，下载又等多久。在下载中开始闲聊起来。原来对面是一个大省的一个多媒体工作室的老一辈策划经理人员，组织过一些明星的演出，这次要审一个音乐人的作品，音乐人出身老制作室使用的就是这个DAW，所以对面在收到工程文件但是没有一个软件可以打开的时候掉了面子，于是来闲鱼找这个软件，刚好找到我在卖这个软件的散码。&lt;/p&gt;
@@ -97,18 +145,6 @@
 &lt;p&gt;晚上和男朋友粥了一晚上。&lt;/p&gt;
 &lt;p&gt;明天开始重新启动套餐计划。&lt;/p&gt;
 &lt;p&gt;之前同一天发布了2片文章，一篇是RSS的一篇是讲响度补偿的，结果现在RSS的访问量是响度补偿的20倍。虽然我对于访问量没有太大的关注，不过同一天的文章有这么大的区别也是挺有趣的，至少通过博客订阅和在网上搜索的人群里面在乎RSS的一定是比在乎响度补偿要多得多的。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://moriform.github.io/diary/20260303/</link>
-        <pubDate>Tue, 03 Mar 2026 21:08:33 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/diary/20260303/</guid>
-        <description>&lt;p&gt;从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。&lt;/p&gt;
-&lt;p&gt;音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。&lt;/p&gt;
-&lt;p&gt;提交作业之后就这样睡一觉到下午，一天都不想动弹了。看了一下这个作业用了我22个番茄钟共18小时，提前安排的话不至于这样狼狈。&lt;/p&gt;
-&lt;p&gt;突然发现如果每天都可以学上8个小时，或者说将番茄闹钟设置50分钟一轮能够学上8轮的话基本上一天就可以过得很充实也不用像这样每次都是邻近DDL了再做作业。所以要在自己还有大片可掌握时间内努力达到这个目的，让自己的时间不要白白浪费。总之今天的学习时间全部花在编程作业上满了快9个小时，可以休息了。明天又是新的挑战（指后天要交的机器学习作业）。&lt;/p&gt;
 </description>
         </item>
         

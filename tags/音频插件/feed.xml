@@ -13,7 +13,7 @@
         <pubDate>Sun, 22 Feb 2026 21:38:26 +0000</pubDate>
         
         <guid>https://moriform.github.io/2026/02/22/magcgaincompensation/</guid>
-        <description>&lt;h2 id=&#34;响度补偿的必要性&#34;&gt;响度补偿的必要性
+        <description>&lt;img src="https://moriform.github.io/2026/02/22/magcgaincompensation/bofu-shaw-IvbRg7697os-unsplash.webp" alt="Featured image of post 在Reaper中实现响度补偿的一种方法" /&gt;&lt;h2 id=&#34;响度补偿的必要性&#34;&gt;响度补偿的必要性
 &lt;/h2&gt;&lt;p&gt;音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。&lt;/p&gt;
 &lt;p&gt;但是在音频制作的过程中，制作人不应该因为给音频增加压缩调节EQ增加失真的时候响度发生变化而影响自己的审美。一些插件给出了响度补偿(gain compensation)的方案，让输出的音频响度和输入的音频响度保持一致，避免响度差异带来误判。&lt;/p&gt;
 &lt;p&gt;本文使用Melda Production的免费插件MAGC演示在Reaper中实现响度补偿的方案，这套方案可用于大部分音频处理插件在处理过程中保持响度不变。&lt;/p&gt;

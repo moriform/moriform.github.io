@@ -13,7 +13,7 @@
         <pubDate>Mon, 23 Feb 2026 15:39:26 +0000</pubDate>
         
         <guid>https://moriform.github.io/2026/02/23/rsslast/</guid>
-        <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
+        <description>&lt;img src="https://moriform.github.io/2026/02/23/rsslast/jj-ying-8bghKxNU1j0-unsplash.webp" alt="Featured image of post 关于我的RSS订阅系统" /&gt;&lt;h2 id=&#34;这是什么&#34;&gt;这是什么
 &lt;/h2&gt;&lt;p&gt;我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。&lt;/p&gt;
 &lt;p&gt;如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建RSS系统的人一些参考。本文不会讲基本的如何安装，只会说一些自己注意到的事项。&lt;/p&gt;
 &lt;h2 id=&#34;系统概述&#34;&gt;系统概述
