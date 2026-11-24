@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bilibili · 森月台</title>
-    <link>https://moriform.github.io/tags/bilibili/</link>
+    <link>https://moriform.com/tags/bilibili/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/bilibili/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/bilibili/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rsshub在bilibili和weibo的一些基础</title>
-      <link>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
+      <link>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Wed, 16 Apr 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。&lt;/p&gt;
 &lt;h2 id=&#34;bilibili的cookie配置&#34;&gt;bilibili的cookie配置&lt;/h2&gt;

@@ -2,40 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages · 森月台</title>
-    <link>https://moriform.github.io/page/</link>
+    <link>https://moriform.com/page/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/page/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/page/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://moriform.github.io/about/</link>
+      <link>https://moriform.com/about/</link>
       <pubDate>Fri, 09 Jan 2026 00:00:00 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/about/</guid>
+      <guid>https://moriform.com/about/</guid>
       <description>&lt;p&gt;信息数据是否能够长久存在于互联网的世界？&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>Archives</title>
-      <link>https://moriform.github.io/archives/</link>
+      <link>https://moriform.com/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/archives/</guid>
+      <guid>https://moriform.com/archives/</guid>
       <description></description>
     </item>
     <item>
       <title>Search</title>
-      <link>https://moriform.github.io/search/</link>
+      <link>https://moriform.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/search/</guid>
+      <guid>https://moriform.com/search/</guid>
       <description></description>
     </item>
     <item>
       <title>友链</title>
-      <link>https://moriform.github.io/%E5%8F%8B%E9%93%BE/</link>
+      <link>https://moriform.com/passengers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/%E5%8F%8B%E9%93%BE/</guid>
-      <description>&lt;hr&gt;
-</description>
+      <guid>https://moriform.com/passengers/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rss · 森月台</title>
-    <link>https://moriform.github.io/tags/rss/</link>
+    <link>https://moriform.com/tags/rss/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/rss/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我的RSS订阅系统</title>
-      <link>https://moriform.github.io/2026/02/23/rsslast/</link>
+      <link>https://moriform.com/2026/02/23/rsslast/</link>
       <pubDate>Mon, 23 Feb 2026 15:39:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/02/23/rsslast/</guid>
+      <guid>https://moriform.com/2026/02/23/rsslast/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。&lt;/p&gt;
 &lt;p&gt;如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建RSS系统的人一些参考。本文不会讲基本的如何安装，只会说一些自己注意到的事项。&lt;/p&gt;
@@ -30,7 +30,7 @@
 &lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
 &lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
 &lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗&lt;/h2&gt;
 &lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
 &lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
@@ -40,9 +40,9 @@
     </item>
     <item>
       <title>关于新版本Freshrss和Rsshub同时使用时出现的问题</title>
-      <link>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 17 Oct 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;暄穗在使用freshrss在服务器中作为远程rss阅读器的时候最近发现了问题，就是和rsshub同时使用的时候总是会有freshrss“力不从心”的情况：抓取的数量很少，通过管理页面看订阅的feed会红一大片，但是自己手动用浏览器打开rsshub订阅发现是可以打开的。也就是说明明rsshub订阅是没有问题，但是Freshrss就是不抓。如果再看得仔细一点会发现Freshrss确实抓了几个我的rsshub，然后就不抓了，通过Rsshub的日志也能看见Freshrss红的订阅根本没有请求抓取（加把劲啊Freshrss!你为什么不抓！）。&lt;/p&gt;
 &lt;h3 id=&#34;原因说明&#34;&gt;原因说明&lt;/h3&gt;
@@ -60,9 +60,9 @@
     </item>
     <item>
       <title>Rsshub在bilibili和weibo的一些基础</title>
-      <link>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
+      <link>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Wed, 16 Apr 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。&lt;/p&gt;
 &lt;h2 id=&#34;bilibili的cookie配置&#34;&gt;bilibili的cookie配置&lt;/h2&gt;
@@ -86,9 +86,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>RSS的实践</title>
-      <link>https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;h2 id=&#34;可以跳过的碎碎念&#34;&gt;可以跳过的碎碎念&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你的Bilibili首页，应该是https://search.bilibili.com&lt;/p&gt;
@@ -106,10 +106,10 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;我的RSS系统分成三个硬件。Iphone作为资讯订阅了一些微博用户作为时事和游戏折扣的消息订阅，订阅了一些推特上的单图漫画家和推特“Aviutlスクリプト”关键词。使用的是Reeder 5，这个阅读器最大的特点是自己定义收藏tag可以把社会消息和情头分开。&lt;/p&gt;
 &lt;p&gt;Ipad因为不能升级IOS15所以用的是netnewswire,也是个不错的IOS端RSS阅读器，用来订阅一些技术博客等长文。&lt;/p&gt;
 &lt;p&gt;PC端的是Fluent Reader，用来替代bilibili和Youtube的关注，简单说就是用来听术力口和术人口的。RSS阅读器的这种列表视图其实用来看视频时相当方便的，按左右键就能直接切视频画面。
-&lt;img src=&#34;https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 用RSS订阅视频需要对于网站本身有一定的了解，比如NICONICO的视频我暂时没有订阅的方法所以我用对应的关键词来搜索B站的搬运视频。Youtube的内嵌视频可以调倍速和高清晰度，B站的内嵌视频不能调倍速，也不能有高清视频。&lt;/p&gt;
 &lt;p&gt;所以总结一下，一个RSS系统需要一个RSS阅读器以及RSS订阅源。阅读器有很多大家可以自己去尝试。RSS源首先去看官方是否有自己的RSS订阅源，一般会有一个长这样的标识：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果没有看到试着在博客主页网址后面加上feed或atom来看看有没有像代码一样的东西出来，如果有，那么这个网址就是订阅源了。&lt;/p&gt;
 &lt;p&gt;顺便一提，森月台的订阅源是&lt;a href=&#34;https://moriform.com/feed/&#34;&gt;森月台&lt;/a&gt;或者&lt;a href=&#34;https://moriform.com/feed/atom&#34;&gt;森月台&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果一个常见的网站没有官方的订阅源(像B站),那么需要一些第三方的RSS订阅源来支持订阅，比较常见的开箱即用的是RSShub&lt;/p&gt;
@@ -135,9 +135,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>对于RSS的一些思考</title>
-      <link>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+      <link>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+      <guid>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
       <description>&lt;p&gt;2022年，信息爆炸的时间，出于对国内外大多数信息社交平台的失望，我将信息接收的主题转为了RSS。&lt;/p&gt;
 &lt;p&gt;RSS，意为简易信息聚合。简单来说就是把各个地方的信息装在一个盒子里面。试想一下你有一个像微博一样的APP，这个APP里面你可以关注任何平台你想要关注(订阅)的信息。&lt;/p&gt;
 &lt;p&gt;在互联网的早期时代，人们分享交流的平台是各个不同平台不同域名的博客，如果我想要看我之前读的博客有没有更新博文，我可以打开他们的网页一个一个去看，当然这是个费时间的方法。另外一种就是RSS，一个订阅器，汇集所有订阅的网页。如果是普通的博文，甚至可以直接在RSS阅读器上读完所有的文章。&lt;/p&gt;

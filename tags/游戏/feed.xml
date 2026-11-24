@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>游戏 · 森月台</title>
-    <link>https://moriform.github.io/tags/%E6%B8%B8%E6%88%8F/</link>
+    <link>https://moriform.com/tags/%E6%B8%B8%E6%88%8F/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/%E6%B8%B8%E6%88%8F/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/%E6%B8%B8%E6%88%8F/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电脑自动刷香蕉</title>
-      <link>https://moriform.github.io/2024/06/21/autobanana/</link>
+      <link>https://moriform.com/2024/06/21/autobanana/</link>
       <pubDate>Fri, 21 Jun 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/06/21/autobanana/</guid>
+      <guid>https://moriform.com/2024/06/21/autobanana/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;最近Banana挺火的，说是挂机就可以得到香蕉到市场上卖，四舍五入挂机得钱。所以我们还是花最少的心思参与一下，而且挂机最好不要影响电脑的正常使用。官方说禁止连点器以外的任何外挂，所以我们就只用python写一个连点器的程序就行了。&lt;/p&gt;
 &lt;h2 id=&#34;代码描述&#34;&gt;代码描述&lt;/h2&gt;
@@ -44,9 +44,9 @@
     </item>
     <item>
       <title>心跳文学部秘密诗篇10自动化获取方案(Python版)</title>
-      <link>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
+      <link>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
       <pubDate>Mon, 23 Oct 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
+      <guid>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
       <description>&lt;h2 id=&#34;总览&#34;&gt;总览&lt;/h2&gt;
 &lt;p&gt;在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。&lt;/p&gt;
 &lt;p&gt;所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。&lt;/p&gt;
@@ -159,9 +159,9 @@
     </item>
     <item>
       <title>Needy Girl Overdose</title>
-      <link>https://moriform.github.io/2022/10/28/needy-girl-overdose/</link>
+      <link>https://moriform.com/2022/10/28/needy-girl-overdose/</link>
       <pubDate>Fri, 28 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/28/needy-girl-overdose/</guid>
+      <guid>https://moriform.com/2022/10/28/needy-girl-overdose/</guid>
       <description>&lt;p&gt;年初的时候玩了这个游戏的所有结局，家人过年我一人抑郁，发现最近有更新了就及时重新下载下来玩了。&lt;/p&gt;
 &lt;p&gt;游戏更新了三个结局线，一条极其地现实，两条极其地浪漫。&lt;/p&gt;
 &lt;p&gt;其实从之前的断网结局就已经看得出作者的意图了，对于现如今混沌的网络最好的方法就是将它完全结束。但是还记得互联网最初的样貌吗？那个真正能够把人们连接起来的互联网。每一个节点就像一颗颗星星那样的闪耀，那样的温暖。成片的星星相互连接能够照亮一整条银河。网络能够传递的是人们内心最真实的善良，无顾忌的倾诉，而不是催人一个劲做数据的机器。&lt;/p&gt;
@@ -170,9 +170,9 @@
     </item>
     <item>
       <title>20220130</title>
-      <link>https://moriform.github.io/2022/01/30/20220130/</link>
+      <link>https://moriform.com/2022/01/30/20220130/</link>
       <pubDate>Sun, 30 Jan 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/01/30/20220130/</guid>
+      <guid>https://moriform.com/2022/01/30/20220130/</guid>
       <description>&lt;p&gt;三色绘恋这桩子事也是意料之中，从一开始关注的时候山百合就搞各种骚操作。对标白色相簿不说，众筹高档位送床单还能理解是对标日厂，游戏还没发售就开始党争就不懂是怎么个操作了。给樱花游戏发行12元真的对得起认真做游戏的人吗？之后还带一些莫名奇妙的周边，官方做女主胖次雨伞也应该是国内第一人了。到现在看更是请了初学程序员来维护屎山一样的操作。&lt;/p&gt;
 &lt;p&gt;从CD上买的杂志关注到的这个游戏，庆幸当时错过了付款时间没有买捆绑初回限定（捆的另外一个蝉XX的游戏现在应该也活不过来了），后来买了一个游戏包付了一个玩了一个半小时真的没有玩下去也明白12元是怎么来的了。&lt;/p&gt;
 &lt;p&gt;不要说什么国AVG第一，15年以前的国内御三家剧本质量都是上乘的文笔都是相当有特色的。写高恋的橘子班、写赤印的Hollowings（这两个可以说是左右极端的浪漫了）、写刻痕的蓝天使都是值得推荐的。&lt;/p&gt;
@@ -181,9 +181,9 @@
     </item>
     <item>
       <title>倾听画语 </title>
-      <link>https://moriform.github.io/2021/09/20/behind_the_frame/</link>
+      <link>https://moriform.com/2021/09/20/behind_the_frame/</link>
       <pubDate>Mon, 20 Sep 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/09/20/behind_the_frame/</guid>
+      <guid>https://moriform.com/2021/09/20/behind_the_frame/</guid>
       <description>&lt;h2 id=&#34;倾听画语&#34;&gt;倾听画语&lt;/h2&gt;
 &lt;p&gt;之前看谜之声玩的游戏，看了一半，感觉时长和题材都挺符合，就买来自己玩了。&lt;/p&gt;
 &lt;p&gt;是一个关于画与相遇的故事。&lt;/p&gt;

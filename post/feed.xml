@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts · 森月台</title>
-    <link>https://moriform.github.io/post/</link>
+    <link>https://moriform.com/post/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/post/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/post/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VRChat模拟全身追踪的方案</title>
-      <link>https://moriform.github.io/2026/09/04/rvchatvdstandable/</link>
+      <link>https://moriform.com/2026/09/04/rvchatvdstandable/</link>
       <pubDate>Fri, 04 Sep 2026 17:23:42 &#43;0800</pubDate>
-      <guid>https://moriform.github.io/2026/09/04/rvchatvdstandable/</guid>
+      <guid>https://moriform.com/2026/09/04/rvchatvdstandable/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗打算做一个slimeVR来实现VRChat里面的全身追踪，但是出于资金和个人精力这个方案得之后再考虑。正好最近看到了virtual desktop（VD）的更新，可以使用有线串流的方式玩VRChat，于是收集并实践了一套基于软件和quest 3头显设备的模拟全身追踪方案。&lt;/p&gt;
 &lt;h2 id=&#34;材料&#34;&gt;材料&lt;/h2&gt;
@@ -46,9 +46,9 @@
     </item>
     <item>
       <title>我用Giscus做了博客的个人说说页面</title>
-      <link>https://moriform.github.io/2026/04/25/giscussvsvnm/</link>
+      <link>https://moriform.com/2026/04/25/giscussvsvnm/</link>
       <pubDate>Sat, 25 Apr 2026 21:20:42 &#43;0100</pubDate>
-      <guid>https://moriform.github.io/2026/04/25/giscussvsvnm/</guid>
+      <guid>https://moriform.com/2026/04/25/giscussvsvnm/</guid>
       <description>&lt;p&gt;我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是没啥技术的碎碎念。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;我除了有一个Wordpress动态博客以外，还留有一个Hugo静态博客部署在Github Page上面。其中的考量有很多，比如静态博客的文章url和Wordpress保持一致，这样一旦Wordpress出现了什么问题我就可以把域名无缝解析到我的静态博客；而且在Github上面使用Git上传文章产生的时间戳比我只发布到自己的服务器要更加可信；以及最重要的，我需要一个看上去十分中立客观的免费平台存放我的文章，作为我在互联网世界的数据骨灰盒。&lt;/p&gt;
@@ -88,9 +88,9 @@
     </item>
     <item>
       <title>记一次闲鱼买卖</title>
-      <link>https://moriform.github.io/2026/04/02/xmyu1/</link>
+      <link>https://moriform.com/2026/04/02/xmyu1/</link>
       <pubDate>Thu, 02 Apr 2026 23:39:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/04/02/xmyu1/</guid>
+      <guid>https://moriform.com/2026/04/02/xmyu1/</guid>
       <description>&lt;p&gt;我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给自己回血。&lt;/p&gt;
 &lt;p&gt;这次我挂出的DAW软件有闲鱼用户询问了。这实际上是一个十分经典古董的软件，以相当的录音效果出现在20年前国内混音教程中神一样的存在，不过现在当问到用什么DAW的时候这经常不会出现在对话当中。我把它挂出来也是因为我Cubase FL Studio One Ableton啥的都用过一遍，而且现在Reaper用起飞了，实在不想给自己添加负担再泛泛学习我9成用不到的东西。&lt;/p&gt;
 &lt;p&gt;一对话我就察觉到了用户的特殊性，从输入法语言的使用以及我说汇率之后让我帮他计算价格的时候我察觉到了对方是个上了年纪的人。个人页面果然没错，是个60后，而且爱好广泛到闲鱼卖家好评从钓鱼到摄影。我感觉这大概率是个突然对音频制作感兴趣的大叔，估计从哪个他那个年代的制作人那里听说了这个软件，不然没有理由买这个。如果真实如此的话那就有得折腾了。通常年纪不大的卖家我发送插件网址让他注册账号，然后发送激活码，他注册完交易就结束了；而年龄大一些的就要帮助处理一些网络问题，而需要我帮忙算汇率的我也不知道还会出什么差错，就像淘宝付费帮人安装Steam一样。&lt;/p&gt;
@@ -100,9 +100,9 @@
     </item>
     <item>
       <title>关于我的RSS订阅系统</title>
-      <link>https://moriform.github.io/2026/02/23/rsslast/</link>
+      <link>https://moriform.com/2026/02/23/rsslast/</link>
       <pubDate>Mon, 23 Feb 2026 15:39:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/02/23/rsslast/</guid>
+      <guid>https://moriform.com/2026/02/23/rsslast/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。&lt;/p&gt;
 &lt;p&gt;如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建RSS系统的人一些参考。本文不会讲基本的如何安装，只会说一些自己注意到的事项。&lt;/p&gt;
@@ -121,7 +121,7 @@
 &lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
 &lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
 &lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗&lt;/h2&gt;
 &lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
 &lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
@@ -131,9 +131,9 @@
     </item>
     <item>
       <title>在Reaper中实现响度补偿的一种方法</title>
-      <link>https://moriform.github.io/2026/02/22/magcgaincompensation/</link>
+      <link>https://moriform.com/2026/02/22/magcgaincompensation/</link>
       <pubDate>Sun, 22 Feb 2026 21:38:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/02/22/magcgaincompensation/</guid>
+      <guid>https://moriform.com/2026/02/22/magcgaincompensation/</guid>
       <description>&lt;h2 id=&#34;响度补偿的必要性&#34;&gt;响度补偿的必要性&lt;/h2&gt;
 &lt;p&gt;音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。&lt;/p&gt;
 &lt;p&gt;但是在音频制作的过程中，制作人不应该因为给音频增加压缩调节EQ增加失真的时候响度发生变化而影响自己的审美。一些插件给出了响度补偿(gain compensation)的方案，让输出的音频响度和输入的音频响度保持一致，避免响度差异带来误判。&lt;/p&gt;
@@ -147,19 +147,19 @@
 &lt;p&gt;这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中FX轨道的“容器”来创建子FX轨，将插件和路由的设置放在容器中，然后把容器作为FX chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个FX chain把其他效果器拖入正确位置就可以。&lt;/p&gt;
 &lt;h3 id=&#34;响度补偿的路由逻辑&#34;&gt;响度补偿的路由逻辑&lt;/h3&gt;
 &lt;p&gt;响度补偿的路由和操作逻辑如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/gaincompensation.webp&#34; alt=&#34;&#34; width=&#34;750&#34; height=&#34;196&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/gaincompensation.webp&#34; alt=&#34;&#34; width=&#34;750&#34; height=&#34;196&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4输入2输出。输入1/2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3/4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
 &lt;h3 id=&#34;实际操作&#34;&gt;实际操作&lt;/h3&gt;
 &lt;p&gt;在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34; alt=&#34;&#34; width=&#34;1239&#34; height=&#34;1013&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34; alt=&#34;&#34; width=&#34;1239&#34; height=&#34;1013&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;设置Gain Compensation Stereo容器的路由如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;312&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;312&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后效果器处理且响度补偿后的音频输出。&lt;/p&gt;
 &lt;p&gt;设置Effectors容器的路由如下：
-&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/rAzUZayTvY.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;352&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/rAzUZayTvY.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;352&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;只取主容器的1/2输入到该容器中，容器内部就是正常的双声道音轨的插件摆放方式。&lt;/p&gt;
 &lt;p&gt;设置MAGC的路由如下：
-&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34; alt=&#34;&#34; width=&#34;610&#34; height=&#34;314&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34; alt=&#34;&#34; width=&#34;610&#34; height=&#34;314&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注意MAGC摆放在主容器里，且在Effector容器下方，所以对于MAGC来说Container Channel 1/2就是Effectors输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2，整个过程结束。&lt;/p&gt;
 &lt;h3 id=&#34;验证&#34;&gt;验证&lt;/h3&gt;
 &lt;p&gt;可以通过在Effectors中放一个Gain来验证。
@@ -171,9 +171,9 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
     </item>
     <item>
       <title>关于AviUtl的自定义UI</title>
-      <link>https://moriform.github.io/2026/01/10/avitulinstallzoku/</link>
+      <link>https://moriform.com/2026/01/10/avitulinstallzoku/</link>
       <pubDate>Sat, 10 Jan 2026 21:38:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/01/10/avitulinstallzoku/</guid>
+      <guid>https://moriform.com/2026/01/10/avitulinstallzoku/</guid>
       <description>&lt;h2 id=&#34;前置准备&#34;&gt;前置准备&lt;/h2&gt;
 &lt;p&gt;前置准备参考前三篇关于AviUtl的文章。&lt;/p&gt;
 &lt;h2 id=&#34;客制化&#34;&gt;客制化&lt;/h2&gt;
@@ -196,59 +196,59 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
     </item>
     <item>
       <title>摇曳露营中的实时摄像头</title>
-      <link>https://moriform.github.io/2026/01/09/yurucamera/</link>
+      <link>https://moriform.com/2026/01/09/yurucamera/</link>
       <pubDate>Fri, 09 Jan 2026 15:01:47 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/01/09/yurucamera/</guid>
+      <guid>https://moriform.com/2026/01/09/yurucamera/</guid>
       <description>&lt;p&gt;摇曳露营第一季中芝麻凛给抚子发送的实时摄像机链接是LCV社为詶访地区设立的道路状况的28个监控中的&lt;a href=&#34;https://live.lcv.ne.jp/cgi-bin/road/movie.php?camera_id=1&#34;&gt;霧ヶ峰映像&lt;/a&gt;)，LCV的这套系统一般人使用需要成为LCV-Net会员，但是唯独霧ヶ峰的监控是不需要登录就可以直接查看的。所以芝麻凛会给抚子发送这个监控的链接。对于圣地巡礼来说也是十分便利的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9570.webp&#34; alt=&#34;芝麻凛招手&#34; width=&#34;750&#34; height=&#34;423&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/msedge_yQSZOzqzdW.webp&#34; alt=&#34;霧ヶ峰实景（晚上）&#34; width=&#34;889&#34; height=&#34;734&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9570.webp&#34; alt=&#34;芝麻凛招手&#34; width=&#34;750&#34; height=&#34;423&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/msedge_yQSZOzqzdW.webp&#34; alt=&#34;霧ヶ峰实景（晚上）&#34; width=&#34;889&#34; height=&#34;734&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;而在第三季中芝麻凛给小明的实时监控来自&lt;a href=&#34;http://linearcam.city.fuefuki.yamanashi.jp/index.html?p=2&#34;&gt;花鸟山一本杉公园&lt;/a&gt;，也是可以直连查看的。而且这个监控是直接接收网络信号的，在修改网址后面的数字后刷新页面的话，可以看见是同一个摄像头转向不同角度拍摄的视角，甚至转向时的画面移动也是可以看见的。所以当查看这个监控画面的时候，如果有其他人发送了其他角度的网页请求，当前查看的摄像头就会转向下一个发送的请求的角度。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9572.webp&#34; alt=&#34;芝麻凛没招手&#34; width=&#34;750&#34; height=&#34;713&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9573.webp&#34; alt=&#34;实景&#34; width=&#34;750&#34; height=&#34;347&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9572.webp&#34; alt=&#34;芝麻凛没招手&#34; width=&#34;750&#34; height=&#34;713&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9573.webp&#34; alt=&#34;实景&#34; width=&#34;750&#34; height=&#34;347&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>11月买了什么</title>
-      <link>https://moriform.github.io/2025/12/01/202511buy/</link>
+      <link>https://moriform.com/2025/12/01/202511buy/</link>
       <pubDate>Mon, 01 Dec 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/12/01/202511buy/</guid>
+      <guid>https://moriform.com/2025/12/01/202511buy/</guid>
       <description>&lt;p&gt;这个月买了什么&lt;/p&gt;
 &lt;p&gt;十一月算是购物大月，我虽然不在国内没有办法过双十一，但是还是一贯在黑五买了些东西。&lt;/p&gt;
 &lt;h2 id=&#34;launchpad-pro-mk3&#34;&gt;Launchpad Pro mk3&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/IMG_9288.webp&#34; alt=&#34;&#34; width=&#34;3024&#34; height=&#34;4032&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/IMG_9288.webp&#34; alt=&#34;&#34; width=&#34;3024&#34; height=&#34;4032&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;一个19年的老玩意儿了。16年的时候买了Launchpad mk2的版本打了几个灯光效果很酷炫的工程之后就一直用于DrumPad弹和弦，以及和Ableton live一起使用在直播的时候作为通道条的控制器。&lt;/p&gt;
 &lt;p&gt;在Ebay上面120镑买的几乎全新的mk3，价格和当时闲鱼上面的最低价差不多了。新的版本多了版面的自定义功能可以使用不同的预设。然后多了十分好用的和弦功能和音阶选择功能，很适合没有灵感的时候随机漫游。&lt;/p&gt;
 &lt;p&gt;以及Pro版本有专属的音序器功能，暂时没有时间去摸索，估计是可以和其他硬件合成器搭配使用的方案。&lt;/p&gt;
 &lt;h2 id=&#34;mpowersynth&#34;&gt;Mpowersynth&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/reaper_yi78BjSHya.webp&#34; alt=&#34;&#34; width=&#34;1707&#34; height=&#34;922&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/reaper_yi78BjSHya.webp&#34; alt=&#34;&#34; width=&#34;1707&#34; height=&#34;922&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;红塔山(Melda production)的波表合成器打骨折，加上折扣券28镑收了，算是逐渐集齐红塔山全家桶的又一步。&lt;/p&gt;
 &lt;p&gt;特点是极低的cpu消耗以及红塔山的特色效果器路由和无限可能性。&lt;/p&gt;
 &lt;p&gt;当然还有红塔山特色的让人不想靠近的UI。&lt;/p&gt;
 &lt;h2 id=&#34;rond&#34;&gt;Rond&lt;/h2&gt;
 &lt;p&gt;128元
-&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/IMG_9407.webp&#34; alt=&#34;&#34; width=&#34;1170&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/IMG_9407.webp&#34; alt=&#34;&#34; width=&#34;1170&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 暄穗之前一直使用Life cycle来进行日常的追踪和记录，在使用的过程中发现了其局限性：其一是太长时间没有更新，像是亖了一样。其二是地图如果有所偏移的话修改方式极其诡异甚至无法修改。&lt;/p&gt;
 &lt;p&gt;所以在少数派搜索Life cycle的时候看见了Rond这款软件。给我的整体感觉就是一个持续更新的Life Cycle，而且还是可以买断的，所以试用了三天就买了。给人感觉相当不错。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/IMG_9406.webp&#34; alt=&#34;&#34; width=&#34;1290&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/IMG_9406.webp&#34; alt=&#34;&#34; width=&#34;1290&#34; height=&#34;2532&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 同时下载了一个叫做一生足迹的APP一直放在手机后台记录。要说两者的区别的话Rond和Life cycle都是记录事件，记录在一个地方呆的时间有多长。而一生足迹是记录具体地图上经历过的路径。&lt;/p&gt;
 &lt;h2 id=&#34;elegoo-uno-r3&#34;&gt;ELEGOO UNO R3&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/20251201232436.webp&#34; alt=&#34;&#34; width=&#34;1500&#34; height=&#34;1500&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/20251201232436.webp&#34; alt=&#34;&#34; width=&#34;1500&#34; height=&#34;1500&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;用于处理学校的Creative Coding for Sound大作业。但是Arduino的价格太高所以选择了替代主板。同时购买的还有ECG贴片，AD8232组件和一盆绿植。大概也能猜出想要做什么东西了。&lt;/p&gt;
 &lt;h2 id=&#34;游戏&#34;&gt;游戏&lt;/h2&gt;
 &lt;h3 id=&#34;亚路塔&#34;&gt;亚路塔&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/2020251201232635.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;215&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/2020251201232635.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;215&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;关于见习勇者打工打怪建设文明乡镇的故事。一个迷你且完善的类潜水员戴夫的经营动作类游戏。&lt;/p&gt;
 &lt;p&gt;像素人物很可爱，但是刷钱的过程有些肝弥补了游戏时长短的缺点。估计20小时以内可以玩完。&lt;/p&gt;
 &lt;h3 id=&#34;星之终途&#34;&gt;星之终途&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2025/12/01/202511buy/20251201232803.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;215&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2025/12/01/202511buy/20251201232803.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;215&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;既然是Key社的游戏还是短篇还是4折促销就不得不买了。&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>Max治好了我的巴托比症候群</title>
-      <link>https://moriform.github.io/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</link>
+      <link>https://moriform.com/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</link>
       <pubDate>Tue, 28 Oct 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</guid>
+      <guid>https://moriform.com/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。&lt;/p&gt;
 &lt;h2 id=&#34;关于项目&#34;&gt;关于项目&lt;/h2&gt;
@@ -272,9 +272,9 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
     </item>
     <item>
       <title>2025.10.26</title>
-      <link>https://moriform.github.io/2025/10/26/202542/</link>
+      <link>https://moriform.com/2025/10/26/202542/</link>
       <pubDate>Sun, 26 Oct 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/10/26/202542/</guid>
+      <guid>https://moriform.com/2025/10/26/202542/</guid>
       <description>&lt;h2 id=&#34;近况&#34;&gt;近况&lt;/h2&gt;
 &lt;h3 id=&#34;1&#34;&gt;1&lt;/h3&gt;
 &lt;p&gt;非常艰难的一周过去了。&lt;/p&gt;
@@ -308,9 +308,9 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
     </item>
     <item>
       <title>关于新版本Freshrss和Rsshub同时使用时出现的问题</title>
-      <link>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <link>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 17 Oct 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;暄穗在使用freshrss在服务器中作为远程rss阅读器的时候最近发现了问题，就是和rsshub同时使用的时候总是会有freshrss“力不从心”的情况：抓取的数量很少，通过管理页面看订阅的feed会红一大片，但是自己手动用浏览器打开rsshub订阅发现是可以打开的。也就是说明明rsshub订阅是没有问题，但是Freshrss就是不抓。如果再看得仔细一点会发现Freshrss确实抓了几个我的rsshub，然后就不抓了，通过Rsshub的日志也能看见Freshrss红的订阅根本没有请求抓取（加把劲啊Freshrss!你为什么不抓！）。&lt;/p&gt;
 &lt;h3 id=&#34;原因说明&#34;&gt;原因说明&lt;/h3&gt;
@@ -328,9 +328,9 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
     </item>
     <item>
       <title>Rsshub在bilibili和weibo的一些基础</title>
-      <link>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
+      <link>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Wed, 16 Apr 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://moriform.com/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。&lt;/p&gt;
 &lt;h2 id=&#34;bilibili的cookie配置&#34;&gt;bilibili的cookie配置&lt;/h2&gt;
@@ -354,9 +354,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>电脑重装记录</title>
-      <link>https://moriform.github.io/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/</link>
+      <link>https://moriform.com/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/</link>
       <pubDate>Sun, 09 Mar 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/</guid>
+      <guid>https://moriform.com/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗习惯一个阶段结束后就把电脑重装了，好像重装之后放入背包也变得更轻了。但是重装之后面对空白的电脑必定会有重新调整配置的过程。为了优化这个过程，所以把一些必要的软件和流程写成文档记录，重装之后把这个文档打开就可以花少量时间恢复电脑的大部分功能。&lt;/p&gt;
 &lt;h2 id=&#34;基本思想&#34;&gt;基本思想&lt;/h2&gt;
@@ -421,9 +421,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>Launchpad Drum Pad在Reaper中的映射设置</title>
-      <link>https://moriform.github.io/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://moriform.com/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Sat, 13 Jul 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://moriform.com/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/</guid>
       <description>&lt;p&gt;暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。&lt;/p&gt;
 &lt;p&gt;若使用LaunchPad作为钢琴来演奏，使用Drum Map模式（4个4×4模块）一定是最好的选择，但是Drum Map模式是在Ableton Live里面才有的，如果我们是使用其他的DAW(如Reaper)，则没有办法直接使用，只能用残疾的音阶模式。有两个办法可以解决这个问题。&lt;/p&gt;
 &lt;p&gt;1.在使用Reaper的时候同时打开Ableton Live，这个时候LaunchPad会自动识别并打开，此时运用于Live的映射会直接运用于Reaper中。注意此时使用User 1模式为Drum Map模式，但是MIDI通道无法修改默认为6。（但是为什么要在打开轻便的Reaper的时候打开一个高负Live呢？？？）&lt;/p&gt;
@@ -585,9 +585,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>我的电脑找不到Voicemeeter硬件，我该怎么做？</title>
-      <link>https://moriform.github.io/2024/06/23/voicemeeterrepair1/</link>
+      <link>https://moriform.com/2024/06/23/voicemeeterrepair1/</link>
       <pubDate>Sun, 23 Jun 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/06/23/voicemeeterrepair1/</guid>
+      <guid>https://moriform.com/2024/06/23/voicemeeterrepair1/</guid>
       <description>&lt;p&gt;暄穗花了一天时间来修Voicemeeter的问题，因为暄穗在音频设置里面完全找不到之前的各种VAIO 3啊VAIO啊之类的选项，在Python中也找不到各种通道的名字。总之一句话：下载了Vociemeeter后在电脑各个选项中都没有Voicemeeter的踪迹，但是可以在Voicemeeter软件上选其他的硬件（当然这事不能正常使用的，因为只能连接输入而不能连接输出）。&lt;/p&gt;
 &lt;p&gt;在多次下载重启卸载重启都没有解决问题后暄穗放弃了。&lt;/p&gt;
 &lt;p&gt;但是某一天在暄穗查找电脑其他硬件设置的时候登入了&lt;strong&gt;此电脑&lt;/strong&gt;的&lt;strong&gt;管理&lt;/strong&gt;页面，在&lt;strong&gt;设备管理器&lt;/strong&gt;的&lt;strong&gt;声音视频和游戏控制器&lt;/strong&gt;中找到了Voicemeeter的选项，其旁边有一个大大的叹号，表示这个设备不能使用。&lt;/p&gt;
@@ -596,9 +596,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>电脑自动刷香蕉</title>
-      <link>https://moriform.github.io/2024/06/21/autobanana/</link>
+      <link>https://moriform.com/2024/06/21/autobanana/</link>
       <pubDate>Fri, 21 Jun 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/06/21/autobanana/</guid>
+      <guid>https://moriform.com/2024/06/21/autobanana/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;最近Banana挺火的，说是挂机就可以得到香蕉到市场上卖，四舍五入挂机得钱。所以我们还是花最少的心思参与一下，而且挂机最好不要影响电脑的正常使用。官方说禁止连点器以外的任何外挂，所以我们就只用python写一个连点器的程序就行了。&lt;/p&gt;
 &lt;h2 id=&#34;代码描述&#34;&gt;代码描述&lt;/h2&gt;
@@ -631,9 +631,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>基于Python由刷课发展出的自动化脚本技术</title>
-      <link>https://moriform.github.io/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</link>
+      <link>https://moriform.com/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Fri, 23 Feb 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://moriform.com/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</guid>
       <description>&lt;p&gt;在去年下半个月买了某个网校的日语课程为期一年半。然后在12月的时候过了N2课程。由于把所有的课程杀完的话可以返还学费来交下一个课程的学费，所以需要一定的技术把剩下一般的课程全部刷完。&lt;/p&gt;
 &lt;p&gt;所有的课程在大年初一前刷完。现在总结一下所需要的技术以及简要代码。&lt;/p&gt;
 &lt;h2 id=&#34;刷课逻辑&#34;&gt;刷课逻辑&lt;/h2&gt;
@@ -700,9 +700,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>心跳文学部秘密诗篇10自动化获取方案(Python版)</title>
-      <link>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
+      <link>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
       <pubDate>Mon, 23 Oct 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
+      <guid>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
       <description>&lt;h2 id=&#34;总览&#34;&gt;总览&lt;/h2&gt;
 &lt;p&gt;在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。&lt;/p&gt;
 &lt;p&gt;所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。&lt;/p&gt;
@@ -815,9 +815,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>Cubase水平滚动反向的解决方法</title>
-      <link>https://moriform.github.io/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>https://moriform.com/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 05 Sep 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://moriform.com/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。&lt;/p&gt;
 &lt;p&gt;作为一家制定标准的公司，我们能够理解其软件制作上为了优化自己独特的工作流程指定不同的快捷键，毕竟其他公司出品软件的快捷键也各不相同。但是其在Windows操作系统下的Cubase却有一个惊为天人的快捷键，就是shift+鼠标滚轮用于水平滚动，说其惊为天人是因为它的鼠标滚轮的滚动方式与其他所有主流软件(不限于音频工作站)的水平滚动是相反的。&lt;/p&gt;
@@ -875,9 +875,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>关于粘贴板的数据</title>
-      <link>https://moriform.github.io/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <link>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Sat, 18 Feb 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;最近大量导入了一些Youtube的RSS feed到fluent reader里面，由于这个阅读器读Youtube官方的RSS链接信息不显示内嵌视频，所以需要使用RSSHUB制作链接，没有爬取限制所以用官方的就行不需要用自己建的（我建的也读不了Youtube）。&lt;/p&gt;
 &lt;p&gt;唯一的问题就是Youtube的用户界面链接有多个，有youtube.com/channel的，有youtube.com/@user的。@的这个应该是最近油管说的可以给自己频道直观ID名字的，不是乱码，这样好记。&lt;/p&gt;
@@ -982,9 +982,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>关于Bios找不到Linux的Grub的一个解决方法</title>
-      <link>https://moriform.github.io/2023/02/13/%E5%85%B3%E4%BA%8Ebios%E6%89%BE%E4%B8%8D%E5%88%B0linux%E7%9A%84grub%E7%9A%84%E4%B8%80%E4%B8%AA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>https://moriform.com/2023/02/13/%E5%85%B3%E4%BA%8Ebios%E6%89%BE%E4%B8%8D%E5%88%B0linux%E7%9A%84grub%E7%9A%84%E4%B8%80%E4%B8%AA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Mon, 13 Feb 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/02/13/%E5%85%B3%E4%BA%8Ebios%E6%89%BE%E4%B8%8D%E5%88%B0linux%E7%9A%84grub%E7%9A%84%E4%B8%80%E4%B8%AA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://moriform.com/2023/02/13/%E5%85%B3%E4%BA%8Ebios%E6%89%BE%E4%B8%8D%E5%88%B0linux%E7%9A%84grub%E7%9A%84%E4%B8%80%E4%B8%AA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;p&gt;暄穗使用一个240G的金士顿A400来作为linux的移动驱动盘，这样能做一个即用即插的linux系统。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;首先这块硬盘是暄穗用来升级十年前联想G450的硬盘，在经历了大量的电脑windows不能驱动这块硬盘的失败后，以及在安装若干个版本的linuxmint后启动找不到SSD盘的时候在网上找到了古今中外大量的相同问题，得到的结论是：这块硬盘和这个电脑型号不兼容。于是放弃了G450的升级。（唯一一个修好的案例：换了一个牌子的硬盘；其他的G450升级攻略上也用的不是金士顿；总之再也不买金士顿的硬盘了）&lt;/p&gt;
@@ -1004,9 +1004,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>20230211</title>
-      <link>https://moriform.github.io/2023/02/11/20230211/</link>
+      <link>https://moriform.com/2023/02/11/20230211/</link>
       <pubDate>Sat, 11 Feb 2023 17:39:52 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/02/11/20230211/</guid>
+      <guid>https://moriform.com/2023/02/11/20230211/</guid>
       <description>&lt;h3 id=&#34;2023-02-11-173952&#34;&gt;2023-02-11 17:39:52&lt;/h3&gt;
 &lt;p&gt;去年做了一个课题，关于互联网上的谣言检测。是一个用NLP模型跑一遍数据集就能用来预测的简单工具。在去微博爬取数据的时候稍微用了一下微博，看一下现在的情况。总体是很不乐观的。&lt;/p&gt;
 &lt;p&gt;这不禁让我重新思考一个问题：互联网究竟给我们带来了什么。它应该是一个提供信息和社交的平台。但是在大量物联网蓬勃发展的今天，人似乎不能够跟上现在的数据交通了。毕竟机器才是处理传输信息最快的工具。而我们却成为了被强制喂下信息数据的婴儿了。&lt;/p&gt;
@@ -1018,9 +1018,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>微博谣言数据爬取</title>
-      <link>https://moriform.github.io/2023/01/01/weiborumor/</link>
+      <link>https://moriform.com/2023/01/01/weiborumor/</link>
       <pubDate>Sun, 01 Jan 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/01/01/weiborumor/</guid>
+      <guid>https://moriform.com/2023/01/01/weiborumor/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;本文记录了笔者使用Python语言对于微博社区管理中心中的举报不实信息进行爬取，使用的模块为selenium。文章详细记录代码的含义以及最后给出所爬取的json数据。&lt;/p&gt;
 &lt;h2 id=&#34;具体实验过程&#34;&gt;具体实验过程&lt;/h2&gt;
@@ -1053,9 +1053,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;打开谣言处理url后对于谣言原文的爬取有3个方法：若页面有’原文‘，则再点进’原文‘微博页面进行文章爬取。若页面有’查看全文‘，则对于’查看全文‘的部分的标签value属性爬取。若都没有，则直接对橘色方框的文字进行爬取。&lt;/p&gt;
 &lt;p&gt;所以爬取分为三层：
 一层对平台一页20条进行爬取，
-&lt;img src=&#34;https://moriform.github.io/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 二层点进20条中每一条，
-&lt;img src=&#34;https://moriform.github.io/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 三层若需要原文则点进原微博进行爬取。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;186&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;196&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##选择要爬取的页面编号&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1180,9 +1180,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>Needy Girl Overdose</title>
-      <link>https://moriform.github.io/2022/10/28/needy-girl-overdose/</link>
+      <link>https://moriform.com/2022/10/28/needy-girl-overdose/</link>
       <pubDate>Fri, 28 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/28/needy-girl-overdose/</guid>
+      <guid>https://moriform.com/2022/10/28/needy-girl-overdose/</guid>
       <description>&lt;p&gt;年初的时候玩了这个游戏的所有结局，家人过年我一人抑郁，发现最近有更新了就及时重新下载下来玩了。&lt;/p&gt;
 &lt;p&gt;游戏更新了三个结局线，一条极其地现实，两条极其地浪漫。&lt;/p&gt;
 &lt;p&gt;其实从之前的断网结局就已经看得出作者的意图了，对于现如今混沌的网络最好的方法就是将它完全结束。但是还记得互联网最初的样貌吗？那个真正能够把人们连接起来的互联网。每一个节点就像一颗颗星星那样的闪耀，那样的温暖。成片的星星相互连接能够照亮一整条银河。网络能够传递的是人们内心最真实的善良，无顾忌的倾诉，而不是催人一个劲做数据的机器。&lt;/p&gt;
@@ -1191,9 +1191,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>Reaper中分频段处理的方案</title>
-      <link>https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</link>
+      <link>https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</link>
       <pubDate>Tue, 25 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</guid>
+      <guid>https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/</guid>
       <description>&lt;p&gt;使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。&lt;/p&gt;
 &lt;p&gt;REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内频段进行分通道处理的典型方法。为了避免一看到JS插件前面几个就不会用导致对于REAPER学习失去信心，这篇文章以3 band为例讲解一下这类通道处理插件的用法。&lt;/p&gt;
 &lt;h3 id=&#34;spliiter-joiner简介&#34;&gt;Spliiter Joiner简介&lt;/h3&gt;
@@ -1201,45 +1201,45 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;3 Band Joiner的作用是将三个通道的信号结合成一个通道。和Spliiter合用就是将低中高三个频段的三个通道混合成一个通道。&lt;/p&gt;
 &lt;h3 id=&#34;splitter&#34;&gt;Splitter&lt;/h3&gt;
 &lt;p&gt;我们先用Splitter对于轨道Main进行处理看能够发生什么。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-16-24.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;121&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-16-24.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;121&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如上图所示，我们将一首歌分成了0&lt;del&gt;200Hz，200Hz&lt;/del&gt;2000Hz和2000Hz以上三个频段，低频部分进入了1+2通道，中频部分进入了3+4通道，高频部分进入了5+6通道。&lt;/p&gt;
 &lt;p&gt;这个时候听得出来整首歌只有低频的部分了，为什么呢？我们打开插件右上角2 in 2/6 out就出现了轨道内的路由设置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-23-59.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;210&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-23-59.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;210&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 可以看到这个插件的路由是这样的：左右双声道进入插件的left right,插件经过了一系列不可描述的操作后想要输出整整6个通道(低中高品分别有左右通道)，但是原来的轨道数值只有两个通道，所以只把低频的左右声道传给了轨道的1和2。所以只听到了低频。&lt;/p&gt;
 &lt;p&gt;点击Track channels，选择6。整个轨道就有了6个通道。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-28-36.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;274&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_11-28-36.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;274&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 插件的输入只有原来音频的两轨1+2我们不管，重要的是插件输出的6个信号被输出在了轨道的6个不同的通道上面，于是多频段的分离就完成了。&lt;/p&gt;
 &lt;h3 id=&#34;在多个轨道中的处理&#34;&gt;在多个轨道中的处理&lt;/h3&gt;
 &lt;p&gt;接下来对于分频的处理，最简单的方法是把不同的分频放入不同的音轨里面单独处理，需要我们把这六个输出分别发送到三个轨道里面，具体如下：&lt;/p&gt;
 &lt;p&gt;分别新建三个轨道，给它们分别命名为Low，Mid和High。从上面的六通道路由可以看见我们应该把通道1+2输出到轨道Low，把3+4输出到轨道Mid，把5+6输出到轨道High。&lt;/p&gt;
 &lt;p&gt;点击原来轨道的Sends界面，首先取消掉Master send这样这条轨道就不会直接发送到总线上。然后拖住Main的Sends分别到三条新建的轨道上。打开Low的Sends界面，右侧可以看见这条轨道从Main上面接收了信息，将Main的1+2接收输入在轨道的1+2上，Low轨接收了Main上面的低频信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_14-59-49.webp&#34; alt=&#34;&#34; width=&#34;630&#34; height=&#34;260&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_14-59-49.webp&#34; alt=&#34;&#34; width=&#34;630&#34; height=&#34;260&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 查看Mid的Sends信息，发现Mid也从Main上面接收了信息接收了1+2轨的低频信息，这和我们定义的Mid轨的作用是违背的，需要修改。从Spliiter后的路由知道Main输出的中频信息在3+4通道上，所以右下角设置为Audio:3/4-&amp;gt;1/2将中频分离。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_15-02-20.webp&#34; alt=&#34;&#34; width=&#34;630&#34; height=&#34;260&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_15-02-20.webp&#34; alt=&#34;&#34; width=&#34;630&#34; height=&#34;260&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;高频轨道的设置和中频相似将Audio的输入改为5/6-&amp;gt;1/2即可。&lt;/p&gt;
 &lt;p&gt;这样就可以实现分频段的音频处理啦。&lt;/p&gt;
 &lt;h3 id=&#34;在单个轨道中的处理&#34;&gt;在单个轨道中的处理&lt;/h3&gt;
 &lt;p&gt;基于REAPER优秀的路由设置，对于强迫症患者，高级路由爱好者和分频简单处理的情况下我们可以试着就在Main里面进行分频后的音频处理不用新建轨道。&lt;/p&gt;
 &lt;p&gt;这个时候我们不仅用到Splitter，还要用到Joiner。将Splitter对应的Joiner放在Splitter的下面，看一下Joiner的路由：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_17-55-38.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;268&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_17-55-38.webp&#34; alt=&#34;&#34; width=&#34;250&#34; height=&#34;268&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;很容易理解，1、3、5通道进入插件输出到通道1表示左声道，2、4、6通道进入插件输出到通道2表示右声道。这样可以把Splitter分开的通道信号重新做成双声道。&lt;/p&gt;
 &lt;p&gt;于是单轨分频处理的逻辑是这样的:Splitter后的通道分别处理后放入Joiner中结合。&lt;/p&gt;
 &lt;p&gt;我们试着对一个鼓组做这样的操作：低频加混响高频加Delay中频加调制(不讨论这样的混音是否及格，只是因为这样显耳)。&lt;/p&gt;
 &lt;p&gt;低频混响如图
-&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-09-47.webp&#34; alt=&#34;&#34; width=&#34;730&#34; height=&#34;825&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-09-47.webp&#34; alt=&#34;&#34; width=&#34;730&#34; height=&#34;825&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 从路由可以看见把Splitter后的1+2放入的混响插件，将插件的输出又放到1+2上等Joiner的结合。&lt;/p&gt;
 &lt;p&gt;中频和高频的处理方式相似，都是直接设置插件的输入输出路由。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-13-00.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;339&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-13-20.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;276&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-13-00.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;339&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/Snipaste_2022-10-25_18-13-20.webp&#34; alt=&#34;&#34; width=&#34;719&#34; height=&#34;276&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;最后通过Joiner的结合完成单轨的分频音频处理。可以通过Joiner上各轨的输入量来明显听清各频段处理的效果。&lt;/p&gt;
 &lt;p&gt;#reaper #js插件 #音频&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>RSS的实践</title>
-      <link>https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</link>
+      <link>https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;h2 id=&#34;可以跳过的碎碎念&#34;&gt;可以跳过的碎碎念&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你的Bilibili首页，应该是https://search.bilibili.com&lt;/p&gt;
@@ -1257,10 +1257,10 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;我的RSS系统分成三个硬件。Iphone作为资讯订阅了一些微博用户作为时事和游戏折扣的消息订阅，订阅了一些推特上的单图漫画家和推特“Aviutlスクリプト”关键词。使用的是Reeder 5，这个阅读器最大的特点是自己定义收藏tag可以把社会消息和情头分开。&lt;/p&gt;
 &lt;p&gt;Ipad因为不能升级IOS15所以用的是netnewswire,也是个不错的IOS端RSS阅读器，用来订阅一些技术博客等长文。&lt;/p&gt;
 &lt;p&gt;PC端的是Fluent Reader，用来替代bilibili和Youtube的关注，简单说就是用来听术力口和术人口的。RSS阅读器的这种列表视图其实用来看视频时相当方便的，按左右键就能直接切视频画面。
-&lt;img src=&#34;https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 用RSS订阅视频需要对于网站本身有一定的了解，比如NICONICO的视频我暂时没有订阅的方法所以我用对应的关键词来搜索B站的搬运视频。Youtube的内嵌视频可以调倍速和高清晰度，B站的内嵌视频不能调倍速，也不能有高清视频。&lt;/p&gt;
 &lt;p&gt;所以总结一下，一个RSS系统需要一个RSS阅读器以及RSS订阅源。阅读器有很多大家可以自己去尝试。RSS源首先去看官方是否有自己的RSS订阅源，一般会有一个长这样的标识：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如果没有看到试着在博客主页网址后面加上feed或atom来看看有没有像代码一样的东西出来，如果有，那么这个网址就是订阅源了。&lt;/p&gt;
 &lt;p&gt;顺便一提，森月台的订阅源是&lt;a href=&#34;https://moriform.com/feed/&#34;&gt;森月台&lt;/a&gt;或者&lt;a href=&#34;https://moriform.com/feed/atom&#34;&gt;森月台&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;如果一个常见的网站没有官方的订阅源(像B站),那么需要一些第三方的RSS订阅源来支持订阅，比较常见的开箱即用的是RSShub&lt;/p&gt;
@@ -1286,31 +1286,31 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>中置通道的初认识</title>
-      <link>https://moriform.github.io/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/</link>
+      <link>https://moriform.com/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/</guid>
+      <guid>https://moriform.com/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/</guid>
       <description>&lt;p&gt;在Reaper的自身JS插件中找到了一个Center Canceler的插件，在调大效果的时候逐渐可以听见人声渐渐消失。&lt;/p&gt;
 &lt;h3 id=&#34;midside&#34;&gt;Mid/Side&lt;/h3&gt;
 &lt;p&gt;去网上查了查这个叫做中置通道析取，是以前的MP3等音乐播放器的卡拉OK去人声的一种快速方法。方式是通过将正常的双声道转换为Mid/Side模式（中央声道/侧边声道模式）进行操作。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/20221024230355.webp&#34; alt=&#34;&#34; width=&#34;660&#34; height=&#34;286&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/20221024230355.webp&#34; alt=&#34;&#34; width=&#34;660&#34; height=&#34;286&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Mid/Side也是一种声道模式，与双声道的左右两通道不同，它是对于两个音响内一个声道(Mid)，两个音响外一个声道(Side)。这样比起左右分声道或频率分声道有独特的混音优势。&lt;/p&gt;
 &lt;p&gt;中置通道析取就是用了这样的方式。通过Mid声道和一个与Mid声道相同但是相位差180度的通道相加直接将Mid通道抵消掉。一般情况下人声大部分都分布在Mid声道上(常见的地球人应该都是正对着麦克风唱歌的吧)，鼓组大都分布在Mid上，乐器在Side上。所以得到的结果是人声和鼓组的大部分都被抵消了剩下了Side通道上面的信息。&lt;/p&gt;
 &lt;h3 id=&#34;验证&#34;&gt;验证&lt;/h3&gt;
 &lt;p&gt;对于中置声道析取我们可以做这样的验证：&lt;/p&gt;
 &lt;p&gt;Reaper里面自带Mid/Side通道和双声道转换的JS插件Mid/Side Decoder 和Mid/side Encoder,在轨道上加一个Mid/side Encoder插件，通过轨道的路由可以看见双声道转换成了MID/SIDE模式，通过左边输出Mid通道，通过右边输出Side通道。所以听起来左边的声音较大较实，右边的声音偏小比较虚。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/Snipaste_2022-10-24_22-33-40.webp&#34; alt=&#34;&#34; width=&#34;240&#34; height=&#34;189&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/Snipaste_2022-10-24_22-33-40.webp&#34; alt=&#34;&#34; width=&#34;240&#34; height=&#34;189&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我们关闭这个音轨到总线的输出将这两个通道的信号发送给不同的轨道，对于Mid轨再发一个信号到新的轨道，对于新的轨道使用JS插件Phase Rotator，数值拉到180。同时打开现在的三个新建的音轨，可以听见人声的大部分都被消除了，和中置通道析取效果相同，就是声音有一些闷，大概这就是自行完成和产品之间的差异。少部分像回声一样的飘渺的Side上的人声留了下来，这个方法无法完全去除人声而且破坏了许多鼓组，在现在有更好的方法的情况下也应该不会再使用这样的人声提取方法了。&lt;/p&gt;
 &lt;p&gt;PS1:既然中置通道已经被抵消了，为什么不直接用Side通道呢？&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/202003_031605145.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;460&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/202003_031605145.webp&#34; alt=&#34;&#34; width=&#34;460&#34; height=&#34;460&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;PS2:将Side直接提出来，响度调成和Center Canceler一个水平效果不相上下。&lt;/p&gt;
 &lt;p&gt;#reaper #js插件&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>对于RSS的一些思考</title>
-      <link>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+      <link>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+      <guid>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
       <description>&lt;p&gt;2022年，信息爆炸的时间，出于对国内外大多数信息社交平台的失望，我将信息接收的主题转为了RSS。&lt;/p&gt;
 &lt;p&gt;RSS，意为简易信息聚合。简单来说就是把各个地方的信息装在一个盒子里面。试想一下你有一个像微博一样的APP，这个APP里面你可以关注任何平台你想要关注(订阅)的信息。&lt;/p&gt;
 &lt;p&gt;在互联网的早期时代，人们分享交流的平台是各个不同平台不同域名的博客，如果我想要看我之前读的博客有没有更新博文，我可以打开他们的网页一个一个去看，当然这是个费时间的方法。另外一种就是RSS，一个订阅器，汇集所有订阅的网页。如果是普通的博文，甚至可以直接在RSS阅读器上读完所有的文章。&lt;/p&gt;
@@ -1331,16 +1331,16 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>在Domino中加载新音源的方法</title>
-      <link>https://moriform.github.io/2022/04/03/new_library_in_domino/</link>
+      <link>https://moriform.com/2022/04/03/new_library_in_domino/</link>
       <pubDate>Sun, 03 Apr 2022 21:08:30 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/04/03/new_library_in_domino/</guid>
+      <guid>https://moriform.com/2022/04/03/new_library_in_domino/</guid>
       <description>&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
 &lt;p&gt;本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/index-1767622087706.webp&#34; alt=&#34;&#34; width=&#34;1479&#34; height=&#34;798&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/index-1767622087706.webp&#34; alt=&#34;&#34; width=&#34;1479&#34; height=&#34;798&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49.webp&#34; alt=&#34;&#34; width=&#34;646&#34; height=&#34;511&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49.webp&#34; alt=&#34;&#34; width=&#34;646&#34; height=&#34;511&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。&lt;/p&gt;
 &lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
 &lt;p&gt;对于本文的实践来说需要准备的工具可以再文中给出的超链接中直接下载。&lt;/p&gt;
@@ -1362,18 +1362,18 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&amp;quot;试用&amp;quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&amp;hellip;&amp;hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。&lt;/p&gt;
 &lt;p&gt;回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。&lt;/p&gt;
 &lt;p&gt;Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/1.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/1.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;当然32位VST插件请自行获取，正版免费的互联网上挺多的。&lt;/p&gt;
 &lt;h3 id=&#34;具体操作&#34;&gt;具体操作&lt;/h3&gt;
 &lt;p&gt;首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1.webp&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;410&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1.webp&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;410&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino&lt;/p&gt;
 &lt;p&gt;最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&amp;gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;右键这个物件选择&amp;quot;Open items in editor&amp;quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&amp;quot;Open items in default editor&amp;quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19.webp&#34; alt=&#34;&#34; width=&#34;448&#34; height=&#34;199&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19.webp&#34; alt=&#34;&#34; width=&#34;448&#34; height=&#34;199&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;按下轨道上面的fx按钮会出来选框，里面是你的电脑里面刚才扫描的VST插件，选择一个乐器插件加载完成之后就可以播放了。&lt;/p&gt;
 &lt;p&gt;以上的操作很基础但是过于反人类，因为在写入MIDI音符的时候听不到任何东西，所以我们调整一下步骤并加入YOKE的使用。&lt;/p&gt;
 &lt;p&gt;轨道上面的表示录音的红色按钮点亮，将喇叭图标调整到有一个A字母的自动监听状态，右击喇叭，在选单中最下面有一个MIDI INPUT，选择一个（建议ALL）。然后在Fx里面选择一个乐器。在有乐器并且开着录音和自动监听的情况下，我们按照原来的方法打开Domino，在里面输入一个音符&amp;hellip;&amp;hellip;然后就会惊讶地发现打入音符的一瞬间DAW发出了声响正是刚才我们选择的那个乐器，在Domino里面播放的时候也能够发出声音，在reaper的对应轨道上面加入phase之类的音频插件后使用Domino也能够发出处理后应该有的声音。注意在录制一条轨道的时候其他的轨道应该关闭录制否则会出现失真的情况。&lt;/p&gt;
@@ -1383,9 +1383,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>20220130</title>
-      <link>https://moriform.github.io/2022/01/30/20220130/</link>
+      <link>https://moriform.com/2022/01/30/20220130/</link>
       <pubDate>Sun, 30 Jan 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/01/30/20220130/</guid>
+      <guid>https://moriform.com/2022/01/30/20220130/</guid>
       <description>&lt;p&gt;三色绘恋这桩子事也是意料之中，从一开始关注的时候山百合就搞各种骚操作。对标白色相簿不说，众筹高档位送床单还能理解是对标日厂，游戏还没发售就开始党争就不懂是怎么个操作了。给樱花游戏发行12元真的对得起认真做游戏的人吗？之后还带一些莫名奇妙的周边，官方做女主胖次雨伞也应该是国内第一人了。到现在看更是请了初学程序员来维护屎山一样的操作。&lt;/p&gt;
 &lt;p&gt;从CD上买的杂志关注到的这个游戏，庆幸当时错过了付款时间没有买捆绑初回限定（捆的另外一个蝉XX的游戏现在应该也活不过来了），后来买了一个游戏包付了一个玩了一个半小时真的没有玩下去也明白12元是怎么来的了。&lt;/p&gt;
 &lt;p&gt;不要说什么国AVG第一，15年以前的国内御三家剧本质量都是上乘的文笔都是相当有特色的。写高恋的橘子班、写赤印的Hollowings（这两个可以说是左右极端的浪漫了）、写刻痕的蓝天使都是值得推荐的。&lt;/p&gt;
@@ -1394,9 +1394,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>AviUtl的一些看上去不错的辅助插件</title>
-      <link>https://moriform.github.io/2021/11/11/aviutl_plugin/</link>
+      <link>https://moriform.com/2021/11/11/aviutl_plugin/</link>
       <pubDate>Thu, 11 Nov 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/11/aviutl_plugin/</guid>
+      <guid>https://moriform.com/2021/11/11/aviutl_plugin/</guid>
       <description>&lt;p&gt;一般情况下使用基础的AUL套件就能够完成剪辑任务了。所以以下的内容作为锦上添花也许会对工作流程等有一定提高(实话说我一开始用英文版的用了几年都不知道插件添加但依旧完成了许多视频的制作)。所以以下的内容没有标注“重要”的话直接跳过是没事的。&lt;/p&gt;
 &lt;h2 id=&#34;外观&#34;&gt;外观&lt;/h2&gt;
 &lt;h3 id=&#34;seekbar&#34;&gt;&lt;a href=&#34;https://aoytsk.blog.jp/aviutl/613302.html&#34;&gt;seekbar&lt;/a&gt;（★★）&lt;/h3&gt;
@@ -1435,9 +1435,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>AviUtl的其他导入导出插件</title>
-      <link>https://moriform.github.io/2021/11/11/aviutl_output/</link>
+      <link>https://moriform.com/2021/11/11/aviutl_output/</link>
       <pubDate>Thu, 11 Nov 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/11/aviutl_output/</guid>
+      <guid>https://moriform.com/2021/11/11/aviutl_output/</guid>
       <description>&lt;h2 id=&#34;导出插件&#34;&gt;导出插件&lt;/h2&gt;
 &lt;p&gt;如果按照之前的攻略来一步一步做的话，AviUtl导出avi，mp4，mkv和264文件就足够，转换成其他文件格式也就一行命令的事。所以以下内容只是为了图方便的选读内容。&lt;/p&gt;
 &lt;h3 id=&#34;かんたんmp4&#34;&gt;&lt;a href=&#34;https://aoytsk.blog.jp/aviutl/34586383.html&#34;&gt;かんたんMP4&lt;/a&gt;&lt;/h3&gt;
@@ -1458,9 +1458,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>你为什么能做一个二维视频</title>
-      <link>https://moriform.github.io/2021/11/11/wycma2dv/</link>
+      <link>https://moriform.com/2021/11/11/wycma2dv/</link>
       <pubDate>Thu, 11 Nov 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/11/wycma2dv/</guid>
+      <guid>https://moriform.com/2021/11/11/wycma2dv/</guid>
       <description>&lt;h1 id=&#34;你为什么能做一个二维视频&#34;&gt;你为什么能做一个二维视频&lt;/h1&gt;
 &lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;这篇文章的契机是几个月之前和一个做AMV的朋友聊天，他做了一个简单的普通迪斯科的MG动画。然后发现里面应该有一个摄像头从斜上降到水平的场景（也有可能是水平升上斜上的场景记不清了）。然后惊奇地发现图像的视角变了但是文字是静止的，问了才知道是通过旋转图像x轴来完成一个看上去像是视角转换的场景，他并不会摄像机的使用。于是当时我问下了这个问题。&lt;/p&gt;
@@ -1469,9 +1469,9 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;混剪人说我把视频导进软件里面然后把视频剪辑了加上过场了把视频的画面改变了然后导出了。MG人说我在里面放了一个图形然后给它一个动作多做几遍然后导出了。&lt;/p&gt;
 &lt;p&gt;实际上不管怎么说我们都在做一件事：在一个虚拟机里面摆放物件。如果你的软件里面左右是x轴，上下是y轴，你把视频z轴拉大拉小视频会变大变小的话，那么就请想象出这样一个三维空间：x轴为水平线方向，y轴为竖直线方向，z轴指向你自己——就是这样一个虚拟空间。&lt;/p&gt;
 &lt;p&gt;现在我们在里面放一些东西吧，我们放一个视频进去，这个空间会变成什么样呢？没错，可能与常识不同，并不是眼前摆了一个视频，而是看哪，这个广阔浩大的空间里面悬浮着一个竖着的像一张纸一样的东西像屏幕一样在播放视频。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/11/11/wycma2dv/202111051.webp&#34; alt=&#34;&#34; width=&#34;896&#34; height=&#34;601&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/11/11/wycma2dv/202111051.webp&#34; alt=&#34;&#34; width=&#34;896&#34; height=&#34;601&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;就像这样，不用担心重力在里面摆放各种物件。摆放一个悬浮着的文字，摆放一个具有自定义贝塞尔曲线的运动的圆。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/11/11/wycma2dv/2021110502.webp&#34; alt=&#34;&#34; width=&#34;896&#34; height=&#34;601&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/11/11/wycma2dv/2021110502.webp&#34; alt=&#34;&#34; width=&#34;896&#34; height=&#34;601&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;于是这个视频文件有了伙伴，整个虚拟空间变得热闹起来了。可喜可贺可喜可贺。&lt;/p&gt;
 &lt;h2 id=&#34;2&#34;&gt;2&lt;/h2&gt;
 &lt;p&gt;不对啊！那我们看到的做完的视频是什么呢？&lt;/p&gt;
@@ -1488,14 +1488,14 @@ HOTLINK_INCLUDE_PATHS: /weibo
     </item>
     <item>
       <title>20211028comiday</title>
-      <link>https://moriform.github.io/2021/11/03/20211028-2/</link>
+      <link>https://moriform.com/2021/11/03/20211028-2/</link>
       <pubDate>Wed, 03 Nov 2021 21:08:30 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/03/20211028-2/</guid>
+      <guid>https://moriform.com/2021/11/03/20211028-2/</guid>
       <description>&lt;p&gt;托人寄了一份CD的场刊过来，一本书（虽然页数有些少），一个纸袋，几张周边，就当是逛了这一次的同人展了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/11/03/20211028-2/8EA91CEEC4CD36855E4565F4CE6A9ABC.webp&#34; alt=&#34;&#34; width=&#34;3264&#34; height=&#34;2448&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/11/03/20211028-2/8EA91CEEC4CD36855E4565F4CE6A9ABC.webp&#34; alt=&#34;&#34; width=&#34;3264&#34; height=&#34;2448&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;持续逛同人展（特指COMIDAY）是从高中开始的，和同学一起在里面逛一天，逛完晚上看电影。高中正是做术力口的狂热时期，逛展的时候也基本上是按着VOCALOID的音乐摊一家一家扫过去的。当时的VOCALOID二创作同人画集的特别多，但是做专辑的数量并不多，见过的就平行四界初心社和稔盛望官方摊位还有一堆寄售其他社团的鸽子，再加上几个海外的社团。&lt;/p&gt;
 &lt;p&gt;当时逛展子要跑到非遗公园和新城区的会展中心那边基本就是地铁穿个城跑终点站的距离。于是早上五六点钟起床打的坐到火车北站地铁口，坐去那边差不多是早上7点钟。CD不让排夜场，但是为了限定周边7点钟就已经排起人了，于是也一起排着一边背单词做作业等到同学来再等到九点多开场。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/11/03/20211028-2/1psc.webp&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;512&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/11/03/20211028-2/1psc.webp&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;512&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;逛展前一个晚上就翻完官方的参展动态，把感兴趣的社团都标记一圈，把预算先算出来甚至零钱都准备好准备拿起本子放下钱就跑下一家（当时也没有智能手机，但是基于场地极其糟糕的信号还是零钱来得快），在地图上把最短路线画好。第二天进场安检完速度跑向限定场，然后跑向官方场刊，顺着路线一家一家跑，差不多10分钟就能够把想买的都买到，然后接下来的几个小时就是闲逛时间了。边聊天边看看其他有趣的摊位。&lt;/p&gt;
 &lt;p&gt;印象深的有一个社团把成都的二次元场地(?)做了一份大的城市地图来卖。一个做术曲（主要是IA和ONE）专辑的海外社团的小哥哥特别可爱，两次去找他签名都会笑着说好多东西（虽然听个半懂）。AVG专区全是严肃otaku不敢去盖印章于是拿痛衣给同学交换代盖。甚至有一届能够看到narcissus的摊位而且还排满人。&lt;/p&gt;
 &lt;p&gt;每一次逛完回家都会写手记，会写很多东西，灵感泉涌。似乎只有在那样一个看上去不是那么真实的环境下才会想到一些。第一次人生有了非提前制定的目标是因为发现原来自己也可以做到。初次看术曲周刊的时候发现弹幕并不在歌姬而在于P主，这个时候才发现原来一首歌的制作并不是远到明星和企业，就是我这样的普通人也可以完成，于是在这样的契机上开始了尝试。那时资源没有现在这么唾手可得，都藏在各种论坛里面；纸片人也没有像现在这样被发现商机被尝试广传，加上还要补课，于是开始几年都不敢外说，在网友的交流中持续着创作。&lt;/p&gt;
@@ -1503,14 +1503,14 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;很遗憾，大学之后就没有再参加本地的同人展了。本来有希望的时隔两年的今年暑假也因为成都的本地疫情取消了。不过之后的每一次同人展都会找人带一份场刊过来。现在大陆这方面的纸质杂志基本上所剩无几了，而CD的场刊在这里无疑是质量上乘的（最近见过的其他能够称得上高质量的也就只有只出过三期的AVG SPIRITS了），里面的每一篇约稿采访都能看出执笔者对于这个圈子学术般认真的态度。而且甚至能够在里面找到更早（小学）时见过的展子和游戏馆。不仅带有现实中的老成都情怀，也让我发现更多圈子里上世纪考古人的身影（或许对于他们来说只是想要找寻童年的痕迹吧）。&lt;/p&gt;
 &lt;p&gt;个人觉得嗅觉应该是最能够唤起人记忆的感觉。虽然封面不同，但开封这份场刊的时候，几年未有过的新印刷杂志特有的油墨味又把我带进了两手拿着纸袋背着书包在场地里奔跑的那几年，似乎又看到了创作者一起交流的场景。很欣慰这份新油墨味确实是新的，证明那里确实有这样的圈子，还有这样的氛围存在着。&lt;/p&gt;
 &lt;p&gt;(图1.新的场刊，图2.老年机时代唯一找到存下来的CD痕迹，图3.突然想到的@tamuro_g的图片)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/11/03/20211028-2/cc22c6376a54bb6f37a3abe09d94f0d1bacd1ef8.jpg@393w_810h_progressive.webp&#34; alt=&#34;&#34; width=&#34;262&#34; height=&#34;540&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/11/03/20211028-2/cc22c6376a54bb6f37a3abe09d94f0d1bacd1ef8.jpg@393w_810h_progressive.webp&#34; alt=&#34;&#34; width=&#34;262&#34; height=&#34;540&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
       <title>关于Aviutl的基本安装说明</title>
-      <link>https://moriform.github.io/2021/10/06/aviutl_base0/</link>
+      <link>https://moriform.com/2021/10/06/aviutl_base0/</link>
       <pubDate>Wed, 06 Oct 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/10/06/aviutl_base0/</guid>
+      <guid>https://moriform.com/2021/10/06/aviutl_base0/</guid>
       <description>&lt;p&gt;&lt;strong&gt;如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;使用Aviutl来编辑视频差不多都快6年了，从以前做V家的PV到现在做VRO视频还是平常剪片子，基本上都没有离开这款软件。&lt;/p&gt;
@@ -1535,20 +1535,20 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;h4 id=&#34;aviutl&#34;&gt;Aviutl&lt;/h4&gt;
 &lt;p&gt;到&lt;a href=&#34;http://spring-fragrance.mints.ne.jp/aviutl/&#34;&gt;AviUtl的部屋&lt;/a&gt;里面进行安装，这个是Ken的发布压面，同时里面还会有其他资源和相关链接。&lt;/p&gt;
 &lt;p&gt;首先是AviUtl的下载，选择上面的稳定版本(2021年10月5日，此时用的是19年10月更新的1.10版本)。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32.webp&#34; alt=&#34;&#34; width=&#34;626&#34; height=&#34;483&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32.webp&#34; alt=&#34;&#34; width=&#34;626&#34; height=&#34;483&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;此时打开AviUtl，会发现这几乎只是一个空壳，什么也没法做。&lt;/p&gt;
 &lt;h4 id=&#34;exedit92&#34;&gt;exedit92&lt;/h4&gt;
 &lt;p&gt;回到部屋，对&lt;strong&gt;拡張編集Plugin&lt;/strong&gt;进行下载。选择上面的稳定版本(2021年10月5日，此时用的是13年7月更新的0.92版本)。注意如果你的片假名过关的话你会发现下面有一个test版本的0.93，如果没有十足的把握的话不要下载这个版本，就我而言因为一直使用的PSDTOOL明确说了0.93里面有Bug所以也不敢用。（当然如果你看着片文章的时候0.93已经放在0.92的上面了，请直接下载上面版本号最高的就行了）。&lt;/p&gt;
 &lt;p&gt;解压缩之后直接放到刚才解压缩的AvuUtl110文件夹里面。此时你的文件夹大概长这样&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56.webp&#34; alt=&#34;&#34; width=&#34;774&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56.webp&#34; alt=&#34;&#34; width=&#34;774&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;(可能你的文件夹里面没有选中的东西比我的要少，这是因为刚才鼓捣了一会儿本体自动写了一些文件出来)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49.webp&#34; alt=&#34;&#34; width=&#34;280&#34; height=&#34;441&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49.webp&#34; alt=&#34;&#34; width=&#34;280&#34; height=&#34;441&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;再次打开软件本体，&lt;strong&gt;设定&lt;/strong&gt;里面选择&lt;strong&gt;扩张编辑的设定&lt;/strong&gt;然后就出现了一般视频编辑软件有的时间轴了。一般我们的时间大部分都用在在时间轴上面摆放物件。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39.webp&#34; alt=&#34;&#34; width=&#34;701&#34; height=&#34;602&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39.webp&#34; alt=&#34;&#34; width=&#34;701&#34; height=&#34;602&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;此时我们已经可以在上面摆放各种物件了，实时在上面摆放一些test文件，或者摆放一个图形(右键点击时间轴选择第一个media object追加)。但是这个时候我们发现我们没有办法加入一般的动画文件画像文件和音频文件。再加入的时候我们发现此时的Aviutl只认识这些文件格式。
-&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51.webp&#34; alt=&#34;&#34; width=&#34;295&#34; height=&#34;62&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19.webp&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;25&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35.webp&#34; alt=&#34;&#34; width=&#34;184&#34; height=&#34;42&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51.webp&#34; alt=&#34;&#34; width=&#34;295&#34; height=&#34;62&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19.webp&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;25&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35.webp&#34; alt=&#34;&#34; width=&#34;184&#34; height=&#34;42&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 一般使用的MP4格式啊MP3格式啊都没有。这个时候我们要来再次扩展插件。&lt;/p&gt;
 &lt;h4 id=&#34;l-smash-works&#34;&gt;L-Smash works&lt;/h4&gt;
 &lt;p&gt;这个插件就是针对刚才所遇到的问题进行的拓展，使得MP4和MP3等文件能够被读取。&lt;strong&gt;L-Smash works 940&lt;/strong&gt;可以在&lt;a href=&#34;https://pop.4-bit.jp/&#34;&gt;RePOPn&lt;/a&gt;大神的博客里面下载到。然后回来了，发现海外人民没有办法下载到这个插件&amp;hellip;&amp;hellip;于是我找到了之前放在Plugin文件夹里面的文件，可能是935版本的。&lt;strong&gt;在AviUtl主文件夹里面创建一个Plugins文件夹&lt;/strong&gt;，然后把L-SMASH WORK的那四个文件放到Plugins文件夹里面即可&lt;/p&gt;
@@ -1556,27 +1556,27 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;这个插件是用来对视频进行解码的，可以在视频导出的时候用到&lt;/p&gt;
 &lt;p&gt;请去&lt;a href=&#34;https://rigaya34589.blog.fc2.com/blog-category-5.html&#34;&gt;rigaya&lt;/a&gt;大神的博客里面寻找相关的词汇，然后找到最新版本进行下载(2021年10月5日，此时用的是21年7月更新的2.67版本)&lt;/p&gt;
 &lt;p&gt;解压缩之后点进去，里面有一个auoSetup.exe（是主文件夹，不是setup文件夹）点进去，命令栏会加载一会儿。选择这个Aviutl所在的文件夹进行插件安装。注意因为刚才创建了一个Plugins文件夹（特别重要），所以安装的插件全部到那个文件夹里面去了。此时Plugins文件夹长这样&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22.webp&#34; alt=&#34;&#34; width=&#34;635&#34; height=&#34;693&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22.webp&#34; alt=&#34;&#34; width=&#34;635&#34; height=&#34;693&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这个时候打开软件本体，试着把刚刚从&lt;a href=&#34;https://mazwai.com/&#34;&gt;mazwai&lt;/a&gt;下载下来的免费素材导入进去，成功了。点击播放（空格），甚至还会跳出来一个播放窗口，这样就表示aviutl的基本设置成功了。&lt;/p&gt;
 &lt;h4 id=&#34;directshow-file-reader&#34;&gt;&lt;a href=&#34;https://videoinfo.tenchi.ne.jp/?DirectShow%20File%20Reader%20%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3%20for%20AviUtl&#34;&gt;DirectShow File Reader&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;还有一个和LSMASHWORK很像的插件，一些lsmashwork不能导入的文件可以使用这个插件进行导入，安装的方法和LSMASHWORK一样都是解压缩把程序放在Plugins里面。&lt;/p&gt;
 &lt;h2 id=&#34;基本设置&#34;&gt;基本设置&lt;/h2&gt;
 &lt;h3 id=&#34;系统设置&#34;&gt;系统设置&lt;/h3&gt;
 &lt;p&gt;我们先摸到系统设置里面&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51.webp&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51.webp&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第一行最大画像是视频的最大尺寸，如果想做4k视频就再调大一点&lt;/p&gt;
 &lt;p&gt;第四行设定解像度list是要把做视频常用的分辨率写进去，这里现在基本都挺全的，如果不做大视频也不用管。&lt;/p&gt;
 &lt;p&gt;上半部分建议把倒数第二个方框打上勾，这样就不会出现多的播放窗口，直接就在主播放窗口播出了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52.webp&#34; alt=&#34;&#34; width=&#34;336&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52.webp&#34; alt=&#34;&#34; width=&#34;336&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下半部分倒数第八个方框打上勾，这样在编辑的时候如果关闭窗口就会提醒你当前的数据不保存的话会丢失。（血的教训，所以请务必勾上。但是这个提示框本身是没有保存功能的，想要保存工程文件请在编辑的过程中时时注意）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25.webp&#34; alt=&#34;&#34; width=&#34;301&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25.webp&#34; alt=&#34;&#34; width=&#34;301&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下半部分再把倒数第二个勾选上，这样就开起了窗口吸附功能。还是挺便利的。&lt;/p&gt;
 &lt;p&gt;差不多设置完了之后整体长这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39.webp&#34; alt=&#34;&#34; width=&#34;452&#34; height=&#34;684&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39.webp&#34; alt=&#34;&#34; width=&#34;452&#34; height=&#34;684&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 其他的选项也可以以后再看。&lt;/p&gt;
 &lt;h3 id=&#34;入力优先度设定&#34;&gt;入力优先度设定&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16.webp&#34; alt=&#34;&#34; width=&#34;469&#34; height=&#34;574&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48.webp&#34; alt=&#34;&#34; width=&#34;268&#34; height=&#34;358&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16.webp&#34; alt=&#34;&#34; width=&#34;469&#34; height=&#34;574&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48.webp&#34; alt=&#34;&#34; width=&#34;268&#34; height=&#34;358&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 AviUtl的入力优先设定之后加入的文件会按照优先度的顺序来读取，如果上一个插件无法读取，则试用下一个插件。&lt;/p&gt;
 &lt;p&gt;这里主要的是DirectShow File Reader放在L-SMASH的后面。根据说明记载使用L-SMASH比起DS“安定していて動作も軽快なので”，所以优先使用L-SMASH，在L-SMASH出问题了之后备用DS导入素材。&lt;/p&gt;
 &lt;h3 id=&#34;exeditini2021年10月20日&#34;&gt;exedit.ini(2021年10月20日)&lt;/h3&gt;
@@ -1668,9 +1668,9 @@ dll=lua51.dll
     </item>
     <item>
       <title>倾听画语 </title>
-      <link>https://moriform.github.io/2021/09/20/behind_the_frame/</link>
+      <link>https://moriform.com/2021/09/20/behind_the_frame/</link>
       <pubDate>Mon, 20 Sep 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/09/20/behind_the_frame/</guid>
+      <guid>https://moriform.com/2021/09/20/behind_the_frame/</guid>
       <description>&lt;h2 id=&#34;倾听画语&#34;&gt;倾听画语&lt;/h2&gt;
 &lt;p&gt;之前看谜之声玩的游戏，看了一半，感觉时长和题材都挺符合，就买来自己玩了。&lt;/p&gt;
 &lt;p&gt;是一个关于画与相遇的故事。&lt;/p&gt;
@@ -1688,9 +1688,9 @@ dll=lua51.dll
     </item>
     <item>
       <title>同一片星空，五年前的你是否能够看到呢</title>
-      <link>https://moriform.github.io/2021/09/01/hosizoranosita/</link>
+      <link>https://moriform.com/2021/09/01/hosizoranosita/</link>
       <pubDate>Wed, 01 Sep 2021 21:20:45 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/09/01/hosizoranosita/</guid>
+      <guid>https://moriform.com/2021/09/01/hosizoranosita/</guid>
       <description>&lt;p&gt;之前在火车上面没事把很早之前看的轻小说重新翻开了，拿着退化了几个等级的日语继续读了下去。读的是星空の下、君の声だけを抱きしめる。购买的契机是2020年暑假bookwalker大甩卖。&lt;/p&gt;
 &lt;p&gt;读下来的整体感受其实挺一般。以为是文化的原因，去网上查了查分数发现是4.1分，对于bookwalker上面的轻小说来说已经是十分普通的分数了。&lt;/p&gt;
 &lt;p&gt;（接下来全文剧透）&lt;/p&gt;
@@ -1706,9 +1706,9 @@ dll=lua51.dll
     </item>
     <item>
       <title>喂猫</title>
-      <link>https://moriform.github.io/2021/08/30/kakusitaneko/</link>
+      <link>https://moriform.com/2021/08/30/kakusitaneko/</link>
       <pubDate>Mon, 30 Aug 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/08/30/kakusitaneko/</guid>
+      <guid>https://moriform.com/2021/08/30/kakusitaneko/</guid>
       <description>&lt;p&gt;稍微舒了一口气，做完了工作。夜过了十二点。整理了屋子，关上灯，拿着一条鱼干去喂猫。&lt;/p&gt;
 &lt;p&gt;那猫很奇怪，不是那种在路上埋伏着拿着卷饼的学生前去蹭腿乞得一点食物的校园猫。虽然会吃人类给予的食物，但从来放不下自有的野性与尊严。讨好一般的给予食物它是从来都不屑的，它与人类从来没有过直接的接触。一次次吓跑猫之后我开始了解了它的习性，并按照它的爱好进行这一猫与食物之间的游戏。&lt;/p&gt;
 &lt;p&gt;橘色的灯光十分温暖，我在无人的街道走着。它若是不出现，就当这就是睡前的散步。幸运的是最终它还是出现了，脚垫踏在了叶子上的规律节奏提醒了我。但是，不要回头，接着往前面走。&lt;/p&gt;
@@ -1725,9 +1725,9 @@ dll=lua51.dll
     </item>
     <item>
       <title>铁轨与佩特拉</title>
-      <link>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</link>
+      <link>https://moriform.com/2021/08/29/rainrail_to_sabaku/</link>
       <pubDate>Sun, 29 Aug 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</guid>
+      <guid>https://moriform.com/2021/08/29/rainrail_to_sabaku/</guid>
       <description>&lt;p&gt;“该起来了，莫多——”&lt;/p&gt;
 &lt;p&gt;盖着被裹整理好昨晚的笔记和地图，清点了食物、空瓶和衣服包裹的数量，在昨天记录下的“暴风”下擦掉多余的文字，补上“无事”后，起身，把莫多叫醒。&lt;/p&gt;
 &lt;p&gt;“嗯——尼桑——再——再多睡一会儿……”睡在一旁的莫多不情愿地裹着被子，呓语一般，翻过身继续睡。&lt;/p&gt;
@@ -1823,9 +1823,9 @@ dll=lua51.dll
     </item>
     <item>
       <title>Solresol语法2</title>
-      <link>https://moriform.github.io/2021/08/28/solresol2/</link>
+      <link>https://moriform.com/2021/08/28/solresol2/</link>
       <pubDate>Sat, 28 Aug 2021 21:02:39 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/08/28/solresol2/</guid>
+      <guid>https://moriform.com/2021/08/28/solresol2/</guid>
       <description>&lt;h2 id=&#34;一音节词&#34;&gt;一音节词&lt;/h2&gt;
 &lt;p&gt;Solresol的单词由一到四个音节组成。以下是一音节的单词。
 Do , no, not, neither, nor;				Sol, if;
@@ -2643,9 +2643,9 @@ Rsoml-, continually .副词
     </item>
     <item>
       <title>Solresol语法3</title>
-      <link>https://moriform.github.io/2021/08/28/solresol3/</link>
+      <link>https://moriform.com/2021/08/28/solresol3/</link>
       <pubDate>Sat, 28 Aug 2021 21:02:39 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/08/28/solresol3/</guid>
+      <guid>https://moriform.com/2021/08/28/solresol3/</guid>
       <description>&lt;h2 id=&#34;动词&#34;&gt;动词&lt;/h2&gt;
 &lt;p&gt;Solresol的动词都是保持原形。
 begin, sdf;I begin, dr sdf
@@ -2945,9 +2945,9 @@ The enermy has a very number of troop.-&amp;gt;enermy has troop much-&amp;gt;sdm
     </item>
     <item>
       <title>Solresol语法1</title>
-      <link>https://moriform.github.io/2021/08/28/solresol1/</link>
+      <link>https://moriform.com/2021/08/28/solresol1/</link>
       <pubDate>Sat, 28 Aug 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/08/28/solresol1/</guid>
+      <guid>https://moriform.com/2021/08/28/solresol1/</guid>
       <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;
 &lt;p&gt;生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。
 但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>响度补偿 · 森月台</title>
-    <link>https://moriform.github.io/tags/%E5%93%8D%E5%BA%A6%E8%A1%A5%E5%81%BF/</link>
+    <link>https://moriform.com/tags/%E5%93%8D%E5%BA%A6%E8%A1%A5%E5%81%BF/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/%E5%93%8D%E5%BA%A6%E8%A1%A5%E5%81%BF/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/%E5%93%8D%E5%BA%A6%E8%A1%A5%E5%81%BF/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Reaper中实现响度补偿的一种方法</title>
-      <link>https://moriform.github.io/2026/02/22/magcgaincompensation/</link>
+      <link>https://moriform.com/2026/02/22/magcgaincompensation/</link>
       <pubDate>Sun, 22 Feb 2026 21:38:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/02/22/magcgaincompensation/</guid>
+      <guid>https://moriform.com/2026/02/22/magcgaincompensation/</guid>
       <description>&lt;h2 id=&#34;响度补偿的必要性&#34;&gt;响度补偿的必要性&lt;/h2&gt;
 &lt;p&gt;音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。&lt;/p&gt;
 &lt;p&gt;但是在音频制作的过程中，制作人不应该因为给音频增加压缩调节EQ增加失真的时候响度发生变化而影响自己的审美。一些插件给出了响度补偿(gain compensation)的方案，让输出的音频响度和输入的音频响度保持一致，避免响度差异带来误判。&lt;/p&gt;
@@ -25,19 +25,19 @@
 &lt;p&gt;这个插件的使用会涉及到Reaper音频轨道中的路由设置。为了不每一次使用MAGC的时候都要重新设置路由，我将演示使用Reaper中FX轨道的“容器”来创建子FX轨，将插件和路由的设置放在容器中，然后把容器作为FX chain预设保存起来，这样每一次调用响度补偿方法的时候就可以直接使用这个FX chain把其他效果器拖入正确位置就可以。&lt;/p&gt;
 &lt;h3 id=&#34;响度补偿的路由逻辑&#34;&gt;响度补偿的路由逻辑&lt;/h3&gt;
 &lt;p&gt;响度补偿的路由和操作逻辑如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/gaincompensation.webp&#34; alt=&#34;&#34; width=&#34;750&#34; height=&#34;196&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/gaincompensation.webp&#34; alt=&#34;&#34; width=&#34;750&#34; height=&#34;196&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4输入2输出。输入1/2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3/4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
 &lt;h3 id=&#34;实际操作&#34;&gt;实际操作&lt;/h3&gt;
 &lt;p&gt;在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34; alt=&#34;&#34; width=&#34;1239&#34; height=&#34;1013&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34; alt=&#34;&#34; width=&#34;1239&#34; height=&#34;1013&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;设置Gain Compensation Stereo容器的路由如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;312&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;312&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后效果器处理且响度补偿后的音频输出。&lt;/p&gt;
 &lt;p&gt;设置Effectors容器的路由如下：
-&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/rAzUZayTvY.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;352&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/rAzUZayTvY.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;352&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;只取主容器的1/2输入到该容器中，容器内部就是正常的双声道音轨的插件摆放方式。&lt;/p&gt;
 &lt;p&gt;设置MAGC的路由如下：
-&lt;img src=&#34;https://moriform.github.io/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34; alt=&#34;&#34; width=&#34;610&#34; height=&#34;314&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/F87nbTawlw.webp&#34; alt=&#34;&#34; width=&#34;610&#34; height=&#34;314&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;注意MAGC摆放在主容器里，且在Effector容器下方，所以对于MAGC来说Container Channel 1/2就是Effectors输出的效果器处理音频，Container Channel 3/4就是一直没有动过的原声（和逻辑图的Channel一致）。MAGC处理的声音作为成品声音输出到Container Channel 1/2，整个过程结束。&lt;/p&gt;
 &lt;h3 id=&#34;验证&#34;&gt;验证&lt;/h3&gt;
 &lt;p&gt;可以通过在Effectors中放一个Gain来验证。

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>X-Mouse · 森月台</title>
-    <link>https://moriform.github.io/tags/x-mouse/</link>
+    <link>https://moriform.com/tags/x-mouse/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/x-mouse/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/x-mouse/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cubase水平滚动反向的解决方法</title>
-      <link>https://moriform.github.io/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
+      <link>https://moriform.com/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 05 Sep 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
+      <guid>https://moriform.com/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。&lt;/p&gt;
 &lt;p&gt;作为一家制定标准的公司，我们能够理解其软件制作上为了优化自己独特的工作流程指定不同的快捷键，毕竟其他公司出品软件的快捷键也各不相同。但是其在Windows操作系统下的Cubase却有一个惊为天人的快捷键，就是shift+鼠标滚轮用于水平滚动，说其惊为天人是因为它的鼠标滚轮的滚动方式与其他所有主流软件(不限于音频工作站)的水平滚动是相反的。&lt;/p&gt;

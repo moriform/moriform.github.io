@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Banana · 森月台</title>
-    <link>https://moriform.github.io/tags/banana/</link>
+    <link>https://moriform.com/tags/banana/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/banana/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/banana/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电脑自动刷香蕉</title>
-      <link>https://moriform.github.io/2024/06/21/autobanana/</link>
+      <link>https://moriform.com/2024/06/21/autobanana/</link>
       <pubDate>Fri, 21 Jun 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/06/21/autobanana/</guid>
+      <guid>https://moriform.com/2024/06/21/autobanana/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;最近Banana挺火的，说是挂机就可以得到香蕉到市场上卖，四舍五入挂机得钱。所以我们还是花最少的心思参与一下，而且挂机最好不要影响电脑的正常使用。官方说禁止连点器以外的任何外挂，所以我们就只用python写一个连点器的程序就行了。&lt;/p&gt;
 &lt;h2 id=&#34;代码描述&#34;&gt;代码描述&lt;/h2&gt;

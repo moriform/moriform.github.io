@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>想法 · 森月台</title>
-    <link>https://moriform.github.io/categories/%E6%83%B3%E6%B3%95/</link>
+    <link>https://moriform.com/categories/%E6%83%B3%E6%B3%95/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/categories/%E6%83%B3%E6%B3%95/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/categories/%E6%83%B3%E6%B3%95/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>对于RSS的一些思考</title>
-      <link>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
+      <link>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</link>
       <pubDate>Mon, 24 Oct 2022 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
+      <guid>https://moriform.com/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/</guid>
       <description>&lt;p&gt;2022年，信息爆炸的时间，出于对国内外大多数信息社交平台的失望，我将信息接收的主题转为了RSS。&lt;/p&gt;
 &lt;p&gt;RSS，意为简易信息聚合。简单来说就是把各个地方的信息装在一个盒子里面。试想一下你有一个像微博一样的APP，这个APP里面你可以关注任何平台你想要关注(订阅)的信息。&lt;/p&gt;
 &lt;p&gt;在互联网的早期时代，人们分享交流的平台是各个不同平台不同域名的博客，如果我想要看我之前读的博客有没有更新博文，我可以打开他们的网页一个一个去看，当然这是个费时间的方法。另外一种就是RSS，一个订阅器，汇集所有订阅的网页。如果是普通的博文，甚至可以直接在RSS阅读器上读完所有的文章。&lt;/p&gt;

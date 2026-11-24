@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Giscus · 森月台</title>
-    <link>https://moriform.github.io/tags/giscus/</link>
+    <link>https://moriform.com/tags/giscus/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/giscus/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/giscus/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我用Giscus做了博客的个人说说页面</title>
-      <link>https://moriform.github.io/2026/04/25/giscussvsvnm/</link>
+      <link>https://moriform.com/2026/04/25/giscussvsvnm/</link>
       <pubDate>Sat, 25 Apr 2026 21:20:42 &#43;0100</pubDate>
-      <guid>https://moriform.github.io/2026/04/25/giscussvsvnm/</guid>
+      <guid>https://moriform.com/2026/04/25/giscussvsvnm/</guid>
       <description>&lt;p&gt;我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是没啥技术的碎碎念。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;我除了有一个Wordpress动态博客以外，还留有一个Hugo静态博客部署在Github Page上面。其中的考量有很多，比如静态博客的文章url和Wordpress保持一致，这样一旦Wordpress出现了什么问题我就可以把域名无缝解析到我的静态博客；而且在Github上面使用Git上传文章产生的时间戳比我只发布到自己的服务器要更加可信；以及最重要的，我需要一个看上去十分中立客观的免费平台存放我的文章，作为我在互联网世界的数据骨灰盒。&lt;/p&gt;

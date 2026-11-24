@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aviutl · 森月台</title>
-    <link>https://moriform.github.io/tags/aviutl/</link>
+    <link>https://moriform.com/tags/aviutl/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/aviutl/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/aviutl/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于AviUtl的自定义UI</title>
-      <link>https://moriform.github.io/2026/01/10/avitulinstallzoku/</link>
+      <link>https://moriform.com/2026/01/10/avitulinstallzoku/</link>
       <pubDate>Sat, 10 Jan 2026 21:38:26 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/01/10/avitulinstallzoku/</guid>
+      <guid>https://moriform.com/2026/01/10/avitulinstallzoku/</guid>
       <description>&lt;h2 id=&#34;前置准备&#34;&gt;前置准备&lt;/h2&gt;
 &lt;p&gt;前置准备参考前三篇关于AviUtl的文章。&lt;/p&gt;
 &lt;h2 id=&#34;客制化&#34;&gt;客制化&lt;/h2&gt;
@@ -34,9 +34,9 @@
     </item>
     <item>
       <title>AviUtl的一些看上去不错的辅助插件</title>
-      <link>https://moriform.github.io/2021/11/11/aviutl_plugin/</link>
+      <link>https://moriform.com/2021/11/11/aviutl_plugin/</link>
       <pubDate>Thu, 11 Nov 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/11/aviutl_plugin/</guid>
+      <guid>https://moriform.com/2021/11/11/aviutl_plugin/</guid>
       <description>&lt;p&gt;一般情况下使用基础的AUL套件就能够完成剪辑任务了。所以以下的内容作为锦上添花也许会对工作流程等有一定提高(实话说我一开始用英文版的用了几年都不知道插件添加但依旧完成了许多视频的制作)。所以以下的内容没有标注“重要”的话直接跳过是没事的。&lt;/p&gt;
 &lt;h2 id=&#34;外观&#34;&gt;外观&lt;/h2&gt;
 &lt;h3 id=&#34;seekbar&#34;&gt;&lt;a href=&#34;https://aoytsk.blog.jp/aviutl/613302.html&#34;&gt;seekbar&lt;/a&gt;（★★）&lt;/h3&gt;
@@ -75,9 +75,9 @@
     </item>
     <item>
       <title>AviUtl的其他导入导出插件</title>
-      <link>https://moriform.github.io/2021/11/11/aviutl_output/</link>
+      <link>https://moriform.com/2021/11/11/aviutl_output/</link>
       <pubDate>Thu, 11 Nov 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/11/11/aviutl_output/</guid>
+      <guid>https://moriform.com/2021/11/11/aviutl_output/</guid>
       <description>&lt;h2 id=&#34;导出插件&#34;&gt;导出插件&lt;/h2&gt;
 &lt;p&gt;如果按照之前的攻略来一步一步做的话，AviUtl导出avi，mp4，mkv和264文件就足够，转换成其他文件格式也就一行命令的事。所以以下内容只是为了图方便的选读内容。&lt;/p&gt;
 &lt;h3 id=&#34;かんたんmp4&#34;&gt;&lt;a href=&#34;https://aoytsk.blog.jp/aviutl/34586383.html&#34;&gt;かんたんMP4&lt;/a&gt;&lt;/h3&gt;
@@ -98,9 +98,9 @@
     </item>
     <item>
       <title>关于Aviutl的基本安装说明</title>
-      <link>https://moriform.github.io/2021/10/06/aviutl_base0/</link>
+      <link>https://moriform.com/2021/10/06/aviutl_base0/</link>
       <pubDate>Wed, 06 Oct 2021 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2021/10/06/aviutl_base0/</guid>
+      <guid>https://moriform.com/2021/10/06/aviutl_base0/</guid>
       <description>&lt;p&gt;&lt;strong&gt;如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;使用Aviutl来编辑视频差不多都快6年了，从以前做V家的PV到现在做VRO视频还是平常剪片子，基本上都没有离开这款软件。&lt;/p&gt;
@@ -125,20 +125,20 @@
 &lt;h4 id=&#34;aviutl&#34;&gt;Aviutl&lt;/h4&gt;
 &lt;p&gt;到&lt;a href=&#34;http://spring-fragrance.mints.ne.jp/aviutl/&#34;&gt;AviUtl的部屋&lt;/a&gt;里面进行安装，这个是Ken的发布压面，同时里面还会有其他资源和相关链接。&lt;/p&gt;
 &lt;p&gt;首先是AviUtl的下载，选择上面的稳定版本(2021年10月5日，此时用的是19年10月更新的1.10版本)。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32.webp&#34; alt=&#34;&#34; width=&#34;626&#34; height=&#34;483&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_19-53-32.webp&#34; alt=&#34;&#34; width=&#34;626&#34; height=&#34;483&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;此时打开AviUtl，会发现这几乎只是一个空壳，什么也没法做。&lt;/p&gt;
 &lt;h4 id=&#34;exedit92&#34;&gt;exedit92&lt;/h4&gt;
 &lt;p&gt;回到部屋，对&lt;strong&gt;拡張編集Plugin&lt;/strong&gt;进行下载。选择上面的稳定版本(2021年10月5日，此时用的是13年7月更新的0.92版本)。注意如果你的片假名过关的话你会发现下面有一个test版本的0.93，如果没有十足的把握的话不要下载这个版本，就我而言因为一直使用的PSDTOOL明确说了0.93里面有Bug所以也不敢用。（当然如果你看着片文章的时候0.93已经放在0.92的上面了，请直接下载上面版本号最高的就行了）。&lt;/p&gt;
 &lt;p&gt;解压缩之后直接放到刚才解压缩的AvuUtl110文件夹里面。此时你的文件夹大概长这样&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56.webp&#34; alt=&#34;&#34; width=&#34;774&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-00-56.webp&#34; alt=&#34;&#34; width=&#34;774&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;(可能你的文件夹里面没有选中的东西比我的要少，这是因为刚才鼓捣了一会儿本体自动写了一些文件出来)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49.webp&#34; alt=&#34;&#34; width=&#34;280&#34; height=&#34;441&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-04-49.webp&#34; alt=&#34;&#34; width=&#34;280&#34; height=&#34;441&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;再次打开软件本体，&lt;strong&gt;设定&lt;/strong&gt;里面选择&lt;strong&gt;扩张编辑的设定&lt;/strong&gt;然后就出现了一般视频编辑软件有的时间轴了。一般我们的时间大部分都用在在时间轴上面摆放物件。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39.webp&#34; alt=&#34;&#34; width=&#34;701&#34; height=&#34;602&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-14-39.webp&#34; alt=&#34;&#34; width=&#34;701&#34; height=&#34;602&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;此时我们已经可以在上面摆放各种物件了，实时在上面摆放一些test文件，或者摆放一个图形(右键点击时间轴选择第一个media object追加)。但是这个时候我们发现我们没有办法加入一般的动画文件画像文件和音频文件。再加入的时候我们发现此时的Aviutl只认识这些文件格式。
-&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51.webp&#34; alt=&#34;&#34; width=&#34;295&#34; height=&#34;62&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19.webp&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;25&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35.webp&#34; alt=&#34;&#34; width=&#34;184&#34; height=&#34;42&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-12-51.webp&#34; alt=&#34;&#34; width=&#34;295&#34; height=&#34;62&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-19.webp&#34; alt=&#34;&#34; width=&#34;190&#34; height=&#34;25&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_20-13-35.webp&#34; alt=&#34;&#34; width=&#34;184&#34; height=&#34;42&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 一般使用的MP4格式啊MP3格式啊都没有。这个时候我们要来再次扩展插件。&lt;/p&gt;
 &lt;h4 id=&#34;l-smash-works&#34;&gt;L-Smash works&lt;/h4&gt;
 &lt;p&gt;这个插件就是针对刚才所遇到的问题进行的拓展，使得MP4和MP3等文件能够被读取。&lt;strong&gt;L-Smash works 940&lt;/strong&gt;可以在&lt;a href=&#34;https://pop.4-bit.jp/&#34;&gt;RePOPn&lt;/a&gt;大神的博客里面下载到。然后回来了，发现海外人民没有办法下载到这个插件&amp;hellip;&amp;hellip;于是我找到了之前放在Plugin文件夹里面的文件，可能是935版本的。&lt;strong&gt;在AviUtl主文件夹里面创建一个Plugins文件夹&lt;/strong&gt;，然后把L-SMASH WORK的那四个文件放到Plugins文件夹里面即可&lt;/p&gt;
@@ -146,27 +146,27 @@
 &lt;p&gt;这个插件是用来对视频进行解码的，可以在视频导出的时候用到&lt;/p&gt;
 &lt;p&gt;请去&lt;a href=&#34;https://rigaya34589.blog.fc2.com/blog-category-5.html&#34;&gt;rigaya&lt;/a&gt;大神的博客里面寻找相关的词汇，然后找到最新版本进行下载(2021年10月5日，此时用的是21年7月更新的2.67版本)&lt;/p&gt;
 &lt;p&gt;解压缩之后点进去，里面有一个auoSetup.exe（是主文件夹，不是setup文件夹）点进去，命令栏会加载一会儿。选择这个Aviutl所在的文件夹进行插件安装。注意因为刚才创建了一个Plugins文件夹（特别重要），所以安装的插件全部到那个文件夹里面去了。此时Plugins文件夹长这样&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22.webp&#34; alt=&#34;&#34; width=&#34;635&#34; height=&#34;693&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-11-22.webp&#34; alt=&#34;&#34; width=&#34;635&#34; height=&#34;693&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;这个时候打开软件本体，试着把刚刚从&lt;a href=&#34;https://mazwai.com/&#34;&gt;mazwai&lt;/a&gt;下载下来的免费素材导入进去，成功了。点击播放（空格），甚至还会跳出来一个播放窗口，这样就表示aviutl的基本设置成功了。&lt;/p&gt;
 &lt;h4 id=&#34;directshow-file-reader&#34;&gt;&lt;a href=&#34;https://videoinfo.tenchi.ne.jp/?DirectShow%20File%20Reader%20%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3%20for%20AviUtl&#34;&gt;DirectShow File Reader&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;还有一个和LSMASHWORK很像的插件，一些lsmashwork不能导入的文件可以使用这个插件进行导入，安装的方法和LSMASHWORK一样都是解压缩把程序放在Plugins里面。&lt;/p&gt;
 &lt;h2 id=&#34;基本设置&#34;&gt;基本设置&lt;/h2&gt;
 &lt;h3 id=&#34;系统设置&#34;&gt;系统设置&lt;/h3&gt;
 &lt;p&gt;我们先摸到系统设置里面&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51.webp&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-15-51.webp&#34; alt=&#34;&#34; width=&#34;480&#34; height=&#34;632&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;第一行最大画像是视频的最大尺寸，如果想做4k视频就再调大一点&lt;/p&gt;
 &lt;p&gt;第四行设定解像度list是要把做视频常用的分辨率写进去，这里现在基本都挺全的，如果不做大视频也不用管。&lt;/p&gt;
 &lt;p&gt;上半部分建议把倒数第二个方框打上勾，这样就不会出现多的播放窗口，直接就在主播放窗口播出了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52.webp&#34; alt=&#34;&#34; width=&#34;336&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-34-52.webp&#34; alt=&#34;&#34; width=&#34;336&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下半部分倒数第八个方框打上勾，这样在编辑的时候如果关闭窗口就会提醒你当前的数据不保存的话会丢失。（血的教训，所以请务必勾上。但是这个提示框本身是没有保存功能的，想要保存工程文件请在编辑的过程中时时注意）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25.webp&#34; alt=&#34;&#34; width=&#34;301&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-37-25.webp&#34; alt=&#34;&#34; width=&#34;301&#34; height=&#34;18&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;下半部分再把倒数第二个勾选上，这样就开起了窗口吸附功能。还是挺便利的。&lt;/p&gt;
 &lt;p&gt;差不多设置完了之后整体长这样：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39.webp&#34; alt=&#34;&#34; width=&#34;452&#34; height=&#34;684&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-41-39.webp&#34; alt=&#34;&#34; width=&#34;452&#34; height=&#34;684&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 其他的选项也可以以后再看。&lt;/p&gt;
 &lt;h3 id=&#34;入力优先度设定&#34;&gt;入力优先度设定&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16.webp&#34; alt=&#34;&#34; width=&#34;469&#34; height=&#34;574&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48.webp&#34; alt=&#34;&#34; width=&#34;268&#34; height=&#34;358&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-24-16.webp&#34; alt=&#34;&#34; width=&#34;469&#34; height=&#34;574&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/10/06/aviutl_base0/Snipaste_2021-10-05_21-25-48.webp&#34; alt=&#34;&#34; width=&#34;268&#34; height=&#34;358&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 AviUtl的入力优先设定之后加入的文件会按照优先度的顺序来读取，如果上一个插件无法读取，则试用下一个插件。&lt;/p&gt;
 &lt;p&gt;这里主要的是DirectShow File Reader放在L-SMASH的后面。根据说明记载使用L-SMASH比起DS“安定していて動作も軽快なので”，所以优先使用L-SMASH，在L-SMASH出问题了之后备用DS导入素材。&lt;/p&gt;
 &lt;h3 id=&#34;exeditini2021年10月20日&#34;&gt;exedit.ini(2021年10月20日)&lt;/h3&gt;

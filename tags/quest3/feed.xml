@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quest3 · 森月台</title>
-    <link>https://moriform.github.io/tags/quest3/</link>
+    <link>https://moriform.com/tags/quest3/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/quest3/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/quest3/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VRChat模拟全身追踪的方案</title>
-      <link>https://moriform.github.io/2026/09/04/rvchatvdstandable/</link>
+      <link>https://moriform.com/2026/09/04/rvchatvdstandable/</link>
       <pubDate>Fri, 04 Sep 2026 17:23:42 &#43;0800</pubDate>
-      <guid>https://moriform.github.io/2026/09/04/rvchatvdstandable/</guid>
+      <guid>https://moriform.com/2026/09/04/rvchatvdstandable/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;暄穗打算做一个slimeVR来实现VRChat里面的全身追踪，但是出于资金和个人精力这个方案得之后再考虑。正好最近看到了virtual desktop（VD）的更新，可以使用有线串流的方式玩VRChat，于是收集并实践了一套基于软件和quest 3头显设备的模拟全身追踪方案。&lt;/p&gt;
 &lt;h2 id=&#34;材料&#34;&gt;材料&lt;/h2&gt;

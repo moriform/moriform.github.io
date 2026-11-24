@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摇曳露营 · 森月台</title>
-    <link>https://moriform.github.io/tags/%E6%91%87%E6%9B%B3%E9%9C%B2%E8%90%A5/</link>
+    <link>https://moriform.com/tags/%E6%91%87%E6%9B%B3%E9%9C%B2%E8%90%A5/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/%E6%91%87%E6%9B%B3%E9%9C%B2%E8%90%A5/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/%E6%91%87%E6%9B%B3%E9%9C%B2%E8%90%A5/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>摇曳露营中的实时摄像头</title>
-      <link>https://moriform.github.io/2026/01/09/yurucamera/</link>
+      <link>https://moriform.com/2026/01/09/yurucamera/</link>
       <pubDate>Fri, 09 Jan 2026 15:01:47 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2026/01/09/yurucamera/</guid>
+      <guid>https://moriform.com/2026/01/09/yurucamera/</guid>
       <description>&lt;p&gt;摇曳露营第一季中芝麻凛给抚子发送的实时摄像机链接是LCV社为詶访地区设立的道路状况的28个监控中的&lt;a href=&#34;https://live.lcv.ne.jp/cgi-bin/road/movie.php?camera_id=1&#34;&gt;霧ヶ峰映像&lt;/a&gt;)，LCV的这套系统一般人使用需要成为LCV-Net会员，但是唯独霧ヶ峰的监控是不需要登录就可以直接查看的。所以芝麻凛会给抚子发送这个监控的链接。对于圣地巡礼来说也是十分便利的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9570.webp&#34; alt=&#34;芝麻凛招手&#34; width=&#34;750&#34; height=&#34;423&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/msedge_yQSZOzqzdW.webp&#34; alt=&#34;霧ヶ峰实景（晚上）&#34; width=&#34;889&#34; height=&#34;734&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9570.webp&#34; alt=&#34;芝麻凛招手&#34; width=&#34;750&#34; height=&#34;423&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/msedge_yQSZOzqzdW.webp&#34; alt=&#34;霧ヶ峰实景（晚上）&#34; width=&#34;889&#34; height=&#34;734&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;而在第三季中芝麻凛给小明的实时监控来自&lt;a href=&#34;http://linearcam.city.fuefuki.yamanashi.jp/index.html?p=2&#34;&gt;花鸟山一本杉公园&lt;/a&gt;，也是可以直连查看的。而且这个监控是直接接收网络信号的，在修改网址后面的数字后刷新页面的话，可以看见是同一个摄像头转向不同角度拍摄的视角，甚至转向时的画面移动也是可以看见的。所以当查看这个监控画面的时候，如果有其他人发送了其他角度的网页请求，当前查看的摄像头就会转向下一个发送的请求的角度。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9572.webp&#34; alt=&#34;芝麻凛没招手&#34; width=&#34;750&#34; height=&#34;713&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.github.io/2026/01/09/yurucamera/IMG_9573.webp&#34; alt=&#34;实景&#34; width=&#34;750&#34; height=&#34;347&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9572.webp&#34; alt=&#34;芝麻凛没招手&#34; width=&#34;750&#34; height=&#34;713&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/01/09/yurucamera/IMG_9573.webp&#34; alt=&#34;实景&#34; width=&#34;750&#34; height=&#34;347&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python · 森月台</title>
-    <link>https://moriform.github.io/tags/python/</link>
+    <link>https://moriform.com/tags/python/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
-    <atom:link href="https://moriform.github.io/tags/python/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Nov 2026 08:58:22 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.com/tags/python/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>基于Python由刷课发展出的自动化脚本技术</title>
-      <link>https://moriform.github.io/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</link>
+      <link>https://moriform.com/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Fri, 23 Feb 2024 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://moriform.com/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/</guid>
       <description>&lt;p&gt;在去年下半个月买了某个网校的日语课程为期一年半。然后在12月的时候过了N2课程。由于把所有的课程杀完的话可以返还学费来交下一个课程的学费，所以需要一定的技术把剩下一般的课程全部刷完。&lt;/p&gt;
 &lt;p&gt;所有的课程在大年初一前刷完。现在总结一下所需要的技术以及简要代码。&lt;/p&gt;
 &lt;h2 id=&#34;刷课逻辑&#34;&gt;刷课逻辑&lt;/h2&gt;
@@ -78,9 +78,9 @@
     </item>
     <item>
       <title>心跳文学部秘密诗篇10自动化获取方案(Python版)</title>
-      <link>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
+      <link>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</link>
       <pubDate>Mon, 23 Oct 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
+      <guid>https://moriform.com/2023/10/23/how_to_get_secret_poem_in_ddlc/</guid>
       <description>&lt;h2 id=&#34;总览&#34;&gt;总览&lt;/h2&gt;
 &lt;p&gt;在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。&lt;/p&gt;
 &lt;p&gt;所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。&lt;/p&gt;
@@ -193,9 +193,9 @@
     </item>
     <item>
       <title>关于粘贴板的数据</title>
-      <link>https://moriform.github.io/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <link>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Sat, 18 Feb 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <guid>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;最近大量导入了一些Youtube的RSS feed到fluent reader里面，由于这个阅读器读Youtube官方的RSS链接信息不显示内嵌视频，所以需要使用RSSHUB制作链接，没有爬取限制所以用官方的就行不需要用自己建的（我建的也读不了Youtube）。&lt;/p&gt;
 &lt;p&gt;唯一的问题就是Youtube的用户界面链接有多个，有youtube.com/channel的，有youtube.com/@user的。@的这个应该是最近油管说的可以给自己频道直观ID名字的，不是乱码，这样好记。&lt;/p&gt;
@@ -300,9 +300,9 @@
     </item>
     <item>
       <title>微博谣言数据爬取</title>
-      <link>https://moriform.github.io/2023/01/01/weiborumor/</link>
+      <link>https://moriform.com/2023/01/01/weiborumor/</link>
       <pubDate>Sun, 01 Jan 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.github.io/2023/01/01/weiborumor/</guid>
+      <guid>https://moriform.com/2023/01/01/weiborumor/</guid>
       <description>&lt;h2 id=&#34;这是什么&#34;&gt;这是什么&lt;/h2&gt;
 &lt;p&gt;本文记录了笔者使用Python语言对于微博社区管理中心中的举报不实信息进行爬取，使用的模块为selenium。文章详细记录代码的含义以及最后给出所爬取的json数据。&lt;/p&gt;
 &lt;h2 id=&#34;具体实验过程&#34;&gt;具体实验过程&lt;/h2&gt;
@@ -335,9 +335,9 @@
 &lt;p&gt;打开谣言处理url后对于谣言原文的爬取有3个方法：若页面有’原文‘，则再点进’原文‘微博页面进行文章爬取。若页面有’查看全文‘，则对于’查看全文‘的部分的标签value属性爬取。若都没有，则直接对橘色方框的文字进行爬取。&lt;/p&gt;
 &lt;p&gt;所以爬取分为三层：
 一层对平台一页20条进行爬取，
-&lt;img src=&#34;https://moriform.github.io/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 二层点进20条中每一条，
-&lt;img src=&#34;https://moriform.github.io/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 三层若需要原文则点进原微博进行爬取。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;186&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;196&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##选择要爬取的页面编号&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
