@@ -5,7 +5,7 @@
     <link>https://moriform.com/categories/%E7%9F%A5%E8%AF%86/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:52:44 &#43;0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:41:52 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/categories/%E7%9F%A5%E8%AF%86/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VRChat模拟全身追踪的方案</title>
@@ -109,7 +109,13 @@
 &lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
 &lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
 &lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_14d0d5b6a11f9e74.webp&#34;
+  srcset=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_736c44d0833755d2.webp 800w, https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_14d0d5b6a11f9e74.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;874&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗&lt;/h2&gt;
 &lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
 &lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
@@ -139,7 +145,13 @@
 &lt;p&gt;即整个效果需要一个Gain Compensation容器，容器设置为4输入2输出。输入1/2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3/4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。&lt;/p&gt;
 &lt;h3 id=&#34;实际操作&#34;&gt;实际操作&lt;/h3&gt;
 &lt;p&gt;在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34; alt=&#34;&#34; width=&#34;1239&#34; height=&#34;1013&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp&#34;
+  srcset=&#34;https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5_hu_c2e8f93a3294bfdc.webp 800w, https://moriform.com/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp 1239w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1239&#34; height=&#34;1013&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;设置Gain Compensation Stereo容器的路由如下：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/22/magcgaincompensation/AGMLffQG0m.webp&#34; alt=&#34;&#34; width=&#34;502&#34; height=&#34;312&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后效果器处理且响度补偿后的音频输出。&lt;/p&gt;
@@ -930,7 +942,13 @@ HOTLINK_INCLUDE_PATHS: /weibo
 一层对平台一页20条进行爬取，
 &lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 二层点进20条中每一条，
-&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img
+  src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34;
+  srcset=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh_hu_1860a0f892cb2cd3.webp 800w, https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp 1118w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1118&#34; height=&#34;955&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 三层若需要原文则点进原微博进行爬取。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;186&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;196&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##选择要爬取的页面编号&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1121,7 +1139,13 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;我的RSS系统分成三个硬件。Iphone作为资讯订阅了一些微博用户作为时事和游戏折扣的消息订阅，订阅了一些推特上的单图漫画家和推特“Aviutlスクリプト”关键词。使用的是Reeder 5，这个阅读器最大的特点是自己定义收藏tag可以把社会消息和情头分开。&lt;/p&gt;
 &lt;p&gt;Ipad因为不能升级IOS15所以用的是netnewswire,也是个不错的IOS端RSS阅读器，用来订阅一些技术博客等长文。&lt;/p&gt;
 &lt;p&gt;PC端的是Fluent Reader，用来替代bilibili和Youtube的关注，简单说就是用来听术力口和术人口的。RSS阅读器的这种列表视图其实用来看视频时相当方便的，按左右键就能直接切视频画面。
-&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img
+  src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_2b0d528772458da.webp&#34;
+  srcset=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_22730b660188add1.webp 800w, https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_2b0d528772458da.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;900&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 用RSS订阅视频需要对于网站本身有一定的了解，比如NICONICO的视频我暂时没有订阅的方法所以我用对应的关键词来搜索B站的搬运视频。Youtube的内嵌视频可以调倍速和高清晰度，B站的内嵌视频不能调倍速，也不能有高清视频。&lt;/p&gt;
 &lt;p&gt;所以总结一下，一个RSS系统需要一个RSS阅读器以及RSS订阅源。阅读器有很多大家可以自己去尝试。RSS源首先去看官方是否有自己的RSS订阅源，一般会有一个长这样的标识：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
@@ -1179,7 +1203,13 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。&lt;/p&gt;
 &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的DAW(Digital Audio Workstation)相反它只能够处理midi文件)。也是许多隔壁音乐人的第一步。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/index-1767622087706.webp&#34; alt=&#34;&#34; width=&#34;1479&#34; height=&#34;798&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/index-1767622087706.webp&#34;
+  srcset=&#34;https://moriform.com/2022/04/03/new_library_in_domino/index-1767622087706_hu_c88cff446da77f4e.webp 800w, https://moriform.com/2022/04/03/new_library_in_domino/index-1767622087706.webp 1479w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1479&#34; height=&#34;798&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;但是对于大多数只用一台电脑的其他设备都没有的纯MIDI的术力口玩家来说基础的Domino只能够读取Microsoft自带的波表，做出来的音乐就和本世纪初的免费RPG游戏的配乐一样(没错，他们大多数都是使用GS波表合成器制作出来的。听上去一种往日怀念的电子塑料感扑面而来。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_18-45-49.webp&#34; alt=&#34;&#34; width=&#34;646&#34; height=&#34;511&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;尽管现在几乎没有多少人再用Domino作为主要的编曲工具（OSTER project:啊对对对），对于追求效率拿Domino作为快速记录midi的工具的人也不太追求音源的音质反正最后都会回到自己熟练使用的DAW上。但是实在加上一个稍微逼真一点的音源都能够极大地增加创作时的幸福感。所以本篇文章着重讨论在Domino中使用其他音源的方法。&lt;/p&gt;
@@ -1203,18 +1233,36 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;Reaper是一款十分成熟自由度超高的DAW，现在升级已经到了6.x的版本，如果你下载了最新的6版本那么就可以不用继续看这篇文章了，下几套免费的音源（喷火的Labs啊大厂的轻量级乐器啊什么的一大堆）就直接使用Reaper来编曲吧，它的开机速度快得随时有灵感都能够快速打开编写，然后用到你觉得一直&amp;quot;试用&amp;quot;过意不去在付费吧，60美元管两个大版本，一个大版本平均都能够更新四年&amp;hellip;&amp;hellip;对，值得一提的是Reaper的付费版本可以一直试用，60天过了早就又出了新版本了接着下载试用（一个软件15M也不大）。但是毕竟这个是收费软件，唯一值得一提的是在2006年更新了免费软件最后一版0.999，我们就用这一版本来贯彻免费这一思想。唯一的限制是0.999是只有32位版本，支持的VST乐器也是32位的。&lt;/p&gt;
 &lt;p&gt;回过头继续说Domino，这个方法的主要思路是打开Reaper，将Domino作为Reaper的外置midi编辑插件来使用。&lt;/p&gt;
 &lt;p&gt;Domino输出midi信息，Reaper接收midi信息，在这之中需要一个midi信息的通信管道，YOKE提供了这一服务。（这样一看全部都是old fashion）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/1.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/1_hu_d2a9279f6d8b5676.webp&#34;
+  srcset=&#34;https://moriform.com/2022/04/03/new_library_in_domino/1_hu_bc3221654c65b08d.webp 800w, https://moriform.com/2022/04/03/new_library_in_domino/1_hu_d2a9279f6d8b5676.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;900&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;当然32位VST插件请自行获取，正版免费的互联网上挺多的。&lt;/p&gt;
 &lt;h3 id=&#34;具体操作&#34;&gt;具体操作&lt;/h3&gt;
 &lt;p&gt;首先下载所需要的工具，用Locale Emulator打开Domino。在菜单栏File里面点击环境设置，在MIDI OUT中设置MIDI OUT的硬件和音源。初步设置硬件为Microsoft GS Wavetable Synth,音源为GSm。这样在钢琴卷帘窗口中添加midi音符就能够听到GSm波表的塑料大钢琴的声音（注意保存按钮下面的乐谱标示符后面不能是System Setup）。这表示Domino的基本设置完成了，可以在里面安心写midi文件了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-22-07-1.webp&#34; alt=&#34;&#34; width=&#34;690&#34; height=&#34;410&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;接着下载YOKE直接安装，我下载的是MIDI Yoke NT 1.75 (163K 09-23-07)，安装后重启。这个时候我们打开Domino回到刚才的MIDI OUT界面，在MIDI OUT硬件中我们找到了Out To MIDI Yoke的选项，对A随意选择一个Yoke就行。这样以后我们就可以不用直接打开Domino而是利用Reaper来打开Domino&lt;/p&gt;
 &lt;p&gt;最后下载Reaper0.999。打开后发现朴素得有些可怜，这就是之后的工作界面。Reaper0.999有很合格的音频处理能力，与Domino正好相互补充。按住ctrl+P打开首选项，在Audio-&amp;gt;Midi中选择刚才在Domino中选择的YOKE接口。在FX Plug-ins中设置32位VST插件存放的文件夹然后Rescan查找扫描所有的VST插件。在External Editrs中我们Add一个数据，在Program里面选中Domino的程序文件(.exe)然后Apply并OK。我们右键左边空白创建一个轨道，选中这条轨道在上方菜单中Insert选择new midi file后轨道上多了一个物件，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp&#34;
+  srcset=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04_hu_48c6420cb37303fb.webp 800w, https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-48-04.webp 1010w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1010&#34; height=&#34;761&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;右键这个物件选择&amp;quot;Open items in editor&amp;quot;你就能发现这个2006年的midi编辑功能究竟有多烂，我们不用这个，我们用&amp;quot;Open items in default editor&amp;quot;。于是我们通过Reaper成功打开了Domino，如果电脑是中文环境的那么此时的Domino是处于乱码状态的这个确实无法处理我们不用管。总之一开始会出现这样一个乱码框意思是是否先把轨道里面的信息写到Domino里面，选择是，这样轨道里面原先就有的MIDI信息就被拷贝到Domino里面供继续编辑。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_16-46-19.webp&#34; alt=&#34;&#34; width=&#34;448&#34; height=&#34;199&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我们试着在此基础上在Domino里面写一些东西，写完之后在Domino里面选择File点击SMFの書き出し再実行，没有任何窗口跑出来则说明成功，这个时候就可以不保存Domino直接退出Domino，此时Reaper的轨道上就已经写入了midi信息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp&#34; alt=&#34;&#34; width=&#34;1010&#34; height=&#34;761&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp&#34;
+  srcset=&#34;https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39_hu_7cc0927cc67911f5.webp 800w, https://moriform.com/2022/04/03/new_library_in_domino/Snipaste_2022-04-03_17-06-39.webp 1010w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1010&#34; height=&#34;761&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;按下轨道上面的fx按钮会出来选框，里面是你的电脑里面刚才扫描的VST插件，选择一个乐器插件加载完成之后就可以播放了。&lt;/p&gt;
 &lt;p&gt;以上的操作很基础但是过于反人类，因为在写入MIDI音符的时候听不到任何东西，所以我们调整一下步骤并加入YOKE的使用。&lt;/p&gt;
 &lt;p&gt;轨道上面的表示录音的红色按钮点亮，将喇叭图标调整到有一个A字母的自动监听状态，右击喇叭，在选单中最下面有一个MIDI INPUT，选择一个（建议ALL）。然后在Fx里面选择一个乐器。在有乐器并且开着录音和自动监听的情况下，我们按照原来的方法打开Domino，在里面输入一个音符&amp;hellip;&amp;hellip;然后就会惊讶地发现打入音符的一瞬间DAW发出了声响正是刚才我们选择的那个乐器，在Domino里面播放的时候也能够发出声音，在reaper的对应轨道上面加入phase之类的音频插件后使用Domino也能够发出处理后应该有的声音。注意在录制一条轨道的时候其他的轨道应该关闭录制否则会出现失真的情况。&lt;/p&gt;

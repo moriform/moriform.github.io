@@ -22,15 +22,7 @@
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
-</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5ZBB760MM');
-</script>
-</head>
+</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css"></head>
 <body class="is-page"><aside class="rail">
   <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
       <span class="rail__title">森月台</span>
@@ -82,7 +74,7 @@
       </div>
     </header>
     <figure class="article__hero">
-      <img src="/2021/11/11/wycma2dv/2021110502_hu_3e32c3c52c9899c.webp" width="1600" height="900" alt="你为什么能做一个二维视频">
+      <img src="/2021/11/11/wycma2dv/2021110502_hu_3e32c3c52c9899c.webp" width="1600" height="900" alt="你为什么能做一个二维视频" fetchpriority="high" decoding="async">
     </figure>
     <div class="article__body prose"><h1 id="你为什么能做一个二维视频">你为什么能做一个二维视频</h1>
 <h2 id="这是什么">这是什么</h2>
@@ -117,7 +109,6 @@
   </article><section class="comments" id="comments">
   <p class="comments__title">评论</p>
   <div class="comments__widget" id="twikoo"></div>
-  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
   <script>
     (function () {
       var cfg = {
@@ -125,18 +116,31 @@
         el: "#twikoo",
         lang: "zh-CN"
       };
-      function boot() {
-        if (window.twikoo && window.twikoo.init) {
-          window.twikoo.init(cfg);
-          return;
-        }
-        setTimeout(boot, 80);
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-      } else {
-        boot();
-      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
     })();
   </script>
 </section>

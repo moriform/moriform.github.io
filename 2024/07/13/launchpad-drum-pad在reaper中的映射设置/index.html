@@ -22,15 +22,7 @@
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
-</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5ZBB760MM');
-</script>
-</head>
+</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css"></head>
 <body class="is-page"><aside class="rail">
   <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
       <span class="rail__title">森月台</span>
@@ -82,7 +74,7 @@
       </div>
     </header>
     <figure class="article__hero">
-      <img src="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/luca-bravo-jUwvjOmCTWc-unsplash_hu_72d5b835070ec0a0.webp" width="1600" height="900" alt="Launchpad Drum Pad在Reaper中的映射设置">
+      <img src="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/luca-bravo-jUwvjOmCTWc-unsplash_hu_72d5b835070ec0a0.webp" width="1600" height="900" alt="Launchpad Drum Pad在Reaper中的映射设置" fetchpriority="high" decoding="async">
     </figure>
     <div class="article__body prose"><p>暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带，和弦像练习吉他压品一样靠记但是8×8布阵在创作中很有灵感。而且这家伙超结实是我现在唯一没出过问题的控制器。也因为它的便携，甚至可以直接冒充SoundPad和Stream Deck(这个等明年大事完成后研究)。</p>
 <p>若使用LaunchPad作为钢琴来演奏，使用Drum Map模式（4个4×4模块）一定是最好的选择，但是Drum Map模式是在Ableton Live里面才有的，如果我们是使用其他的DAW(如Reaper)，则没有办法直接使用，只能用残疾的音阶模式。有两个办法可以解决这个问题。</p>
@@ -251,7 +243,6 @@
   </article><section class="comments" id="comments">
   <p class="comments__title">评论</p>
   <div class="comments__widget" id="twikoo"></div>
-  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
   <script>
     (function () {
       var cfg = {
@@ -259,18 +250,31 @@
         el: "#twikoo",
         lang: "zh-CN"
       };
-      function boot() {
-        if (window.twikoo && window.twikoo.init) {
-          window.twikoo.init(cfg);
-          return;
-        }
-        setTimeout(boot, 80);
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-      } else {
-        boot();
-      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
     })();
   </script>
 </section>

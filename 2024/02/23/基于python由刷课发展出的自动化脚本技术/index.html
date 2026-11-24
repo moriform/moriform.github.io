@@ -24,15 +24,7 @@
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
-</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5ZBB760MM');
-</script>
-</head>
+</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css"></head>
 <body class="is-page"><aside class="rail">
   <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
       <span class="rail__title">森月台</span>
@@ -84,7 +76,7 @@
       </div>
     </header>
     <figure class="article__hero">
-      <img src="/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/gabriel-benois-qnWPjzewewA-unsplash_hu_604cf32ae175249e.webp" width="1600" height="900" alt="基于Python由刷课发展出的自动化脚本技术">
+      <img src="/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/gabriel-benois-qnWPjzewewA-unsplash_hu_604cf32ae175249e.webp" width="1600" height="900" alt="基于Python由刷课发展出的自动化脚本技术" fetchpriority="high" decoding="async">
     </figure>
     <div class="article__body prose"><p>在去年下半个月买了某个网校的日语课程为期一年半。然后在12月的时候过了N2课程。由于把所有的课程杀完的话可以返还学费来交下一个课程的学费，所以需要一定的技术把剩下一般的课程全部刷完。</p>
 <p>所有的课程在大年初一前刷完。现在总结一下所需要的技术以及简要代码。</p>
@@ -158,7 +150,6 @@
   </article><section class="comments" id="comments">
   <p class="comments__title">评论</p>
   <div class="comments__widget" id="twikoo"></div>
-  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
   <script>
     (function () {
       var cfg = {
@@ -166,18 +157,31 @@
         el: "#twikoo",
         lang: "zh-CN"
       };
-      function boot() {
-        if (window.twikoo && window.twikoo.init) {
-          window.twikoo.init(cfg);
-          return;
-        }
-        setTimeout(boot, 80);
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-      } else {
-        boot();
-      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
     })();
   </script>
 </section>

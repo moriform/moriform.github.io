@@ -5,7 +5,7 @@
     <link>https://moriform.com/tags/rss/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:52:44 &#43;0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:41:52 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/rss/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我的RSS订阅系统</title>
@@ -30,7 +30,13 @@
 &lt;p&gt;其一是FreshRSS FlareSolverr。一些网站虽然提供了RSS订阅，但是使用FreshRSS的时候会被cloudflare发送的验证挡住，比如我最喜欢的bedroomproducersblog，这个插件可以帮助解决cloudflare验证的问题。需要注意的是FlareSolverr解决cloudflare验证需要额外时间，所以可能要把对应的订阅超时时间调整大一些，40秒左右是够用的。&lt;/p&gt;
 &lt;p&gt;其二是AutoTTL，这个插件会把更新频率为“默认”的订阅通过30天内平均更新的频率来决定下一次抓取的时间。非常好用。&lt;/p&gt;
 &lt;p&gt;其三是Youlag插件，这个插件可以把FreshRSS的普通视图变成Youtube关注一样的贴片视图，如果是Youtube的订阅还可以直接模拟内嵌视频的油管网站，看上去颜值十分高。但是尝试了一次之后发现似乎会把我常用的快捷键给禁掉，所以我没有推荐这个拓展。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX.webp&#34; alt=&#34;&#34; width=&#34;2550&#34; height=&#34;1393&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_14d0d5b6a11f9e74.webp&#34;
+  srcset=&#34;https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_736c44d0833755d2.webp 800w, https://moriform.com/2026/02/23/rsslast/msedge_pQDLsgkQjX_hu_14d0d5b6a11f9e74.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;874&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;我们订阅的是时事吗&#34;&gt;我们订阅的是时事吗&lt;/h2&gt;
 &lt;p&gt;在AutoTTL之前，我的订阅都是默认刷新时间，默认刷新时间都是30分钟，这样我可以第一时间看到哪个UP主更新了视频哪个博主又发了什么新鲜的事情。但是这样做哔哩哔哩很快就对我进行了限制，微博也很快处于饼干冷却中。所以我不得不调整刷新的时间，同时从心理上说服自己调整刷新时间：我需要第一时间跟进这些事情吗？&lt;/p&gt;
 &lt;p&gt;我订阅的大多数是各种人文、二次元、各种音乐和音频技术，偶尔一些校园相关的事情如果和我有关系的话学校也会通过其他方式联系我而不是几乎没人使用的RSS。如果我第二天才发现车祸警示录前一天发了新视频我没有及时观看的话会不会对我有影响？如果Deco发了新歌我过了两天才发现，点进去已经播放量几百万了对我有影响吗？&lt;/p&gt;
@@ -106,7 +112,13 @@ HOTLINK_INCLUDE_PATHS: /weibo
 &lt;p&gt;我的RSS系统分成三个硬件。Iphone作为资讯订阅了一些微博用户作为时事和游戏折扣的消息订阅，订阅了一些推特上的单图漫画家和推特“Aviutlスクリプト”关键词。使用的是Reeder 5，这个阅读器最大的特点是自己定义收藏tag可以把社会消息和情头分开。&lt;/p&gt;
 &lt;p&gt;Ipad因为不能升级IOS15所以用的是netnewswire,也是个不错的IOS端RSS阅读器，用来订阅一些技术博客等长文。&lt;/p&gt;
 &lt;p&gt;PC端的是Fluent Reader，用来替代bilibili和Youtube的关注，简单说就是用来听术力口和术人口的。RSS阅读器的这种列表视图其实用来看视频时相当方便的，按左右键就能直接切视频画面。
-&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29.webp&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1080&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img
+  src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_2b0d528772458da.webp&#34;
+  srcset=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_22730b660188add1.webp 800w, https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%28148%29_hu_2b0d528772458da.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;900&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 用RSS订阅视频需要对于网站本身有一定的了解，比如NICONICO的视频我暂时没有订阅的方法所以我用对应的关键词来搜索B站的搬运视频。Youtube的内嵌视频可以调倍速和高清晰度，B站的内嵌视频不能调倍速，也不能有高清视频。&lt;/p&gt;
 &lt;p&gt;所以总结一下，一个RSS系统需要一个RSS阅读器以及RSS订阅源。阅读器有很多大家可以自己去尝试。RSS源首先去看官方是否有自己的RSS订阅源，一般会有一个长这样的标识：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://moriform.com/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/Snipaste_2022-10-23_22-09-51.webp&#34; alt=&#34;&#34; width=&#34;82&#34; height=&#34;96&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;

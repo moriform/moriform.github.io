@@ -5,7 +5,7 @@
     <link>https://moriform.com/tags/nlp/</link>
     <description>森月台，森林深处无人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:52:44 &#43;0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 12:41:52 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/nlp/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微博谣言数据爬取</title>
@@ -46,7 +46,13 @@
 一层对平台一页20条进行爬取，
 &lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/msedge_2iOSChdcSJ.webp&#34; alt=&#34;&#34; width=&#34;924&#34; height=&#34;943&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 二层点进20条中每一条，
-&lt;img src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34; alt=&#34;&#34; width=&#34;1118&#34; height=&#34;955&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
+&lt;img
+  src=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp&#34;
+  srcset=&#34;https://moriform.com/2023/01/01/weiborumor/uwF60USBNh_hu_1860a0f892cb2cd3.webp 800w, https://moriform.com/2023/01/01/weiborumor/uwF60USBNh.webp 1118w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1118&#34; height=&#34;955&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;
 三层若需要原文则点进原微博进行爬取。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;186&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;196&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;##选择要爬取的页面编号&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;  2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;

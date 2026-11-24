@@ -24,15 +24,7 @@
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
-</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5ZBB760MM');
-</script>
-</head>
+</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css"></head>
 <body class="is-page"><aside class="rail">
   <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
       <span class="rail__title">森月台</span>
@@ -84,7 +76,7 @@
       </div>
     </header>
     <figure class="article__hero">
-      <img src="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/greg-studio-_QqZMJ3FDNQ-unsplash_hu_7ef54ad180b5210f.webp" width="1600" height="900" alt="Cubase水平滚动反向的解决方法">
+      <img src="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/greg-studio-_QqZMJ3FDNQ-unsplash_hu_7ef54ad180b5210f.webp" width="1600" height="900" alt="Cubase水平滚动反向的解决方法" fetchpriority="high" decoding="async">
     </figure>
     <div class="article__body prose"><h3 id="前言">前言</h3>
 <p>Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。</p>
@@ -149,7 +141,6 @@
   </article><section class="comments" id="comments">
   <p class="comments__title">评论</p>
   <div class="comments__widget" id="twikoo"></div>
-  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
   <script>
     (function () {
       var cfg = {
@@ -157,18 +148,31 @@
         el: "#twikoo",
         lang: "zh-CN"
       };
-      function boot() {
-        if (window.twikoo && window.twikoo.init) {
-          window.twikoo.init(cfg);
-          return;
-        }
-        setTimeout(boot, 80);
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-      } else {
-        boot();
-      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
     })();
   </script>
 </section>

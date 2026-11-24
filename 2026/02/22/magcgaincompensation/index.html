@@ -22,15 +22,7 @@
       document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   })();
-</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-R5ZBB760MM');
-</script>
-</head>
+</script><link rel="stylesheet" href="/css/moriform.min.40d815485761105b389835f8d7c3bbba34566bb5133be86d6a436b1ba532b194.css"></head>
 <body class="is-page"><aside class="rail">
   <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
       <span class="rail__title">森月台</span>
@@ -82,7 +74,7 @@
       </div>
     </header>
     <figure class="article__hero">
-      <img src="/2026/02/22/magcgaincompensation/bofu-shaw-IvbRg7697os-unsplash_hu_d2f4c9cca6307b53.webp" width="1600" height="900" alt="在Reaper中实现响度补偿的一种方法">
+      <img src="/2026/02/22/magcgaincompensation/bofu-shaw-IvbRg7697os-unsplash_hu_d2f4c9cca6307b53.webp" width="1600" height="900" alt="在Reaper中实现响度补偿的一种方法" fetchpriority="high" decoding="async">
     </figure>
     <div class="article__body prose"><h2 id="响度补偿的必要性">响度补偿的必要性</h2>
 <p>音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样响度越大越好听的审美心理也直接影响到响度大战。</p>
@@ -101,7 +93,13 @@
 <p>即整个效果需要一个Gain Compensation容器，容器设置为4输入2输出。输入1/2（原声左声道和右声道）输入到Effectors容器，用于音频处理（2输入2输出）。Effectors容器的输出作为主音频输入MAGC，Gain Compensation容器的输入3/4（也是原声左声道和右声道）作为侧链输入到MAGC的侧链通道。MAGC经过处理之后输出一个经过处理且响度和原声相同的音频作为整个容器的输出。</p>
 <h3 id="实际操作">实际操作</h3>
 <p>在FX track中右键Add container就可以添加容器，如图我在音轨的FX track上添加了Gain Compensation Stereo容器，在Gain Compensation Stereo容器中添加了Effectors容器。（在Gain Compensation Stereo添加Gain效果器用于调整原声的响度，而Effectors中的Gain只用于测试，测试方法后文会提到。）</p>
-<p><img src="/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp" alt="" width="1239" height="1013" loading="lazy" decoding="async"></p>
+<p><img
+  src="/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp"
+  srcset="/2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5_hu_c2e8f93a3294bfdc.webp 800w, /2026/02/22/magcgaincompensation/reaper_y9FIXtBtm5.webp 1239w"
+  sizes="(max-width: 700px) 100vw, 780px"
+  width="1239" height="1013"
+  alt=""
+  loading="lazy" decoding="async"></p>
 <p>设置Gain Compensation Stereo容器的路由如下：</p>
 <p><img src="/2026/02/22/magcgaincompensation/AGMLffQG0m.webp" alt="" width="502" height="312" loading="lazy" decoding="async"></p>
 <p>Track Channel 1/2是原声，输入到input 1/2作为处理声音，输入到3/4作为参考侧链。Output 1/2是最后效果器处理且响度补偿后的音频输出。</p>
@@ -127,7 +125,6 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
   </article><section class="comments" id="comments">
   <p class="comments__title">评论</p>
   <div class="comments__widget" id="twikoo"></div>
-  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
   <script>
     (function () {
       var cfg = {
@@ -135,18 +132,31 @@ MAGC中的range参数是MAGC可以做的最大响度补偿。比如range是20dB�
         el: "#twikoo",
         lang: "zh-CN"
       };
-      function boot() {
-        if (window.twikoo && window.twikoo.init) {
-          window.twikoo.init(cfg);
-          return;
-        }
-        setTimeout(boot, 80);
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-      } else {
-        boot();
-      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
     })();
   </script>
 </section>
