@@ -1,530 +1,458 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="森林深处无人经过的站点">
-<title>Diaries</title>
-
-<link rel='canonical' href='https://moriform.github.io/diary/'>
-
-<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="Diaries">
-<meta property='og:description' content="森林深处无人经过的站点">
-<meta property='og:url' content='https://moriform.github.io/diary/'>
-<meta property='og:site_name' content='森月台'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-09-04T17:23:42&#43;08:00 '/>
-<meta name="twitter:title" content="Diaries">
-<meta name="twitter:description" content="森林深处无人经过的站点"><link rel="alternate" type="application/rss&#43;xml" href="https://moriform.github.io/diary/feed.xml">
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-R5ZBB760MM');
-        }
-      </script>
-    </head>
-    <body class="">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_ca8eaf639996c849.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">森月台</a></h1>
-            <h2 class="site-description">森林深处无人经过的站点</h2>
-        </div>
-    </header><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/diary/index.html' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
-                
-                <span>日记</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/svsvnm/2026/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mountain"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20h18l-6.921 -14.612a2.3 2.3 0 0 0 -4.158 0l-6.921 14.612" /><path d="M7.5 11l2 2.5l2.5 -2.5l2 3l2.5 -2" /></svg>
-                
-                <span>碎碎念</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>暗色模式</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
-
-            <main class="main full-width">
-
-<h1 class="page-title">Diaries</h1>
-
-<div class="diary-list">
-  
-  <a class="diary-item" href="/diary/20260402/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-04-02
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><h1 id="记一次闲鱼买卖">记一次闲鱼买卖
-</h1><p>我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给自己回血。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260306/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-03-06
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>早上起来把Machine Learning的作业提交了，最忙碌的一周即将迎来结束，去公寓拿了一杯鸡汤面之后睡到下午。</p>
-<p>点了一份老城火锅的牛肉麻辣烫12镑多。满满一盒，结果一份肥牛之后全是素菜开会，下面还垫了一份方便面。点了特辣确实是我不能从容的级别，最后留了方便面没吃。素菜里面很多是来爱丁堡之后就没吃上的，这点感觉确实不错。不过下一次12镑的话我还是选择自选全肉+自购菠菜米饭的方案。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260303/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-03-03
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>从昨天晚上六点到今天早上十点，完成了音频编程的所有作业。人已经麻掉了。</p>
-<p>音频作业是在JUCE上面使用DSP元件搭建一个Drone Music的生成装置。简单说就是制造各种变换不断的波形。如果是提前没有接触过音频的编程人来说这个作业的难点在于没有工具可以提前知道自己的波形会成什么样。但是很幸运，我刚好有一个Phaseplant合成器。它的好处在于它没有传统的像是Serum和Massive这样的路由路径让我们必须先通过什么效果再通过什么特定效果，而是就是一个音效操场，可以通过Kilo Hearts家最擅长的路由将各种基础元件和效果以及调制工具搭配起来使用，而且一切波形和效果都是可数据化的。所以我可以先在Phaseplant用学过的元件搭建自己喜欢的声音之后，直接将元件数据记录下来在JUCE里面实现，基本上可以做个八分相像。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260302/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-03-02
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>现在我的博客更新方式成了先在hugo上面写，上传到github进行渲染之后再放到wordpress上面。这样写的好处有两个。首先md文件里面会设置页面的url，这样可以进行博客url的同步，如果wordpress实在无法运营下去了就可以把静态博客无缝衔接搬过来。然后是github上面的提交日期是世界公认的时间戳，弥补了个人服务器wordpress时间可以更改的无法保存为证据的不足，虽然暂时没有可以使用的地方，不过做好预防肯定是好的。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260223/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-02-23
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>上午睡过去了，所以吃了辛拉面。</p>
-<p>下午做完了套餐，另外写了博客介绍自己的RSS系统。</p>
-<p>晚上吃了Meal Deal，发现了Chorizo和鸡肉一起的三明治，味道不错。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260222/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-02-22
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>上午睡过去了。</p>
-<p>下午做套餐去了。</p>
-<p>晚上按照某个妈见打的担担面套装的里面做了臊子，味道不错，如果没有那个担担面就更好了。</p>
-<p>开了一个逐渐认识MeldaProduction插件的新坑。想要通过实践过程来补足缺失的音频知识。写了一遍使用MAGC进行Gain Compensation的攻略。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260221/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-02-21
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>早起，然后运动，抄写摩斯电码，打音游，把Freshrss修理了一遍。</p>
-<p>上午的时间出去闲逛，小红书上说爱丁堡周末有一个农贸集市，去看了看也就两排，没有什么看上去想吃的东西，小红书爆款海鲜饭也没有出现。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260109/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-01-09
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>假期快要结束了，几个课程的指导人都已经发了邮件了。</p>
-<p>今天把所有的博客都维护完成了。一个静态博客和一个媒体全部丢失的wordpress。在这之后就安心写博客不去碰配置了。</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260108/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-01-08
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>☁️ 阴<br>
-今天风很大，在 Stack 里折腾日记系统</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260107/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-01-07
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>今天做了什么呢</p></p>
-
-    </div>
-  </a>
-  
-  <a class="diary-item" href="/diary/20260101/">
-    <div class="diary-item-content">
-
-      
-      <div class="diary-date">
-        2026-01-01
-      </div>
-
-      
-      <h2 class="diary-title"></h2>
-
-      
-      <p class="diary-excerpt"><p>2026年的第一天。</p>
-<p>由于昨天去卡尔顿山上拍烟花冻了一晚上，所以今天吃了几副藿香正气液就呆在家里了。</p>
-<p><img src="/diary/20260101/IMG_9543.webp"
-	width="2059"
-	height="1170"
-	srcset="/diary/20260101/IMG_9543_hu_7ed135f9b0c808de.webp 480w, /diary/20260101/IMG_9543_hu_e57491e2967242.webp 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="175"
-		data-flex-basis="422px"
-	
-></p>
-<p>昨天趁着腾讯云的服务器优惠活动的最后一天买了一台境外的2g服务器，今天就把rsshub和freshrss部署在上面了，如果是自己用的话2g服务器对于rsshub来说还是足够的。</p></p>
-
-    </div>
-  </a>
-  
-</div>
-
-<style>
- 
-.page-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  color: var(--text-primary);
-}
-
- 
-.diary-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
- 
-.diary-item {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
- 
-.diary-item-content {
-  position: relative;
-  padding: 1.6rem 1.5rem 1.2rem;
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.diary-item:hover .diary-item-content {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-}
-
- 
-.diary-date {
-  position: absolute;
-  top: 0.6rem;
-  left: 1rem;
-
-  font-size: 1.5rem;
-  color: var(--text-secondary);
-  letter-spacing: 0.03em;
-
-  background-color: var(--body-bg);
-  padding: 0.15rem 0.5rem;
-  border-radius: 6px;
-}
-
- 
-.diary-title {
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-  margin-bottom: 0.3rem;
-  color: var(--text-primary);
-}
-
- 
-.diary-excerpt {
-  font-size: 1rem;
-  color: var(--text-primary);
-  line-height: 1.6;
-}
-</style>
-
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<html lang="zh-cn" data-theme="light">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>日记 · 森月台</title>
+<meta name="description" content="森月台，森林深处无人经过的站点。">
+<link rel="canonical" href="https://moriform.github.io/diary/">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:site_name" content="森月台">
+<meta property="og:title" content="日记">
+<meta property="og:description" content="森月台，森林深处无人经过的站点。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://moriform.github.io/diary/">
 <script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script><link rel="stylesheet" href="/css/moriform.min.1197fc3ad861bd3ad7dccd815d222f9d9369b3ed03e3842f1a1b779347f7046b.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R5ZBB760MM');
 </script>
+</head>
+<body class="is-list"><aside class="rail">
+  <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
+      <span class="rail__title">森月台</span>
+      <span class="rail__sub">森林深处无人经过的站点</span>
+    </span>
+  </a><nav class="rail__nav" aria-label="栏目"><a class="nav-item" href="/"><span class="nav-item__label">博客</span>
+      </a><a class="nav-item is-active" href="/diary/"><span class="nav-item__label">日记</span>
+      </a><a class="nav-item" href="/note/"><span class="nav-item__label">说说</span>
+      </a><a class="nav-item" href="/%E5%8F%8B%E9%93%BE/"><span class="nav-item__label">友链</span>
+      </a><a class="nav-item" href="/about/"><span class="nav-item__label">关于</span>
+      </a>
+  </nav>
+  <div class="rail__group">
+    <p class="rail__group-title">标签</p>
+    <ul class="rail__tags">
+      <li class="rail__tag rail__tag--pinned"><span class="dot dot--pin"></span><a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a></li>
+    </ul>
+  </div>
 
-    </body>
+  <div class="rail__bottom">
+    <a class="rail__banner" href="https://travel.moe/go.html" target="_blank" rel="noopener" title="异次元之旅">
+      <img src="/img/links/travel-moe.png" alt="异次元之旅" loading="lazy">
+    </a>
+    <a class="rail__banner rail__banner--invert-light" href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往">
+      <img src="/img/links/travelgo.svg" alt="开往" style="width: 120px" loading="lazy">
+    </a>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗配色">
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="theme-toggle__label">亮 / 暗</span>
+    </button>
+  </div>
+</aside>
+<main class="main">
+    <div class="container"><header class="page-head">
+  <div>
+    <h1 class="page-head__title">日记</h1>
+  </div>
+</header>
+<div class="diary-list"><h2 class="diary-year">2026</h2><a class="diary-entry" href="/diary/20261122/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-11-22">11.22</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">和父母去6号线终点站百仁公园散步。说是公园更像一个大的草场保留区，实际建设的程度很低，可以看见耕种的麦子耕种的痕迹，还有一片菜园。算是一地两用了。听说菜园还会租给城里人耕种用，一片地3000元一年追求健康原生态，算是一地三用了。 母亲喜欢散 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20261121/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-11-21">11.21</time></span>
+    <span class="diary-entry__weekday">周六</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">MonoMoon。 今天完了半天把MonoMoon通关了，好久没有玩过这么精彩又有成就感的解谜游戏了。这种优质游戏真的玩一个少一个。 博客的重新装修。 Hugo版本升级之后没有拓展版本了需要多安装一个dart sass来支持原来的主题，为了 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20261012/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-10-12">10.12</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">做了第一份泰式黄咖喱鸡，加了一整罐椰浆，味道浓郁丝滑。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20261001/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-10-01">10.01</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">国庆回老家了。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260921/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-21">09.21</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">去省医院复查，结果不错，医生说百分之百不会异变，药量也可以减半了，半年之后再去复查一次抽血，然后尽量不要熬夜了。 天气很好，下午在人民公园转悠，公交车做到了终点站才下车往回走。感觉周一外国旅游团在这里特别多。转了各个园林石碑和湖面，看了看人 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260920/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-20">09.20</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">上午和中午的时间看完了《太空漫游2010》，讲了关于鲍曼消失之后俄美宇航员去恢复HAL看黑石碑然后发现木星成为了第二个太阳的故事，把鲍曼升维之后的事情做了些补充。 下午和晚上堂妹来做客，和她聊了很多关于人生专业和社会的问题，然后玩了VR眼镜 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260919/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-19">09.19</time></span>
+    <span class="diary-entry__weekday">周六</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">上午把屋子打扫了一遍，并且在日程上面安排了以后的每个周六都要用于打扫卫生。 一天的时间读了《太空漫游2001》，最后的一章过于意识流，但是看过《星际穿越》以及《三体》之后基本也知道他在讲什么。在读《太空漫游2001》的时候确确实实感觉到现代 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260918/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-18">09.18</time></span>
+    <span class="diary-entry__weekday">周五</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">918的空袭警报在10:00响起，幸运的是我们不需要奔跑躲难了。 看完了银河帝国5，第二基地的创始人是谢顿的孙女和她的配偶（谢顿的保镖），因为都有心灵读取和“推”的能力，为铎丝的死感到难过。 下午姨婆来玩的时候让我给她处理一个十分气愤的问题 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260917/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-17">09.17</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">凌晨开通了微信阅读的会员，个人认为这是今年最具有收获的支出。 看完了《银河帝国4》。 下午开着直播想把CS DETECTIVE看完，无奈英文版本的确实阅读起来太费劲了，看了一下午才看了一半。最后还是在IPAD上面用微信读书的翻译功能直接把书 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260916/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-16">09.16</time></span>
+    <span class="diary-entry__weekday">周三</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">上午去看了一部分《Computers that Made the Britain》，但是最终放弃了。我觉得这种计算机历史的书籍对我来说意义不大。 晚上看了《四叠半时光机布鲁斯》，依旧是吃了药一样的幻想。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260915/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-15">09.15</time></span>
+    <span class="diary-entry__weekday">周二</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">看完了《克苏鲁神话》的第三本，实际上并不是把书看完，而是一半文本一半视频的方式。把一些是在不能读下去的篇章通过视频故事看完了。没办法，克苏鲁这种文风没办法用快速阅读的方式读下去，语言既生涩又使人感到被排斥。所以我注定无法当调查员。不过这本书 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260914/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-14">09.14</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">看完了《克苏鲁神话》的第2本。 晚上又一次做了日式咖喱鸡，提前焯了水之后感觉鸡肉更老了，下次还是用新鲜的鸡腿肉不焯水直接做。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260913/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-13">09.13</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">上午把家里的那一台老电脑给刷上了antix linux。虽然很想装mint linux，但是网络驱动总成问题，所以还是用了最省资源且最适用老电脑的方案。 删除了dlsite和cien的账号，这下又给自己省下了不少时间。 晚上看完了第一本克苏 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260912/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-12">09.12</time></span>
+    <span class="diary-entry__weekday">周六</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">上午读完了英文版本的bakemonogatari 1，看了一下微信读书的记录这本书花费了7小时。结果已经很明确了。我不应该花费如此多的时间在多年前买的书包里面，所以我决定把慈善包的账号注销，一次解痛把更多的时间放在以后的事情上面。 所以整个 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260911/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-11">09.11</time></span>
+    <span class="diary-entry__weekday">周五</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">想买一个电纸书，用来装微信读书以及humble bundle上面没有看的书籍，也许之后上下班通勤也会用。所以看了一下午的电纸书推荐，去闲鱼看了一个理想ocean 4turbo的得800元。 但是最后发现其实在那块ipad还能用的情况下买一个 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260910/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-10">09.10</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">晚上和父母去看了一场川剧，在城市音乐厅，因为赶时间所以找了一家面馆吃了三碗面。 是南充市川剧团的演出，叫《明月情》。第一次听在大雅之堂说四川方言有些不习惯，但是演员的情绪还是很到位很快沉浸了进去，舞台旁边的提词屏幕也帮了大忙。从观众每一幕越 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260909/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-09">09.09</time></span>
+    <span class="diary-entry__weekday">周三</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">安装了project diva mega 39+和对应的模组拓展音乐库，然后把sam达成的成就重新锁上打算通过实际的游玩来获取成就。 下午帮父亲把出题的试卷进行了排版，因为他全部是在网络不同地方复制的题目，格式完全不一样，所以我把格式清除之 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260908/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-08">09.08</time></span>
+    <span class="diary-entry__weekday">周二</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">NASA出了一个新的望眼镜Nancy Grace Roman拍摄的第一张图的认领活动，每个人可以认领一个像素点。 晚上直播完project diva之后播了一段在vrchat中做asmr，虽然真人只有两个，下次在周六直播试试。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260907/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-07">09.07</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">晚上第一次一个人在家里的厨房做了一锅咖喱。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260906/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-06">09.06</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">确定了一下要读的杂志，以性价比高为主。 中文： Midifan月刊 免费 博物 去图书馆借 英文 Sos issue 免费 Tape On 免费 Acoustic Today 免费 Beat English libby上免费 日语 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260904/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-04">09.04</time></span>
+    <span class="diary-entry__weekday">周五</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">读完了查理布朗第四年目，查理布朗有了一个妹妹。 下午把房间收拾了，但仅仅是简单的收拾，我发现了很多一直存在的东西实际上没有存在的必要，比如那个占空间的锁已经坏掉的装满硬币的米老鼠存钱罐。之后会抽时间来完整地清理一遍，包括家里的其他地方。 下 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260903/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-03">09.03</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">母亲今天做了番茄牛筋汤，味道很好喝，让我想起了在爱丁堡糊弄的番茄牛腩：预制菜红烧牛腩煮好后直接倒入压好的米饭里面，加入一些蕃茄膏和香菜搞定。不过味道肯定比不上母亲做的菜。 按照每天2小时的进度看完了第四本查理布朗。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260902/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-02">09.02</time></span>
+    <span class="diary-entry__weekday">周三</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">在表姐家做客看装修后的新房。 因为姨妈错把另一袋猪蹄当作牛肉拿出冰箱解冻了，所以中午吃了红烧猪蹄和凉拌猪蹄。 在表姐家看了2小时查理布朗，吃了一堆东西，玩了一堆侄子的玩具，还帮忙把魔方还原了。 晚上8个人吃鱼娃锅，味道还行，补充了过去一年都 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260901/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-09-01">09.01</time></span>
+    <span class="diary-entry__weekday">周二</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">在B站偶然看见了virtual desktop可以有线串流了，于是下午鼓捣了半天quest 3。出问题的是“未知来源软件”在没有联网（vpn）的情况下是没有办法显示的，而vpn又是“未知来源软件”，所以不开vpn的话就没办法打开vpn软件， …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260831/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-31">08.31</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">读了《美丽新世界》。 发现查理布朗可以直接传到微信占微信阅读的时间！ 晚上在看slime vr的文件。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260829/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-29">08.29</time></span>
+    <span class="diary-entry__weekday">周六</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">《宋慈洗冤笔记》之前在飞机上面看了第一册，现在第二册看了一半没有再看下去了。如果不是专程为了改偶像电视剧，我不知道为什么他的人物塑造如此生硬。每个角色都是首先定一个标签，然后全程的矛盾和发展全是按照这种标签式的处理方式去写的。宋慈永远冷静无 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260828/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-28">08.28</time></span>
+    <span class="diary-entry__weekday">周五</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">《加利宅邸悬案》玩了一天</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260827/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-27">08.27</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">《春宵苦短，少女前行吧》 去吃了陶德砂锅，因为表妹明天就坐飞机去学校了。 在沃尔玛重新熟悉中国的物价。 在想能用什么做一本日记书。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260826/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-26">08.26</time></span>
+    <span class="diary-entry__weekday">周三</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">早上6点起来，看完了嫌疑人X的献身。实在为揭秘结果感到震惊。 白天给表妹推荐了几个单机游戏，最后把她加进了我的steam家庭里面（当然把若干个美少女文字游戏加私密了）。 晚上吃了姨妈做的兔子，很好吃。 晚上在acfun直播推送了indie …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260825/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-25">08.25</time></span>
+    <span class="diary-entry__weekday">周二</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">在飞机上无所事事，想看《浪浪山小妖怪》，但是隐喻过于浓厚不适合没有睡觉的早上，所以就关掉了，打开飞行地图任其随意切换视角，闭眼假装自己在睡觉，也许真睡着了，睁眼再看看时间过了多久，看看地图上的飞机距离北京还剩了多久。早餐是菠菜鸡蛋香肠蔬菜和 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260824/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-24">08.24</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">最后一次洗漱，倒垃圾，把整个房间清空了。7点半带着2箱行李下了楼，从邮箱口递交了宿舍的钥匙，正式退租了。下楼的时候遇见John正在为10点钟全体退宿打扫做准备，相互打了招呼就离开了宿舍。 Uber叫了一辆普通车，但是7:40的早高峰没有什么 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260802/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-08-02">08.02</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">我发现了BILIBILI在最近最可耻的改动，就是搜索引擎变得和主页一样了。具体来说，我搜索一些关键词的时候出来的前2-3行可能出现的是相关的，而后面几排中就会有各种毫无关联但是看上去像是以前使用主页的时候会出现的东西，无意义的时事，关注的人 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260706/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-07-06">07.06</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">之前办理了爱丁堡图书馆的membership。今天发现如果要使用libby来借书，需要把membership升级成为正式的会员，于是向图书馆写信申请之后很快得到了正式的图书馆借书证的ID。输入之后立刻就可以使用免费图书馆借阅了。里面还在更新 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260705/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-07-05">07.05</time></span>
+    <span class="diary-entry__weekday">周日</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">ACFUN的直播以前在非凌晨的时候一直无法正常推流，现在明白了就是网络的问题不会给境外推流太多的宽带，所以买了一个回国加速器，一上obs推流网速直接跑满。折腾好久之后终于开播了，虽然是周日的晚上12点但是还是有几个活人也涨了几个粉。 点了 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260704/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-07-04">07.04</time></span>
+    <span class="diary-entry__weekday">周六</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">点了两个爱丁堡人认为的日式三文鱼饭撑一天。结果三文鱼使用的是鱼肉松而不是完整的鱼块。素菜挺多，味道靠海菜和照烧酱来撑。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260702/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-07-02">07.02</time></span>
+    <span class="diary-entry__weekday">周四</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">这两天都在尝试辣椒圈拌面，味道特别过瘾，不知道怎么使用的六婆辣椒面也有用处了。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260701/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-07-01">07.01</time></span>
+    <span class="diary-entry__weekday">周三</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">看阿西莫夫的银河帝国第二本和第三本看到3点。 中午吃了辣椒圈拌面。</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260630/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-06-30">06.30</time></span>
+    <span class="diary-entry__weekday">周二</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">办理了一张爱丁堡图书馆的membership。 看阿西莫夫的银河帝国看到3点</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260615/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-06-15">06.15</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">完美的一天，从和自己的日记聊天开始。 今天肯定是要熬夜的了。把之前的所有进度都赶上去。然后告诉自己我必须去过自己想过的日记而不是整天呆在互联网无所事事。 现在开始17:00，去洗澡然后去吃日料，吃完去买点饼干之类的。我要18:00的时候开始 …</p>
+  </div>
+</a>
+<a class="diary-entry" href="/diary/20260608/">
+  <span class="diary-entry__date">
+    <span class="diary-entry__md"><time datetime="2026-06-08">06.08</time></span>
+    <span class="diary-entry__weekday">周一</span>
+  </span>
+  <div class="diary-entry__body">
+    <p class="diary-entry__text">晚上去拿了caffe nero的盲盒，老板给了一袋之后问我要不要再买一袋可能有人买了之后退货了剩了一袋，我就没有再要了。 听广播的时候收到了104.1mhz的电台，是完全听不懂的语言，去搜索BBC的频道台发现这是一个叫做Gàidheal的苏 …</p>
+  </div>
+</a>
+</div>
+<nav class="pager" aria-label="分页">
+  <span class="is-disabled">←</span>
+  <span class="is-active">1</span>
+  <a href="/diary/page/2/">2</a>
+  <a href="/diary/page/3/">3</a>
+  <a href="/diary/page/4/">4</a>
+  <a href="/diary/page/5/">5</a>
+  <a href="/diary/page/6/">6</a>
+  <a href="/diary/page/7/">7</a>
+  <a href="/diary/page/2/" rel="next">→</a>
+</nav>
+
+<footer class="site-foot">
+  <p class="site-foot__copy">© 2026 暄穗</p>
+  <p class="site-foot__meta">
+    使用 <a href="https://gohugo.io" rel="noopener">Hugo</a> 构建 · <a href="/feed.xml">RSS</a>
+  </p>
+  <p class="site-foot__icp">
+    <a href="https://icp.gov.moe/?keyword=20241101" target="_blank" rel="noopener">萌ICP备20241101号</a>
+  </p>
+</footer>
+</div>
+  </main><script src="/js/moriform.min.e62d8b85a9b0a5c0ef78b322615dc5168ad33d4b831606a03595988e15d592dd.js" defer></script></body>
 </html>

@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>原创小说 on 森月台</title>
-        <link>https://moriform.github.io/tags/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/</link>
-        <description>Recent content in 原创小说 on 森月台</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>暄穗</copyright>
-        <lastBuildDate>Sun, 29 Aug 2021 19:40:38 +0000</lastBuildDate><atom:link href="https://moriform.github.io/tags/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/feed.xml" rel="self" type="application/rss+xml" /><item>
-        <title>铁轨与佩特拉</title>
-        <link>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</link>
-        <pubDate>Sun, 29 Aug 2021 19:40:38 +0000</pubDate>
-        
-        <guid>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</guid>
-        <description>&lt;p&gt;“该起来了，莫多——”&lt;/p&gt;
+  <channel>
+    <title>原创小说 · 森月台</title>
+    <link>https://moriform.github.io/tags/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/</link>
+    <description>森月台，森林深处无人经过的站点。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.github.io/tags/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>铁轨与佩特拉</title>
+      <link>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</link>
+      <pubDate>Sun, 29 Aug 2021 19:40:38 &#43;0000</pubDate>
+      <guid>https://moriform.github.io/2021/08/29/rainrail_to_sabaku/</guid>
+      <description>&lt;p&gt;“该起来了，莫多——”&lt;/p&gt;
 &lt;p&gt;盖着被裹整理好昨晚的笔记和地图，清点了食物、空瓶和衣服包裹的数量，在昨天记录下的“暴风”下擦掉多余的文字，补上“无事”后，起身，把莫多叫醒。&lt;/p&gt;
 &lt;p&gt;“嗯——尼桑——再——再多睡一会儿……”睡在一旁的莫多不情愿地裹着被子，呓语一般，翻过身继续睡。&lt;/p&gt;
 &lt;p&gt;“得快一点了，收音机说今天有雨。”我不再管她，扎好头发，打理好装束，一个人走出帐篷。矿车还停在轨道上，没有被吹散架真是幸运。虽说是半路上发现的，和当时的我们一样残缺得不成样子，但好歹车轮还完整，能够加锁固定，并且足够轻，两个人拉着不成问题。&lt;/p&gt;
@@ -105,7 +104,6 @@
 &lt;p&gt;远处的光这样照过来，穿过雨滴，又聚在了她的身上。这大概是她最可爱的时候。&lt;/p&gt;
 &lt;p&gt;PS:因为始终忘不了这篇18年末写的小说，所以每一次搬家的时候都会把这篇搬过去。上传的时候想了一下封面做成什么样子，社团那边是直接给了一个三次元的铁轨感觉过于敷衍。写的时候记得表示铁轨错乱用的是阳炎计划的那种风格（买本保目隐轻小说里面大开插图的那种感觉），写完被评论说像是终末。阳炎那种图我画不来，终末的话加上去又显得我是同人二创。最后思来想去想起了春卷饭的PV里面很搭配，就选了这个做封面。&lt;/p&gt;
 </description>
-        </item>
-        
-    </channel>
+    </item>
+  </channel>
 </rss>

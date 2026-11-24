@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Svsvnms on 森月台</title>
-        <link>https://moriform.github.io/svsvnm/</link>
-        <description>Recent content in Svsvnms on 森月台</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <copyright>暄穗</copyright><atom:link href="https://moriform.github.io/svsvnm/feed.xml" rel="self" type="application/rss+xml" />
-    </channel>
+  <channel>
+    <title>Svsvnms · 森月台</title>
+    <link>https://moriform.github.io/svsvnm/</link>
+    <description>森月台，森林深处无人经过的站点。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 24 Nov 2026 07:56:45 &#43;0000</lastBuildDate>
+    <atom:link href="https://moriform.github.io/svsvnm/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025说说</title>
+      <link>https://moriform.github.io/svsvnm/2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <guid>https://moriform.github.io/svsvnm/2025/</guid>
+      <description>&lt;hr&gt;
+</description>
+    </item>
+    <item>
+      <title>说说</title>
+      <link>https://moriform.github.io/svsvnm/2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <guid>https://moriform.github.io/svsvnm/2026/</guid>
+      <description></description>
+    </item>
+  </channel>
 </rss>

@@ -1,687 +1,150 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。\n">
-<title>Rsshub在bilibili和weibo的一些基础</title>
-
-<link rel='canonical' href='https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/'>
-
-<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="Rsshub在bilibili和weibo的一些基础">
-<meta property='og:description' content="这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。\n">
-<meta property='og:url' content='https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/'>
-<meta property='og:site_name' content='森月台'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='rss' /><meta property='article:tag' content='bilibili' /><meta property='article:tag' content='weibo' /><meta property='article:published_time' content='2025-04-16T19:40:38&#43;00:00'/><meta property='article:modified_time' content='2025-04-16T19:40:38&#43;00:00'/>
-<meta name="twitter:title" content="Rsshub在bilibili和weibo的一些基础">
-<meta name="twitter:description" content="这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。\n">
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-R5ZBB760MM');
-        }
-      </script>
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
+<html lang="zh-cn" data-theme="light">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Rsshub在bilibili和weibo的一些基础 · 森月台</title>
+<meta name="description" content="这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的 …">
+<link rel="canonical" href="https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:site_name" content="森月台">
+<meta property="og:title" content="Rsshub在bilibili和weibo的一些基础">
+<meta property="og:description" content="这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的 …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://moriform.github.io/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">
+<meta property="article:published_time" content="2025-04-16T19:40:38Z">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script><link rel="stylesheet" href="/css/moriform.min.1197fc3ad861bd3ad7dccd815d222f9d9369b3ed03e3842f1a1b779347f7046b.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R5ZBB760MM');
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
+</head>
+<body class="is-page"><aside class="rail">
+  <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
+      <span class="rail__title">森月台</span>
+      <span class="rail__sub">森林深处无人经过的站点</span>
+    </span>
+  </a><nav class="rail__nav" aria-label="栏目"><a class="nav-item is-active" href="/"><span class="nav-item__label">博客</span>
+      </a><a class="nav-item" href="/diary/"><span class="nav-item__label">日记</span>
+      </a><a class="nav-item" href="/note/"><span class="nav-item__label">说说</span>
+      </a><a class="nav-item" href="/%E5%8F%8B%E9%93%BE/"><span class="nav-item__label">友链</span>
+      </a><a class="nav-item" href="/about/"><span class="nav-item__label">关于</span>
+      </a>
+  </nav>
+  <div class="rail__group">
+    <p class="rail__group-title">标签</p>
+    <ul class="rail__tags">
+      <li class="rail__tag rail__tag--pinned"><span class="dot dot--pin"></span><a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a></li>
+    </ul>
+  </div>
+
+  <div class="rail__bottom">
+    <a class="rail__banner" href="https://travel.moe/go.html" target="_blank" rel="noopener" title="异次元之旅">
+      <img src="/img/links/travel-moe.png" alt="异次元之旅" loading="lazy">
+    </a>
+    <a class="rail__banner rail__banner--invert-light" href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往">
+      <img src="/img/links/travelgo.svg" alt="开往" style="width: 120px" loading="lazy">
+    </a>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗配色">
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="theme-toggle__label">亮 / 暗</span>
     </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_ca8eaf639996c849.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">森月台</a></h1>
-            <h2 class="site-description">森林深处无人经过的站点</h2>
-        </div>
-    </header><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/diary/index.html' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
-                
-                <span>日记</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/svsvnm/2026/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mountain"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20h18l-6.921 -14.612a2.3 2.3 0 0 0 -4.158 0l-6.921 14.612" /><path d="M7.5 11l2 2.5l2.5 -2.5l2 3l2.5 -2" /></svg>
-                
-                <span>碎碎念</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>暗色模式</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
+  </div>
 </aside>
-
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目录</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#这是什么">这是什么</a></li>
-    <li><a href="#bilibili的cookie配置">bilibili的cookie配置</a></li>
-    <li><a href="#weibo的饼干以及防盗链媒体方案">weibo的饼干以及防盗链媒体方案</a></li>
-    <li><a href="#后话">后话</a></li>
-  </ol>
+<main class="main">
+    <div class="container container--narrow"><nav class="crumbs" aria-label="面包屑">
+  <a href="/">首页</a>
+  <span class="crumbs__sep">/</span>
+  <a href="/post/">博客</a>
+  <span class="crumbs__sep">/</span>
+  <span>Rsshub在bilibili和weibo的一些基础</span>
 </nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
-            <main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/%E7%9F%A5%E8%AF%86/" >
-                知识
-            </a>
-        
+<article class="article">
+    <header class="article__header">
+      <h1 class="article__title">Rsshub在bilibili和weibo的一些基础</h1>
+      <div class="article__meta">
+        <time datetime="2025-04-16">2025 年 4 月 16 日</time><a class="chip" href="/categories/%e7%9f%a5%e8%af%86/">#知识</a>
+        <span>3 分钟</span>
+      </div>
     </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">Rsshub在bilibili和weibo的一些基础</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2025-04-16T19:40:38Z'>Apr 16, 2025</time>
-            </div>
-        
-
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-
-    <section class="article-content">
-    
-    
-    <h2 id="这是什么">这是什么
-</h2><p>暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。</p>
-<h2 id="bilibili的cookie配置">bilibili的cookie配置
-</h2><p>如在bilibili平台中如果直接裸爬取大概率是会直接报错的，需要将用户的浏览器cookie添加在config文件里面，具体操作如<a class="link" href="https://blog.csdn.net/weixin_38125348/article/details/141217956"  target="_blank" rel="noopener"
-    >自建 RSSHub，打造你的专属信息聚合神器！-CSDN博客</a>中所示。</p>
-<p>简单说，在浏览器登陆了帐号之后，打开网站 <a class="link" href="https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&amp;type=8"  target="_blank" rel="noopener"
-    >api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&amp;type=8</a> 通过浏览器的开发工具网络模块找到一个cookie值，完全复制下来。</p>
+    <figure class="article__hero">
+      <img src="/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/kristina-tripkovic-8Zs5H6CnYJo-unsplash_hu_5eb8355fb9c1677.webp" width="1600" height="900" alt="Rsshub在bilibili和weibo的一些基础">
+    </figure>
+    <div class="article__body prose"><h2 id="这是什么">这是什么</h2>
+<p>暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在rsshub环境中，程序拾取信息的时候自带正确的head就可以通过反爬取机制的限制。</p>
+<h2 id="bilibili的cookie配置">bilibili的cookie配置</h2>
+<p>如在bilibili平台中如果直接裸爬取大概率是会直接报错的，需要将用户的浏览器cookie添加在config文件里面，具体操作如<a href="https://blog.csdn.net/weixin_38125348/article/details/141217956">自建 RSSHub，打造你的专属信息聚合神器！-CSDN博客</a>中所示。</p>
+<p>简单说，在浏览器登陆了帐号之后，打开网站 <a href="https://api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&amp;type=8">api.vc.bilibili.com/dynamic_svr/v1/dynamic_svr/dynamic_new?uid=0&amp;type=8</a> 通过浏览器的开发工具网络模块找到一个cookie值，完全复制下来。</p>
 <p>然后在应用的docker-compose.yml文件中进行文件配置，在rsshub的environment里面加上BILIBILI_COOKIE_你的UID : &ldquo;你的Cookie值&rdquo;，注意cookie值需要用引号括起来，因为我的cookie中有单引号所以我用双引号括起来。差不多长这样。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">BILIBILI_COOKIE_93428 : &#34;buvid3=B73F8077-A97A-28A2-DF18-DE6B6DE33C7882766infoc; b_nut=1741006682; _uuid=35BEAF7F-FD9E-4624-10CD1-F37D7A465EB383184infoc; enable_web_push=DISABLE; buvid4=1B604924-B54C-8E43-7BF7-89B5E1807EFF83660-025030312-E8iAdFrDoyrfEKkydeDeQw%3D%3D; DedeUserID=3546601188493428; DedeUserIDbili_jct=dbbffc52a0ee7baf9ba16c40b7a06310; sid=8m9rq12i; CURRENT_FNVAL=4048; b_lsid=D46D3B15_1961E5C9EF1; timeMachine=0; bp_t_offset_3546601188493428=1054106693811568640; bsource=search_google&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>在完成cookie配置之后重启rsshub就可以爬取rsshub的信息了。</p>
-<h2 id="weibo的饼干以及防盗链媒体方案">weibo的饼干以及防盗链媒体方案
-</h2><p>在使用rsshub订阅微博的时候，有时会遇到“幽灵账号”，就是可以在电脑浏览器上面看到用户的消息，但是在手机端发现他的主页是空白的，而且使用rsshub也不能订阅，这个时候就需要使用weibo的cookie配置，参照rsshub的文档添加环境变量，和bilibili的cookie添加方式大差不差。我没有weibo账号就不演示了。</p>
+<pre tabindex="0"><code class="language-差不多长这样" data-lang="差不多长这样">BILIBILI_COOKIE_93428 : &#34;buvid3=B73F8077-A97A-28A2-DF18-DE6B6DE33C7882766infoc; b_nut=1741006682; _uuid=35BEAF7F-FD9E-4624-10CD1-F37D7A465EB383184infoc; enable_web_push=DISABLE; buvid4=1B604924-B54C-8E43-7BF7-89B5E1807EFF83660-025030312-E8iAdFrDoyrfEKkydeDeQw%3D%3D; DedeUserID=3546601188493428; DedeUserIDbili_jct=dbbffc52a0ee7baf9ba16c40b7a06310; sid=8m9rq12i; CURRENT_FNVAL=4048; b_lsid=D46D3B15_1961E5C9EF1; timeMachine=0; bp_t_offset_3546601188493428=1054106693811568640; bsource=search_google&#34;
+</code></pre><p>在完成cookie配置之后重启rsshub就可以爬取rsshub的信息了。</p>
+<h2 id="weibo的饼干以及防盗链媒体方案">weibo的饼干以及防盗链媒体方案</h2>
+<p>在使用rsshub订阅微博的时候，有时会遇到“幽灵账号”，就是可以在电脑浏览器上面看到用户的消息，但是在手机端发现他的主页是空白的，而且使用rsshub也不能订阅，这个时候就需要使用weibo的cookie配置，参照rsshub的文档添加环境变量，和bilibili的cookie添加方式大差不差。我没有weibo账号就不演示了。</p>
 <p>另外weibo的防盗链机制使得图片必须通过weibo平台才能够获取，如果直接用rss阅读器没有办法显示图片。需要添加参数通过替换媒体文件的url来使得在rss阅读器中可以显示。</p>
 <p>方法是在rsshub的docker-compose.yml的rsshub的environment中添加参数如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">HOTLINK_TEMPLATE: &#39;https://image.baidu.com/search/down?url=$${href_ue}&#39;
-</span></span><span class="line"><span class="cl">HOTLINK_INCLUDE_PATHS: /weibo
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="后话">后话
-</h2><p>由于cookie需要不定期的更新这比较麻烦，所以我尽量避免相关的配置。比如bilibili的话我一般只用电脑看视频，所以它和我的youtube一起放在了电脑本地浏览器的feedbro里面，同时我在电脑端配置了一个rsshub，所以feedbro通过本地rsshub可以直接在浏览器上面对bilibili进行抓取，这样就不用配置cookie了。</p>
+<pre tabindex="0"><code>HOTLINK_TEMPLATE: &#39;https://image.baidu.com/search/down?url=$${href_ue}&#39;
+HOTLINK_INCLUDE_PATHS: /weibo
+</code></pre><h2 id="后话">后话</h2>
+<p>由于cookie需要不定期的更新这比较麻烦，所以我尽量避免相关的配置。比如bilibili的话我一般只用电脑看视频，所以它和我的youtube一起放在了电脑本地浏览器的feedbro里面，同时我在电脑端配置了一个rsshub，所以feedbro通过本地rsshub可以直接在浏览器上面对bilibili进行抓取，这样就不用配置cookie了。</p>
 <p>但是偶尔有一次我在检查rss报错的时候发现还是有人使用我的月台信息分发服务，也有学生群体使用我的rsshub来订阅B站上的授课老师来获取知识，所以我现在还是换回了在线的rsshub来订阅bilibili，这样如果cookie需要更新了我及时可以发现。也祝各位同学能够学业有成，取得理想的成绩。</p>
 <p>如果真的有其他平台的cookie配置需求（比如前文说到的微博幽灵账号订阅），可以在这篇文章下方进行评论，不是太复杂的我都可以进行配置。</p>
 <p>最后，我的服务器是阿里云的大陆ecs，想从这里订阅AV和境外新闻是几乎不可能的事情。</p>
-
-</section>
-
-
-    <footer class="article-footer">
-    
-    <section class="article-tags">
-        
-            <a href="/tags/rss/">Rss</a>
-        
-            <a href="/tags/bilibili/">Bilibili</a>
-        
-            <a href="/tags/weibo/">Weibo</a>
-        
-    </section>
-
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>Licensed under CC BY-NC-SA 4.0</span>
-    </section>
-    </footer>
-
-
-    
-        <link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
-            ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
-                defer
-                >
-            </script><script>
-    window.addEventListener("DOMContentLoaded", () => {
-        const elementsToRender = [".main-article", ".widget--toc"];
-
-        elementsToRender.forEach(selector => {
-            const element = document.querySelector(selector);
-            if (element) {
-                renderMathInElement(element, {
-                    delimiters: [
-                        { left: "$$", right: "$$", display: true },
-                        { left: "$", right: "$", display: false },
-                        { left: "\\(", right: "\\)", display: false },
-                        { left: "\\[", right: "\\]", display: true }
-                    ],
-                    ignoredClasses: ["gist"]
-                });
-            }
-        });
-    });
-</script>
-    
-</article>
-
-    
-
-    
-
-<aside class="related-content--wrapper">
-    <h2 class="section-title">相关文章</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/2026/02/23/rsslast/">
-        
-        
-            <div class="article-image">
-                <img src="/2026/02/23/rsslast/jj-ying-8bghKxNU1j0-unsplash.875821ab1ce2d4a96e0f2fb06b5b2489_hu_efe32c0f5ed4df5b.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 关于我的RSS订阅系统"
-                        data-key="rsslast" 
-                        data-hash="md5-h1ghqxzi1KluDy&#43;wa1skiQ==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">关于我的RSS订阅系统</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">关于新版本Freshrss和Rsshub同时使用时出现的问题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/2023/01/01/weiborumor/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">微博谣言数据爬取</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">RSS的实践</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/2026/09/04/rvchatvdstandable/">
-        
-        
-            <div class="article-image">
-                <img src="/2026/09/04/rvchatvdstandable/VRChat_2026-07-08_00-36-43.743_1920x1080.e486d24b80b85341c209bcef45da2612_hu_47379307fd1d0f38.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post VRChat模拟全身追踪的方案"
-                        data-key="rvchatvdstandable" 
-                        data-hash="md5-5IbSS4C4U0HCCbzvRdomEg==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">VRChat模拟全身追踪的方案</h2>
-        </div>
-    </a>
-</article>
-
-            
-        </div>
+</div>
+    <div class="article__tags"><a class="chip chip--soft" href="/tags/rss/">#rss</a><a class="chip chip--soft" href="/tags/bilibili/">#bilibili</a><a class="chip chip--soft" href="/tags/weibo/">#weibo</a>
     </div>
-</aside>
-
-     
-    
-        
-    <script
-    src="https://giscus.app/client.js"
-    data-repo="moriform/moriform.github.io"
-    data-repo-id="R_kgDOHEppWw"
-    data-category="Announcements"
-    data-category-id="DIC_kwDOHEppW84C0pyw"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light"
-    data-lang="en"
-    data-loading=""
-    crossorigin="anonymous"
-    async
-></script>
-<script>
-    function setGiscusTheme(theme) {
-        let giscus = document.querySelector("iframe.giscus-frame");
-        if (giscus) {
-            giscus.contentWindow.postMessage(
-                {
-                    giscus: {
-                        setConfig: {
-                            theme: theme,
-                        },
-                    },
-                },
-                "https://giscus.app"
-            );
-        }
-    }
-
+    <nav class="article__foot">
+      <div><a href="/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/">← 电脑重装记录</a></div>
+      <div class="article__nav-next"><a href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">关于新版本Freshrss和Rsshub同时使用时出现的问题 →</a></div>
+    </nav>
+  </article><section class="comments" id="comments">
+  <p class="comments__title">评论</p>
+  <div class="comments__widget" id="twikoo"></div>
+  <script src="/vendor/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js" defer></script>
+  <script>
     (function () {
-        addEventListener("message", (e) => {
-            if (event.origin !== "https://giscus.app") return;
-            handler();
-        });
-        window.addEventListener("onColorSchemeChange", handler);
-
-        function handler() {
-            if (document.documentElement.dataset.scheme === "light") {
-                setGiscusTheme('light');
-            } else {
-                setGiscusTheme('dark_dimmed');
-            }
+      var cfg = {
+        envId: "https:\/\/twikoo-netlify-n663.netlify.app\/.netlify\/functions\/twikoo",
+        el: "#twikoo",
+        lang: "zh-CN"
+      };
+      function boot() {
+        if (window.twikoo && window.twikoo.init) {
+          window.twikoo.init(cfg);
+          return;
         }
+        setTimeout(boot, 80);
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", boot);
+      } else {
+        boot();
+      }
     })();
-</script>
-
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2026 暄穗
-    </section>
-    
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+  </script>
+</section>
+<footer class="site-foot">
+  <p class="site-foot__copy">© 2026 暄穗</p>
+  <p class="site-foot__meta">
+    使用 <a href="https://gohugo.io" rel="noopener">Hugo</a> 构建 · <a href="/feed.xml">RSS</a>
+  </p>
+  <p class="site-foot__icp">
+    <a href="https://icp.gov.moe/?keyword=20241101" target="_blank" rel="noopener">萌ICP备20241101号</a>
+  </p>
 </footer>
-
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-    
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
+</div>
+  </main><script src="/js/moriform.min.e62d8b85a9b0a5c0ef78b322615dc5168ad33d4b831606a03595988e15d592dd.js" defer></script></body>
 </html>

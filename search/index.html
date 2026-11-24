@@ -1,284 +1,293 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>Search</title>
-
-<link rel='canonical' href='https://moriform.github.io/search/'>
-
-<link rel="stylesheet" href="/scss/style.min.53073c9f361b699a072e98901ea0389e51ba2ef78af4f99673f597ebaf7be858.css"><meta property='og:title' content="Search">
-<meta property='og:description' content="">
-<meta property='og:url' content='https://moriform.github.io/search/'>
-<meta property='og:site_name' content='森月台'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' />
-<meta name="twitter:title" content="Search">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://moriform.github.io/search/index.json">
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-R5ZBB760MM');
-        }
-      </script><link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
-    </head>
-    <body class="template-search">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
+<html lang="zh-cn" data-theme="light">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Search · 森月台</title>
+<meta name="description" content="森月台，森林深处无人经过的站点。">
+<link rel="canonical" href="https://moriform.github.io/search/">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:site_name" content="森月台">
+<meta property="og:title" content="Search">
+<meta property="og:description" content="森月台，森林深处无人经过的站点。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://moriform.github.io/search/">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script><link rel="stylesheet" href="/css/moriform.min.1197fc3ad861bd3ad7dccd815d222f9d9369b3ed03e3842f1a1b779347f7046b.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R5ZBB760MM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R5ZBB760MM');
 </script>
-<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
+</head>
+<body class="is-page"><aside class="rail">
+  <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
+      <span class="rail__title">森月台</span>
+      <span class="rail__sub">森林深处无人经过的站点</span>
+    </span>
+  </a><nav class="rail__nav" aria-label="栏目"><a class="nav-item" href="/"><span class="nav-item__label">博客</span>
+      </a><a class="nav-item" href="/diary/"><span class="nav-item__label">日记</span>
+      </a><a class="nav-item" href="/note/"><span class="nav-item__label">说说</span>
+      </a><a class="nav-item" href="/%E5%8F%8B%E9%93%BE/"><span class="nav-item__label">友链</span>
+      </a><a class="nav-item" href="/about/"><span class="nav-item__label">关于</span>
+      </a>
+  </nav>
+  <div class="rail__group">
+    <p class="rail__group-title">标签</p>
+    <ul class="rail__tags">
+      <li class="rail__tag rail__tag--pinned"><span class="dot dot--pin"></span><a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a></li>
+    </ul>
+  </div>
+
+  <div class="rail__bottom">
+    <a class="rail__banner" href="https://travel.moe/go.html" target="_blank" rel="noopener" title="异次元之旅">
+      <img src="/img/links/travel-moe.png" alt="异次元之旅" loading="lazy">
+    </a>
+    <a class="rail__banner rail__banner--invert-light" href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往">
+      <img src="/img/links/travelgo.svg" alt="开往" style="width: 120px" loading="lazy">
+    </a>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗配色">
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="theme-toggle__label">亮 / 暗</span>
     </button>
-
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_ca8eaf639996c849.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">森月台</a></h1>
-            <h2 class="site-description">森林深处无人经过的站点</h2>
-        </div>
-    </header><ol class="menu" id="main-menu">
-        
-        
-        
-        <li >
-            <a href='/about/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="7" r="4" />
-  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-</svg>
-
-
-
-                
-                <span>About</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/archives/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <rect x="3" y="4" width="18" height="4" rx="2" />
-  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
-  <line x1="10" y1="12" x2="14" y2="12" />
-</svg>
-
-
-
-                
-                <span>Archives</span>
-            </a>
-        </li>
-        
-        
-        <li  class='current' >
-            <a href='/search/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-                
-                <span>Search</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/links/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-</svg>
-
-
-
-                
-                <span>Links</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/diary/index.html' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-notebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
-                
-                <span>日记</span>
-            </a>
-        </li>
-        
-        
-        <li >
-            <a href='/svsvnm/2026/' >
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mountain"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 20h18l-6.921 -14.612a2.3 2.3 0 0 0 -4.158 0l-6.921 14.612" /><path d="M7.5 11l2 2.5l2.5 -2.5l2 3l2.5 -2" /></svg>
-                
-                <span>碎碎念</span>
-            </a>
-        </li>
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
-
-
-
-                        <span>暗色模式</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
+  </div>
 </aside>
+<main class="main">
+    <div class="container"><header class="page-head">
+  <div>
+    <h1 class="page-head__title">Search</h1><p class="page-head__desc">输入关键词，按标题、标签和摘要过滤</p>
+  </div>
+</header>
 
-            <main class="main full-width">
-<form action="/search/" class="search-form"data-json="/search/index.json">
-    <p>
-        <label>搜索</label>
-        <input name="keyword" placeholder="输入关键词..." />
-    </p>
-
-    <button title="搜索">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-    </button>
-</form>
-
-<div class="search-result">
-    <h3 class="search-result--title section-title"></h3>
-    <div class="search-result--list article-list--compact"></div>
-</div>
-
-<script>
-    window.searchResultTitleTemplate = "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
-</script><script type="text/javascript" src="/ts/search.js" defer></script>
-
-<footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2026 暄穗
-    </section>
-    
-    <section class="powerby">
-        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
-        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
-    </section>
+  <div class="search">
+    <input class="search__input" type="search" placeholder="搜索文章…" autocomplete="off" aria-label="搜索文章" data-search-input>
+    <ul class="search__list" data-search-list>
+      <li class="search__item" data-search-item data-key="VRChat模拟全身追踪的方案 vrchat game virtual desktop standable quest3 这是什么 暄穗打算做一个slimeVR来实现VRChat里面的全身追踪，但是出于资金和个人精力这个方案得之后再考虑。正好最近看到了virtual desktop（VD）的更新，可以使用有线串流的方式玩VRChat，于是收集并实践了一套基于软 …">
+        <a class="search__title" href="/2026/09/04/rvchatvdstandable/">VRChat模拟全身追踪的方案</a>
+        <time class="search__date" datetime="2026-09-04">2026-09-04</time>
+      </li>
+      <li class="search__item" data-search-item data-key="我用Giscus做了博客的个人说说页面 giscus hugo 我用Giscus做了博客的个人说说页面，这是全文信息量最大的一句话。如果你赶时间看RSS，那么看完这个标题你思索了一下发现带时间的评论系统确实可以像个人动态一样使用，然后你就可以跳向下一篇文章了，后文都是没啥技术的碎碎念。
+">
+        <a class="search__title" href="/2026/04/25/giscussvsvnm/">我用Giscus做了博客的个人说说页面</a>
+        <time class="search__date" datetime="2026-04-25">2026-04-25</time>
+      </li>
+      <li class="search__item" data-search-item data-key="记一次闲鱼买卖 记录 闲鱼 mixcraft 我平时经常去各个慈善包或者音频论坛之类的地方，看到有音频插件包或者打折二手包就买下来。把我自己想要的插件激活之后，把剩下多余的或者早就买了而这次顺带在包里面的插件放在闲鱼当二手卖。29刀的卖39人民币，39刀的卖49人民币以此方式靠信息差给 …">
+        <a class="search__title" href="/2026/04/02/xmyu1/">记一次闲鱼买卖</a>
+        <time class="search__date" datetime="2026-04-02">2026-04-02</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于我的RSS订阅系统 rss rsshub freshrss 这是什么 我曾经写了若干篇关于RSS的思考和RSS的实践，在这几年间也一直在升级自己的RSS系统，用于抵抗平台算法和流量的浪潮。
+如今自己的这套系统已经趋于稳定，已经没有曾经三天两头就要维护的状态了，想要为此做个总结，也希望为后来想要搭建 …">
+        <a class="search__title" href="/2026/02/23/rsslast/">关于我的RSS订阅系统</a>
+        <time class="search__date" datetime="2026-02-23">2026-02-23</time>
+      </li>
+      <li class="search__item" data-search-item data-key="在Reaper中实现响度补偿的一种方法 reaper 音频 meldaproduction magc 响度补偿 音频插件 响度补偿的必要性 音频处理制作的过程中，我们免不了使用各种插件对音频进行加工。而在加工的途中，响度会成为干扰制作角度审美的一大因素，比如通过饱和激励等处理的鼓组会因为响度大于原来的响度，只要不极端不管如何调节参数听上去都会让人更能接受。这样 …">
+        <a class="search__title" href="/2026/02/22/magcgaincompensation/">在Reaper中实现响度补偿的一种方法</a>
+        <time class="search__date" datetime="2026-02-22">2026-02-22</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于AviUtl的自定义UI aviutl 视频 前置准备 前置准备参考前三篇关于AviUtl的文章。
+客制化 Patch插件的发布直接拉高了AUL的性能，以此为基础hebiiro (蛇色(へびいろ))大佬发布了一系列的插件能够对AUL的UI进行自定义，其中瞩目的是SplitWindow， …">
+        <a class="search__title" href="/2026/01/10/avitulinstallzoku/">关于AviUtl的自定义UI</a>
+        <time class="search__date" datetime="2026-01-10">2026-01-10</time>
+      </li>
+      <li class="search__item" data-search-item data-key="摇曳露营中的实时摄像头 摇曳露营 动漫 摇曳露营第一季中芝麻凛给抚子发送的实时摄像机链接是LCV社为詶访地区设立的道路状况的28个监控中的霧ヶ峰映像)，LCV的这套系统一般人使用需要成为LCV-Net会员，但是唯独霧ヶ峰的监控是不需要登录就可以直接查看的。所以芝麻凛会给抚子发送这 …">
+        <a class="search__title" href="/2026/01/09/yurucamera/">摇曳露营中的实时摄像头</a>
+        <time class="search__date" datetime="2026-01-09">2026-01-09</time>
+      </li>
+      <li class="search__item" data-search-item data-key="11月买了什么 weekly 这个月买了什么
+十一月算是购物大月，我虽然不在国内没有办法过双十一，但是还是一贯在黑五买了些东西。
+Launchpad Pro mk3 一个19年的老玩意儿了。16年的时候买了Launchpad mk2的版本打了几个灯光效果很酷炫的工程之后 …">
+        <a class="search__title" href="/2025/12/01/202511buy/">11月买了什么</a>
+        <time class="search__date" datetime="2025-12-01">2025-12-01</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Max治好了我的巴托比症候群 max 音频 这是什么 上周暄穗花了几天的时间完成了一个Max工程作为创意声音编程的项目提交了上去。这个项目改变了暄穗对于创作的底层思考。
+关于项目 稍微说一下项目本身。
+这是一个自称“自动Lofi生成系统”的MIDI生成片段。需要和任意一个daw连接， …">
+        <a class="search__title" href="/2025/10/28/2025-10-28-max%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%B7%B4%E6%89%98%E6%AF%94%E7%97%87%E5%80%99%E7%BE%A4/">Max治好了我的巴托比症候群</a>
+        <time class="search__date" datetime="2025-10-28">2025-10-28</time>
+      </li>
+      <li class="search__item" data-search-item data-key="2025.10.26 weekly 近况 1 非常艰难的一周过去了。
+具体来说一周的时间都在赶DDL，声学和声音编程课的期中作业和项目都放在了这周交，但是从周一开始才开始做。由于完全高估了自己对时间的掌握能力和编辑Latex的能力所以晚上过得特别艰难。
+">
+        <a class="search__title" href="/2025/10/26/202542/">2025.10.26</a>
+        <time class="search__date" datetime="2025-10-26">2025-10-26</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于新版本Freshrss和Rsshub同时使用时出现的问题 rss rsshub freshrss 问题描述 暄穗在使用freshrss在服务器中作为远程rss阅读器的时候最近发现了问题，就是和rsshub同时使用的时候总是会有freshrss“力不从心”的情况：抓取的数量很少，通过管理页面看订阅的feed会红一大片，但是自己手动用浏览器 …">
+        <a class="search__title" href="/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">关于新版本Freshrss和Rsshub同时使用时出现的问题</a>
+        <time class="search__date" datetime="2025-10-17">2025-10-17</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Rsshub在bilibili和weibo的一些基础 rss bilibili weibo 这是什么 暄穗在实际使用rsshub订阅国内平台的时候遇到了一些网站的反爬虫机制，导致一些网站在直接使用RSShub的时候无法拾取信息。在这个时候需要我们对Rsshub的环境进行一定的配置，比如把自己的账号信息或是浏览器的信息配置在 …">
+        <a class="search__title" href="/2025/04/16/rsshub%E5%9C%A8bilibili%E5%92%8Cweibo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80/">Rsshub在bilibili和weibo的一些基础</a>
+        <time class="search__date" datetime="2025-04-16">2025-04-16</time>
+      </li>
+      <li class="search__item" data-search-item data-key="电脑重装记录 windows 这是什么 暄穗习惯一个阶段结束后就把电脑重装了，好像重装之后放入背包也变得更轻了。但是重装之后面对空白的电脑必定会有重新调整配置的过程。为了优化这个过程，所以把一些必要的软件和流程写成文档记录，重装之后把这个文档打开就可以花少量时间恢复电脑 …">
+        <a class="search__title" href="/2025/03/09/%E7%94%B5%E8%84%91%E9%87%8D%E8%A3%85%E6%8C%87%E5%8C%97/">电脑重装记录</a>
+        <time class="search__date" datetime="2025-03-09">2025-03-09</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Launchpad Drum Pad在Reaper中的映射设置 音频 launchpad reaper drumpad midi 暄穗在上古时期连MIDI是什么都不知道就买了一块Launchpad mk2装酷，弹回了几首五光十色的工程和一首烂大街的钢琴曲就把它搁置了上个月才从吃灰状态中拯救出来。这才发现原来这才是我最理想的MIDI控制器，相比较传统琴式这块板更好携带， …">
+        <a class="search__title" href="/2024/07/13/launchpad-drum-pad%E5%9C%A8reaper%E4%B8%AD%E7%9A%84%E6%98%A0%E5%B0%84%E8%AE%BE%E7%BD%AE/">Launchpad Drum Pad在Reaper中的映射设置</a>
+        <time class="search__date" datetime="2024-07-13">2024-07-13</time>
+      </li>
+      <li class="search__item" data-search-item data-key="我的电脑找不到Voicemeeter硬件，我该怎么做？ windows voicemeeter 暄穗花了一天时间来修Voicemeeter的问题，因为暄穗在音频设置里面完全找不到之前的各种VAIO 3啊VAIO啊之类的选项，在Python中也找不到各种通道的名字。总之一句话：下载了Vociemeeter后在电脑各个选项中都没有 …">
+        <a class="search__title" href="/2024/06/23/voicemeeterrepair1/">我的电脑找不到Voicemeeter硬件，我该怎么做？</a>
+        <time class="search__date" datetime="2024-06-23">2024-06-23</time>
+      </li>
+      <li class="search__item" data-search-item data-key="电脑自动刷香蕉 自动化 游戏 banana 这是什么 最近Banana挺火的，说是挂机就可以得到香蕉到市场上卖，四舍五入挂机得钱。所以我们还是花最少的心思参与一下，而且挂机最好不要影响电脑的正常使用。官方说禁止连点器以外的任何外挂，所以我们就只用python写一个连点器的程序就行了。 …">
+        <a class="search__title" href="/2024/06/21/autobanana/">电脑自动刷香蕉</a>
+        <time class="search__date" datetime="2024-06-21">2024-06-21</time>
+      </li>
+      <li class="search__item" data-search-item data-key="基于Python由刷课发展出的自动化脚本技术 python 刷课 自动化 在去年下半个月买了某个网校的日语课程为期一年半。然后在12月的时候过了N2课程。由于把所有的课程杀完的话可以返还学费来交下一个课程的学费，所以需要一定的技术把剩下一般的课程全部刷完。
+">
+        <a class="search__title" href="/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/">基于Python由刷课发展出的自动化脚本技术</a>
+        <time class="search__date" datetime="2024-02-23">2024-02-23</time>
+      </li>
+      <li class="search__item" data-search-item data-key="心跳文学部秘密诗篇10自动化获取方案(Python版) ddlc 游戏 自动化 python 总览 在做DDLC&#43;全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程 …">
+        <a class="search__title" href="/2023/10/23/how_to_get_secret_poem_in_ddlc/">心跳文学部秘密诗篇10自动化获取方案(Python版)</a>
+        <time class="search__date" datetime="2023-10-23">2023-10-23</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Cubase水平滚动反向的解决方法 音频 cubase x-mouse 前言 Cubase是一款相当常用的数字音频工作站，有着相当广泛的用户群体，其公司Steinberg也在音频行业有着相当大的话语权，制定了VST和VST3的音频插件标准。
+">
+        <a class="search__title" href="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Cubase水平滚动反向的解决方法</a>
+        <time class="search__date" datetime="2023-09-05">2023-09-05</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于粘贴板的数据 自动化 windows python 前言 最近大量导入了一些Youtube的RSS feed到fluent reader里面，由于这个阅读器读Youtube官方的RSS链接信息不显示内嵌视频，所以需要使用RSSHUB制作链接，没有爬取限制所以用官方的就行不需要用自己建的（我建 …">
+        <a class="search__title" href="/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/">关于粘贴板的数据</a>
+        <time class="search__date" datetime="2023-02-18">2023-02-18</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于Bios找不到Linux的Grub的一个解决方法 linux bios 暄穗使用一个240G的金士顿A400来作为linux的移动驱动盘，这样能做一个即用即插的linux系统。
+前言 首先这块硬盘是暄穗用来升级十年前联想G450的硬盘，在经历了大量的电脑windows不能驱动这块硬盘的失败后，以及在安装若干个版 …">
+        <a class="search__title" href="/2023/02/13/%E5%85%B3%E4%BA%8Ebios%E6%89%BE%E4%B8%8D%E5%88%B0linux%E7%9A%84grub%E7%9A%84%E4%B8%80%E4%B8%AA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">关于Bios找不到Linux的Grub的一个解决方法</a>
+        <time class="search__date" datetime="2023-02-13">2023-02-13</time>
+      </li>
+      <li class="search__item" data-search-item data-key="20230211 互联网 2023-02-11 17:39:52 去年做了一个课题，关于互联网上的谣言检测。是一个用NLP模型跑一遍数据集就能用来预测的简单工具。在去微博爬取数据的时候稍微用了一下微博，看一下现在的情况。总体是很不乐观的。
+">
+        <a class="search__title" href="/2023/02/11/20230211/">20230211</a>
+        <time class="search__date" datetime="2023-02-11">2023-02-11</time>
+      </li>
+      <li class="search__item" data-search-item data-key="微博谣言数据爬取 nlp weibo 爬虫 python 这是什么 本文记录了笔者使用Python语言对于微博社区管理中心中的举报不实信息进行爬取，使用的模块为selenium。文章详细记录代码的含义以及最后给出所爬取的json数据。
+">
+        <a class="search__title" href="/2023/01/01/weiborumor/">微博谣言数据爬取</a>
+        <time class="search__date" datetime="2023-01-01">2023-01-01</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Needy Girl Overdose 游戏 主播女孩重度依赖 年初的时候玩了这个游戏的所有结局，家人过年我一人抑郁，发现最近有更新了就及时重新下载下来玩了。
+游戏更新了三个结局线，一条极其地现实，两条极其地浪漫。
+">
+        <a class="search__title" href="/2022/10/28/needy-girl-overdose/">Needy Girl Overdose</a>
+        <time class="search__date" datetime="2022-10-28">2022-10-28</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Reaper中分频段处理的方案 reaper eq 分频 splitter joiner 音频 使用REAPER许久，发现REAPER相对于其他的DAW最大的优势在于极其方便的路由管理，通道之间的关联设置极其简单。
+REAPER的JS插件中最前面有几个3/4/5 band的Splitter/Joiner就是一种用路由设置快速对于轨道内 …">
+        <a class="search__title" href="/2022/10/25/reaper%E4%B8%AD%E5%88%86%E9%A2%91%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88/">Reaper中分频段处理的方案</a>
+        <time class="search__date" datetime="2022-10-25">2022-10-25</time>
+      </li>
+      <li class="search__item" data-search-item data-key="对于RSS的一些思考 rss 互联网 2022年，信息爆炸的时间，出于对国内外大多数信息社交平台的失望，我将信息接收的主题转为了RSS。
+RSS，意为简易信息聚合。简单来说就是把各个地方的信息装在一个盒子里面。试想一下你有一个像微博一样的APP，这个APP里面你可以关注任何平台 …">
+        <a class="search__title" href="/2022/10/24/%E5%AF%B9%E4%BA%8Erss%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/">对于RSS的一些思考</a>
+        <time class="search__date" datetime="2022-10-24">2022-10-24</time>
+      </li>
+      <li class="search__item" data-search-item data-key="中置通道的初认识 中置通道 音频 midside reaper 在Reaper的自身JS插件中找到了一个Center Canceler的插件，在调大效果的时候逐渐可以听见人声渐渐消失。
+Mid/Side 去网上查了查这个叫做中置通道析取，是以前的MP3等音乐播放器的卡拉OK去人声的一种快速方法。方式是通 …">
+        <a class="search__title" href="/2022/10/24/%E4%B8%AD%E7%BD%AE%E9%80%9A%E9%81%93%E7%9A%84%E5%88%9D%E8%AE%A4%E8%AF%86/">中置通道的初认识</a>
+        <time class="search__date" datetime="2022-10-24">2022-10-24</time>
+      </li>
+      <li class="search__item" data-search-item data-key="RSS的实践 rss 互联网 可以跳过的碎碎念 你的Bilibili首页，应该是https://search.bilibili.com
+我是比较晚接触互联网的那一批。08年联网11年微博12年B站。在社交平台的一些交流中能够明显感觉到表面互联网（说白了就是大平台，没有限 …">
+        <a class="search__title" href="/2022/10/24/rss%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9E%E8%B7%B5/">RSS的实践</a>
+        <time class="search__date" datetime="2022-10-24">2022-10-24</time>
+      </li>
+      <li class="search__item" data-search-item data-key="在Domino中加载新音源的方法 reaper loopmidi 音频 domino 注意 本文讨论的是在日语环境下运行的极其简单的midi文件编辑工具的使用。
+前言 Domino是一款极其优秀的免费MIDI编辑软件。日本的许多编曲相关的教材都将它作为向入门学者推荐的一款简洁的DAW(虽然与大多数同样偏科的 …">
+        <a class="search__title" href="/2022/04/03/new_library_in_domino/">在Domino中加载新音源的方法</a>
+        <time class="search__date" datetime="2022-04-03">2022-04-03</time>
+      </li>
+      <li class="search__item" data-search-item data-key="20220130 游戏 三色绘恋 三色绘恋这桩子事也是意料之中，从一开始关注的时候山百合就搞各种骚操作。对标白色相簿不说，众筹高档位送床单还能理解是对标日厂，游戏还没发售就开始党争就不懂是怎么个操作了。给樱花游戏发行12元真的对得起认真做游戏的人吗？之后还带一些莫名奇妙的周 …">
+        <a class="search__title" href="/2022/01/30/20220130/">20220130</a>
+        <time class="search__date" datetime="2022-01-30">2022-01-30</time>
+      </li>
+      <li class="search__item" data-search-item data-key="你为什么能做一个二维视频 视频 你为什么能做一个二维视频 这是什么 这篇文章的契机是几个月之前和一个做AMV的朋友聊天，他做了一个简单的普通迪斯科的MG动画。然后发现里面应该有一个摄像头从斜上降到水平的场景（也有可能是水平升上斜上的场景记不清了）。然后惊奇地发现图像的视角 …">
+        <a class="search__title" href="/2021/11/11/wycma2dv/">你为什么能做一个二维视频</a>
+        <time class="search__date" datetime="2021-11-11">2021-11-11</time>
+      </li>
+      <li class="search__item" data-search-item data-key="AviUtl的其他导入导出插件 视频 aviutl 导出插件 如果按照之前的攻略来一步一步做的话，AviUtl导出avi，mp4，mkv和264文件就足够，转换成其他文件格式也就一行命令的事。所以以下内容只是为了图方便的选读内容。
+">
+        <a class="search__title" href="/2021/11/11/aviutl_output/">AviUtl的其他导入导出插件</a>
+        <time class="search__date" datetime="2021-11-11">2021-11-11</time>
+      </li>
+      <li class="search__item" data-search-item data-key="AviUtl的一些看上去不错的辅助插件 aviutl 视频 一般情况下使用基础的AUL套件就能够完成剪辑任务了。所以以下的内容作为锦上添花也许会对工作流程等有一定提高(实话说我一开始用英文版的用了几年都不知道插件添加但依旧完成了许多视频的制作)。所以以下的内容没有标注“重要”的话直接跳过是没事的。
+">
+        <a class="search__title" href="/2021/11/11/aviutl_plugin/">AviUtl的一些看上去不错的辅助插件</a>
+        <time class="search__date" datetime="2021-11-11">2021-11-11</time>
+      </li>
+      <li class="search__item" data-search-item data-key="20211028comiday comiday 漫展 托人寄了一份CD的场刊过来，一本书（虽然页数有些少），一个纸袋，几张周边，就当是逛了这一次的同人展了。
+持续逛同人展（特指COMIDAY）是从高中开始的，和同学一起在里面逛一天，逛完晚上看电影。高中正是做术力口的狂热时期，逛展的时候也基本上 …">
+        <a class="search__title" href="/2021/11/03/20211028-2/">20211028comiday</a>
+        <time class="search__date" datetime="2021-11-03">2021-11-03</time>
+      </li>
+      <li class="search__item" data-search-item data-key="关于Aviutl的基本安装说明 视频 aviutl 如果你是为了简单剪一个片子来找教程找完整软件的话那你可以关掉这个页面了，到叔叔站那里会有大佬给你整合包的，然后也有各种操作的教程。咱们也都互不浪费时间
+">
+        <a class="search__title" href="/2021/10/06/aviutl_base0/">关于Aviutl的基本安装说明</a>
+        <time class="search__date" datetime="2021-10-06">2021-10-06</time>
+      </li>
+      <li class="search__item" data-search-item data-key="倾听画语  游戏 倾听画语 倾听画语 之前看谜之声玩的游戏，看了一半，感觉时长和题材都挺符合，就买来自己玩了。
+是一个关于画与相遇的故事。
+我很喜欢里面的动画过场，就和电影一样。而动画与游戏场景的融合，我好像便融入了这场一个小时的电影中去了。
+">
+        <a class="search__title" href="/2021/09/20/behind_the_frame/">倾听画语 </a>
+        <time class="search__date" datetime="2021-09-20">2021-09-20</time>
+      </li>
+      <li class="search__item" data-search-item data-key="同一片星空，五年前的你是否能够看到呢 轻小说 星空の下、君の声だけを抱きしめる 之前在火车上面没事把很早之前看的轻小说重新翻开了，拿着退化了几个等级的日语继续读了下去。读的是星空の下、君の声だけを抱きしめる。购买的契机是2020年暑假bookwalker大甩卖。
+">
+        <a class="search__title" href="/2021/09/01/hosizoranosita/">同一片星空，五年前的你是否能够看到呢</a>
+        <time class="search__date" datetime="2021-09-01">2021-09-01</time>
+      </li>
+      <li class="search__item" data-search-item data-key="喂猫 散文 稍微舒了一口气，做完了工作。夜过了十二点。整理了屋子，关上灯，拿着一条鱼干去喂猫。
+那猫很奇怪，不是那种在路上埋伏着拿着卷饼的学生前去蹭腿乞得一点食物的校园猫。虽然会吃人类给予的食物，但从来放不下自有的野性与尊严。讨好一般的给予食物它是从来 …">
+        <a class="search__title" href="/2021/08/30/kakusitaneko/">喂猫</a>
+        <time class="search__date" datetime="2021-08-30">2021-08-30</time>
+      </li>
+      <li class="search__item" data-search-item data-key="铁轨与佩特拉 原创小说 “该起来了，莫多——”
+盖着被裹整理好昨晚的笔记和地图，清点了食物、空瓶和衣服包裹的数量，在昨天记录下的“暴风”下擦掉多余的文字，补上“无事”后，起身，把莫多叫醒。
+">
+        <a class="search__title" href="/2021/08/29/rainrail_to_sabaku/">铁轨与佩特拉</a>
+        <time class="search__date" datetime="2021-08-29">2021-08-29</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Solresol语法3 索来索 语言 音乐 solresol 动词 Solresol的动词都是保持原形。 begin, sdf;I begin, dr sdf 为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss. 在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代 …">
+        <a class="search__title" href="/2021/08/28/solresol3/">Solresol语法3</a>
+        <time class="search__date" datetime="2021-08-28">2021-08-28</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Solresol语法2 索来索 语言 音乐 solresol 一音节词 Solresol的单词由一到四个音节组成。以下是一音节的单词。 Do , no, not, neither, nor;	Sol, if; Re, and, as well as;	La, the; Mi, or, or even; …">
+        <a class="search__title" href="/2021/08/28/solresol2/">Solresol语法2</a>
+        <time class="search__date" datetime="2021-08-28">2021-08-28</time>
+      </li>
+      <li class="search__item" data-search-item data-key="Solresol语法1 索来索 语言 音乐 solresol 引入 生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。 但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。 为了旅行和国际交流的方便，促进有益科学的发展，我们需要一门易于理解传播的全人类所共有的一门语 …">
+        <a class="search__title" href="/2021/08/28/solresol1/">Solresol语法1</a>
+        <time class="search__date" datetime="2021-08-28">2021-08-28</time>
+      </li>
+    </ul>
+    <p class="search__empty" data-search-empty hidden>没有匹配的文章，换个关键词试试。</p>
+  </div>
+  <script src="/js/search.min.b058cc2ece5be7ac53a8e86aae46ee281f5e8793b878c99e32888c65e2c67569.js" defer></script>
+<footer class="site-foot">
+  <p class="site-foot__copy">© 2026 暄穗</p>
+  <p class="site-foot__meta">
+    使用 <a href="https://gohugo.io" rel="noopener">Hugo</a> 构建 · <a href="/feed.xml">RSS</a>
+  </p>
+  <p class="site-foot__icp">
+    <a href="https://icp.gov.moe/?keyword=20241101" target="_blank" rel="noopener">萌ICP备20241101号</a>
+  </p>
 </footer>
-
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
+</div>
+  </main><script src="/js/moriform.min.e62d8b85a9b0a5c0ef78b322615dc5168ad33d4b831606a03595988e15d592dd.js" defer></script></body>
 </html>
