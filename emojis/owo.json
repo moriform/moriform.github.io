@@ -1,0 +1,489 @@
+{
+  "颜文字": {
+    "type": "emoticon",
+    "container": [
+      {
+        "icon": "OωO",
+        "text": "Author: DIYgod"
+      },
+      {
+        "icon": "|´・ω・)ノ",
+        "text": "Hi"
+      },
+      {
+        "icon": "ヾ(≧∇≦*)ゝ",
+        "text": "开心"
+      },
+      {
+        "icon": "(☆ω☆)",
+        "text": "星星眼"
+      },
+      {
+        "icon": "（╯‵□′）╯︵┴─┴",
+        "text": "掀桌"
+      },
+      {
+        "icon": "￣﹃￣",
+        "text": "流口水"
+      },
+      {
+        "icon": "(/ω＼)",
+        "text": "捂脸"
+      },
+      {
+        "icon": "∠( ᐛ 」∠)＿",
+        "text": "给跪"
+      },
+      {
+        "icon": "(๑•̀ㅁ•́ฅ)",
+        "text": "Hi"
+      },
+      {
+        "icon": "→_→",
+        "text": "斜眼"
+      },
+      {
+        "icon": "୧(๑•̀⌄•́๑)૭",
+        "text": "加油"
+      },
+      {
+        "icon": "٩(ˊᗜˋ*)و",
+        "text": "有木有WiFi"
+      },
+      {
+        "icon": "(ノ°ο°)ノ",
+        "text": "前方高能预警"
+      },
+      {
+        "icon": "(´இ皿இ｀)",
+        "text": "我从未见过如此厚颜无耻之人"
+      },
+      {
+        "icon": "⌇●﹏●⌇",
+        "text": "吓死宝宝惹"
+      },
+      {
+        "icon": "(ฅ´ω`ฅ)",
+        "text": "已阅留爪"
+      },
+      {
+        "icon": "(╯°A°)╯︵○○○",
+        "text": "去吧大师球"
+      },
+      {
+        "icon": "φ(￣∇￣o)",
+        "text": "太萌惹"
+      },
+      {
+        "icon": "ヾ(´･ ･｀｡)ノ\"",
+        "text": "咦咦咦"
+      },
+      {
+        "icon": "( ง ᵒ̌皿ᵒ̌)ง⁼³₌₃",
+        "text": "气呼呼"
+      },
+      {
+        "icon": "(ó﹏ò｡)",
+        "text": "我受到了惊吓"
+      },
+      {
+        "icon": "Σ(っ °Д °;)っ",
+        "text": "什么鬼"
+      },
+      {
+        "icon": "( ,,´･ω･)ﾉ\"(´っω･｀｡)",
+        "text": "摸摸头"
+      },
+      {
+        "icon": "╮(╯▽╰)╭ ",
+        "text": "无奈"
+      },
+      {
+        "icon": "o(*////▽////*)q ",
+        "text": "脸红"
+      },
+      {
+        "icon": "＞﹏＜",
+        "text": ""
+      },
+      {
+        "icon": "( ๑´•ω•) \"(ㆆᴗㆆ)",
+        "text": ""
+      }
+    ]
+  },
+  "Emoji": {
+    "type": "emoji",
+    "container": [
+      {
+        "icon": "😂",
+        "text": ""
+      },
+      {
+        "icon": "😀",
+        "text": ""
+      },
+      {
+        "icon": "😅",
+        "text": ""
+      },
+      {
+        "icon": "😊",
+        "text": ""
+      },
+      {
+        "icon": "🙂",
+        "text": ""
+      },
+      {
+        "icon": "🙃",
+        "text": ""
+      },
+      {
+        "icon": "😌",
+        "text": ""
+      },
+      {
+        "icon": "😍",
+        "text": ""
+      },
+      {
+        "icon": "😘 ",
+        "text": ""
+      },
+      {
+        "icon": "😜",
+        "text": ""
+      },
+      {
+        "icon": "😝",
+        "text": ""
+      },
+      {
+        "icon": "😏",
+        "text": ""
+      },
+      {
+        "icon": "😒",
+        "text": ""
+      },
+      {
+        "icon": "🙄",
+        "text": ""
+      },
+      {
+        "icon": "😳 ",
+        "text": ""
+      },
+      {
+        "icon": "😡",
+        "text": ""
+      },
+      {
+        "icon": "😔",
+        "text": ""
+      },
+      {
+        "icon": "😫",
+        "text": ""
+      },
+      {
+        "icon": "😱",
+        "text": ""
+      },
+      {
+        "icon": "😭",
+        "text": ""
+      },
+      {
+        "icon": "💩",
+        "text": ""
+      },
+      {
+        "icon": "👻",
+        "text": ""
+      },
+      {
+        "icon": "🙌",
+        "text": ""
+      },
+      {
+        "icon": "🖕",
+        "text": ""
+      },
+      {
+        "icon": "👍",
+        "text": ""
+      },
+      {
+        "icon": "👫",
+        "text": ""
+      },
+      {
+        "icon": "👬",
+        "text": ""
+      },
+      {
+        "icon": "👭",
+        "text": ""
+      },
+      {
+        "icon": "🌚",
+        "text": ""
+      },
+      {
+        "icon": "🌝",
+        "text": ""
+      },
+      {
+        "icon": "🙈",
+        "text": ""
+      },
+      {
+        "icon": "💊",
+        "text": ""
+      },
+      {
+        "icon": "😶",
+        "text": ""
+      },
+      {
+        "icon": "🙏",
+        "text": ""
+      },
+      {
+        "icon": "🍦",
+        "text": ""
+      },
+      {
+        "icon": "🍉",
+        "text": ""
+      },
+      {
+        "icon": "😣",
+        "text": ""
+      }
+    ]
+  },
+  "AC娘": {
+    "type": "image",
+    "container": [
+      {
+        "icon": "<img src=\"/emojis/acfun/ac01.gif\">",
+        "text": "ac01"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac02.gif\">",
+        "text": "ac02"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac03.gif\">",
+        "text": "ac03"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac04.gif\">",
+        "text": "ac04"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac05.gif\">",
+        "text": "ac05"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac06.gif\">",
+        "text": "ac06"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac07.gif\">",
+        "text": "ac07"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac08.gif\">",
+        "text": "ac08"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac09.gif\">",
+        "text": "ac09"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac10.gif\">",
+        "text": "ac10"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac11.gif\">",
+        "text": "ac11"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac12.gif\">",
+        "text": "ac12"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac13.gif\">",
+        "text": "ac13"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac14.gif\">",
+        "text": "ac14"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac15.gif\">",
+        "text": "ac15"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac16.gif\">",
+        "text": "ac16"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac17.gif\">",
+        "text": "ac17"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac18.gif\">",
+        "text": "ac18"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac19.gif\">",
+        "text": "ac19"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac20.gif\">",
+        "text": "ac20"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac21.gif\">",
+        "text": "ac21"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac22.gif\">",
+        "text": "ac22"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac23.gif\">",
+        "text": "ac23"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac24.gif\">",
+        "text": "ac24"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac25.gif\">",
+        "text": "ac25"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac26.gif\">",
+        "text": "ac26"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac27.gif\">",
+        "text": "ac27"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac28.gif\">",
+        "text": "ac28"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac29.gif\">",
+        "text": "ac29"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac30.gif\">",
+        "text": "ac30"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac31.gif\">",
+        "text": "ac31"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac32.gif\">",
+        "text": "ac32"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac33.gif\">",
+        "text": "ac33"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac34.gif\">",
+        "text": "ac34"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac35.gif\">",
+        "text": "ac35"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac36.gif\">",
+        "text": "ac36"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac37.gif\">",
+        "text": "ac37"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac38.gif\">",
+        "text": "ac38"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac39.gif\">",
+        "text": "ac39"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac40.gif\">",
+        "text": "ac40"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac41.gif\">",
+        "text": "ac41"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac42.gif\">",
+        "text": "ac42"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac43.gif\">",
+        "text": "ac43"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac44.gif\">",
+        "text": "ac44"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac45.gif\">",
+        "text": "ac45"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac46.gif\">",
+        "text": "ac46"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac47.gif\">",
+        "text": "ac47"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac48.gif\">",
+        "text": "ac48"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac49.gif\">",
+        "text": "ac49"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac50.gif\">",
+        "text": "ac50"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac51.gif\">",
+        "text": "ac51"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac52.gif\">",
+        "text": "ac52"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac53.gif\">",
+        "text": "ac53"
+      },
+      {
+        "icon": "<img src=\"/emojis/acfun/ac54.gif\">",
+        "text": "ac54"
+      }
+    ]
+  }
+}
