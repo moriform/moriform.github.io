@@ -145,12 +145,24 @@ Mid/Side 去网上查了查这个叫做中置通道析取，是以前的MP3等�
   <p class="site-foot__meta">
     使用 <a href="https://gohugo.io" rel="noopener">Hugo</a> 构建 · <a href="/feed.xml">RSS</a>
   </p>
-  <p class="site-foot__icp">
+  <p class="site-foot__icp site-foot__icp--moe">
     <a href="https://icp.gov.moe/?keyword=20241101" target="_blank" rel="noopener">萌ICP备20241101号</a>
   </p>
-  <p class="site-foot__icp">
+  <p class="site-foot__icp site-foot__icp--miit">
     <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">蜀ICP备2021000157号-2</a>
-  </p>
+  </p><script>
+    (function () {
+      var host = location.hostname;
+      var moe = document.querySelector(".site-foot__icp--moe");
+      var miit = document.querySelector(".site-foot__icp--miit");
+      if (!moe || !miit) return;
+      if (host === "moriform.com" || host === "www.moriform.com") {
+        moe.remove();
+      } else if (/(^|\.)github\.io$/.test(host)) {
+        miit.remove();
+      }
+    })();
+  </script>
 </footer>
 </div>
   </main><script src="/js/moriform.min.e62d8b85a9b0a5c0ef78b322615dc5168ad33d4b831606a03595988e15d592dd.js" defer></script></body>
