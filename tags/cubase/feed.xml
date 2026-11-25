@@ -5,7 +5,7 @@
     <link>https://moriform.com/tags/cubase/</link>
     <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:23:46 &#43;0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 09:51:11 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/cubase/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cubase水平滚动反向的解决方法</title>
@@ -65,6 +65,49 @@
 &lt;p&gt;这样操作后在Cubase中启动Vocaloid和Melonyne之类也能够正常水平拖动了。&lt;/p&gt;
 &lt;h3 id=&#34;后话&#34;&gt;后话&lt;/h3&gt;
 &lt;p&gt;查文件折腾了这么多，10多年来一直有人提这个问题，但是从官方的回信来看实际上他们也不想深入解决这个问题。作为正版受害者也只能看着官方这态度憋着气自己找方法解决，每次写术前多开一个应用也挺膈应人的。毕竟现在能用的DAW太多了不用惯着这群官方，能用其他的来写就尽量往其他DAW搬了。反正在官方解决这个问题前是不会再给Steinberg多花一分钱了。&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Cubase启动画面性化设置</title>
+      <link>https://moriform.com/2021/08/24/cubasestartup/</link>
+      <pubDate>Tue, 24 Aug 2021 17:37:01 &#43;0800</pubDate>
+      <guid>https://moriform.com/2021/08/24/cubasestartup/</guid>
+      <description>&lt;p&gt;在D:\Program Files\Steinberg\Cubase 10\Startup里面有些图片作为Cubase的启动界面，分别是600X326的startup_cubase_pro.png和1200X652的startup_cubase_pro_2.00x.png可以直接进行替换。&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2021/08/24/cubasestartup/2000.webp&#34;
+  srcset=&#34;https://moriform.com/2021/08/24/cubasestartup/2000_hu_2eab1bb0c108c90a.webp 800w, https://moriform.com/2021/08/24/cubasestartup/2000.webp 1277w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1277&#34; height=&#34;360&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;顺带gimp的图像处理问题&#34;&gt;顺带GIMP的图像处理问题&lt;/h2&gt;
+&lt;p&gt;将原来的黑不溜秋的图片导入gimp里，通过色键来将背景透明化。此处使用的是颜色中的颜色到透明（图片右下角）&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-1_hu_aaf628efe3a25c0a.webp&#34;
+  srcset=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-1_hu_af545719e35c82d5.webp 800w, https://moriform.com/2021/08/24/cubasestartup/2000-1_hu_aaf628efe3a25c0a.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;900&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在颜色到透明的设置中点击色块旁边的取色按钮，点击背景取色，此时能够看到背景已经处理为了透明。&lt;img
+  src=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-2_hu_440f4aafcf982cc1.webp&#34;
+  srcset=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-2_hu_c72e5cfb35760004.webp 800w, https://moriform.com/2021/08/24/cubasestartup/2000-2_hu_440f4aafcf982cc1.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;868&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在该图层下面新建一个图层，将喜欢的背景加入新建图层，将图层缩放为1200X652，导出png得到新的启动封面。&lt;/p&gt;
+&lt;p&gt;&lt;img
+  src=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-3_hu_e6fc1797e6b029c4.webp&#34;
+  srcset=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-3_hu_cdb53c3f83d8c2a8.webp 800w, https://moriform.com/2021/08/24/cubasestartup/2000-3_hu_e6fc1797e6b029c4.webp 1600w&#34;
+  sizes=&#34;(max-width: 700px) 100vw, 780px&#34;
+  width=&#34;1600&#34; height=&#34;895&#34;
+  alt=&#34;&#34;
+  loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但是这里所做的图片是startup_cubase_pro_2.00x.png，要得到原来的开机界面大小需要将该图形再次缩放为600X326后导出命名为startup_cubase_pro.png。将图片放入Startup文件夹。打开Cubase尝试一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/24/cubasestartup/2000-4.webp&#34; alt=&#34;&#34; width=&#34;617&#34; height=&#34;342&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;效果极佳，注意的是这里使用的是600X326的图片，注意确保分辨率（也就是说不仅是图层，画布的大小也是600X326，如果没有改动画布的大小的话得到的是周围一圈的大黑框）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;然后就能够提高摸鱼的时候的幸福度了&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>
