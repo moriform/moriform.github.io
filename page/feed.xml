@@ -3,9 +3,9 @@
   <channel>
     <title>Pages · 森月台</title>
     <link>https://moriform.com/page/</link>
-    <description>森月台，森林深处无人经过的站点。</description>
+    <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 14:09:13 &#43;0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 02:31:57 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/page/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -16,17 +16,10 @@
 </description>
     </item>
     <item>
-      <title>Archives</title>
+      <title>存档</title>
       <link>https://moriform.com/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 &#43;0000</pubDate>
       <guid>https://moriform.com/archives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>https://moriform.com/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-      <guid>https://moriform.com/search/</guid>
       <description></description>
     </item>
     <item>
@@ -34,6 +27,13 @@
       <link>https://moriform.com/passengers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
       <guid>https://moriform.com/passengers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>搜索</title>
+      <link>https://moriform.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <guid>https://moriform.com/search/</guid>
       <description></description>
     </item>
   </channel>
