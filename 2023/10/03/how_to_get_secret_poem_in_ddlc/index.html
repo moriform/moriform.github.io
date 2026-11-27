@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-cn" data-theme="light">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>心跳文学部秘密诗篇10自动化获取方案(Python版) · 森月台</title>
+<meta name="description" content="总览 在做DDLC&#43;全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出 …">
+<link rel="canonical" href="https://moriform.com/2023/10/03/how_to_get_secret_poem_in_ddlc/">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:site_name" content="森月台">
+<meta property="og:title" content="心跳文学部秘密诗篇10自动化获取方案(Python版)">
+<meta property="og:description" content="总览 在做DDLC&#43;全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出 …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://moriform.com/2023/10/03/how_to_get_secret_poem_in_ddlc/">
+<meta property="article:published_time" content="2023-10-03T19:40:38Z">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script><link rel="stylesheet" href="/css/moriform.min.55a1bbfc7fb789505fa9dc23898da5aa0c88570961fb4b567890fb9949dbb8c2.css">
+<script defer src="https://umami.moriform.com/script.js" data-website-id="645a628f-4101-4e5b-b1a5-f719c6b70cde" data-domains="moriform.com,www.moriform.com"></script>
+</head>
+<body class="is-page"><aside class="rail">
+  <a class="rail__brand" href="/"><img class="rail__avatar" src="/img/avatar_hu_74adc551ab814e30.webp" alt="暄穗" width="48" height="48"><span class="rail__names">
+      <span class="rail__title">森月台</span>
+      <span class="rail__sub">森林深处少有人经过的站点</span>
+    </span>
+  </a><nav class="rail__nav" aria-label="栏目"><a class="nav-item is-active" href="/"><span class="nav-item__label">博客</span>
+      </a><a class="nav-item" href="/search/"><span class="nav-item__label">搜索</span>
+      </a><a class="nav-item" href="/archives/"><span class="nav-item__label">存档</span>
+      </a><a class="nav-item" href="/passengers/"><span class="nav-item__label">友链</span>
+      </a><a class="nav-item" href="/about/"><span class="nav-item__label">关于</span>
+      </a>
+  </nav>
+  <div class="rail__group">
+    <p class="rail__group-title">标签</p>
+    <ul class="rail__tags">
+      <li class="rail__tag rail__tag--pinned"><span class="dot dot--pin"></span><a href="/tags/%E9%9F%B3%E9%A2%91/">音频</a></li>
+    </ul>
+  </div>
+
+  <div class="rail__bottom">
+    <a class="rail__banner" href="https://travel.moe/go.html" target="_blank" rel="noopener" title="异次元之旅">
+      <img src="/img/links/travel-moe.png" alt="异次元之旅" loading="lazy">
+    </a>
+    <a class="rail__banner rail__banner--invert-light" href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往">
+      <img src="/img/links/travelgo.svg" alt="开往" style="width: 120px" loading="lazy">
+    </a>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗配色">
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <span class="theme-toggle__label">亮 / 暗</span>
+    </button>
+  </div>
+</aside>
+<main class="main">
+    <div class="container container--narrow"><nav class="crumbs" aria-label="面包屑">
+  <a href="/">首页</a>
+  <span class="crumbs__sep">/</span>
+  <a href="/post/">博客</a>
+  <span class="crumbs__sep">/</span>
+  <span>心跳文学部秘密诗篇10自动化获取方案(Python版)</span>
+</nav>
+<article class="article">
+    <header class="article__header">
+      <h1 class="article__title">心跳文学部秘密诗篇10自动化获取方案(Python版)</h1>
+      <div class="article__meta">
+        <time datetime="2023-10-03">2023 年 10 月 3 日</time><a class="chip" href="/categories/%e7%9f%a5%e8%af%86/">#知识</a>
+        <span>3 分钟</span>
+      </div>
+    </header>
+    <figure class="article__hero">
+      <img src="/2023/10/03/how_to_get_secret_poem_in_ddlc/ddlc_hu_fb8b6863d3b7ab6d.webp" width="1600" height="900" alt="心跳文学部秘密诗篇10自动化获取方案(Python版)" fetchpriority="high" decoding="async">
+    </figure>
+    <div class="article__body prose"><h2 id="总览">总览</h2>
+<p>在做DDLC+全成就的时候发现了需要靠概率才能刷出来的收集要素秘密10，其出现概率低得令人发指，导致刷出来的时间从5分钟到十多个小时不等。我个人自认脸黑且懒，但是既然是DDLC就不得不全成就，所以自己写了些代码来实现反复进入游戏的过程。最终在33分钟重复了115次后连续刷出了两次秘密10，看上去还行。</p>
+<p>所以现在将程序代码进行修枝完善后发布，给同样对运气没有信心但是还想要收集的玩家一些帮助。</p>
+<h2 id="代码简介">代码简介</h2>
+<p>代码由python写成，非常简单，实现鼠标的移动单击和截屏保存。代码不包括任何网络通讯功能。逻辑如下：</p>
+<p>从游戏的OS界面（游戏中模拟电脑的画面）单击<em>心跳文学部</em>进入DDLC，待人物立绘出现后截屏。对于截屏的某一个特定像素进行颜色分析，若颜色为黑色，则刷出了秘密10，保存截屏，程序退出。若为原来的颜色，则退出DDLC回到OS界面再进入DDLC循环。</p>
+<h2 id="准备工作">准备工作</h2>
+<h3 id="ddlc">DDLC</h3>
+<p>1.DDLC进入第二周目，首次见到Monika后就可以保存退出。
+2.DDLC分辨率调整到1920x1080并全屏。</p>
+<h3 id="电脑">电脑</h3>
+<p>1.安装Python <a href="https://www.python.org/">Welcome to Python.org</a>
+2.使用pip安装pyautogui（控制鼠标）和pillow（图像截屏和分析）
+3.分辨率调整到1920x1080（我的电脑是这样的分辨率，鼠标的移动也是按照该分辨率设置的）</p>
+<h2 id="运行">运行</h2>
+<p>代码需要在游戏全屏进行时运行。可以在游戏全屏的时候按Windows键从下面任务栏调出<em>没有最大化的编辑器或文件管理器</em>。注意调出的编辑器或文件管理器不能遮挡游戏的OS界面菜单选项。</p>
+<p>对于有编程经验的人可以直接用熟手的编辑器来运行代码。</p>
+<p>对于没有编程经验的人可以创建一个txt文件，将代码粘贴保存后文件更名为example.py(注意把txt的后缀改成py)，然后在代码保存的文件夹下创建一个txt文件，粘贴以下代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">python example.py
+</span></span></code></pre></div><p>保存文件后文件更名为1.bat。双击文件运行程序。</p>
+<h2 id="结果">结果</h2>
+<p>如果吃完饭看完电影回来发现画面停在了OS界面，则秘密10已经刷到，可以在shortcut里面找到截图和刷图用时以及刷图的次数。</p>
+<p>如果页面停在了游戏的设置画面，则在点击进入游戏时出现了问题，需要稍微加长while下面四行的两个duration参数。</p>
+<h2 id="中途我想退出">中途我想退出&hellip;&hellip;</h2>
+<p>程序我没有做任何中途退出的方式。</p>
+<p>所以如果中途不想刷图了，或者运行的时候遇到了各种错误但是程序没有停下也没有办法控制鼠标。这个时候要介绍pyautogui的紧急停止机制:迅速将鼠标移动到屏幕最左上角，就可以停下整个程序。</p>
+<h2 id="代码">代码</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">pyautogui</span> <span class="k">as</span> <span class="nn">ui</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">ImageGrab</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;./shortcut/&#39;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  
+</span></span><span class="line"><span class="ln">14</span><span class="cl">
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">):</span>           <span class="c1">#创建文件夹保存截图  #create a folder to save shortcut</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  
+</span></span><span class="line"><span class="ln">18</span><span class="cl">
+</span></span><span class="line"><span class="ln">19</span><span class="cl">    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">
+</span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">
+</span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="n">time0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>  
+</span></span><span class="line"><span class="ln">26</span><span class="cl">
+</span></span><span class="line"><span class="ln">27</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">480</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">1.7</span><span class="p">)</span>         <span class="c1">#点击开机键</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl">
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">480</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>         <span class="c1">#enter DDLC</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">470</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">
+</span></span><span class="line"><span class="ln">35</span><span class="cl">  
+</span></span><span class="line"><span class="ln">36</span><span class="cl">
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>           <span class="c1">#等待开屏动画   #5s game loading</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl">
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    <span class="n">pic</span> <span class="o">=</span> <span class="n">ImageGrab</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl">
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    <span class="n">pic</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s1">&#39;0_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>   <span class="c1">#截图保存格言   #save monologue</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">
+</span></span><span class="line"><span class="ln">43</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">44</span><span class="cl">
+</span></span><span class="line"><span class="ln">45</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>           <span class="c1">#等待立绘动画   #load menu</span>
+</span></span><span class="line"><span class="ln">46</span><span class="cl">
+</span></span><span class="line"><span class="ln">47</span><span class="cl">    <span class="n">pic</span> <span class="o">=</span> <span class="n">ImageGrab</span><span class="o">.</span><span class="n">grab</span><span class="p">()</span>                  <span class="c1">#立绘截图      #get characters image from menu  </span>
+</span></span><span class="line"><span class="ln">48</span><span class="cl">
+</span></span><span class="line"><span class="ln">49</span><span class="cl">  
+</span></span><span class="line"><span class="ln">50</span><span class="cl">
+</span></span><span class="line"><span class="ln">51</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">,</span><span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>           <span class="c1">#退出DDLC      #exit DDLC and back to OS</span>
+</span></span><span class="line"><span class="ln">52</span><span class="cl">
+</span></span><span class="line"><span class="ln">53</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">900</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">54</span><span class="cl">
+</span></span><span class="line"><span class="ln">55</span><span class="cl">  
+</span></span><span class="line"><span class="ln">56</span><span class="cl">
+</span></span><span class="line"><span class="ln">57</span><span class="cl">    <span class="n">img</span> <span class="o">=</span> <span class="n">pic</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">58</span><span class="cl">
+</span></span><span class="line"><span class="ln">59</span><span class="cl">    <span class="n">color</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">getpixel</span><span class="p">((</span><span class="mi">1600</span><span class="p">,</span><span class="mi">680</span><span class="p">))</span>        <span class="c1">#截取图中某点的像素  #get pixel from characters image (actually from Monika)    </span>
+</span></span><span class="line"><span class="ln">60</span><span class="cl">
+</span></span><span class="line"><span class="ln">61</span><span class="cl">  
+</span></span><span class="line"><span class="ln">62</span><span class="cl">
+</span></span><span class="line"><span class="ln">63</span><span class="cl">    <span class="c1">#if color != (166,132,143):              #判断色素是否正常，不正常则保存立绘并退出自动程序  </span>
+</span></span><span class="line"><span class="ln">64</span><span class="cl">
+</span></span><span class="line"><span class="ln">65</span><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">20</span> <span class="p">)</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span><span class="mi">20</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">66</span><span class="cl">
+</span></span><span class="line"><span class="ln">67</span><span class="cl">        <span class="n">filePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span><span class="s1">&#39;test.txt&#39;</span><span class="p">)</span><span class="c1">#check the color of the pixel, if black then save the ghost menu and cease the script</span>
+</span></span><span class="line"><span class="ln">68</span><span class="cl">
+</span></span><span class="line"><span class="ln">69</span><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filePath</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">70</span><span class="cl">
+</span></span><span class="line"><span class="ln">71</span><span class="cl">            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;It took </span><span class="si">{</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="o">-</span><span class="n">time0</span><span class="p">)</span><span class="o">//</span><span class="mi">1</span><span class="si">}</span><span class="s1">s and repeated for </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> times&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">72</span><span class="cl">
+</span></span><span class="line"><span class="ln">73</span><span class="cl">        <span class="n">pic</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">)</span>    <span class="c1">#截图</span>
+</span></span><span class="line"><span class="ln">74</span><span class="cl">
+</span></span><span class="line"><span class="ln">75</span><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="ln">76</span><span class="cl">
+</span></span><span class="line"><span class="ln">77</span><span class="cl">  
+</span></span><span class="line"><span class="ln">78</span><span class="cl">
+</span></span><span class="line"><span class="ln">79</span><span class="cl">    <span class="n">ui</span><span class="o">.</span><span class="n">leftClick</span><span class="p">(</span><span class="mi">850</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span><span class="c1">#确认退出</span>
+</span></span><span class="line"><span class="ln">80</span><span class="cl">
+</span></span><span class="line"><span class="ln">81</span><span class="cl">    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span></code></pre></div></div>
+    <div class="article__tags"><a class="chip chip--soft" href="/tags/ddlc/">#ddlc</a><a class="chip chip--soft" href="/tags/%e6%b8%b8%e6%88%8f/">#游戏</a><a class="chip chip--soft" href="/tags/%e8%87%aa%e5%8a%a8%e5%8c%96/">#自动化</a><a class="chip chip--soft" href="/tags/python/">#python</a>
+    </div>
+    <nav class="article__foot">
+      <div><a href="/2023/09/05/cubase%E6%B0%B4%E5%B9%B3%E6%BB%9A%E5%8A%A8%E5%8F%8D%E5%90%91%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">← Cubase水平滚动反向的解决方法</a></div>
+      <div class="article__nav-next"><a href="/2024/02/23/%E5%9F%BA%E4%BA%8Epython%E7%94%B1%E5%88%B7%E8%AF%BE%E5%8F%91%E5%B1%95%E5%87%BA%E7%9A%84%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E6%8A%80%E6%9C%AF/">基于Python由刷课发展出的自动化脚本技术 →</a></div>
+    </nav>
+  </article><section class="comments" id="comments">
+  <p class="comments__title">评论</p>
+  <div class="comments__widget" id="twikoo"></div>
+  <script>
+    (function () {
+      var cfg = {
+        envId: "https:\/\/twikoo-netlify-n663.netlify.app\/.netlify\/functions\/twikoo",
+        el: "#twikoo",
+        lang: "zh-CN"
+      };
+      var src = "\/vendor\/twikoo.all.min.aea8cab06fe54e195ff46412675a60a81323e9e684c79c460c4d08a396448b6e.js";
+      var loaded = false;
+
+      function start() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement("script");
+        s.src = src;
+        s.onload = function () {
+          if (window.twikoo && window.twikoo.init) window.twikoo.init(cfg);
+        };
+        document.head.appendChild(s);
+      }
+
+      var el = document.getElementById("twikoo");
+      if (!el) return;
+
+       
+      if (!("IntersectionObserver" in window)) { start(); return; }
+      var io = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        io.disconnect();
+        start();
+      }, { rootMargin: "600px 0px" });
+      io.observe(el);
+    })();
+  </script>
+</section>
+<footer class="site-foot">
+  <p class="site-foot__copy">© 2026 暄穗</p>
+  <p class="site-foot__meta">
+    使用 <a href="https://gohugo.io" rel="noopener">Hugo</a> 构建 · <a href="/feed.xml">RSS</a>
+  </p>
+  <p class="site-foot__icp site-foot__icp--moe">
+    <a href="https://icp.gov.moe/?keyword=20241101" target="_blank" rel="noopener">萌ICP备20241101号</a>
+  </p>
+  <p class="site-foot__icp site-foot__icp--miit">
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">蜀ICP备2021000157号-2</a>
+  </p><script>
+    (function () {
+      var host = location.hostname;
+      var moe = document.querySelector(".site-foot__icp--moe");
+      var miit = document.querySelector(".site-foot__icp--miit");
+      if (!moe || !miit) return;
+      if (host === "moriform.com" || host === "www.moriform.com") {
+        moe.remove();
+      } else if (/(^|\.)github\.io$/.test(host)) {
+        miit.remove();
+      }
+    })();
+  </script>
+</footer>
+</div>
+  </main><script src="/js/moriform.min.e62d8b85a9b0a5c0ef78b322615dc5168ad33d4b831606a03595988e15d592dd.js" defer></script></body>
+</html>

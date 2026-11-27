@@ -5,7 +5,7 @@
     <link>https://moriform.com/tags/windows/</link>
     <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:49:38 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:50:15 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/windows/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>电脑重装记录</title>
@@ -87,9 +87,9 @@
     </item>
     <item>
       <title>关于粘贴板的数据</title>
-      <link>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
-      <pubDate>Sat, 18 Feb 2023 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.com/2023/02/18/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
+      <link>https://moriform.com/2023/02/19/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sun, 19 Feb 2023 19:40:38 &#43;0000</pubDate>
+      <guid>https://moriform.com/2023/02/19/%E5%85%B3%E4%BA%8E%E7%B2%98%E8%B4%B4%E6%9D%BF%E7%9A%84%E6%95%B0%E6%8D%AE/</guid>
       <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;最近大量导入了一些Youtube的RSS feed到fluent reader里面，由于这个阅读器读Youtube官方的RSS链接信息不显示内嵌视频，所以需要使用RSSHUB制作链接，没有爬取限制所以用官方的就行不需要用自己建的（我建的也读不了Youtube）。&lt;/p&gt;
 &lt;p&gt;唯一的问题就是Youtube的用户界面链接有多个，有youtube.com/channel的，有youtube.com/@user的。@的这个应该是最近油管说的可以给自己频道直观ID名字的，不是乱码，这样好记。&lt;/p&gt;

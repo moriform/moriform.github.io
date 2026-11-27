@@ -5,315 +5,13 @@
     <link>https://moriform.com/tags/%E9%9F%B3%E4%B9%90/</link>
     <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:49:38 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:50:15 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/%E9%9F%B3%E4%B9%90/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Solresol语法3</title>
-      <link>https://moriform.com/2019/12/03/solresol3/</link>
-      <pubDate>Tue, 03 Dec 2019 21:02:39 &#43;0000</pubDate>
-      <guid>https://moriform.com/2019/12/03/solresol3/</guid>
-      <description>&lt;h2 id=&#34;动词&#34;&gt;动词&lt;/h2&gt;
-&lt;p&gt;Solresol的动词都是保持原形。
-begin, sdf;I begin, dr sdf
-为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss.
-在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代替soso……&lt;/p&gt;
-&lt;h3 id=&#34;d&#34;&gt;D&lt;/h3&gt;
-&lt;p&gt;一般现在时I begin, dr D sdf, etc.
-过去完成时I had begun, dr D sdf, etc.&lt;/p&gt;
-&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
-&lt;p&gt;一般过去时I began, dr R sdf, etc.
-先事过去时(as soon as/when) I had begun, dr R sdf, etc.
-一般虚拟时that I might/should begin, mr dr R sdf, etc.
-过去虚拟时that I might/should have begun, mr dr, R sdf.&lt;/p&gt;
-&lt;h3 id=&#34;m&#34;&gt;M&lt;/h3&gt;
-&lt;p&gt;一般将来时I will begin, dr M sdf, etc., etc.
-将来完成时 I will have begun, dr M sdf, etc.&lt;/p&gt;
-&lt;h3 id=&#34;f&#34;&gt;F&lt;/h3&gt;
-&lt;p&gt;条件现在时I would begin, dr F sdf, etc.
-条件完成时I would have begun, dr F sdf, etc.&lt;/p&gt;
-&lt;h3 id=&#34;so&#34;&gt;SO.&lt;/h3&gt;
-&lt;p&gt;祈使句 Let&amp;rsquo;s begin, SO sdf.&lt;/p&gt;
-&lt;h3 id=&#34;l&#34;&gt;L.&lt;/h3&gt;
-&lt;p&gt;现在分词beginning, L sdf.
-过去分词having begun, L sdf&lt;/p&gt;
-&lt;h3 id=&#34;s&#34;&gt;S&lt;/h3&gt;
-&lt;p&gt;被动分词begun, S sdf.&lt;/p&gt;
-&lt;h2 id=&#34;虚拟语气&#34;&gt;虚拟语气&lt;/h2&gt;
-&lt;p&gt;通过在人称代词前面加mr（that）来表现虚拟语气。
-That I should commence, mr dr sdf.
-That you should finish, mr dm fds.
-May he/it progress, mr df sdl.
-May she learn, mr df- sds.
-That we should study, mr dr&amp;rsquo; sdso.
-That you (pl) should accomplish, mr dm&amp;rsquo; dsf.
-That they (not f) should work, mr df&amp;rsquo; rsosr.
-That they (f)should come, mr df&amp;rsquo;- msod.
-That you might write, mr dm R lmr.&lt;/p&gt;
-&lt;h2 id=&#34;被动语态&#34;&gt;被动语态&lt;/h2&gt;
-&lt;p&gt;我们看到完成时的变换不需要任何助动词，而在被动语态下我们会用助动词frm（be）。
-To be loved, frm mls.
-To have been loved, frm mls.
-I am loved, dr frm mls.
-I have been loved, dr frm mls.
-I was (being) detested, dr D frm slm.
-I had been (being) detested, dr D frm slm.
-I was detested, dr R frm slm.
-I had been detested, dr R frm slm.
-I will be understood, dr M frm flf.
-I shall have been understood, dr M frm flf.
-I would be understood, dr F frm flf.
-I would have been understood, dr F frm flf.
-Be accepted, frm dldm.
-Let&amp;rsquo;s be accepted, SO frm dldm.
-That I should be refused, mr dr frm mdld.
-That I should have received, mr dr frm msorso.
-That I might be understood, mr dr R frm flf.
-That I might have been understood, mr dr R frm flf.
-Being understood, L frm flf.
-Having been understood, L frm flf.
-Understood, S frm flf.&lt;/p&gt;
-&lt;h2 id=&#34;反身动词&#34;&gt;反身动词&lt;/h2&gt;
-&lt;p&gt;I amuse myself, dr lsr dr.
-You amuse yourself, dm lsr dm.
-He amuses himself, df lsr dso.
-She amuses herself, df炉 lsr dso.&lt;/p&gt;
-&lt;h2 id=&#34;非人称动词&#34;&gt;非人称动词&lt;/h2&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It is necessary. 	fld.&lt;/td&gt;
-					&lt;td&gt;It is freezing/icy. 	lsoso&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It is raining. 		ssd&lt;/td&gt;
-					&lt;td&gt;It is windy.		ssr&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It is snowing.	iff.&lt;/td&gt;
-					&lt;td&gt;It is foggy.		lrr&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;There is thunder	ssso&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It is (now) necessary.	fld&lt;/td&gt;
-					&lt;td&gt;It will be windy.			M ssr&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It was necessary.		fld&lt;/td&gt;
-					&lt;td&gt;It will have been foggy.	M lrr&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It was raining.		D ssd&lt;/td&gt;
-					&lt;td&gt;It will be hot 				F ssl&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It had snowed		D lff&lt;/td&gt;
-					&lt;td&gt;It shall have been cold	F lss&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It thundered.			R ssso&lt;/td&gt;
-					&lt;td&gt;It had been icy.			R lsoso&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;疑问与否定&#34;&gt;疑问与否定&lt;/h2&gt;
-&lt;p&gt;将人称代词放在动词后面表示疑问&lt;/p&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Am I?&lt;/td&gt;
-					&lt;td&gt;frm-dr?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Do we study?&lt;/td&gt;
-					&lt;td&gt;sdso-dr?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Do you want (to/that)?&lt;/td&gt;
-					&lt;td&gt;fsf-dm?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Are you learning?&lt;/td&gt;
-					&lt;td&gt;sds-dm?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Does he understand?&lt;/td&gt;
-					&lt;td&gt;flf-df?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Do they love?&lt;/td&gt;
-					&lt;td&gt;mls-df&#39;?&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;在需要否定的单词前面加d来否定&#34;&gt;在需要否定的单词前面加d来否定&lt;/h3&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;I do not love.&lt;/td&gt;
-					&lt;td&gt;dr d mls.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Don&amp;rsquo;t you want (to/that)?&lt;/td&gt;
-					&lt;td&gt;d fsf-dm?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Won&amp;rsquo;t it rain?&lt;/td&gt;
-					&lt;td&gt;d M ssd so?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Why don&amp;rsquo;t we ocntinue the study?&lt;/td&gt;
-					&lt;td&gt;fso d Frsoml_dr&amp;rsquo; fm sd?&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;Let&amp;rsquo;s not go there&lt;/td&gt;
-					&lt;td&gt;d So frf lm.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;It is necessary never to act unwisely in order not to be sick.&lt;/td&gt;
-					&lt;td&gt;Lso fld fsol dsfd md d ffdr&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;语法规则&#34;&gt;语法规则&lt;/h2&gt;
-&lt;p&gt;Solresol通过短语的缩写或省略来使它们在符合逻辑的条件下，更清楚简单地被使用。
-否定句式只需要加一个d而不需要重复多次表示否定。（这条规则是相较于法语的简化，不懂可省略，略懂可参照例句。）&lt;/p&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;I don&amp;rsquo;t want to leave.&lt;/td&gt;
-					&lt;td&gt;Dr d fsf fsor.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;We never go there.&lt;/td&gt;
-					&lt;td&gt;Dr&amp;rsquo; frf ls lm.&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;You don&amp;rsquo;t understand their letter.&lt;/td&gt;
-					&lt;td&gt;Dm d flf re fdm.&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;一些外语存在习语成语或是具有比喻意义的表达，其他国家的人一般情况下难以理解这些表达。而solresol强调用准确的单词来表达正确清晰易懂的意思。&lt;/p&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;俚语&lt;/th&gt;
-					&lt;th&gt;实意&lt;/th&gt;
-					&lt;th&gt;单词&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;get the drift&lt;/td&gt;
-					&lt;td&gt;understand&lt;/td&gt;
-					&lt;td&gt;flf&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;how are you doing&lt;/td&gt;
-					&lt;td&gt;are you well&lt;/td&gt;
-					&lt;td&gt;rdff&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;pass away&lt;/td&gt;
-					&lt;td&gt;die&lt;/td&gt;
-					&lt;td&gt;rfmd&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;have every hair in place&lt;/td&gt;
-					&lt;td&gt;be correct&lt;/td&gt;
-					&lt;td&gt;frm srso&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;feel hollow&lt;/td&gt;
-					&lt;td&gt;be hungry&lt;/td&gt;
-					&lt;td&gt;dsod&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;我们把具有形容词意义的部分放在名词性部分之后。
-所以我们不会说	joyful baby, unhappy friend, honest citizen, good food
-而是Baby joyful, dmfso sosr.
-和Friend unhappy, mds sosm.
-和Citizen honest, sdrd dfsso.
-和Food good, dlfr fl.&lt;/p&gt;
-&lt;p&gt;Fasi和Sifa
-Solresol用这两个单词来表示四个不同的程度。&lt;/p&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;fs加在形容词前面表示比较级：fl：good&lt;/td&gt;
-					&lt;td&gt;fs fl：very good&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;fs加在形容词后面表示最高级：fl：good&lt;/td&gt;
-					&lt;td&gt;fl fs：extremely good&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;sf加在形容词前面表示微小级：fl：good&lt;/td&gt;
-					&lt;td&gt;sf fl：somewhat good&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;sf加在形容词后面表示极微级：fl：good&lt;/td&gt;
-					&lt;td&gt;fl sf：not very good，almost bad&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;对名词来说也是如此。
-ssr	wind
-sf ssr：slight wind
-ssr sf：gentle breeze
-fs ssr：gale
-ssr fs：strong wind 、hurricane&lt;/p&gt;
-&lt;h2 id=&#34;不确定量&#34;&gt;不确定量&lt;/h2&gt;
-&lt;p&gt;在表示不确定的数量时，solresol省略了其中表示部分一些和表示不确定的词，同时单数的冠词也被省略。
-I would like [* some] beer and [* a] pastry -&amp;gt; I would like beer and pastry-&amp;gt;dr mfl dsfr r dsrs
-Give me a meter of muslin-&amp;gt;Give meter muslin-&amp;gt;rml rdd lsorf ldld
-The enermy has a very number of troop.-&amp;gt;enermy has troop much-&amp;gt;sdm fmso fmfr fs&lt;/p&gt;
-&lt;p&gt;#solresol&lt;/p&gt;
-</description>
-    </item>
-    <item>
       <title>Solresol语法2</title>
-      <link>https://moriform.com/2019/12/02/solresol2/</link>
-      <pubDate>Mon, 02 Dec 2019 21:02:39 &#43;0000</pubDate>
-      <guid>https://moriform.com/2019/12/02/solresol2/</guid>
+      <link>https://moriform.com/2021/08/28/solresol2/</link>
+      <pubDate>Sat, 28 Aug 2021 21:02:39 &#43;0000</pubDate>
+      <guid>https://moriform.com/2021/08/28/solresol2/</guid>
       <description>&lt;h2 id=&#34;一音节词&#34;&gt;一音节词&lt;/h2&gt;
 &lt;p&gt;Solresol的单词由一到四个音节组成。以下是一音节的单词。
 Do , no, not, neither, nor;				Sol, if;
@@ -1130,10 +828,312 @@ Rsoml-, continually .副词
 </description>
     </item>
     <item>
+      <title>Solresol语法3</title>
+      <link>https://moriform.com/2021/08/28/solresol3/</link>
+      <pubDate>Sat, 28 Aug 2021 21:02:39 &#43;0000</pubDate>
+      <guid>https://moriform.com/2021/08/28/solresol3/</guid>
+      <description>&lt;h2 id=&#34;动词&#34;&gt;动词&lt;/h2&gt;
+&lt;p&gt;Solresol的动词都是保持原形。
+begin, sdf;I begin, dr sdf
+为了标明时态和情感，我们会使用叠词dd,rr,mm,ff,soso,ll,ss.
+在书写的时候我们可以采取简写用D代替dd，R代替rr，SO代替soso……&lt;/p&gt;
+&lt;h3 id=&#34;d&#34;&gt;D&lt;/h3&gt;
+&lt;p&gt;一般现在时I begin, dr D sdf, etc.
+过去完成时I had begun, dr D sdf, etc.&lt;/p&gt;
+&lt;h3 id=&#34;r&#34;&gt;R&lt;/h3&gt;
+&lt;p&gt;一般过去时I began, dr R sdf, etc.
+先事过去时(as soon as/when) I had begun, dr R sdf, etc.
+一般虚拟时that I might/should begin, mr dr R sdf, etc.
+过去虚拟时that I might/should have begun, mr dr, R sdf.&lt;/p&gt;
+&lt;h3 id=&#34;m&#34;&gt;M&lt;/h3&gt;
+&lt;p&gt;一般将来时I will begin, dr M sdf, etc., etc.
+将来完成时 I will have begun, dr M sdf, etc.&lt;/p&gt;
+&lt;h3 id=&#34;f&#34;&gt;F&lt;/h3&gt;
+&lt;p&gt;条件现在时I would begin, dr F sdf, etc.
+条件完成时I would have begun, dr F sdf, etc.&lt;/p&gt;
+&lt;h3 id=&#34;so&#34;&gt;SO.&lt;/h3&gt;
+&lt;p&gt;祈使句 Let&amp;rsquo;s begin, SO sdf.&lt;/p&gt;
+&lt;h3 id=&#34;l&#34;&gt;L.&lt;/h3&gt;
+&lt;p&gt;现在分词beginning, L sdf.
+过去分词having begun, L sdf&lt;/p&gt;
+&lt;h3 id=&#34;s&#34;&gt;S&lt;/h3&gt;
+&lt;p&gt;被动分词begun, S sdf.&lt;/p&gt;
+&lt;h2 id=&#34;虚拟语气&#34;&gt;虚拟语气&lt;/h2&gt;
+&lt;p&gt;通过在人称代词前面加mr（that）来表现虚拟语气。
+That I should commence, mr dr sdf.
+That you should finish, mr dm fds.
+May he/it progress, mr df sdl.
+May she learn, mr df- sds.
+That we should study, mr dr&amp;rsquo; sdso.
+That you (pl) should accomplish, mr dm&amp;rsquo; dsf.
+That they (not f) should work, mr df&amp;rsquo; rsosr.
+That they (f)should come, mr df&amp;rsquo;- msod.
+That you might write, mr dm R lmr.&lt;/p&gt;
+&lt;h2 id=&#34;被动语态&#34;&gt;被动语态&lt;/h2&gt;
+&lt;p&gt;我们看到完成时的变换不需要任何助动词，而在被动语态下我们会用助动词frm（be）。
+To be loved, frm mls.
+To have been loved, frm mls.
+I am loved, dr frm mls.
+I have been loved, dr frm mls.
+I was (being) detested, dr D frm slm.
+I had been (being) detested, dr D frm slm.
+I was detested, dr R frm slm.
+I had been detested, dr R frm slm.
+I will be understood, dr M frm flf.
+I shall have been understood, dr M frm flf.
+I would be understood, dr F frm flf.
+I would have been understood, dr F frm flf.
+Be accepted, frm dldm.
+Let&amp;rsquo;s be accepted, SO frm dldm.
+That I should be refused, mr dr frm mdld.
+That I should have received, mr dr frm msorso.
+That I might be understood, mr dr R frm flf.
+That I might have been understood, mr dr R frm flf.
+Being understood, L frm flf.
+Having been understood, L frm flf.
+Understood, S frm flf.&lt;/p&gt;
+&lt;h2 id=&#34;反身动词&#34;&gt;反身动词&lt;/h2&gt;
+&lt;p&gt;I amuse myself, dr lsr dr.
+You amuse yourself, dm lsr dm.
+He amuses himself, df lsr dso.
+She amuses herself, df炉 lsr dso.&lt;/p&gt;
+&lt;h2 id=&#34;非人称动词&#34;&gt;非人称动词&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It is necessary. 	fld.&lt;/td&gt;
+					&lt;td&gt;It is freezing/icy. 	lsoso&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It is raining. 		ssd&lt;/td&gt;
+					&lt;td&gt;It is windy.		ssr&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It is snowing.	iff.&lt;/td&gt;
+					&lt;td&gt;It is foggy.		lrr&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;There is thunder	ssso&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It is (now) necessary.	fld&lt;/td&gt;
+					&lt;td&gt;It will be windy.			M ssr&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It was necessary.		fld&lt;/td&gt;
+					&lt;td&gt;It will have been foggy.	M lrr&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It was raining.		D ssd&lt;/td&gt;
+					&lt;td&gt;It will be hot 				F ssl&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It had snowed		D lff&lt;/td&gt;
+					&lt;td&gt;It shall have been cold	F lss&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It thundered.			R ssso&lt;/td&gt;
+					&lt;td&gt;It had been icy.			R lsoso&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;疑问与否定&#34;&gt;疑问与否定&lt;/h2&gt;
+&lt;p&gt;将人称代词放在动词后面表示疑问&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Am I?&lt;/td&gt;
+					&lt;td&gt;frm-dr?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Do we study?&lt;/td&gt;
+					&lt;td&gt;sdso-dr?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Do you want (to/that)?&lt;/td&gt;
+					&lt;td&gt;fsf-dm?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Are you learning?&lt;/td&gt;
+					&lt;td&gt;sds-dm?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Does he understand?&lt;/td&gt;
+					&lt;td&gt;flf-df?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Do they love?&lt;/td&gt;
+					&lt;td&gt;mls-df&#39;?&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;在需要否定的单词前面加d来否定&#34;&gt;在需要否定的单词前面加d来否定&lt;/h3&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I do not love.&lt;/td&gt;
+					&lt;td&gt;dr d mls.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Don&amp;rsquo;t you want (to/that)?&lt;/td&gt;
+					&lt;td&gt;d fsf-dm?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Won&amp;rsquo;t it rain?&lt;/td&gt;
+					&lt;td&gt;d M ssd so?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Why don&amp;rsquo;t we ocntinue the study?&lt;/td&gt;
+					&lt;td&gt;fso d Frsoml_dr&amp;rsquo; fm sd?&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Let&amp;rsquo;s not go there&lt;/td&gt;
+					&lt;td&gt;d So frf lm.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;It is necessary never to act unwisely in order not to be sick.&lt;/td&gt;
+					&lt;td&gt;Lso fld fsol dsfd md d ffdr&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;语法规则&#34;&gt;语法规则&lt;/h2&gt;
+&lt;p&gt;Solresol通过短语的缩写或省略来使它们在符合逻辑的条件下，更清楚简单地被使用。
+否定句式只需要加一个d而不需要重复多次表示否定。（这条规则是相较于法语的简化，不懂可省略，略懂可参照例句。）&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I don&amp;rsquo;t want to leave.&lt;/td&gt;
+					&lt;td&gt;Dr d fsf fsor.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;We never go there.&lt;/td&gt;
+					&lt;td&gt;Dr&amp;rsquo; frf ls lm.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;You don&amp;rsquo;t understand their letter.&lt;/td&gt;
+					&lt;td&gt;Dm d flf re fdm.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;一些外语存在习语成语或是具有比喻意义的表达，其他国家的人一般情况下难以理解这些表达。而solresol强调用准确的单词来表达正确清晰易懂的意思。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;俚语&lt;/th&gt;
+					&lt;th&gt;实意&lt;/th&gt;
+					&lt;th&gt;单词&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;get the drift&lt;/td&gt;
+					&lt;td&gt;understand&lt;/td&gt;
+					&lt;td&gt;flf&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;how are you doing&lt;/td&gt;
+					&lt;td&gt;are you well&lt;/td&gt;
+					&lt;td&gt;rdff&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;pass away&lt;/td&gt;
+					&lt;td&gt;die&lt;/td&gt;
+					&lt;td&gt;rfmd&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;have every hair in place&lt;/td&gt;
+					&lt;td&gt;be correct&lt;/td&gt;
+					&lt;td&gt;frm srso&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;feel hollow&lt;/td&gt;
+					&lt;td&gt;be hungry&lt;/td&gt;
+					&lt;td&gt;dsod&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;我们把具有形容词意义的部分放在名词性部分之后。
+所以我们不会说	joyful baby, unhappy friend, honest citizen, good food
+而是Baby joyful, dmfso sosr.
+和Friend unhappy, mds sosm.
+和Citizen honest, sdrd dfsso.
+和Food good, dlfr fl.&lt;/p&gt;
+&lt;p&gt;Fasi和Sifa
+Solresol用这两个单词来表示四个不同的程度。&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;fs加在形容词前面表示比较级：fl：good&lt;/td&gt;
+					&lt;td&gt;fs fl：very good&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;fs加在形容词后面表示最高级：fl：good&lt;/td&gt;
+					&lt;td&gt;fl fs：extremely good&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;sf加在形容词前面表示微小级：fl：good&lt;/td&gt;
+					&lt;td&gt;sf fl：somewhat good&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;sf加在形容词后面表示极微级：fl：good&lt;/td&gt;
+					&lt;td&gt;fl sf：not very good，almost bad&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;对名词来说也是如此。
+ssr	wind
+sf ssr：slight wind
+ssr sf：gentle breeze
+fs ssr：gale
+ssr fs：strong wind 、hurricane&lt;/p&gt;
+&lt;h2 id=&#34;不确定量&#34;&gt;不确定量&lt;/h2&gt;
+&lt;p&gt;在表示不确定的数量时，solresol省略了其中表示部分一些和表示不确定的词，同时单数的冠词也被省略。
+I would like [* some] beer and [* a] pastry -&amp;gt; I would like beer and pastry-&amp;gt;dr mfl dsfr r dsrs
+Give me a meter of muslin-&amp;gt;Give meter muslin-&amp;gt;rml rdd lsorf ldld
+The enermy has a very number of troop.-&amp;gt;enermy has troop much-&amp;gt;sdm fmso fmfr fs&lt;/p&gt;
+&lt;p&gt;#solresol&lt;/p&gt;
+</description>
+    </item>
+    <item>
       <title>Solresol语法1</title>
-      <link>https://moriform.com/2019/12/01/solresol1/</link>
-      <pubDate>Sun, 01 Dec 2019 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.com/2019/12/01/solresol1/</guid>
+      <link>https://moriform.com/2021/08/28/solresol1/</link>
+      <pubDate>Sat, 28 Aug 2021 19:40:38 &#43;0000</pubDate>
+      <guid>https://moriform.com/2021/08/28/solresol1/</guid>
       <description>&lt;h3 id=&#34;引入&#34;&gt;引入&lt;/h3&gt;
 &lt;p&gt;生活中的方方面面的基础，在于人与人之间相互明白对方在说什么。
 但是这个世界上存在的语言超过三千种，人们有多大的几率明白一个外国人在说什么呢。
@@ -1153,13 +1153,13 @@ Rsoml-, continually .副词
 写全音节do,re,mi,fa,sol,la,si。&lt;/p&gt;
 &lt;p&gt;书写省略元音（除了sol要写成so来与si区分开）：d,r,m,f,so,l,s。&lt;/p&gt;
 &lt;p&gt;五线谱取下加一线到第三间的范围书写。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2019/12/01/solresol1/3e5659fe62b746c65a3bf0d5f41a015d.webp&#34; alt=&#34;&#34; width=&#34;543&#34; height=&#34;246&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/28/solresol1/3e5659fe62b746c65a3bf0d5f41a015d.webp&#34; alt=&#34;&#34; width=&#34;543&#34; height=&#34;246&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;用简谱上的数字来代替音节。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2019/12/01/solresol1/3e79b973f015843bfd7b6ff8a4cb1ef6.webp&#34; alt=&#34;&#34; width=&#34;224&#34; height=&#34;65&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/28/solresol1/3e79b973f015843bfd7b6ff8a4cb1ef6.webp&#34; alt=&#34;&#34; width=&#34;224&#34; height=&#34;65&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;由 Vincent GAJEWSKI发明的solresol特有的速记方式。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2019/12/01/solresol1/9bc3b8b5e96197edc1ae2a0413e845ca.webp&#34; alt=&#34;&#34; width=&#34;547&#34; height=&#34;154&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/28/solresol1/9bc3b8b5e96197edc1ae2a0413e845ca.webp&#34; alt=&#34;&#34; width=&#34;547&#34; height=&#34;154&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;（译：神奇的事来了：这些速记符号是用来画图的，读图方式遵循从上到下从左到右）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2019/12/01/solresol1/6833bb32dfd7f185979d30b635b16e8e.webp&#34; alt=&#34;&#34; width=&#34;291&#34; height=&#34;371&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/28/solresol1/6833bb32dfd7f185979d30b635b16e8e.webp&#34; alt=&#34;&#34; width=&#34;291&#34; height=&#34;371&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;遇到叠音我们只需要写一遍然后在中间划一道线。&lt;/p&gt;
 &lt;h3 id=&#34;用solresol交流的不同方式&#34;&gt;用solresol交流的不同方式&lt;/h3&gt;
 &lt;p&gt;不管是在白天还是黑夜，远处还是近处，海上还是陆地，出声与否我们都能通过solresol语言交流自如。即使是各国的聋哑人或是盲人也有多种交流方式。
@@ -1167,7 +1167,7 @@ Rsoml-, continually .副词
 &lt;p&gt;之前所提到的五种简单的书写方式。&lt;/p&gt;
 &lt;p&gt;这门语言可以通过用手摆出之前所提到的速记方式的标志来无声交流（比如说do需要将手比作一个球或摆出一个零，对于叠词将同一记号摆两次即可）。&lt;/p&gt;
 &lt;p&gt;用右手食指指出左手的不同区域来代表不同的音节。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2019/12/01/solresol1/599068a0884c366c4db976989a32ab88.webp&#34; alt=&#34;&#34; width=&#34;434&#34; height=&#34;222&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://moriform.com/2021/08/28/solresol1/599068a0884c366c4db976989a32ab88.webp&#34; alt=&#34;&#34; width=&#34;434&#34; height=&#34;222&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
 &lt;p&gt;看见了吗，这里比出的三根手指就是之前说明的五线谱标注法的第一线，第二线和第三线。&lt;/p&gt;
 &lt;p&gt;通过敲击的方式来进行交流。
 &lt;code&gt;敲一下代表do.&lt;/code&gt;

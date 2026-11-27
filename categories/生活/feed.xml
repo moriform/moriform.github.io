@@ -5,28 +5,8 @@
     <link>https://moriform.com/categories/%E7%94%9F%E6%B4%BB/</link>
     <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:49:38 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:50:15 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/categories/%E7%94%9F%E6%B4%BB/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>大概是最后一次博客大调整</title>
-      <link>https://moriform.com/2026/11/26/lasthugobuildmaybe/</link>
-      <pubDate>Thu, 26 Nov 2026 16:18:26 &#43;0800</pubDate>
-      <guid>https://moriform.com/2026/11/26/lasthugobuildmaybe/</guid>
-      <description>&lt;p&gt;经过了一个周末的大改，新的博客上线啦！&lt;/p&gt;
-&lt;p&gt;这次博客采用了和以前完全不一样的结构，使用了Hugo为博客的主要框架。&lt;/p&gt;
-&lt;h2 id=&#34;使用hugo的原因有以下几点&#34;&gt;使用Hugo的原因有以下几点：&lt;/h2&gt;
-&lt;p&gt;其一，服务器一年99元的活动快结束了，一年1000元的aliyun服务器作为博客托管服务肯定性价比是不高的，原先的计划就是等服务器到期之后把github page的内容直接解析到域名中去。既然迟早要换成静态博客，不如现在就准备更换。&lt;/p&gt;
-&lt;p&gt;其二，Wordpres经历让我发现一个拥有后台的博客并不是我的刚需，尤其是一个每天后台被攻打几千次动不动就报数据库问题存储问题还有PHP问题的wordpress。静态博客的最大好处就是在本地保留一个文档库，本地编写文档上传渲染的静态页面，一次配置之后就可以安心写博客不用在意其他的服务器问题。&lt;/p&gt;
-&lt;h2 id=&#34;于是我开始了hugo的搭建&#34;&gt;于是我开始了hugo的搭建。&lt;/h2&gt;
-&lt;p&gt;为了hugo博客的稳定性，我没有dart sass组件，这样就不能使用大多数高人气的hugo主题，所以我用deepseek写了一个主题，一个属于我自己的基于贴片的主题。没有过多的动画和颜色，就只是一个保留我文章的地方。且通过deepseek丰富的前端知识，我还了解到相当多的以前没有实践的点子，比如将笔记藏起来不让搜索引擎和网友发现的方法，以及将周记100年后才推出的方法。&lt;/p&gt;
-&lt;p&gt;博客依旧拥有一些基本功能，评论功能我使用了atlas部署mangodb和netlify部署twikoo，邮箱功能我沿用了以前aliyun设置的smtp服务基本保持不变，这两项的部署对于我这种小体量博客来说也是免费的。之前我使用的评论系统是giscus，但是考虑到我的读者不可能都有github账号，就还是用了这个匿名也可以发评论的系统。&lt;/p&gt;
-&lt;p&gt;唯一的问题就是当下的这一台服务器是经过备案的，对应了我的域名，所以我不能够直接把域名解析到我的github pages。我的做法是在本地写完hugo文档之后，将hugo文档更新到github私有库，在github上面通过action将私有库的内容渲染成静态页面，发给github page的同时通过ssh发送给我的服务器。这样在服务器没有到期，备案还在的时候域名依旧指向服务器。这样的好处是合法的同时加速了国内访问博客的速度，且如果有什么鬼点子，当下几乎空余的服务器和备案匹配的域名依旧是好的试验场。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://moriform.com/2026/11/26/lasthugobuildmaybe/image.webp&#34; alt=&#34;&#34; width=&#34;519&#34; height=&#34;606&#34; loading=&#34;lazy&#34; decoding=&#34;async&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;obsidian是hugo最好的编辑器&#34;&gt;Obsidian是Hugo最好的编辑器&lt;/h2&gt;
-&lt;p&gt;Obsidian作为出色的具有良好文件管理功能的高自定义Markdown编辑器，通过安装一些插件就可以作为一个一站式的Hugo博客编辑器。&lt;/p&gt;
-&lt;p&gt;我现在使用的插件有Calendar(用于一键生成日记)；Excalidraw用于随时画图插入文章中；Flexplorer必要时自定义顺序查看文件列表；Image Converter用于把插入的图片转换成webp格式减少仓库的体积；QuickAdd用于一键生成其他类型的文章(posts,notes&amp;hellip;.)；以及Git插件也可以直接接管Git而不需要终端。&lt;/p&gt;
-</description>
-    </item>
     <item>
       <title>记一次闲鱼买卖</title>
       <link>https://moriform.com/2026/04/02/xmyu1/</link>

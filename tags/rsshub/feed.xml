@@ -5,7 +5,7 @@
     <link>https://moriform.com/tags/rsshub/</link>
     <description>森林深处少有人经过的站点。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 08:49:38 &#43;0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:50:15 &#43;0000</lastBuildDate>
     <atom:link href="https://moriform.com/tags/rsshub/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我的RSS订阅系统</title>
@@ -46,9 +46,9 @@
     </item>
     <item>
       <title>关于新版本Freshrss和Rsshub同时使用时出现的问题</title>
-      <link>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Fri, 17 Oct 2025 19:40:38 &#43;0000</pubDate>
-      <guid>https://moriform.com/2025/10/17/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <link>https://moriform.com/2025/10/18/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 18 Oct 2025 19:40:38 &#43;0000</pubDate>
+      <guid>https://moriform.com/2025/10/18/%E5%85%B3%E4%BA%8Efreshrss-1-27%E5%92%8Crsshub%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8%E6%97%B6%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h3 id=&#34;问题描述&#34;&gt;问题描述&lt;/h3&gt;
 &lt;p&gt;暄穗在使用freshrss在服务器中作为远程rss阅读器的时候最近发现了问题，就是和rsshub同时使用的时候总是会有freshrss“力不从心”的情况：抓取的数量很少，通过管理页面看订阅的feed会红一大片，但是自己手动用浏览器打开rsshub订阅发现是可以打开的。也就是说明明rsshub订阅是没有问题，但是Freshrss就是不抓。如果再看得仔细一点会发现Freshrss确实抓了几个我的rsshub，然后就不抓了，通过Rsshub的日志也能看见Freshrss红的订阅根本没有请求抓取（加把劲啊Freshrss!你为什么不抓！）。&lt;/p&gt;
 &lt;h3 id=&#34;原因说明&#34;&gt;原因说明&lt;/h3&gt;
